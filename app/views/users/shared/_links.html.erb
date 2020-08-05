@@ -1,3 +1,4 @@
+<!--
 <%- if controller_name != 'sessions' %>
   <%= link_to "Log in", new_session_path(resource_name) %><br />
 <% end %>
@@ -5,9 +6,11 @@
 <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
 <% end %>
+-->
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+  <!-- <%= link_to "Forgot your password?", new_password_path(resource_name) %><br /> -->
+  <%= link_to "パスワードをお忘れの方", new_password_path(resource_name) %><br />
 <% end %>
 
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
@@ -18,36 +21,40 @@
   <%= link_to "Didn't receive unlock instructions?", new_unlock_path(resource_name) %><br />
 <% end %>
 
-
-<p>ここから</p>
-
-
+<!--
 <%- if devise_mapping.omniauthable? %>
   <%- resource_class.omniauth_providers.each do |provider| %>
     <%= link_to "Sign in with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider) %><br />
   <% end %>
 <% end %>
+-->
 
-
-<% if @monitor == "Login" %>
+<% if @monitor == "ログイン" %>
   <% Rails.application.config.another_logger.debug "[d] ログイン画面" %>
+  
+  <div class="col-11 col-sm-10 col-md-9 col-lg-7 col-xl-6 mx-auto">
+    <%= link_to "#", class: "btn btn-social btn-twitter my-2 btn-block" do %>
+    <i class="fa fa-twitter", id="my_size"></i><div class="text2">Twitterでログインする</div>
+    <% end %>
+    <%= link_to user_facebook_omniauth_authorize_path, class: "btn btn-social btn-facebook my-2 btn-block" do %>
+    <i class="fa fa-facebook", id="my_size"></i><div class="text2">Facebookでログインする</div>
+    <% end %>
+    <%= link_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-social btn-google my-2 btn-block" do %>
+    <i class="fa fa-google", id="my_size"></i><div class="text2">Googleでログインする</div>
+    <% end %>
+  </div>
 <% else %>
   <% Rails.application.config.another_logger.debug "[d] 新規作成" %>
-<% end %>
-
-
-<% if user_signed_in? %>
-  <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-<% else %>
-  <p>
-    <%= link_to user_facebook_omniauth_authorize_path, class: "btn btn-social btn-facebook" do %>
-      <i class="fab fa-facebook"></i> Facebookアカウントでログイン
+  
+  <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-6 mx-auto">
+    <%= link_to "#", class: "btn btn-social btn-twitter my-2 btn-block" do %>
+    <i class="fa fa-twitter", id="my_size"></i><div class="text">Twitterで登録する</div>
     <% end %>
-  </p>
-  <p>
-    <%= link_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-social btn-google" do %>
-      <i class="fab fa-google"></i> Googleアカウントでログイン
+    <%= link_to user_facebook_omniauth_authorize_path, class: "btn btn-social btn-facebook my-2 btn-block" do %>
+    <i class="fa fa-facebook", id="my_size"></i><div class="text">Facebookで登録する</div>
     <% end %>
-  </p>
+    <%= link_to user_google_oauth2_omniauth_authorize_path, class: "btn btn-social btn-google my-2 btn-block" do %>
+    <i class="fa fa-google", id="my_size"></i><div class="text">Googleで登録する</div>
+    <% end %>
+  </div>
 <% end %>
-

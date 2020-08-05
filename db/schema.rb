@@ -21,6 +21,13 @@ ActiveRecord::Schema.define(version: 2020_07_31_185932) do
     t.string "uid"
     t.string "token"
     t.string "provider"
+    t.boolean "admin", default: false
+    t.string "shop_name"
+    t.string "address"
+    t.string "tel"
+    t.string "business_hours"
+    t.string "holiday"
+    t.string "url"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

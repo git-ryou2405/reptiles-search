@@ -1,6 +1,6 @@
 /*
- *= require_self
- *= require_tree .
+*= require_self
+*= require_tree . 
  */
 @charset "utf-8";
 @import "bootstrap";
@@ -37,28 +37,15 @@ ul, li { list-style: none;}
 /*==============================================================================
   共通header
 ============================================================================= */
-#header {
-  background-color: #111;
-  color: silver;
-  font-weight: bold;
-  cursor: pointer;
-}
-#logo { font-size: 20px;
-}
-#logo:hover { color: silver;
-text-decoration: none;
-}
+#header { background-color: #111; color: silver; font-weight: bold; }
+#logo { font-size: 20px; }
+#logo:hover { color: silver; text-decoration: none; cursor: pointer; }
 
-/* header-list */
-.deco1:hover { color: #fff;
-background-color: #dc3545;
-border-color: #dc3545;
-}
-.deco2 { color: white;
-}
-.deco2-pd { padding-left: 10px;
-}
-.deco2:hover {
+/* header-btn */
+.btn1:hover { color: #fff; background-color: #dc3545; border-color: #dc3545; }
+.btn2 { color: white; }
+.btn-padding { padding-left: 10px; }
+.btn2:hover {
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -141,6 +128,21 @@ border-color: #dc3545;
 .align-center{align-items:center;}
 
 .group .content  { width: 900px; margin: 0 auto; padding: 60px 0 0; }
+
+/*==============================================================================
+  login画面
+============================================================================= */
+.text { text-align: center; }
+.text2 { text-align: center; }
+#my_size {
+  text-align: center;
+  font-size: 14px;
+}
+.devise {
+  background-color: #333;
+  padding: 40px;
+}
+
 
 
 

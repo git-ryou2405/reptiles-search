@@ -1,0 +1,7 @@
+<% Rails.application.config.another_logger.debug "[debug] users/index" %>
+
+<div class="container text-center">
+  <div class=""><%= "こんにちは、#{@user.name}さん"%></div>
+
+  <%= link_to "ユーザ情報の編集",edit_user_registration_path, class:"btn btn-sm btn-primary" %>
+</div>

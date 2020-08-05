@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
+  
   def line
     debug_log("[debug] line")  # デバッグ出力
     callback_from(:line)
@@ -28,9 +29,8 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
 
     if @user.persisted?
       debug_log("[debug] callback_from：if ok (@user.persisted?)")  # デバッグ出力
-      flash[:notice] = I18n.t('devise.omniauth_callbacks.success', kind: provider.capitalize)
-      flash[:notice] = "ログインしました"
-
+      flash[:success] = I18n.t('devise.omniauth_callbacks.success', kind: provider.capitalize)
+      
       # @userがアクティブ化されていない場合スローされる
       sign_in_and_redirect @user, event: :authentication
     else

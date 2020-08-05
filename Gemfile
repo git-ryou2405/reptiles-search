@@ -47,8 +47,8 @@ gem 'omniauth-google-oauth2'                   # Google
 # デバッグ機能
 # gem 'pry-rails'                              # デバッグ機能（Rails console で Pry が起動するようになる）
 # gem "pry-byebug"                             # デバッグ機能（binding.pry（Viewファイルでは<% binding.pry %>）をブレークポイントとして記述）
-# gem 'hirb'                                   # モデルの出力結果を表形式で表示するGem
-# gem 'hirb-unicode'                           # 日本語などマルチバイト文字の出力時の出力結果のずれに対応
+gem 'hirb'                                   # モデルの出力結果を表形式で表示するGem
+gem 'hirb-unicode'                           # 日本語などマルチバイト文字の出力時の出力結果のずれに対応
 
 # other
 # gem "haml-rails", "~> 2.0"                   # haml導入
