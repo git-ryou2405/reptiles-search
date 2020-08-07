@@ -30,8 +30,6 @@
 -->
 
 <% if @monitor == "ログイン" %>
-  <% Rails.application.config.another_logger.debug "[d] ログイン画面" %>
-  
   <div class="col-11 col-sm-10 col-md-9 col-lg-7 col-xl-6 mx-auto">
     <%= link_to "#", class: "btn btn-social btn-twitter my-2 btn-block" do %>
     <i class="fa fa-twitter", id="my_size"></i><div class="text2">Twitterでログインする</div>
@@ -44,8 +42,6 @@
     <% end %>
   </div>
 <% else %>
-  <% Rails.application.config.another_logger.debug "[d] 新規作成" %>
-  
   <div class="col-10 col-sm-9 col-md-8 col-lg-6 col-xl-6 mx-auto">
     <%= link_to "#", class: "btn btn-social btn-twitter my-2 btn-block" do %>
     <i class="fa fa-twitter", id="my_size"></i><div class="text">Twitterで登録する</div>

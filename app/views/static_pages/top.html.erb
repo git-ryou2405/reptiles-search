@@ -1,4 +1,4 @@
-<% Rails.application.config.another_logger.debug "[debug] StaticPages#top" %>
+<% Rails.application.config.another_logger.debug "[d] view: StaticPages#top" %>
 
 <main class="jumbotron text-center">
   <h1>Reptiles Farm</h1>
@@ -8,24 +8,23 @@
   </div>
 </main>
 
- <div class="container text-center">
-    
+<div class="container text-center">
   <!-- 検索バー -->
   <div class="search">
     <h2 class="serch-ttl">爬虫類を探す</h2>
-    <form class="relative" action="" method="">
-        <input class="search-box align-center" type="search" name="keyword" placeholder="種類やモルフ、ショップ名を入力して下さい">
-        <input class="search-btn align-center" type="submit" value="検索">
-    </form>
+    <div class="row justify-content-center">
+      <input class="search-box align-center" type="search" name="keyword" placeholder="種類やモルフ、ショップ名を入力して下さい">
+      <input class="search-btn align-center" type="submit" value="検索">
+    </div>
   </div>
   <!-- 検索バー：end -->
+  
   
   <!-- 種類から探す -->
   <div class="content">
       <h2 class="group-ttl">種類から探す</h2>
   </div>
   <!-- 種類から探す：end -->
-
 
 
   <!-- スクロール用 -->

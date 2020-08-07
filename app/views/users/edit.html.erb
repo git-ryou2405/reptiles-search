@@ -1,13 +1,15 @@
-<% Rails.application.config.another_logger.debug "[d] view: ログイン画面" %>
+<% Rails.application.config.another_logger.debug "[d] view: users/edit" %>
 
-<div class="container-fluid text-center">
-  <h4>Reptiles Farm</h4><br>
-  <div class="row justify-content-center">
-    <div class="col-9 col-sm-8 col-md-7 col-lg-7 col-xl-6 devise align-self-center">
-      <h4>ログイン</h4>
-      <% @monitor = "ログイン" %>
-      
-      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+<div class="container">
+  <div class="row justify-content-center text-center">
+    
+
+<div class="col-9 col-sm-8 col-md-7 col-lg-7 col-xl-6 devise">
+      <h2>ユーザー情報の編集</h2>
+
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= render "users/shared/error_messages", resource: resource %>
+
         <div class="field">
           <%#= f.label :email %><br>
           <%= f.email_field :email, :placeholder => "メールアドレス", autofocus: true, autocomplete: "email" %>
@@ -25,12 +27,11 @@
           </div>
         <% end %>
 
-        <div class="actions"><br />
-          <%= f.submit "ログイン", class:"btn btn-md btn-info" %>
+        <div class="actions">
+          <%= f.submit "Update", class:"btn btn-md btn-info" %>
         </div>
       <% end %><br />
-
-      <%= render "users/shared/links" %>
     </div>
+ 
   </div>
 </div>

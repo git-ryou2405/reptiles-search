@@ -23,14 +23,34 @@ h1,h2,h3,h4,h5,h6 {
   text-align: center;
 }
 
-a { color: inherit;
-}
+a { color: inherit; }
 
 /* =============================================================================
     Common Style
 ========================================================================== */
-ul, li { list-style: none;}
+ul, li { list-style: none; }
 
+.botton-hover {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+/*
+ * position styles
+ */
+.relative { position: relative; }
+
+.absolute { position: absolute; }
+
+/*
+ * flex box
+ */
+.flex { display: flex; display: -webkit-flex; }
+
+.align-center{ align-items: center; }
 // /* Inner InitialStyle */
 // .inner { width:1000px; margin: 0 auto; padding: 0; position:relative; }
 
@@ -42,20 +62,23 @@ ul, li { list-style: none;}
 #logo:hover { color: silver; text-decoration: none; cursor: pointer; }
 
 /* header-btn */
-.btn1:hover { color: #fff; background-color: #dc3545; border-color: #dc3545; }
-.btn2 { color: white; }
+.mypage { color: white; background-color: #17a2b8;}
+.mypage:hover {
+  color: white;
+  background-color: #0e7889;
+}
+
 .btn-padding { padding-left: 10px; }
-.btn2:hover {
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -ms-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  
-  color: #000;
-  background: #fff;
-  border-color: #555;
-  text-decoration: none;
+
+.login_out { color: white; background-color: #666;}
+.login_out:hover {
+  color: white;
+  background-color: #444;
+}
+.newcreate:hover {
+  color: #fff;
+  background-color: #c11e2e;
+  border-color: #c11e2e;
 }
 
 /*==============================================================================
@@ -66,20 +89,20 @@ ul, li { list-style: none;}
 .jumbotron {
   background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
   text-shadow: 3px 3px 5px #333, 6px 6px 10px #111;
-}
-.jumbotron h1 {
-  font-size: 70px;
-  margin: 50px 0px 60px;
-}
-.jumbotron .txt {
-  text-shadow: 1px 1px #666, 2px 2px #333;
-}
-.jumbotron .txt01 {
-  font-size: 30px;
-}
-.jumbotron .txt02 {
-  font-size: 23px;
-  margin: 10px 0 0;
+  h1 {
+    font-size: 70px;
+    margin: 50px 0px 60px;
+  }
+  .txt {
+    text-shadow: 1px 1px #666, 2px 2px #333;
+  }
+  .txt01 {
+    font-size: 30px;
+  }
+  .txt02 {
+    font-size: 23px;
+    margin: 10px 0 0;
+  }
 }
 
 /* search */
@@ -143,13 +166,126 @@ ul, li { list-style: none;}
   padding: 40px;
 }
 
+/*==============================================================================
+マイページ(show)
+============================================================================= */
+
+/* マイページ */
+.show { margin-top: 150px; }
+
+/* 生体登録 */
+.regist-pd { width: 220px; }
+.regist {
+  width: 220px;
+  padding: 10px 20px;
+  margin: 0px 0px 50px 15px;
+  background: lightcoral;
+  color: white;
+  font-size: 18px;
+  border: solid 1px lightcoral;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px #444;
+}
+.regist:hover {
+  background-color: rgb(211, 80, 80);
+  cursor: pointer;
+ }
+
+ /* 生体一覧 */
+.menu-ttl {
+  padding: 10px 20px;
+	background: #222;
+	color: palevioletred;
+	font-size: 20px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 1px #000;
+}
+.menu-list {
+  padding-left: 0;
+  
+  .reptile-item {
+    font-size: 18px;
+    color:palevioletred;
+    padding: 20px;
+    border-bottom: 3px #333 solid;
+    cursor: pointer;
+  }
+  .reptile-item:hover {
+    background-color: #222;
+    transition: .3s;
+  }
+}
 
 
+// .menu-list a .item .menu-select {
+//   padding-right: 10px;
+// }
+// .menu-list a .item .menu-select:hover {
+//   padding-right: 0px;
+//   transition: .3s;
+// }
+/*==============================================================================
+shop 情報
+============================================================================= */
+
+/* ショップデータ */
+
+.shop-data { margin: 0 0 0 40px; align-items: center; justify-content: flex-end; }
+
+.shop-data h3 { padding: 10px 20px; background: #222; font-size: 22px; border-radius: 5%; color: thistle; font-weight: bold; text-align: center;}
+
+.shop-data-item  { padding: 20px 20px 20px 30px;  border-bottom: 3px #333 solid; align-items: center;}
+
+.shop-data-item dt { width: 150px; font-size: 20px; font-weight: bold; color: thistle;  }
+
+.shop-data-item dd { width: 500px; font-size: 16px;color: #fff;  }
+
+.shop-data a:hover { color: lightblue; text-decoration: underline ;}
+
+/* 新入荷 */
+.arrival-ttl {  padding: 10px 20px; background: #222; color: darkseagreen; font-size: 22px; text-align: center; border-radius: 5%;}
+
+.arrival-item { padding: 20px 20px 20px 30px; border-bottom: 3px #333 solid;  }
+
+.arrival-day { font-size: 12px;}
+
+.arrival-animal { font-size: 16px; margin: 5px 0 0; }
+
+.arrival-animal:hover { color: lightblue; text-decoration: underline; }
 
 
+/* googlemap */
+.googlemap { height: 350px; margin: 50px 0 50px;}
+
+/* ツイッター */
+.sns-ttl { padding: 10px 20px; background: #222; color: skyblue; font-size: 22px; text-align: center; border-radius: 5%;}
+.sns-box { height: 500px; margin: 5px auto 0;}
 
 
+/*==============================================================================
+============================================================================= */
 
-.align-center{align-items:center;}
+
+/* =============================================================================
+    Others
+   ========================================================================== */
+
+/* Header fix */
+.fixed { position:fixed; left:0; top:0; z-index:9999; }
+
+/* arrow */
+.arrow:after { display:block; position:absolute; left:0; right:0; margin:auto; content:''; }
+
+/*
+ * clearfix
+ */
+.clearfix:after { content: ""; display: block; height: 0; clear: both; visibility: hidden; }
+
+/*
+ * hover effect
+ */
+.u-target { transition: opacity .3s; cursor: pointer; }
+
+
 
 .box { height: 2000px;}

@@ -4,11 +4,11 @@
       
       <ul class="nav nav-right reset">
         <% if user_signed_in? %>
-          <li><%= link_to 'マイページ', user_path(current_user), class:"btn btn-sm btn-info" %></li>
-          <li class="btn-padding"><%= link_to 'ログアウト', destroy_user_session_path, class:"btn btn-sm btn-secondary btn2", method: :delete %></li>
+          <li><%= link_to 'マイページ', user_path(current_user), class:"btn btn-sm mypage btn-hover" %></li>
+          <li class="btn-padding"><%= link_to 'ログアウト', destroy_user_session_path, class:"btn btn-sm login_out btn-hover", method: :delete %></li>
         <% else %>
-          <li><%= link_to "SHOP登録", new_user_registration_path, class:"btn btn-sm btn-danger btn1" %></li>
-          <li class="btn-padding"><%= link_to "ログイン", new_user_session_path, class:"btn btn-sm btn-outline-secondary btn2" %></li>
+          <li><%= link_to "SHOP登録", new_user_registration_path, class:"btn btn-sm btn-danger newcreate btn-hover" %></li>
+          <li class="btn-padding"><%= link_to "ログイン", new_user_session_path, class:"btn btn-sm login_out btn-hover" %></li>
         <% end %>
       </ul>
       

@@ -1,0 +1,35 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+    attributes:
+        user:
+          id: ID
+          name: 名前
+          email: メールアドレス
+          image: プロフィール画像
+          password: パスワード
+          password_confirmation: パスワード再入力
+          shop_name: ショップ名
+          address: 住所
+          howto_access: アクセス方法
+          tel: 電話番号
+          business_hours: 営業時間
+          holiday: 定休日
+          url: ホームページ
+          created_at: 作成日
+          updated_at: 更新日
+        reptile:
+          image: 写真
+          type1: 種別1
+          type2: 種別2
+          aname: 名前
+          sex: 性別
+          size: サイズ等
+          max: 最大サイズ
+          area: 生息地
+          description: 説明
+          price: 価格
+          sales_status: 販売状況
+          arrival_day: 入荷時期
+          user_id: ユーザーID

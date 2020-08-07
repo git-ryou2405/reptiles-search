@@ -10,7 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_31_185932) do
+ActiveRecord::Schema.define(version: 2020_08_05_061820) do
+
+  create_table "reptiles", force: :cascade do |t|
+    t.string "image"
+    t.string "tyep1"
+    t.string "tyep2"
+    t.string "aname"
+    t.string "sex"
+    t.string "size"
+    t.string "max"
+    t.string "area"
+    t.string "description"
+    t.integer "price"
+    t.string "sales_status"
+    t.date "arrival_day"
+    t.integer "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_07_31_185932) do
     t.boolean "admin", default: false
     t.string "shop_name"
     t.string "address"
+    t.string "howto_access"
     t.string "tel"
     t.string "business_hours"
     t.string "holiday"
