@@ -190,7 +190,7 @@ GEM
       omniauth-oauth (~> 1.1)
       rack
     orm_adapter (0.5.0)
-    pg (1.2.3)
+    pg (0.20.0)
     popper_js (1.16.0)
     public_suffix (4.0.5)
     puma (4.3.5)
@@ -329,7 +329,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-google-oauth2
   omniauth-twitter
-  pg
+  pg (= 0.20.0)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.2)
   rails-i18n
@@ -338,7 +338,7 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
+  sqlite3
   turbolinks (~> 5)
   uglifier
   web-console (>= 3.3.0)
