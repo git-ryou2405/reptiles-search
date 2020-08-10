@@ -15,9 +15,9 @@ class ReptilesController < ApplicationController
 
   # GET /reptiles/new
   def new
-    debug_log("[d] Reptiles_Ctrl: action: new")  # デバッグ出力
+    debug_log("[d] Reptiles_Ctrl: action: new")  # log
     @reptile = Reptile.new
-    debug_log("[d] Reptiles_Ctrl: @reptile: #{@reptile.inspect}")  # デバッグ出力
+    debug_log("[d] Reptiles_Ctrl: @reptile: #{@reptile.inspect}")  # log
   end
 
   # GET /reptiles/1/edit
@@ -27,10 +27,10 @@ class ReptilesController < ApplicationController
   # POST /reptiles
   # POST /reptiles.json
   def create
-    debug_log("[d] Reptiles_Ctrl: action: create")  # デバッグ出力
+    debug_log("[d] Reptiles_Ctrl: action: create")  # log
     @reptile = Reptile.new(reptile_params)
     @reptile.user_id = current_user.id
-    debug_log("[d] Reptiles_Ctrl: @reptile: #{@reptile.inspect}")  # デバッグ出力
+    debug_log("[d] Reptiles_Ctrl: @reptile: #{@reptile.inspect}")  # log
 
     respond_to do |format|
       if @reptile.save

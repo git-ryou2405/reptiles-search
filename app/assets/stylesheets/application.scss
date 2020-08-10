@@ -5,6 +5,7 @@
 @charset "utf-8";
 @import "bootstrap";
 @import "bootstrap-social";
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700');
 
 /*==============================================================================
 body
@@ -14,11 +15,12 @@ body {
   background-color: #111;
   color: #fff;
   font-family: "Hiragino Kaku Gothic ProN";
+  //font-family: "M PLUS Rounded 1c", sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-weight:bold;
-  line-height: 1.4;
+  line-height: 1.8;
   letter-spacing: .06rem;
   text-align: center;
 }
@@ -53,6 +55,14 @@ ul, li { list-style: none; }
 .align-center{ align-items: center; }
 // /* Inner InitialStyle */
 // .inner { width:1000px; margin: 0 auto; padding: 0; position:relative; }
+
+/*
+ * form-control
+ */
+.form-control {
+  // border-radius: 0.125rem;
+  border-radius: 0.2rem;
+}
 
 /*==============================================================================
   共通header
@@ -191,7 +201,7 @@ ul, li { list-style: none; }
   cursor: pointer;
  }
 
- /* 生体一覧 */
+ /* 販売生体 */
 .menu-ttl {
   padding: 10px 20px;
 	background: #222;
@@ -234,11 +244,11 @@ shop 情報
 
 .shop-data h3 { padding: 10px 20px; background: #222; font-size: 22px; border-radius: 5%; color: thistle; font-weight: bold; text-align: center;}
 
-.shop-data-item  { padding: 20px 20px 20px 30px;  border-bottom: 3px #333 solid; align-items: center;}
+.shop-data-item { padding: 10px 20px 10px 30px;  border-bottom: 3px #333 solid; align-items: center;}
 
-.shop-data-item dt { width: 150px; font-size: 20px; font-weight: bold; color: thistle;  }
+.shop-data-item dt { width: 150px; font-size: 18px; font-weight: bold; color: thistle;  }
 
-.shop-data-item dd { width: 500px; font-size: 16px;color: #fff;  }
+.shop-data-item dd { width: 500px; font-size: 16px; color: #fff;  }
 
 .shop-data a:hover { color: lightblue; text-decoration: underline ;}
 
@@ -260,7 +270,16 @@ shop 情報
 /* ツイッター */
 .sns-ttl { padding: 10px 20px; background: #222; color: skyblue; font-size: 22px; text-align: center; border-radius: 5%;}
 .sns-box { height: 500px; margin: 5px auto 0;}
+.twitter-timeline { width: 100%; height: 100%; }
 
+/* instagram */
+.iswd-base {
+  width: 100% !important;
+  color: black;
+  // color: white;
+  // background-color: #292F33 !important;
+  // border-color: #292F33 !important;
+}
 
 /*==============================================================================
 ============================================================================= */
@@ -285,7 +304,6 @@ shop 情報
  * hover effect
  */
 .u-target { transition: opacity .3s; cursor: pointer; }
-
 
 
 .box { height: 2000px;}

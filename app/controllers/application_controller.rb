@@ -7,13 +7,16 @@ class ApplicationController < ActionController::Base
   end
   
   def after_sign_in_path_for(resource)
-    debug_log("[d] Application_Ctrl: resource = #{resource.inspect}")  # デバッグ出力
-    debug_log("[d] Application_Ctrl: resource.id = #{resource.id}")  # デバッグ出力
+    debug_log("[d] Application_Ctrl: resource = #{resource.inspect}")  # log
+    debug_log("[d] Application_Ctrl: resource.id = #{resource.id}")  # log
     
     user_path(resource.id)
   end
   
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:account_update, keys: [:name, :image, :shop_name, :address, :howto_access, :tel, :business_hours, :holiday, :url])
+    devise_parameter_sanitizer.permit(:account_update, keys: [
+      :name, :image, :shop_name, :shop_image, :address, :howto_access, :tel,
+      :business_hours, :holiday, :handling_animals, :handling_feeds, :handling_goods, :feature,
+      :url, :map_info, :twitter, :facebook ,:instagram] )
   end
 end

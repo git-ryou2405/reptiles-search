@@ -1,62 +1,84 @@
-<%= form_with(model: @reptile, url: yield(:routes_url), local: true) do |f| %>
-  <% if @reptile.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(reptile.errors.count, "error") %> prohibited this reptile from being saved:</h2>
+<% Rails.application.config.another_logger.debug "[d] view: reptiles/new id=#{current_user.id}" %>
 
-      <ul>
-        <% @reptile.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  
-  <!-- image -->
-  <% if @reptile.image.url %>
-    <p>
-    <%= image_tag reptile.image.url, :width => "100", id: "margin5px" %><br>
-    <%= f.check_box :remove_image %><%= "画像を削除" %><br>
-    </p>
-  <% else %>
-    <%= f.label :image, class: "mt-2" %><br>
-    <%= f.file_field :image, id: :reptile_image %><br>
-  <% end %>
-  <!-- image -->
-  
-  <%= f.label :aname, class: "mt-2" %>
-  <%= f.text_field :aname, id: :reptile_a_name, class: "form-control" %>
+<div class="row justify-content-center">
+  <div class="col-11">
+    <h2>生体登録</h2>
+    <%= form_with(model: @reptile, url: yield(:routes_url), local: true) do |f| %>
+      <% if @reptile.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(reptile.errors.count, "error") %> prohibited this reptile from being saved:</h2>
 
-  <%= f.label :type1, class: "mt-2" %>
-  <%= f.text_field :type1, id: :reptile_type1, class: "form-control" %>
-  
-  <%= f.label :type2, class: "mt-2" %>
-  <%= f.text_field :type2, id: :reptile_type2, class: "form-control" %>
+          <ul>
+            <% @reptile.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      
+      <!-- image -->
+      <% if @reptile.image.url %>
+        <p>
+        <%= image_tag reptile.image.url, :width => "100", id: "margin5px" %><br>
+        <%= f.check_box :remove_image %><%= "画像を削除" %><br>
+        </p>
+      <% else %>
+        <%= f.label :image, class: "mt-2" %><br>
+        <%= f.file_field :image, id: :reptile_image %><br>
+      <% end %>
+      <!-- image -->
+      
+      <% arrey = [
+        [:aname, :reptile_a_name],
+        [:type1,:reptile_type1],
+        [:type2,:reptile_type2],
+        [:sex,:reptile_sex],
+        [:size,:reptile_size],
+        [:max,:reptile_max],
+        [:area,:reptile_area],
+        [:description,:reptile_description]
+        ] %>
+      
+      <%= f.label :aname, class: "mt-2" %>
+      <%= f.text_field :aname, id: :reptile_a_name, class: "form-control" %>
 
-  <%= f.label :sex, class: "mt-2" %>
-  <%= f.text_field :sex, id: :reptile_size, class: "form-control" %>
+      <%= f.label :type1, class: "mt-2" %>
+      <%= f.text_field :type1, id: :reptile_type1, class: "form-control" %>
+      
+      <%= f.label :type2, class: "mt-2" %>
+      <%= f.text_field :type2, id: :reptile_type2, class: "form-control" %>
 
-  <%= f.label :size, class: "mt-2" %>
-  <%= f.text_field :size, id: :reptile_size, class: "form-control" %>
-  
-  <%= f.label :max, class: "mt-2" %>
-  <%= f.text_field :max, id: :reptile_max, class: "form-control" %>
-  
-  <%= f.label :area, class: "mt-2" %>
-  <%= f.text_field :area, id: :reptile_area, class: "form-control" %>
-  
-  <%= f.label :description, class: "mt-2" %>
-  <%= f.text_field :description, id: :reptile_description, class: "form-control" %>
-  
-  <%= f.label :price, class: "mt-2" %>
-  <%= f.number_field :price, id: :reptile_price, class: "form-control" %>
-  
-  <%= f.label :sales_status, class: "mt-2" %>
-  <%= f.text_field :sales_status, id: :reptile_sales_status, class: "form-control" %>
-  
-  <%= f.label :arrival_day, class: "mt-2" %>
-  <%= f.date_field :arrival_day, id: :reptile_arrival_day, class: "form-control" %>
-  
-  <div class="actions">
-    <%= f.submit yield(:button_text), class: "btn btn-info w-100 my-3" %>
+      <%= f.label :sex, class: "mt-2" %>
+      <%= f.text_field :sex, id: :reptile_size, class: "form-control" %>
+
+      <%= f.label :size, class: "mt-2" %>
+      <%= f.text_field :size, id: :reptile_size, class: "form-control" %>
+      
+      <%= f.label :max, class: "mt-2" %>
+      <%= f.text_field :max, id: :reptile_max, class: "form-control" %>
+      
+      <%= f.label :area, class: "mt-2" %>
+      <%= f.text_field :area, id: :reptile_area, class: "form-control" %>
+      
+      <%= f.label :description, class: "mt-2" %>
+      <%= f.text_field :description, id: :reptile_description, class: "form-control" %>
+      
+      <%= f.label :price, class: "mt-2" %>
+      <%= f.number_field :price, id: :reptile_price, class: "form-control" %>
+      
+      <%= f.label :sales_status, class: "mt-2" %>
+      <%= f.text_field :sales_status, id: :reptile_sales_status, class: "form-control" %>
+      
+      <%= f.label :arrival_day, class: "mt-2" %>
+      <%= f.date_field :arrival_day, id: :reptile_arrival_day, class: "form-control" %>
+      
+      <div class="actions">
+        <%= f.submit yield(:button_text), class: "btn btn-primary w-100 my-3",data: { confirm: "生体を新規登録します。\nこの内容でよろしければOKを押してください。" } %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>
+
+<br>
+<%= link_to "◀︎ マイページへ戻る", :back, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
+<br>

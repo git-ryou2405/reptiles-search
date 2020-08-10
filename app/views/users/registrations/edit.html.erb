@@ -1,22 +1,17 @@
-<% Rails.application.config.another_logger.debug "[d] view: パスワード編集" %>
-
 <div class="container-fluid">
   <h4>Reptiles Farm</h4><br>
   <div class="row justify-content-center">
-    <div class="col-9 col-sm-8 col-md-7 col-lg-7 col-xl-6 devise">
-    
-      <div class="row justify-content-center">
-        <div class="col-8">
-        <% if @edit_mode == "pass" %>
-          <h2>パスワードの変更</h2><!--<%= resource_name.to_s.humanize %>-->
-          <%= render 'users/shared/pass_edit' %>
-        <% else %>
-          <h2>ユーザー情報の編集</h2>
-          <%= render "users/shared/userinfo_edit" %>
-        <% end %>
-        </div>
-      </div>
-      
+    <div class="col-11 col-sm-9 col-md-8 col-lg-7 col-xl-6 devise">
+      <% if @edit_mode == "info" %>
+        <!-- ユーザー情報の変更 -->
+        <%= render "users/shared/user_edit" %>
+      <% elsif @edit_mode == "pass" %>
+        <!-- パスワードの変更 -->
+        <%= render 'users/shared/pass_edit' %>
+      <% elsif @edit_mode == "destroy" %>
+        <!-- アカウントの削除 -->
+        <%= render "users/shared/delete_acount" %>
+      <% end %>
     </div>
   </div>
 </div>

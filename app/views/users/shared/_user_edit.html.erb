@@ -1,0 +1,90 @@
+<% Rails.application.config.another_logger.debug "[d] view: ユーザー情報の変更 id=#{@user.id}" %>
+<div class="row justify-content-center">
+  <div class="col-9">
+    <h2>ユーザー情報の編集</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= render "users/shared/error_messages", resource: resource %>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+
+      <!-- shop_image -->
+      <% if @user.shop_image.present? %>
+        <p>
+        <%= image_tag @user.shop_image.url, :width => "100", id: "margin5px" %><br>
+        <%= f.check_box :remove_shop_image %><%= "画像を削除" %><br>
+        </p>
+      <% else %>
+        <%= f.label :shop_image, class: "mt-2" %><br>
+        <%= f.file_field :shop_image, id: :resource_shop_image %><br>
+      <% end %>
+      <!-- shop_image -->
+
+      <div class="field">
+        <%= f.label :email, class: "mt-2" %>
+        <%= f.email_field :email, autofocus: false, autocomplete: "email", class: "form-control" %>
+      </div>
+      
+      <div class="field">
+          <%= f.label :shop_name, class: "mt-2" %>
+          <%= f.text_field :shop_name, autofocus: false, autocomplete: "shop_name", class: "form-control" %>
+      </div>
+      
+      <div class="field">
+          <%= f.label :address, class: "mt-2" %>
+          <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control" %>
+      </div>
+        
+      <% arrey = [
+        [:howto_access, "howto_access"],
+        [:tel, "tel"],
+        [:business_hours, "business_hours"],
+        [:holiday, "holiday"]
+        ] %>
+
+      <% arrey.map do |first,second| %>  
+        <div class="field">
+          <%= f.label first, class: "mt-2" %>
+          <%= f.text_field first, autofocus: false, autocomplete: second, class: "form-control" %>
+        </div>
+      <% end %>
+
+      <% text_area = [
+        [:handling_animals, "handling_animals","2x2"],
+        [:handling_feeds, "handling_feeds","2x2"],
+        [:handling_goods, "handling_goods","2x2"],
+        [:feature, "feature","5x5"],
+        ] %>
+
+      <% text_area.map do |first,second,third| %>  
+        <div class="field">
+          <%= f.label first, class: "mt-2" %>
+          <%= f.text_area first, autofocus: false, autocomplete: second, size: third, class: "form-control" %>
+        </div>
+      <% end %>
+
+      <% url = [:url,:twitter] %>
+        
+      <% url.map do |official| %>  
+        <div class="field">
+          <%= f.label official, class: "mt-2" %>
+          <%= f.url_field official, autofocus: false, class: "form-control" %>
+        </div>
+      <% end %>
+    
+      <div class="field">
+        <%= f.label :instagram, class: "mt-2" %>（埋め込みコードを入力してください。）
+        <%= f.text_field :instagram, autofocus: false, class: "form-control" %>
+      </div>
+        
+      <div class="actions">
+        <%= f.submit "更新", class: "btn btn-primary w-100 mt-4",data: { confirm: "ユーザー情報を更新します。\nこの内容でよろしければOKを押してください。" } %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<br><br>
+<%= link_to "◀︎ マイページへ戻る", :back, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>

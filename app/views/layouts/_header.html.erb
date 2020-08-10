@@ -4,6 +4,9 @@
       
       <ul class="nav nav-right reset">
         <% if user_signed_in? %>
+          <% if current_user.image.present? %>
+            <%= image_tag current_user.image, :size =>'30x30' %>
+          <% end %>
           <li><%= link_to 'マイページ', user_path(current_user), class:"btn btn-sm mypage btn-hover" %></li>
           <li class="btn-padding"><%= link_to 'ログアウト', destroy_user_session_path, class:"btn btn-sm login_out btn-hover", method: :delete %></li>
         <% else %>

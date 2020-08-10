@@ -11,12 +11,17 @@ ja:
           password: パスワード
           password_confirmation: パスワード再入力
           shop_name: ショップ名
+          shop_image: ショップイメージ画像
           address: 住所
           howto_access: アクセス方法
           tel: 電話番号
           business_hours: 営業時間
           holiday: 定休日
           url: ホームページ
+          handling_animals: 取扱い生体
+          handling_feeds: 取扱い餌
+          handling_goods: 取扱い用品
+          feature: 当店の特徴
           created_at: 作成日
           updated_at: 更新日
         reptile:

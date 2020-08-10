@@ -15,12 +15,23 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
 
       t.boolean :admin,             default: false
       t.string :shop_name
+      t.string :shop_image
       t.string :address
       t.string :howto_access
       t.string :tel
       t.string :business_hours
       t.string :holiday
       t.string :url
+      t.string :handling_animals
+      t.string :handling_feeds
+      t.string :handling_goods
+      t.string :feature
+      t.string :map_info
+      
+      # sns_info
+      t.string :twitter
+      t.string :facebook
+      t.string :instagram
       
       ## Recoverable
       t.string   :reset_password_token

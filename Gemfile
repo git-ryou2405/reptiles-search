@@ -26,6 +26,7 @@ gem 'carrierwave'                              # 画像のアップロード
 gem 'colorize'                                 # ログの色付け
 # gem 'font-awesome-sass'                        # FontAwesome
 gem 'gretel'                                   # パンくずリスト
+gem 'gon'                                      # JavascriptとRails連携
 
 gem 'rails-i18n'                               # 日本語化
 gem 'faker'                                    # ダミーデータ自動生成用

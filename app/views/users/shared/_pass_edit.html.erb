@@ -1,33 +1,44 @@
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= render "users/shared/error_messages", resource: resource %>
+<% Rails.application.config.another_logger.debug "[d] view: パスワード変更 id=#{@user.id}" %>
+<div class="row justify-content-center">
+  <div class="col-9">
+    <h2>パスワードの変更</h2><!--<%= resource_name.to_s.humanize %>-->
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-  
-  <div class="field">
-    <!--<%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />-->
-    <%= f.password_field :password, autofocus: false, :placeholder => "パスワード", autocomplete: "new-password", class: "form-control mt-4" %>
-    
-    <% if @minimum_password_length %>
-      <br />
-      <em><%= @minimum_password_length %> characters minimum</em>
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= render "users/shared/error_messages", resource: resource %>
+
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+      
+      <div class="field">
+        <!--<%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />-->
+        <%= f.password_field :password, autofocus: false, :placeholder => "パスワード", autocomplete: "new-password", class: "form-control mt-4" %>
+        
+        <% if @minimum_password_length %>
+          <br />
+          <em><%= @minimum_password_length %> characters minimum</em>
+        <% end %>
+      </div>
+
+      <div class="field">
+        <!--<%= f.label :password_confirmation %><br />-->
+        <%= f.password_field :password_confirmation, :placeholder => "パスワードの確認", autocomplete: "new-password", class: "form-control mt-2" %>
+      </div>
+      
+      <!-- 現在のパスワード確認
+      <div class="field">
+        <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+        <%= f.password_field :current_password, autocomplete: "current-password" %>
+      </div>
+      -->
+      
+      <div class="actions">
+        <%= f.submit "変更", class: "btn btn-primary w-100 mt-4",data: { confirm: "パスワードを変更します。\nこの内容でよろしければOKを押してください。" } %>
+      </div>
     <% end %>
   </div>
+</div>
 
-  <div class="field">
-    <!--<%= f.label :password_confirmation %><br />-->
-    <%= f.password_field :password_confirmation, :placeholder => "パスワードの確認", autocomplete: "new-password", class: "form-control mt-2" %>
-  </div>
-  
-  <!-- 現在のパスワード確認
-  <div class="field">
-    <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
-    <%= f.password_field :current_password, autocomplete: "current-password" %>
-  </div>
-  -->
-  
-  <div class="actions">
-    <%= f.submit "変更", class: "btn btn-info w-100 mt-4" %>
-  </div>
-<% end %>
+<br><br>
+<%= link_to "◀︎ マイページへ戻る", :back, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
+

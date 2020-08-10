@@ -1,4 +1,4 @@
-<% Rails.application.config.another_logger.debug "[d] view: users/index" %>
+<% Rails.application.config.another_logger.debug "[d] view: users/index id=#{@user.id}" %>
 
 <div style="padding-top: 60px;">
 
@@ -17,7 +17,7 @@
         </div>
         
         <!-- 生体カテゴリー -->
-        <h2 class="menu-ttl">生体一覧
+        <h2 class="menu-ttl">販売生体
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
         
@@ -97,13 +97,28 @@
         <!-- 入荷情報 -->
         
         <!-- お店のSNS -->
-        <h2 class="sns-ttl relative mt-5">SNS
-            <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
-        </h2>
         <div class="sns-box-wrap wrap-trigger">
-          <div class="sns-box">
-              <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="dark" href="https://twitter.com/yuma03060306?ref_src=twsrc%5Etfw">Tweets by yuma03060306</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-          </div>
+          <% if @user.twitter.present? || @user.instagram.present? %>
+            <h2 class="sns-ttl relative mt-5">SNS
+              <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+            </h2>
+          <% end %>
+          <!-- twitter -->
+          <% if @user.twitter.present? %>
+            <div class="sns-box">
+              <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="dark" href=<%= @user.twitter %> ></a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          <% end %>
+          <!-- twitter -->
+          
+          <!-- Instagram -->
+          <% if @user.instagram.present? %>
+            <div style="padding: 10px 0;">
+              <%= @user.instagram.html_safe %>
+            </div>
+          <% end %>
+          <!-- Instagram -->
         </div>
         <!-- お店のSNS -->
         
@@ -112,68 +127,64 @@
       
       
       <!-- メイン -->
-      <!--<section class="shop-data">-->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
-      
           <h3>店舗情報</h3>
           <div class="shop-data-list">
               <dl class="shop-data-item flex align-center">
                   <dt>所在地</dt>
-                  <dd><%= "東京都○○区○ー○ー○○#{@user.address}" %></dd>
+                  <dd><%= @user.address %></dd>
               </dl>
               <dl class="shop-data-item flex align-center">
                   <dt>アクセス方法</dt>
                   <!-- googlemapへスクロール -->
-                  <dd class="anchor"><a href="#googlemap">中野駅から徒歩5分 ⬇︎</a></span></dd>
+                  <dd class="anchor"><a href="#googlemap"><%= @user.howto_access %></a></span></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>営業時間</dt>
-                  <dd> 10:00～21:00</dd>
+                  <dd><%= @user.business_hours %></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>定休日</dt>
-                  <dd>木曜日</dd>
+                  <dd><%= @user.holiday %></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>電話番号</dt>
-                  <dd>0000-00-1234</dd>
+                  <dd><%= @user.tel %></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>ホームページ</dt>
                   <!-- 別タブでホームページに移動 -->
-                  <dd><a href="#" target="_blank">https://○○○○○○○○○○○○.com</a></dd>
+                  <dd><a href=<%= @user.url %> target="_blank"><%= @user.url %></a></dd>
               </dl>
               <dl class="shop-data-item flex">
-                  <dt>SNS</dt>
+                  <dt>SNS(twitter)</dt>
                   <!-- 別タブでSNSに移動 -->
-                  <dd><a href="#" target="_blank">https://twitter.com/○○○○○○</a></dd>
+                  <dd><a href=<%= @user.twitter %> target="_blank"><%= @user.twitter %></a></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>取扱い生体</dt>
-                  <dd>ヘビ、トカゲ、カメ、小動物</dd>
+                  <dd><%= simple_format(@user.handling_animals) %></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>取扱い餌</dt>
-                  <dd>フタホシコオロギ、レッドローチ、冷凍マウス・ラットなど</dd>
+                  <dd><%= simple_format(@user.handling_feeds) %></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>取扱い用品</dt>
-                  <dd>爬虫類ケージ、パネルヒーターなど</dd>
+                  <dd><%= simple_format(@user.handling_goods) %></dd>
               </dl>
               <dl class="shop-data-item flex">
                   <dt>当店の特徴</dt>
-                  <dd>ボールパイソンのCB個体を中心に販売しております。日本屈指の数のボールパイソンを見ることができます。また海外から独自のコネクションにより最新のモルフを取り寄せることも可能ですので、ぜひご相談下さい。
-                  </dd>
+                  <dd><%= simple_format(@user.feature) %></dd>
               </dl>
           </div>
           
+          <% if @user.map_info.present? %>
           <div class="col-12 googlemap">
-              <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103549.52359747014!2d139.5873336642929!3d35.80183311876449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f2beb3e11e07%3A0x4f4f2d5c1232af0f!2z54is6Jmr6aGe5YC25qW96YOo!5e0!3m2!1sja!2sjp!4v1594531126079!5m2!1sja!2sjp"
-                  width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""
-                  aria-hidden="false" tabindex="0"></iframe>
+              <iframe src=<%= @user.map_info %> width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </div>
-          
+          <% end %>
+          <!--
           <div id="map"></div>
           <script>
             var MyLatLng = new google.maps.LatLng(35.5419941, 139.4453761);
@@ -184,11 +195,17 @@
             };
             var map = new google.maps.Map(document.getElementById('map'), Options);
           </script>
+          -->
+          <div class="col-4">
+            <%= link_to "ユーザー情報の編集",edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
+            
+            <% unless @user.provider.present? %>
+              <%= link_to "パスワードの変更",edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary px-3 my-2" %>
+            <% end %>
+            
+            <%= link_to "アカウントの削除",edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
+          </div>
           
-
-          <%= link_to "パスワードの変更",edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary", style:"margin: 30px" %>
-      
-          <%= link_to "ユーザー情報の編集",edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary", style:"margin: 30px" %>
       </div>
       
   </div>
