@@ -1,10 +1,10 @@
 <% Rails.application.config.another_logger.debug "[d] view: users/index id=#{@user.id}" %>
 
-<div style="padding-top: 60px;">
+<div style="padding-top: 40px;">
 
 <!-- マイページ -->
 <div class="container">
-  <h1 class="shop-ttl"><%= "Shop名：#{@user.shop_name}" %></h1>
+  <h1 class="shop-ttl"><%= @user.shop_name %></h1>
   <div class="row justify-content-center show">
       
       <!-- サイドメニュー -->
@@ -128,7 +128,13 @@
       
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
-          <h3>店舗情報</h3>
+          <div class="row justify-content-center my-3">
+            <% if current_user.shop_image.present? %>
+              <%= image_tag current_user.shop_image.url, :size =>'400x200' %>
+            <% end %>
+          </div>
+          
+          <%# <h3>店舗情報</h3> %>
           <div class="shop-data-list">
               <dl class="shop-data-item flex align-center">
                   <dt>所在地</dt>
