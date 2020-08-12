@@ -13,6 +13,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # POST /resource
   def create
+    debug_log("[d] Registrations_Ctrl: action: create")  # log
     super
     debug_log("[d] Registrations_Ctrl: action: create id:#{current_user.id}")  # log
   end
@@ -27,14 +28,17 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # PUT /resource
   def update
     debug_log("[d] Registrations_Ctrl: action: update id:#{current_user.id}")  # log
+    
     super
     
+    # googleMap_緯度経度の取得
     unless @user.address.present?
       @user.map_info = ""
       @user.save
     else
       search_map_set_latlng if @user.saved_change_to_address?
     end
+    
     debug_log("[d] Registrations_Ctrl: action: update ..address = #{@user.address}")  # log
     debug_log("[d] Registrations_Ctrl: action: update ..map_info = #{@user.map_info}")  # log
   end
@@ -59,6 +63,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # ユーザ情報変更時の「パスワードの確認」を無効にする
   def update_resource(resource, params)
     debug_log("[d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)")  # log
+    debug_log("[d] Registrations_Ctrl: action: update_resourc resource = #{resource.inspect}")  # log
+    debug_log("[d] Registrations_Ctrl: action: update_resourc params = #{params.inspect}")  # log
     resource.update_without_password(params)
   end
   

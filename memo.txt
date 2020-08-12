@@ -14,3 +14,16 @@ sm：576px〜767px
 md：768px〜991px
 lg：992px〜1199px
 xl：1200px〜
+
+
+Lizard Gecko
+turtle
+chameleon
+frog
+strange-looking creatures
+
+トカゲ・ヤモリ
+カメ
+カメレオン
+カエル
+奇虫

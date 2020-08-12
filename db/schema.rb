@@ -14,8 +14,8 @@ ActiveRecord::Schema.define(version: 2020_08_05_061820) do
 
   create_table "reptiles", force: :cascade do |t|
     t.string "image"
-    t.string "tyep1"
-    t.string "tyep2"
+    t.string "type1"
+    t.string "type2"
     t.string "aname"
     t.string "sex"
     t.string "size"

@@ -8,7 +8,25 @@ class UsersController < ApplicationController
   # require 'json'
 
   def show
-    debug_log("[d] Users_Ctrl: action: index")  # log
+    
+    
+    @areptyle_all = Reptile.all
+    @user_reptile = Reptile.where(user_id: @user.id)
+    @reptile_type1 = Reptile.group(:type1)
+    
+    debug_log("[d] Users_Ctrl: action: show")  # log
+    
+    @reptile_list = "user"
+    
+    if params[:type1].present?
+      debug_log("[d] Users_Ctrl: action: show reptile_list = #{params[:type1]}")  # log
+      @reptile_list = params[:type1]
+      
+      @aa = User.where(id: Reptile.where(type1: params[:type1]).select(current_user.id))
+      debug_log("[d] Users_Ctrl: action: show @reptile_list = #{@aa}")  # log
+    end
+    debug_log("[d] Users_Ctrl: action: show @reptile_list = #{@reptile_list}")  # log
+    
     
     # gon.address = @user.address
     # gon.userid = @user.id

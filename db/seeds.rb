@@ -33,6 +33,21 @@ User.create!(name: "はぁちゅう",
               twitter: "https://twitter.com/89_nakano"
               )
 
+Reptile.create!(
+              image: "",
+              type1: "snake",
+              type2: "雑種",
+              aname: "ボールパイソン",
+              sex: "man",
+              size: "100cm",
+              max: "120cm",
+              area: "America",
+              description: "せつめい",
+              price: "10000",
+              sales_status: "販売中",
+              arrival_day: "",
+              user_id: "2"
+              )
 # 1.times do |n|
 #   name  = "user-#{n+1}"
 #   email = "sample#{n+1}@email.com"

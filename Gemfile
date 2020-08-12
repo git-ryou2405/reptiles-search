@@ -23,6 +23,7 @@ gem 'sassc', '~> 2.0.0'                        # Sass言語の利用
 gem 'will_paginate'                            # ページネション
 gem 'bootstrap-will_paginate'                  # ページネション(bootstrap)
 gem 'carrierwave'                              # 画像のアップロード
+gem 'mini_magick'                              # 画像リサイズ（ImageMagickのラッパー）
 gem 'colorize'                                 # ログの色付け
 # gem 'font-awesome-sass'                        # FontAwesome
 gem 'gretel'                                   # パンくずリスト

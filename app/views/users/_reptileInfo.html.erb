@@ -1,0 +1,12 @@
+<% Rails.application.config.another_logger.debug "[d] view reptileInfo id=#{@user.id}" %>
+  <!-- 生体詳細 -->
+  <section class="search-content">
+    <% Rails.application.config.another_logger.debug "[d] Reptile = #{@reptile_list}" %>
+    
+    <% @reptile = Reptile.where(type1: @reptile_list.to_s) %>
+    <% @all = Reptile.all %>
+    <% Rails.application.config.another_logger.debug "[d] @all = #{@all.inspect}" %>
+    <% Rails.application.config.another_logger.debug "[d] @reptile = #{@reptile.inspect}" %>
+    
+  </section>
+  <!-- 生体詳細：end -->

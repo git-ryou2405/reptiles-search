@@ -5575,3 +5575,836 @@ D, [2020-08-11T10:57:01.967913 #54595] DEBUG -- : [d] Users_Ctrl: index id: 2
 D, [2020-08-11T10:57:01.968836 #54595] DEBUG -- : [d] Users_Ctrl: action: index
 D, [2020-08-11T10:57:01.969235 #54595] DEBUG -- : [d] view: users/index id=2
 D, [2020-08-11T10:57:01.987721 #54595] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T14:58:19.473828 #59822] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T14:58:22.716053 #59822] DEBUG -- : [d] view: 新規作成
+D, [2020-08-11T14:58:22.718946 #59822] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T14:58:22.737872 #59822] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-11T14:58:28.146891 #59822] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-11T14:58:28.147509 #59822] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-11T14:58:28.147611 #59822] DEBUG -- : [d] user.rb
+D, [2020-08-11T14:58:28.416348 #59822] DEBUG -- : @user = #<User id: 1, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMDc4N8FUQQEd2LexsP3trsIIzw-Uq8MlRGyMBc...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 05:58:28", updated_at: "2020-08-11 05:58:28">
+D, [2020-08-11T14:58:28.416427 #59822] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-11T14:58:28.926958 #59822] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 1, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMDc4N8FUQQEd2LexsP3trsIIzw-Uq8MlRGyMBc...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 05:58:28", updated_at: "2020-08-11 05:58:28">
+D, [2020-08-11T14:58:28.927011 #59822] DEBUG -- : [d] Application_Ctrl: resource.id = 1
+D, [2020-08-11T14:58:28.942440 #59822] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T14:58:28.944046 #59822] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T14:58:28.948059 #59822] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T14:58:28.961990 #59822] DEBUG -- : [d] flash[:success]
+D, [2020-08-11T16:24:52.446270 #62582] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T16:24:52.478810 #62582] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:24:52.491254 #62582] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T16:24:53.613876 #62582] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T16:24:58.517280 #62582] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T16:24:58.545412 #62582] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:25:00.431861 #62582] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T16:25:07.794365 #62582] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T16:25:07.806937 #62582] DEBUG -- : [d] flash[:alert]
+D, [2020-08-11T16:26:02.364286 #62716] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T16:26:10.948154 #62716] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:26:10">
+D, [2020-08-11T16:26:10.948238 #62716] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-11T16:26:10.964502 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:26:10.965844 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:26:10.993274 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:26:11.009884 #62716] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:26:15.959594 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:26:15.966042 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:26:15.967939 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:26:29.382356 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:26:29.384231 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:28:07.547686 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:28:07.549327 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:28:12.271116 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T16:28:12.272644 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:28:12.273656 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T16:28:16.315567 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:28:16.316727 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:28:16.317374 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:28:20.381172 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:28:20.382329 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:28:20.382822 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:28:26.601369 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:28:26.602494 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:30:42.481035 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:30:42.507377 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:30:42.508193 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:30:45.246163 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:30:45.247203 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:30:45.247613 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:30:52.977320 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:30:52.978586 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:30:52.979038 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:26:10">, params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd56c5e6390 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200811-62716-13mixqu.jpg>, @original_filename="shop_img02.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img02.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-11T16:32:32.999071 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:32:33.037226 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:32:33.038058 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:32:36.100928 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:32:36.102701 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:32:36.103094 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:32:41.700882 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:32:41.702962 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:32:41.703555 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:26:10">
+D, [2020-08-11T16:32:41.703656 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部あああ", "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-11T16:32:41.710388 #62716] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-11T16:32:41.715904 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京都中野区中野６丁目１５−１３
+D, [2020-08-11T16:32:41.715952 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565
+D, [2020-08-11T16:32:41.724538 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:32:41.725444 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:32:41.725831 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:32:41.740873 #62716] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:32:45.861303 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:32:45.862199 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:32:45.862541 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:34:42.155949 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:34:42.156986 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:34:42.157258 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:34:50.142517 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:34:50.144035 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:34:50.144462 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部あああ", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:32:41">
+D, [2020-08-11T16:34:50.144548 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部あああ", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd569467288 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200811-62716-p4s503.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-11T16:35:30.774571 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:35:30.775446 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:35:30.775781 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:35:39.736685 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:35:39.738000 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:35:39.738400 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部あああ", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:32:41">
+D, [2020-08-11T16:35:39.738497 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部あああ", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd568a53210 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200811-62716-gqexik.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-11T16:36:04.788337 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:36:04.789158 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:36:04.789427 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:36:11.863586 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:36:11.865968 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:36:11.866712 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部あああ", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:32:41">
+D, [2020-08-11T16:36:11.866852 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部あああ", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd57024f2c8 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200811-62716-22tdad.jpg>, @original_filename="shop_img02.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img02.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-11T16:36:11.877263 #62716] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-11T16:36:11.878328 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京都中野区中野６丁目１５−１３
+D, [2020-08-11T16:36:11.878417 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565
+D, [2020-08-11T16:36:11.889268 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:36:11.890364 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:36:11.890956 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:36:11.907085 #62716] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:41:21.098840 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:41:21.124091 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:41:21.124757 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:41:24.556644 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:41:24.557456 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T16:41:24.557759 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:41:29.284777 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-11T16:41:29.286167 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:41:29.286635 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部あああ", shop_image: "original.jpg", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:36:11">
+D, [2020-08-11T16:41:29.286706 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部あああ", "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-11T16:41:29.289235 #62716] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-11T16:41:29.290340 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京都中野区中野６丁目１５−１３
+D, [2020-08-11T16:41:29.290391 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565
+D, [2020-08-11T16:41:29.299510 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:41:29.300667 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:41:29.301155 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:41:29.315937 #62716] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:41:32.205690 #62716] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T16:41:32.206995 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:41:32.207569 #62716] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T16:41:36.945063 #62716] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T16:41:36.956466 #62716] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:41:38.971851 #62716] DEBUG -- : [d] view: 新規作成
+D, [2020-08-11T16:41:38.972337 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:41:38.989400 #62716] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-11T16:41:43.735238 #62716] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T16:42:05.795299 #62716] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 1, shop_image: nil, email: "admin@email.com", name: "Admin", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: true, shop_name: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:42:05">
+D, [2020-08-11T16:42:05.795374 #62716] DEBUG -- : [d] Application_Ctrl: resource.id = 1
+D, [2020-08-11T16:42:05.806265 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T16:42:05.807235 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:42:05.807679 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T16:42:05.821524 #62716] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T16:42:11.694832 #62716] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T16:42:11.695953 #62716] DEBUG -- : [d] view: ユーザー情報の変更 id=1
+D, [2020-08-11T16:42:11.696253 #62716] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T16:42:19.745500 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update id:1
+D, [2020-08-11T16:42:19.747211 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-11T16:42:19.747727 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 1, email: "admin@email.com", name: "Admin", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: true, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 07:25:43", updated_at: "2020-08-11 07:42:05">
+D, [2020-08-11T16:42:19.747798 #62716] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"admin@email.com", "shop_name"=>"aaaa", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fd568b68fb0 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200811-62716-guh32c.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"", "howto_access"=>"", "tel"=>"", "business_hours"=>"", "holiday"=>"", "handling_animals"=>"", "handling_feeds"=>"", "handling_goods"=>"", "feature"=>"", "url"=>"", "twitter"=>"", "instagram"=>""}
+D, [2020-08-11T16:46:13.849523 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T16:46:13.874449 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:46:13.878196 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T16:46:15.272261 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T16:46:15.273980 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T16:46:15.274587 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:08:14.814793 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:08:14.840189 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:08:27.048002 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:08:27.049418 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:08:38.411858 #62716] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T17:08:40.391650 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:08:40.393683 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:09:33.220540 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:09:33.223122 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:10:46.707212 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:10:46.733159 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:10:46.733248 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T17:11:57.157963 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:11:57.159537 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:11:57.159616 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T17:11:57.163550 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:13:06.285477 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:13:06.287431 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:13:06.287554 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T17:13:06.288732 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:13:09.409753 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:13:09.411656 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:13:09.411776 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T17:13:09.412315 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:13:33.298040 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:13:33.299636 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:13:33.299722 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T17:13:33.307200 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:15:42.889881 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:15:42.894841 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:15:42.895538 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T17:15:42.936426 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:22:20.704297 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:22:20.744637 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:22:20.744939 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T17:22:20.762873 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:22:22.269370 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:22:22.271652 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:22:22.271873 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T17:22:22.273229 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T17:22:23.877651 #62716] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-11T17:22:23.880576 #62716] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T17:22:23.880726 #62716] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T17:22:23.881828 #62716] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-11T18:58:46.381819 #63764] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T18:58:49.044627 #63764] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T18:59:01.130131 #63764] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 09:58:37", updated_at: "2020-08-11 09:59:01">
+D, [2020-08-11T18:59:01.130192 #63764] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-11T18:59:01.146238 #63764] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T18:59:01.147548 #63764] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T18:59:01.147596 #63764] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T18:59:01.151959 #63764] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T18:59:01.155643 #63764] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T18:59:01.168455 #63764] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T18:59:10.923660 #63764] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T18:59:10.925498 #63764] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T18:59:10.925602 #63764] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T18:59:10.926322 #63764] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T18:59:10.929899 #63764] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T18:59:10.932886 #63764] DEBUG -- : [d] nil
+D, [2020-08-11T19:01:10.086016 #63870] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T19:01:11.414915 #63870] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T19:01:16.734511 #63870] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 10:00:57", updated_at: "2020-08-11 10:01:16">
+D, [2020-08-11T19:01:16.734568 #63870] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-11T19:01:16.748065 #63870] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:01:16.749425 #63870] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:01:16.749472 #63870] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T19:01:16.752356 #63870] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:01:16.755314 #63870] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T19:01:16.769568 #63870] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T19:01:19.039298 #63870] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-11T19:01:19.045842 #63870] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-11T19:01:19.048987 #63870] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-11T19:01:22.897526 #63870] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:01:22.898800 #63870] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:01:22.898871 #63870] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T19:01:22.899312 #63870] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:01:22.902520 #63870] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T19:01:22.905365 #63870] DEBUG -- : [d] nil
+D, [2020-08-11T19:06:53.578400 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:06:53.635250 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:06:53.635403 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T19:06:53.646199 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:07:03.548261 #64272] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T19:07:06.056282 #64272] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T19:07:12.166642 #64272] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 10:06:39", updated_at: "2020-08-11 10:07:12">
+D, [2020-08-11T19:07:12.166720 #64272] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-11T19:07:12.178927 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:07:12.179850 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:07:12.179890 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T19:07:12.180264 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:07:12.183485 #64272] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T19:07:12.196984 #64272] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T19:07:14.558374 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:07:14.560318 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:07:14.560389 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T19:07:14.560846 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:07:14.564284 #64272] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T19:07:14.574819 #64272] DEBUG -- : [d] nil
+D, [2020-08-11T19:11:53.971794 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:11:53.973774 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:11:53.973878 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T19:11:53.983373 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:11:54.024366 #64272] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T19:11:55.963290 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:11:55.965502 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:11:55.965874 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T19:11:55.967800 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:11:55.973952 #64272] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T19:11:55.974269 #64272] DEBUG -- : [d] Reptile = #<Reptile::ActiveRecord_Relation:0x00007ff03ccc11c0>
+D, [2020-08-11T19:11:55.990147 #64272] DEBUG -- : [d] @reptile = nil
+D, [2020-08-11T19:12:44.639425 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:12:44.640942 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:12:44.641029 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T19:12:44.644721 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:12:44.647766 #64272] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T19:12:44.658464 #64272] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", tyep1: "snake", tyep2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:06:39", updated_at: "2020-08-11 10:06:39">]>
+D, [2020-08-11T19:12:44.658550 #64272] DEBUG -- : [d] @reptile = nil
+D, [2020-08-11T19:12:46.693674 #64272] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:12:46.695020 #64272] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:12:46.695095 #64272] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T19:12:46.695511 #64272] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:12:46.697640 #64272] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T19:12:46.700076 #64272] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", tyep1: "snake", tyep2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:06:39", updated_at: "2020-08-11 10:06:39">]>
+D, [2020-08-11T19:12:46.700156 #64272] DEBUG -- : [d] @reptile = nil
+D, [2020-08-11T19:20:06.654660 #64412] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:20:06.681942 #64412] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:20:06.682071 #64412] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T19:20:06.695035 #64412] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:20:12.521328 #64412] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T19:20:15.068259 #64412] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-11T19:20:21.209641 #64412] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:20:21">
+D, [2020-08-11T19:20:21.209711 #64412] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-11T19:20:21.222883 #64412] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:20:21.239501 #64412] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:20:21.239561 #64412] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T19:20:21.240001 #64412] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:20:21.243955 #64412] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T19:20:21.256667 #64412] DEBUG -- : [d] flash[:notice]
+D, [2020-08-11T19:20:25.577575 #64412] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T19:20:25.579130 #64412] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T19:20:25.579239 #64412] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T19:20:25.579932 #64412] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T19:20:25.583809 #64412] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T19:20:25.599847 #64412] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-11T19:20:25.599929 #64412] DEBUG -- : [d] @reptile = nil
+D, [2020-08-11T23:55:26.490868 #1557] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-11T23:55:42.874199 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T23:55:42.876608 #1557] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T23:55:42.876681 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T23:55:42.880791 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T23:55:42.885653 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T23:55:45.938159 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T23:55:45.939404 #1557] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T23:55:45.939475 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T23:55:45.940105 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T23:55:45.945053 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T23:55:45.964785 #1557] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-11T23:55:45.964898 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-11T23:58:09.873041 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T23:58:09.948027 #1557] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T23:58:09.948115 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T23:58:09.953411 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T23:58:09.957521 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T23:58:11.447192 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T23:58:11.480565 #1557] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T23:58:11.480693 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T23:58:11.481449 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T23:58:11.485811 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T23:58:11.500323 #1557] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-11T23:58:11.500408 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-11T23:59:22.578235 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T23:59:22.633526 #1557] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T23:59:22.633619 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = user
+D, [2020-08-11T23:59:22.639774 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T23:59:22.643436 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-11T23:59:23.590923 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-11T23:59:23.672772 #1557] DEBUG -- : [d] Users_Ctrl: action: index
+D, [2020-08-11T23:59:23.673252 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T23:59:23.673828 #1557] DEBUG -- : [d] Users_Ctrl: action: index @reptile_list = snake
+D, [2020-08-11T23:59:23.676651 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-11T23:59:23.685828 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-11T23:59:23.724958 #1557] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-11T23:59:23.725094 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-12T00:00:27.128908 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:00:27.159969 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:00:27.160062 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T00:00:27.160720 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:00:27.163645 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T00:00:28.114687 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:00:28.180034 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:00:28.180174 #1557] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T00:00:28.180253 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T00:00:28.181343 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:00:28.188447 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T00:00:28.244900 #1557] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T00:00:28.245042 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-12T00:35:04.545222 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:35:04.547415 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:35:04.547539 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T00:35:04.554284 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:35:04.560256 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T00:35:05.571596 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:35:05.573443 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:35:05.573558 #1557] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T00:35:05.573606 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T00:35:05.574582 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:35:05.579078 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T00:35:05.579210 #1557] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T00:35:05.581940 #1557] DEBUG -- : [d] Reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T00:35:05.582048 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-12T00:38:03.977518 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:38:03.979449 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:38:03.979553 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T00:38:03.987292 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:38:04.001601 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T00:38:05.387092 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:38:05.390627 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:38:05.390769 #1557] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T00:38:05.390832 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T00:38:05.392395 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:38:05.427245 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T00:38:05.427341 #1557] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T00:38:05.427701 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-12T00:38:05.430138 #1557] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T00:41:14.462713 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:41:14.464914 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:41:14.465026 #1557] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T00:41:14.465076 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T00:41:14.474586 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:41:14.480823 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T00:41:14.480968 #1557] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T00:41:14.483969 #1557] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T00:41:14.484176 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-12T00:41:16.741502 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:41:16.742730 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:41:16.742799 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T00:41:16.743273 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:41:16.748025 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T00:41:17.641654 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:41:17.643598 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:41:17.643706 #1557] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T00:41:17.643751 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T00:41:17.644474 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:41:17.671830 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T00:41:17.671986 #1557] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T00:41:17.675177 #1557] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T00:41:17.675744 #1557] DEBUG -- : [d] @reptile = nil
+D, [2020-08-12T00:45:18.823974 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:45:18.913368 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:45:18.913522 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T00:45:18.921108 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:45:18.926806 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T00:45:20.644093 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:45:20.711778 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:45:20.711913 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T00:45:20.744874 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:45:20.750567 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T00:45:21.531783 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T00:45:21.533797 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T00:45:21.533919 #1557] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T00:45:21.533970 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T00:45:21.535045 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T00:45:21.540695 #1557] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T00:45:21.540819 #1557] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T00:45:21.569937 #1557] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T00:45:21.572882 #1557] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:19:55">]>
+D, [2020-08-12T01:42:09.168081 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T01:42:09.226393 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T01:42:09.226485 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T01:42:09.227150 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T01:42:09.229785 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T01:42:11.198015 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T01:42:11.204211 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T01:42:11.207808 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T01:42:20.737255 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T01:42:20.738642 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T01:42:20.739080 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:20:21">
+D, [2020-08-12T01:42:20.739161 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f816426b960 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-1557-1a6x5xj.jpg>, @original_filename="shop_img03.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img03.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T01:43:31.500213 #1557] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T01:43:31.528771 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T01:43:31.528856 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T01:43:31.529427 #1557] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T01:43:31.531660 #1557] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T01:43:39.983944 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T01:43:39.985099 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T01:43:39.985490 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T01:43:42.855914 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T01:43:42.857667 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T01:43:42.857743 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T01:43:42.858344 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T01:43:42.861000 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T01:43:45.399193 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T01:43:45.400706 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T01:43:45.401230 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T01:43:51.595225 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T01:43:51.596724 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T01:43:51.597193 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:20:21">
+D, [2020-08-12T01:43:51.597285 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8164c67a90 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-1557-1fsp76r.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T01:50:40.397334 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T01:50:40.397921 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T01:50:40.398185 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T01:50:47.436861 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T01:50:47.437958 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T01:50:47.438331 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 10:20:21">
+D, [2020-08-12T01:50:47.438385 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T01:50:47.446951 #1557] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T01:50:47.453661 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京都中野区中野６丁目１５−１３
+D, [2020-08-12T01:50:47.453737 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565
+D, [2020-08-12T01:50:47.461878 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T01:50:47.462908 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T01:50:47.462951 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T01:50:47.463318 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T01:50:47.465043 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T01:50:47.479206 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T01:53:04.716105 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T01:53:04.718249 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T01:53:04.718364 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T01:53:04.725774 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T01:53:04.732642 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T01:53:07.731491 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T01:53:07.738781 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T01:53:07.741032 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T01:53:16.093410 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T01:53:16.094936 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T01:53:16.095339 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 16:50:47">
+D, [2020-08-12T01:53:16.095416 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f815a5e8228 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-1557-1pap6yb.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T02:06:52.032593 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T02:06:52.059560 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:06:52.059672 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:06:52.066183 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T02:06:52.074727 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T02:06:54.375380 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T02:06:54.383721 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T02:06:54.385962 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:07:01.753239 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T02:07:01.755152 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T02:07:01.755828 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 16:50:47">
+D, [2020-08-12T02:07:01.755985 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f815d12bac0 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-1557-mjgz9z.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T02:07:03.113173 #1557] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T02:07:03.117580 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京都中野区中野６丁目１５−１３
+D, [2020-08-12T02:07:03.117628 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565
+D, [2020-08-12T02:07:03.126852 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T02:07:03.128160 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:07:03.128228 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:07:03.128675 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T02:07:03.130675 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T02:07:03.143154 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:07:27.073975 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T02:07:27.074758 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T02:07:27.075046 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:07:32.885884 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T02:07:32.888583 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T02:07:32.889449 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: "original.jpg", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 10:19:55", updated_at: "2020-08-11 17:07:03">
+D, [2020-08-12T02:07:32.889562 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "address"=>"東京都中野区中野６丁目１５−１３", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T02:07:32.893245 #1557] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T02:07:32.894099 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京都中野区中野６丁目１５−１３
+D, [2020-08-12T02:07:32.894139 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565
+D, [2020-08-12T02:07:32.903943 #1557] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T02:07:32.907242 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:07:32.907319 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:07:32.907886 #1557] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T02:07:32.909855 #1557] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T02:07:32.925085 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:08:22.437934 #1557] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T02:08:22.451900 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:08:25.185515 #1557] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T02:08:25.186202 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:08:25.207219 #1557] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T02:08:31.036908 #1557] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T02:08:31.037010 #1557] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T02:08:31.037041 #1557] DEBUG -- : [d] user.rb
+D, [2020-08-12T02:08:31.302343 #1557] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMBV650-Y55uboVNo2HxqdC9PFH6BNEVb1fm1Vm...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:08:31", updated_at: "2020-08-11 17:08:31">
+D, [2020-08-12T02:08:31.302400 #1557] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T02:08:31.307691 #1557] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMBV650-Y55uboVNo2HxqdC9PFH6BNEVb1fm1Vm...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:08:31", updated_at: "2020-08-11 17:08:31">
+D, [2020-08-12T02:08:31.307741 #1557] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T02:08:31.317530 #1557] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T02:08:31.318629 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:08:31.318684 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:08:31.319117 #1557] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T02:08:31.320999 #1557] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T02:08:31.334494 #1557] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T02:08:34.826657 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T02:08:34.827465 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=3
+D, [2020-08-12T02:08:34.827908 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:08:44.013254 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:3
+D, [2020-08-12T02:08:44.014916 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T02:08:44.015274 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMBV650-Y55uboVNo2HxqdC9PFH6BNEVb1fm1Vm...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:08:31", updated_at: "2020-08-11 17:08:31">
+D, [2020-08-12T02:08:44.015643 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"r2405.exe@gmail.com", "shop_name"=>"", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8163658538 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-1557-qj64ju.jpg>, @original_filename="shop_img02.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img02.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"", "howto_access"=>"", "tel"=>"", "business_hours"=>"", "holiday"=>"", "handling_animals"=>"", "handling_feeds"=>"", "handling_goods"=>"", "feature"=>"", "url"=>"", "twitter"=>"", "instagram"=>""}
+D, [2020-08-12T02:08:44.087174 #1557] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T02:08:44.096512 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 
+D, [2020-08-12T02:08:44.096576 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = 
+D, [2020-08-12T02:08:44.106513 #1557] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T02:08:44.107870 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:08:44.107919 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:08:44.108347 #1557] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T02:08:44.110659 #1557] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T02:08:44.135851 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:15:21.915048 #1557] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T02:15:21.933562 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:15:24.760467 #1557] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T02:15:24.761176 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:15:24.779004 #1557] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T02:15:27.536704 #1557] DEBUG -- : [d] OmniauthCallbacks_Ctrl: facebook
+D, [2020-08-12T02:15:27.536759 #1557] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = facebook
+D, [2020-08-12T02:15:27.536789 #1557] DEBUG -- : [d] user.rb
+D, [2020-08-12T02:15:27.800847 #1557] DEBUG -- : @user = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAJEHsW5jKeOTgZB6CgMrZB9Uq5TPScwO1aquz...", provider: "facebook", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:15:27", updated_at: "2020-08-11 17:15:27">
+D, [2020-08-12T02:15:27.800898 #1557] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T02:15:27.805567 #1557] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAJEHsW5jKeOTgZB6CgMrZB9Uq5TPScwO1aquz...", provider: "facebook", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:15:27", updated_at: "2020-08-11 17:15:27">
+D, [2020-08-12T02:15:27.805613 #1557] DEBUG -- : [d] Application_Ctrl: resource.id = 4
+D, [2020-08-12T02:15:27.816895 #1557] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T02:15:27.820385 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:15:27.820503 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:15:27.821282 #1557] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T02:15:27.823721 #1557] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T02:15:27.838582 #1557] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T02:15:31.007387 #1557] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T02:15:31.008094 #1557] DEBUG -- : [d] view: ユーザー情報の変更 id=4
+D, [2020-08-12T02:15:31.008472 #1557] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:15:47.403101 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update id:4
+D, [2020-08-12T02:15:47.404115 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T02:15:47.404470 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAJEHsW5jKeOTgZB6CgMrZB9Uq5TPScwO1aquz...", provider: "facebook", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:15:27", updated_at: "2020-08-11 17:15:27">
+D, [2020-08-12T02:15:47.404529 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"ryou2405@yahoo.co.jp", "shop_name"=>"", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007f81634d9108 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-1557-1372c15.jpeg>, @original_filename="images.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"images.jpeg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"", "howto_access"=>"", "tel"=>"", "business_hours"=>"", "holiday"=>"", "handling_animals"=>"", "handling_feeds"=>"", "handling_goods"=>"", "feature"=>"", "url"=>"", "twitter"=>"", "instagram"=>""}
+D, [2020-08-12T02:15:47.450284 #1557] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T02:15:47.456279 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 
+D, [2020-08-12T02:15:47.456394 #1557] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = 
+D, [2020-08-12T02:15:47.465724 #1557] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T02:15:47.467206 #1557] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:15:47.467263 #1557] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:15:47.467716 #1557] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T02:15:47.469672 #1557] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T02:15:47.483906 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:16:04.492190 #1557] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T02:16:04.504531 #1557] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:18:33.999572 #4244] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T02:18:36.008955 #4244] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T02:18:36.012132 #4244] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:18:36.032927 #4244] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T02:18:40.683226 #4244] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T02:18:40.683275 #4244] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T02:18:40.683303 #4244] DEBUG -- : [d] user.rb
+D, [2020-08-12T02:18:40.950287 #4244] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:18:40", updated_at: "2020-08-11 17:18:40">
+D, [2020-08-12T02:18:40.950335 #4244] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T02:18:41.346941 #4244] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:18:40", updated_at: "2020-08-11 17:18:41">
+D, [2020-08-12T02:18:41.346990 #4244] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T02:18:41.357294 #4244] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T02:18:41.360897 #4244] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:18:41.360969 #4244] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:18:41.364281 #4244] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T02:18:41.368146 #4244] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T02:18:41.385388 #4244] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T02:18:46.968470 #4244] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T02:18:46.972099 #4244] DEBUG -- : [d] view: ユーザー情報の変更 id=3
+D, [2020-08-12T02:18:46.972550 #4244] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T02:19:01.779886 #4244] DEBUG -- : [d] Registrations_Ctrl: action: update id:3
+D, [2020-08-12T02:19:01.781270 #4244] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T02:19:01.781869 #4244] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-11 17:18:40", updated_at: "2020-08-11 17:18:41">
+D, [2020-08-12T02:19:01.781966 #4244] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"r2405.exe@gmail.com", "shop_name"=>"", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007feac6309c48 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-4244-hrars.jpg>, @original_filename="61EDg9ILYmL._AC_SL1000_.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"61EDg9ILYmL._AC_SL1000_.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"", "howto_access"=>"", "tel"=>"", "business_hours"=>"", "holiday"=>"", "handling_animals"=>"", "handling_feeds"=>"", "handling_goods"=>"", "feature"=>"", "url"=>"", "twitter"=>"", "instagram"=>""}
+D, [2020-08-12T02:19:01.853747 #4244] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T02:19:01.862825 #4244] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 
+D, [2020-08-12T02:19:01.862873 #4244] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = 
+D, [2020-08-12T02:19:01.870863 #4244] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T02:19:01.872663 #4244] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T02:19:01.872747 #4244] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T02:19:01.873855 #4244] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T02:19:01.876410 #4244] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T02:19:01.888537 #4244] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T02:19:08.602281 #4244] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T02:19:08.614504 #4244] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T09:49:03.914149 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T09:49:09.129809 #7894] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T09:49:09.133707 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T09:49:09.154653 #7894] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T09:49:14.483982 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T09:49:14.484117 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T09:49:14.484167 #7894] DEBUG -- : [d] user.rb
+D, [2020-08-12T09:49:14.490395 #7894] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-11 17:19:01">
+D, [2020-08-12T09:49:14.490602 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T09:49:14.950021 #7894] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 00:49:14">
+D, [2020-08-12T09:49:14.950099 #7894] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T09:49:14.968303 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T09:49:14.978146 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T09:49:14.978246 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T09:49:14.983686 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T09:49:14.991001 #7894] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T09:49:15.016454 #7894] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T09:49:21.027786 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T09:49:21.030377 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T09:49:21.030540 #7894] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T09:49:21.030584 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T09:49:21.031366 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T09:49:21.036626 #7894] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T09:49:21.036732 #7894] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T09:49:21.055822 #7894] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T09:49:21.057316 #7894] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T10:07:02.007144 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T10:07:02.012350 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:07:02.012423 #7894] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T10:07:02.012444 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T10:07:02.014885 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T10:07:02.019853 #7894] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T10:07:02.019917 #7894] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T10:07:02.023079 #7894] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T10:07:02.025010 #7894] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T10:07:11.170126 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T10:07:11.171809 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:07:11.171875 #7894] DEBUG -- : [d] Users_Ctrl: action: show reptile_list = snake
+D, [2020-08-12T10:07:11.171896 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = snake
+D, [2020-08-12T10:07:11.172483 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T10:07:11.174476 #7894] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T10:07:11.174528 #7894] DEBUG -- : [d] Reptile = snake
+D, [2020-08-12T10:07:11.176063 #7894] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T10:07:11.177476 #7894] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T10:07:14.454124 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:07:22.412034 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:07:22.442400 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:07:35.698169 #7894] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T10:07:35.698981 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:07:35.715877 #7894] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T10:07:52.145811 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T10:07:52.146045 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T10:07:52.146172 #7894] DEBUG -- : [d] user.rb
+D, [2020-08-12T10:07:52.149917 #7894] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 00:49:14">
+D, [2020-08-12T10:07:52.149996 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T10:07:52.162867 #7894] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 01:07:52">
+D, [2020-08-12T10:07:52.162943 #7894] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T10:07:52.176777 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T10:07:52.178648 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:07:52.178720 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:07:52.179185 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T10:07:52.181509 #7894] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T10:07:52.197941 #7894] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T10:07:59.042072 #7894] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T10:07:59.048076 #7894] DEBUG -- : [d] view: ユーザー情報の変更 id=3
+D, [2020-08-12T10:07:59.048537 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:08:03.198386 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:08:03.210786 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:08:05.322021 #7894] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T10:08:11.320968 #7894] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 01:08:11">
+D, [2020-08-12T10:08:11.321043 #7894] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T10:08:11.339330 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:08:11.340338 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:08:11.340383 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:08:11.340755 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:08:11.342592 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:08:11.357944 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:09:03.589505 #7894] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T10:09:03.590620 #7894] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T10:09:03.591229 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:10:04.328734 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T10:10:04.329935 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T10:10:04.330342 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 01:08:11">
+D, [2020-08-12T10:10:04.330403 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "address"=>"神奈川県相模原市南区上鶴間本町3-18-27", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>""}
+D, [2020-08-12T10:10:04.337135 #7894] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T10:10:05.347102 #7894] DEBUG -- : [d] Registrations_Ctrl: action: search_map_set_latlng
+D, [2020-08-12T10:10:05.347161 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 神奈川県相模原市南区上鶴間本町3-18-27
+D, [2020-08-12T10:10:05.347185 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.541386,139.443727
+D, [2020-08-12T10:10:05.356224 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:10:05.358225 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:10:05.358330 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:10:05.358987 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:10:05.361684 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:10:05.375356 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:11:36.993697 #7894] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T10:11:36.995196 #7894] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T10:11:36.995943 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:13:34.462523 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T10:13:34.464814 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T10:13:34.465262 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "神奈川県相模原市南区上鶴間本町3-18-27", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.5...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 01:10:05">
+D, [2020-08-12T10:13:34.465324 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "address"=>"神奈川県相模原市南区上鶴間本町3-18-27", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>"<div id=\"insta-window\" class=\"iswd-base\" data-iswd='{\"username\":\"watanabenaomi703\"}'></div> <script src=\"https://insta-window-tool.web.app/v3/insta-window.js\"></script>"}
+D, [2020-08-12T10:13:34.472671 #7894] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T10:13:34.474297 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 神奈川県相模原市南区上鶴間本町3-18-27
+D, [2020-08-12T10:13:34.474347 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.541386,139.443727
+D, [2020-08-12T10:13:34.484508 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:13:34.485773 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:13:34.485848 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:13:34.486420 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:13:34.489569 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:13:34.521016 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:14:06.854005 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:14:06.856121 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:14:06.856236 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:14:06.857063 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:14:06.863107 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:14:22.923576 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:14:22.925735 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:14:22.925852 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:14:22.926632 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:14:22.932019 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:14:24.814960 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:14:27.472008 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:14:27.473314 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:14:27.473390 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:14:27.473956 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:14:27.479341 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:16:48.014635 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:16:48.997268 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:16:48.999063 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:16:48.999140 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:16:48.999702 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:16:49.003767 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:17:24.696070 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:17:30.830036 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:17:30.843735 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:17:40.391752 #7894] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T10:17:40.392535 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:17:40.411714 #7894] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T10:17:47.343529 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T10:17:47.343681 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T10:17:47.343801 #7894] DEBUG -- : [d] user.rb
+D, [2020-08-12T10:17:47.347300 #7894] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 01:07:52">
+D, [2020-08-12T10:17:47.347380 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T10:17:47.357293 #7894] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 01:17:47">
+D, [2020-08-12T10:17:47.357413 #7894] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T10:17:47.372844 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T10:17:47.374408 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:17:47.374479 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:17:47.375001 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T10:17:47.377720 #7894] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T10:17:47.391169 #7894] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T10:18:32.405394 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T10:18:32.407856 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:18:32.407987 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:18:32.409031 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T10:18:32.413337 #7894] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T10:18:33.846125 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:22:10.159255 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:22:10.186375 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:22:13.084046 #7894] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T10:22:13.084457 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:22:13.121096 #7894] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T10:22:14.711106 #7894] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T10:22:19.224006 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T10:22:19.224156 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T10:22:19.224217 #7894] DEBUG -- : [d] user.rb
+D, [2020-08-12T10:22:19.229226 #7894] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 01:17:47">
+D, [2020-08-12T10:22:19.229486 #7894] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T10:22:19.240173 #7894] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMAe4cMHDBe9IivP9vfZ-pMKHk-85LpXpkIiRBJ...", provider: "google_oauth2", admin: false, shop_name: "", shop_image: "original.jpg", address: "", howto_access: "", tel: "", business_hours: "", holiday: "", url: "", handling_animals: "", handling_feeds: "", handling_goods: "", feature: "", map_info: "", twitter: "", facebook: nil, instagram: "", created_at: "2020-08-11 17:18:40", updated_at: "2020-08-12 01:22:19">
+D, [2020-08-12T10:22:19.240257 #7894] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T10:22:19.254974 #7894] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T10:22:19.256613 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:22:19.256697 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:22:19.257269 #7894] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T10:22:19.260095 #7894] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T10:22:19.271960 #7894] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T10:22:22.042831 #7894] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T10:22:22.054979 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:22:24.474246 #7894] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T10:22:30.074799 #7894] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "神奈川県相模原市南区上鶴間本町3-18-27", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.5...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "<div id=\"insta-window\" class=\"iswd-base\" data-iswd...", created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 01:22:30">
+D, [2020-08-12T10:22:30.074906 #7894] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T10:22:30.085473 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:22:30.086496 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:22:30.086540 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:22:30.086915 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:22:30.088623 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:22:30.100554 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T10:22:44.016922 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:22:44.019503 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:22:44.019819 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:22:44.020881 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:22:44.027780 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:44:23.600700 #7894] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T10:44:23.602141 #7894] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T10:44:23.602891 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:47:19.417362 #7894] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T10:47:19.418200 #7894] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T10:47:19.418543 #7894] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T10:47:27.811492 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update id:2
+D, [2020-08-12T10:47:27.813835 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T10:47:27.814672 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "神奈川県相模原市南区上鶴間本町3-18-27", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.5...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "<div id=\"insta-window\" class=\"iswd-base\" data-iswd...", created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 01:22:30">
+D, [2020-08-12T10:47:27.814785 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"sample@email.com", "shop_name"=>"爬虫類倶楽部", "address"=>"東京タワー", "howto_access"=>"中野駅から徒歩5分 ⬇︎", "tel"=>"03-3227-5122", "business_hours"=>"13時〜20時", "holiday"=>"木曜日", "handling_animals"=>"ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", "handling_feeds"=>"活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", "handling_goods"=>"飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品", "feature"=>"取り扱い多数、御来店お待ちしております。", "url"=>"http://www.hachikura.com/", "twitter"=>"https://twitter.com/89_nakano", "instagram"=>"<div id=\"insta-window\" class=\"iswd-base\" data-iswd='{\"username\":\"watanabenaomi703\"}'></div> <script src=\"https://insta-window-tool.web.app/v3/insta-window.js\"></script>"}
+D, [2020-08-12T10:47:27.824755 #7894] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T10:47:28.994792 #7894] DEBUG -- : [d] Registrations_Ctrl: action: search_map_set_latlng
+D, [2020-08-12T10:47:28.994904 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 東京タワー
+D, [2020-08-12T10:47:28.994954 #7894] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = https://maps.google.co.jp/maps?output=embed&q=35.658581,139.745433
+D, [2020-08-12T10:47:29.013263 #7894] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T10:47:29.014927 #7894] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T10:47:29.014999 #7894] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T10:47:29.015498 #7894] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T10:47:29.018000 #7894] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T10:47:29.033411 #7894] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T11:11:36.534887 #7894] DEBUG -- : [d] view: StaticPages#top
