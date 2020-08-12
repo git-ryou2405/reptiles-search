@@ -17,7 +17,7 @@
       <% end %>
       
       <!-- image -->
-      <% if @reptile.image.url %>
+      <% if @reptile.image %>
         <p>
         <%= image_tag reptile.image.url, :width => "100", id: "margin5px" %><br>
         <%= f.check_box :remove_image %><%= "画像を削除" %><br>
@@ -28,40 +28,38 @@
       <% end %>
       <!-- image -->
       
+      <!--
       <% arrey = [
-        [:aname, :reptile_a_name],
         [:type1,:reptile_type1],
         [:type2,:reptile_type2],
         [:sex,:reptile_sex],
+        [:age,:reptile_age],
         [:size,:reptile_size],
-        [:max,:reptile_max],
-        [:area,:reptile_area],
+        [:weight,:reptile_weight],
         [:description,:reptile_description]
         ] %>
+      -->
       
-      <%= f.label :aname, class: "mt-2" %>
-      <%= f.text_field :aname, id: :reptile_a_name, class: "form-control" %>
-
       <%= f.label :type1, class: "mt-2" %>
-      <%= f.text_field :type1, id: :reptile_type1, class: "form-control" %>
+      <%= f.select :type1, [ ['ヘビ', 'ヘビ'], ['カメ', 'カメ'], ['トカゲ', 'トカゲ'], ['ヤモリ', 'ヤモリ'], ['両生類', '両生類'], ['奇虫・その他', '奇虫・その他'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select" } %>
       
       <%= f.label :type2, class: "mt-2" %>
       <%= f.text_field :type2, id: :reptile_type2, class: "form-control" %>
 
       <%= f.label :sex, class: "mt-2" %>
-      <%= f.text_field :sex, id: :reptile_size, class: "form-control" %>
+      <%= f.select :sex, [['オス', 'オス'], ['メス', 'メス'], ['不明', '不明'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select" } %>
+
+      <%= f.label :age, class: "mt-2" %>
+      <%= f.text_field :age, id: :reptile_age, class: "form-control" %>
 
       <%= f.label :size, class: "mt-2" %>
       <%= f.text_field :size, id: :reptile_size, class: "form-control" %>
       
-      <%= f.label :max, class: "mt-2" %>
-      <%= f.text_field :max, id: :reptile_max, class: "form-control" %>
-      
-      <%= f.label :area, class: "mt-2" %>
-      <%= f.text_field :area, id: :reptile_area, class: "form-control" %>
+      <%= f.label :weight, class: "mt-2" %>
+      <%= f.text_field :weight, id: :reptile_weight, class: "form-control" %>
       
       <%= f.label :description, class: "mt-2" %>
-      <%= f.text_field :description, id: :reptile_description, class: "form-control" %>
+      <%= f.text_area :description, id: :reptile_description, size: "3x3", class: "form-control" %>
       
       <%= f.label :price, class: "mt-2" %>
       <%= f.number_field :price, id: :reptile_price, class: "form-control" %>

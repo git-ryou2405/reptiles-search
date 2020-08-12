@@ -17,7 +17,7 @@ class ReptilesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create reptile" do
     assert_difference('Reptile.count') do
-      post reptiles_url, params: { reptile: { aname: @reptile.aname, area: @reptile.area, arrival_day: @reptile.arrival_day, description: @reptile.description, max: @reptile.max, price: @reptile.price, sales_status: @reptile.sales_status, sex: @reptile.sex, size: @reptile.size, tyep1: @reptile.tyep1, tyep2: @reptile.tyep2, user_id: @reptile.user_id } }
+      post reptiles_url, params: { reptile: { aname: @reptile.aname, area: @reptile.area, arrival_day: @reptile.arrival_day, description: @reptile.description, max: @reptile.max, price: @reptile.price, sales_status: @reptile.sales_status, sex: @reptile.sex, size: @reptile.size, type1: @reptile.type1, type2: @reptile.type2, user_id: @reptile.user_id } }
     end
 
     assert_redirected_to reptile_url(Reptile.last)
@@ -34,7 +34,7 @@ class ReptilesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update reptile" do
-    patch reptile_url(@reptile), params: { reptile: { aname: @reptile.aname, area: @reptile.area, arrival_day: @reptile.arrival_day, description: @reptile.description, max: @reptile.max, price: @reptile.price, sales_status: @reptile.sales_status, sex: @reptile.sex, size: @reptile.size, tyep1: @reptile.tyep1, tyep2: @reptile.tyep2, user_id: @reptile.user_id } }
+    patch reptile_url(@reptile), params: { reptile: { aname: @reptile.aname, area: @reptile.area, arrival_day: @reptile.arrival_day, description: @reptile.description, max: @reptile.max, price: @reptile.price, sales_status: @reptile.sales_status, sex: @reptile.sex, size: @reptile.size, type1: @reptile.type1, type2: @reptile.type2, user_id: @reptile.user_id } }
     assert_redirected_to reptile_url(@reptile)
   end
 

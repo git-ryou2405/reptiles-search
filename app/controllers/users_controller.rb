@@ -8,25 +8,18 @@ class UsersController < ApplicationController
   # require 'json'
 
   def show
-    
-    
-    @areptyle_all = Reptile.all
-    @user_reptile = Reptile.where(user_id: @user.id)
-    @reptile_type1 = Reptile.group(:type1)
-    
     debug_log("[d] Users_Ctrl: action: show")  # log
     
     @show_option = "user"
     
+    # ユーザーが持つ、タイプ毎のReptile情報を取得
     if params[:reptile_type].present?
-      debug_log("[d] Users_Ctrl: action: show reptile_list = #{params[:reptile_type]}")  # log
       @show_option = params[:reptile_type]
-      
-      @user_reptile = User.where(id: Reptile.where(type1: params[:reptile_type]).select(current_user.id))
-      debug_log("[d] Users_Ctrl: action: show @user_reptile = #{@user_reptile}")  # log
+      # @reptile_type = User.where(id: Reptile.where(type1: params[:reptile_type]).select(current_user.id))
+      @reptile_type = Reptile.where(type1: params[:reptile_type], user_id: current_user.id)
+      debug_log("[d] Users_Ctrl: action: show @show_option = #{@reptile_type}")  # log
     end
     debug_log("[d] Users_Ctrl: action: show @show_option = #{@show_option}")  # log
-    
     
     # gon.address = @user.address
     # gon.userid = @user.id

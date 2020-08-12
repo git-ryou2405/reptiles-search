@@ -15,23 +15,24 @@ md：768px〜991px
 lg：992px〜1199px
 xl：1200px〜
 
-
-Lizard Gecko
+snake
 turtle
-chameleon
-frog
+Lizard
+Gecko
+amphibian
 strange-looking creatures
 
-トカゲ・ヤモリ
+ヘビ
+トカゲ
+ヤモリ
 カメ
-カメレオン
-カエル
+両生類
 奇虫
 
 
 image: "",
-tyep1: "",
-tyep2: "",
+type1: "",
+type2: "",
 aname: "",
 sex: "",
 size: "",

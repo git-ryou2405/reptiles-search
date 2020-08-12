@@ -203,6 +203,7 @@ ul, li { list-style: none; }
 
  /* 販売生体 */
 .menu-ttl {
+  position: relative;
   padding: 10px 20px;
 	background: #222;
 	color: palevioletred;
@@ -282,7 +283,38 @@ shop 情報
 }
 
 /*==============================================================================
+販売生体
 ============================================================================= */
+
+/* メインコンテンツ */
+
+.lower-container { margin: 40px 0 0;}
+
+.search-content { width: 700px; margin: 0 0 0 40px;}
+
+.search-item { padding: 20px 0 0; border-top: 3px solid #333;}
+
+.search-item:not(:first-of-type) { margin: 20px 0 0;}
+
+.search-content .photo { padding: 0 20px 0 0;}
+
+.search-content .txt-item { font-size: 20px;}
+
+.search-item .photo { width: 160px;}
+
+.txt-item p:first-of-type { width: 150px; padding: 5px 5px 5px 0; font-weight: bold;}
+
+.search-content .species { color: darkseagreen;}
+
+.search-content .morph { color: darkgoldenrod;}
+
+.search-content .shop { color: thistle;}
+
+.search-content .gender { color: lightsalmon;}
+
+.search-content .price { color: skyblue;}
+
+.search-content .name a:hover { text-decoration: underline; color: lightblue;}
 
 
 /* =============================================================================

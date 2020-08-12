@@ -9,58 +9,58 @@
 
 <%# <h3>店舗情報</h3> %>
 <div class="shop-data-list">
-    <dl class="shop-data-item flex align-center">
-        <dt>所在地</dt>
-        <dd><%= @user.address %></dd>
-    </dl>
-    <dl class="shop-data-item flex align-center">
-        <dt>アクセス方法</dt>
-        <!-- googlemapへスクロール -->
-        <dd class="anchor"><a href="#googlemap"><%= @user.howto_access %></a></span></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>営業時間</dt>
-        <dd><%= @user.business_hours %></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>定休日</dt>
-        <dd><%= @user.holiday %></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>電話番号</dt>
-        <dd><%= @user.tel %></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>ホームページ</dt>
-        <!-- 別タブでホームページに移動 -->
-        <dd><a href=<%= @user.url %> target="_blank"><%= @user.url %></a></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>SNS(twitter)</dt>
-        <!-- 別タブでSNSに移動 -->
-        <dd><a href=<%= @user.twitter %> target="_blank"><%= @user.twitter %></a></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>取扱い生体</dt>
-        <dd><%= simple_format(@user.handling_animals) %></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>取扱い餌</dt>
-        <dd><%= simple_format(@user.handling_feeds) %></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>取扱い用品</dt>
-        <dd><%= simple_format(@user.handling_goods) %></dd>
-    </dl>
-    <dl class="shop-data-item flex">
-        <dt>当店の特徴</dt>
-        <dd><%= simple_format(@user.feature) %></dd>
-    </dl>
+  <dl class="shop-data-item flex align-center">
+    <dt>所在地</dt>
+    <dd><%= @user.address %></dd>
+  </dl>
+  <dl class="shop-data-item flex align-center">
+    <dt>アクセス方法</dt>
+    <!-- googlemapへスクロール -->
+    <dd class="anchor"><a href="#googlemap"><%= @user.howto_access %></a></span></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>営業時間</dt>
+    <dd><%= @user.business_hours %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>定休日</dt>
+    <dd><%= @user.holiday %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>電話番号</dt>
+    <dd><%= @user.tel %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>ホームページ</dt>
+    <!-- 別タブでホームページに移動 -->
+    <dd><a href=<%= @user.url %> target="_blank"><%= @user.url %></a></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>SNS(twitter)</dt>
+    <!-- 別タブでSNSに移動 -->
+    <dd><a href=<%= @user.twitter %> target="_blank"><%= @user.twitter %></a></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>取扱い生体</dt>
+    <dd><%= simple_format(@user.handling_animals) %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>取扱い餌</dt>
+    <dd><%= simple_format(@user.handling_feeds) %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>取扱い用品</dt>
+    <dd><%= simple_format(@user.handling_goods) %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>当店の特徴</dt>
+    <dd><%= simple_format(@user.feature) %></dd>
+  </dl>
 </div>
 
 <!-- google Map -->
 <% if @user.map_info.present? %>
   <div class="col-12 googlemap">
-      <iframe src=<%= @user.map_info %> width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src=<%= @user.map_info %> width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
 <% end %>

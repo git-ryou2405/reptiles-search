@@ -23,8 +23,8 @@ class ReptilesTest < ApplicationSystemTestCase
     fill_in "Sales status", with: @reptile.sales_status
     fill_in "Sex", with: @reptile.sex
     fill_in "Size", with: @reptile.size
-    fill_in "Tyep1", with: @reptile.tyep1
-    fill_in "Tyep2", with: @reptile.tyep2
+    fill_in "Type1", with: @reptile.type1
+    fill_in "Type2", with: @reptile.type2
     fill_in "User", with: @reptile.user_id
     click_on "Create Reptile"
 
@@ -45,8 +45,8 @@ class ReptilesTest < ApplicationSystemTestCase
     fill_in "Sales status", with: @reptile.sales_status
     fill_in "Sex", with: @reptile.sex
     fill_in "Size", with: @reptile.size
-    fill_in "Tyep1", with: @reptile.tyep1
-    fill_in "Tyep2", with: @reptile.tyep2
+    fill_in "Type1", with: @reptile.type1
+    fill_in "Type2", with: @reptile.type2
     fill_in "User", with: @reptile.user_id
     click_on "Update Reptile"
 

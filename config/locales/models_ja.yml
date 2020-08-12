@@ -26,9 +26,8 @@ ja:
           updated_at: 更新日
         reptile:
           image: 写真
-          type1: 種別1
-          type2: 種別2
-          aname: 名前
+          type1: 分類
+          type2: モルフ
           sex: 性別
           size: サイズ等
           max: 最大サイズ

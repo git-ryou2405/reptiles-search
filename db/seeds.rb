@@ -33,15 +33,16 @@ User.create!(name: "はぁちゅう",
               twitter: "https://twitter.com/89_nakano"
               )
 
+puts "success create user."
+              
 Reptile.create!(
               image: "",
-              type1: "snake",
+              type1: "ヘビ",
               type2: "雑種",
-              aname: "ボールパイソン",
               sex: "man",
+              age: "24",
               size: "100cm",
-              max: "120cm",
-              area: "America",
+              weight: "10kg",
               description: "せつめい",
               price: "10000",
               sales_status: "販売中",
@@ -57,4 +58,4 @@ Reptile.create!(
 #                password_confirmation: @password)
 # end
 
-puts "success create user."
+puts "success create reptile."

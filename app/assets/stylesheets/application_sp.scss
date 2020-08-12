@@ -33,7 +33,66 @@ body { padding-top: 4rem; }
 #my_size { font-size: 1.4rem; }
 .devise { padding: 1.4rem; }
 
+
+/*==============================================================================
+============================================================================= */
+
+.menu-ttl:after { 
+  position: absolute;
 }
+
+.menu-ttl:after { 
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  width: 12px;
+  height: 12px;
+  content: attr(data-item);
+  border-width: 3px 0 0 3px;
+  border-style: solid;
+  border-color: palevioletred transparent transparent palevioletred;
+  transform: rotate(225deg) translateY(-50%);
+}
+
+.arrival-ttl:after { 
+  border-color: darkseagreen;
+}
+
+.sns-ttl:after { 
+  position: absolute;
+  top: 30%;
+  right: 8%;
+  width: 12px;
+  height: 12px;
+  content: attr(data-item);
+  border-width: 3px 0 0 3px;
+  border-style: solid;
+  border-color: skyblue;
+  transform: rotate(225deg) translateY(-50%);
+}
+
+.menu-list {
+  padding-left: 0;
+  display: none;
+}
+
+.reptile-item {
+  font-size: 18px;
+  color:palevioletred;
+  padding: 20px;
+  border-bottom: 3px #333 solid;
+  cursor: pointer;
+}
+.reptile-item:hover {
+  background-color: #222;
+  transition: .3s;
+}
+
+
+
+
+}
+
 
 
 

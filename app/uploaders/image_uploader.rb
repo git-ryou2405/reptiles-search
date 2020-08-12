@@ -40,7 +40,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # リサイズ設定
   # process resize_to_fit: [300, 200]
   # process resize_to_fill: [300, 200, "Center"]
-  process resize_and_pad: [300, 200, "#000000", "Center"]
+  process resize_and_pad: [400, 300, "#000000", "Center"]
   
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

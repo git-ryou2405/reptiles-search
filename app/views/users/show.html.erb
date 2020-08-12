@@ -22,72 +22,26 @@
         </h2>
         
         <ul class="menu-list">
-          <%= link_to user_path(current_user, reptile_type: "snake"), style:"text-decoration: none;" do %>
-            <li class="reptile-item">ヘビ
-              <div style="float: right; margin-right: auto;">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </li>
-          <% end %>
-          <%= link_to user_path(current_user, reptile_type: "lizard"), style:"text-decoration: none;" do %>
-            <li class="reptile-item">トカゲ・ヤモリ
-              <div style="float: right; margin-right: auto;">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </li>
-          <% end %>
-          <%= link_to user_path(current_user, reptile_type: "turtle"), style:"text-decoration: none;" do %>
-            <li class="reptile-item">カメ
-              <div style="float: right; margin-right: auto;">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </li>
-          <% end %>
-          <%= link_to user_path(current_user, reptile_type: "chameleon"), style:"text-decoration: none;" do %>
-            <li class="reptile-item">カメレオン
-              <div style="float: right; margin-right: auto;">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </li>
-          <% end %>
-          <%= link_to user_path(current_user, reptile_type: "flog"), style:"text-decoration: none;" do %>
-            <li class="reptile-item">カエル
-              <div style="float: right; margin-right: auto;">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </li>
-          <% end %>
-          <%= link_to user_path(current_user, reptile_type: "other"), style:"text-decoration: none;" do %>
-            <li class="reptile-item list-item">奇虫・その他
-              <div style="float: right; margin-right: auto;">
-                <i class="fas fa-chevron-right"></i>
-              </div>
-            </li>
+          <!-- メニュー作成 -->
+          <% reptile_list = [ "ヘビ", "カメ", "トカゲ", "ヤモリ", "両生類", "奇虫・その他" ] %>
+          <% reptile_list.each do |reptile_type| %>
+            <%= link_to user_path(current_user, reptile_type: reptile_type), style:"text-decoration: none;" do %>
+              <li class="reptile-item"><%= reptile_type %>
+                <div style="float: right; margin-right: auto;">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </li>
+            <% end %>
           <% end %>
         </ul>
         <!-- 生体カテゴリー -->
         
         <!-- 入荷情報 -->
-        <h2 class="arrival-ttl relative mt-5">新入荷
+        <h2 class="arrival-ttl menu-ttl relative mt-5">新入荷
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
         
         <ul class="menu-list">
-          <li class="arrival-item">
-              <p class="arrival-day">2020年◯月◯日入荷</p>
-              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
-              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
-          </li>
-          <li class="arrival-item">
-              <p class="arrival-day">2020年◯月◯日入荷</p>
-              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
-              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
-          </li>
-          <li class="arrival-item">
-              <p class="arrival-day">2020年◯月◯日入荷</p>
-              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
-              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
-          </li>
           <li class="arrival-item">
               <p class="arrival-day">2020年◯月◯日入荷</p>
               <!-- ↓リンク入れて商品ページに飛ぶようにする -->
@@ -128,7 +82,7 @@
       
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
-        <% if @reptile_list == "user" %>
+        <% if @show_option == "user" %>
           <%= render "userInfo" %>
         <% else %>
           <%= render "reptileInfo" %>
@@ -161,3 +115,12 @@
       
   </div>
 </div>
+
+<script>
+$('.menu-ttl').click(function() {
+  $(this).next('.menu-list').slideToggle();
+});
+$('.sns-ttl').click(function() {
+  $('.sns-box').slideToggle();
+});
+</script>

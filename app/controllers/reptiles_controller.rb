@@ -29,8 +29,10 @@ class ReptilesController < ApplicationController
   def create
     debug_log("[d] Reptiles_Ctrl: action: create")  # log
     @reptile = Reptile.new(reptile_params)
+    debug_log("[d] Reptiles_Ctrl: @reptile1: #{@reptile.inspect}")  # log
+    
     @reptile.user_id = current_user.id
-    debug_log("[d] Reptiles_Ctrl: @reptile: #{@reptile.inspect}")  # log
+    debug_log("[d] Reptiles_Ctrl: @reptile2: #{@reptile.inspect}")  # log
 
     respond_to do |format|
       if @reptile.save
@@ -75,6 +77,6 @@ class ReptilesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reptile_params
-      params.require(:reptile).permit(:aname, :image, :tyep1, :tyep2, :sex, :size, :max, :area, :description, :price, :sales_status, :arrival_day)
+      params.require(:reptile).permit(:image, :type1, :type2, :sex, :age, :size, :weight, :description, :price, :sales_status, :arrival_day)
     end
 end

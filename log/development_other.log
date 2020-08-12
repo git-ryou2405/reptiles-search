@@ -6483,3 +6483,1236 @@ D, [2020-08-12T13:04:15.636648 #9715] DEBUG -- : [d] view reptileInfo id=2
 D, [2020-08-12T13:04:15.636771 #9715] DEBUG -- : [d] Reptile = 
 D, [2020-08-12T13:04:15.671872 #9715] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
 D, [2020-08-12T13:04:15.736860 #9715] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation []>
+D, [2020-08-12T13:16:25.709228 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:16:25.743711 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:16:25.743820 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:16:25.748566 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:16:25.753298 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:16:25.753441 #9715] DEBUG -- : [d] Reptile = 
+D, [2020-08-12T13:16:25.767855 #9715] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T13:16:25.769351 #9715] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation []>
+D, [2020-08-12T13:25:39.126894 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:25:39.173531 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:25:39.177694 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<User::ActiveRecord_Relation:0x00007ffb89c57740>
+D, [2020-08-12T13:25:39.178507 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:25:39.179411 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:25:39.179482 #9715] DEBUG -- : [d] Reptile = 
+D, [2020-08-12T13:25:39.192013 #9715] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T13:25:39.193246 #9715] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation []>
+D, [2020-08-12T13:25:41.448480 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:25:41.450344 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:25:41.450460 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:25:41.451725 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:25:41.457117 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:25:41.457266 #9715] DEBUG -- : [d] Reptile = 
+D, [2020-08-12T13:25:41.459478 #9715] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T13:25:41.462205 #9715] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation []>
+D, [2020-08-12T13:25:44.716939 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:25:44.722302 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:25:44.722420 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:25:44.723323 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:25:44.731333 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:25:44.731442 #9715] DEBUG -- : [d] Reptile = 
+D, [2020-08-12T13:25:44.737097 #9715] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T13:25:44.740803 #9715] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation []>
+D, [2020-08-12T13:25:51.326434 #9715] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T13:25:53.245202 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:25:53.247421 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:25:53.247573 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:25:53.248727 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:25:53.253387 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:25:53.253495 #9715] DEBUG -- : [d] Reptile = 
+D, [2020-08-12T13:25:53.255544 #9715] DEBUG -- : [d] @all = #<ActiveRecord::Relation [#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">]>
+D, [2020-08-12T13:25:53.257525 #9715] DEBUG -- : [d] @reptile = #<ActiveRecord::Relation []>
+D, [2020-08-12T13:27:56.268572 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:27:56.271015 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:27:56.271094 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:27:56.274896 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:27:56.280676 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T13:39:57.293435 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:39:57.324995 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:39:57.325087 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:39:57.328117 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:39:57.333117 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T13:40:01.489232 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:40:01.491073 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:40:01.498204 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T13:40:01.499611 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:40:01.503190 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:40:23.544506 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:40:23.545727 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:40:23.547902 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T13:40:23.551360 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:40:23.553109 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:43:07.693642 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:43:07.695546 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:43:07.697791 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T13:43:07.698454 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:43:07.699273 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:43:45.717374 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:43:45.719331 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:43:45.721908 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T13:43:45.726056 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:43:45.729713 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T13:49:21.159291 #9715] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T13:49:38.139988 #9715] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T13:49:43.194384 #9715] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T13:49:56.864992 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T13:49:56.867696 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T13:49:56.867850 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T13:49:56.874999 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T13:49:56.880461 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T14:13:52.943406 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:13:52.947561 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:13:52.947681 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T14:13:52.956664 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:13:52.964881 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T14:13:55.085360 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:13:55.087071 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:13:55.090588 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:13:55.091677 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:13:55.095734 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:14:05.569943 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:14:05.571381 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:14:05.573655 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:14:05.576811 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:14:05.578516 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:15:21.024883 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:15:21.026372 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:15:21.029318 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:15:21.035009 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:15:21.038188 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:15:21.040384 #9715] DEBUG -- : [d] view reptileInfo id=#<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "爬虫類倶楽部", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "<div id=\"insta-window\" class=\"iswd-base\" data-iswd...", created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 03:50:58">
+D, [2020-08-12T14:15:35.520954 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:15:35.522124 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:15:35.522198 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T14:15:35.522818 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:15:35.526287 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T14:15:41.480326 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:15:41.481944 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:15:41.484912 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:15:41.485739 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:15:41.487193 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:15:41.490242 #9715] DEBUG -- : [d] view reptileInfo id=#<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "爬虫類倶楽部", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "<div id=\"insta-window\" class=\"iswd-base\" data-iswd...", created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 03:50:58">
+D, [2020-08-12T14:17:58.442401 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:17:58.446431 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:17:58.446609 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T14:17:58.448645 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:17:58.454377 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T14:18:06.637230 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:18:06.639425 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:18:06.639632 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T14:18:06.640918 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:18:06.648897 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T14:36:07.489249 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:36:07.492066 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:36:07.495627 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:36:07.504950 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:36:07.509253 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:36:07.513215 #9715] DEBUG -- : [d] view reptileInfo reptile=#<User id: 2, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", shop_image: nil, address: "爬虫類倶楽部", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: "<div id=\"insta-window\" class=\"iswd-base\" data-iswd...", created_at: "2020-08-11 17:18:25", updated_at: "2020-08-12 03:50:58">
+D, [2020-08-12T14:39:30.949050 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:39:30.980800 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:39:30.980992 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T14:39:30.981793 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:39:30.987289 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T14:39:35.309788 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:39:35.311396 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:39:35.319425 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:39:35.320333 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:39:35.321680 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:39:35.348409 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T14:39:57.716654 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:39:57.717878 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:39:57.720113 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:39:57.726688 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:39:57.728245 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:39:57.729558 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T14:40:08.124116 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:40:08.125842 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:40:08.128426 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:40:08.132644 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:40:08.134430 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:40:08.135765 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T14:40:21.846850 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:40:21.848692 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:40:21.851908 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:40:21.857450 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:40:21.859434 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:40:21.860961 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T14:40:31.118929 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:40:31.121592 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:40:31.124996 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = lizard
+D, [2020-08-12T14:40:31.125887 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:40:31.127226 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:40:32.192788 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T14:40:32.195777 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T14:40:32.199225 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T14:40:32.201379 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T14:40:32.203016 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T14:40:32.229690 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T15:00:14.728188 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:00:14.730153 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:00:14.732945 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T15:00:14.744069 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:00:14.748093 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:00:14.751173 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T15:00:36.457338 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:00:36.459816 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:00:36.462267 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T15:00:36.467552 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:00:36.470245 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:00:36.472190 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T15:03:16.212917 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:03:16.215432 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:03:16.218699 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = lizard
+D, [2020-08-12T15:03:16.219628 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:03:16.221768 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:03:17.807104 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:03:17.809502 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:03:17.811460 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = lizard
+D, [2020-08-12T15:03:17.812178 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:03:17.813074 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:03:21.543151 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:03:21.544380 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:03:21.546435 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T15:03:21.547272 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:03:21.548563 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:03:21.550998 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T15:03:24.022978 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:03:24.024584 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:03:24.027480 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = lizard
+D, [2020-08-12T15:03:24.028359 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:03:24.030463 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:03:25.094828 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:03:25.096855 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:03:25.099901 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = turtle
+D, [2020-08-12T15:03:25.100886 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:03:25.102799 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:03:26.878243 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:03:26.880188 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:03:26.883311 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T15:03:26.884401 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:03:26.885570 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:03:26.887613 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T15:08:21.464384 #9715] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:08:21.464922 #9715] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, aname: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:08:21.480569 #9715] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:08:26.763889 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:08:26.766063 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:08:26.768619 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T15:08:26.769402 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:08:26.770643 #9715] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:08:26.772998 #9715] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "snake", type2: "雑種", aname: "ボールパイソン", sex: "man", size: "100cm", max: "120cm", area: "America", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 2, created_at: "2020-08-11 17:18:25", updated_at: "2020-08-11 17:18:25">
+D, [2020-08-12T15:08:31.702757 #9715] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:08:31.703134 #9715] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, aname: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:08:31.707334 #9715] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:18:01.011930 #9715] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:18:01.012480 #9715] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, aname: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:18:01.021594 #9715] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:18:39.734950 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:18:39.737790 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:18:39.737936 #9715] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:18:39.744871 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:18:39.750668 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:18:42.184099 #9715] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:18:42.184436 #9715] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, aname: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:18:42.188503 #9715] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:27:43.109517 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T15:27:58.985670 #11703] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T15:28:06.088714 #11703] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-12 06:27:25", updated_at: "2020-08-12 06:28:06">
+D, [2020-08-12T15:28:06.088790 #11703] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T15:28:06.107231 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:28:06.108589 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:28:06.108640 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:28:06.111647 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:28:06.116439 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:28:06.132786 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T15:28:20.816474 #11703] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T15:28:20.825174 #11703] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T15:28:20.827688 #11703] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T15:28:31.765925 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:28:31.767361 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:28:31.779127 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T15:28:31.779770 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:28:31.782032 #11703] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T15:28:36.971340 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:28:36.986386 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:28:36.994880 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:29:55.551316 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:29:55.553201 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:29:55.553307 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:29:55.554162 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:29:55.559179 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:30:53.959332 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:30:53.959776 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:30:53.963486 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:33:54.009213 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:33:54.009465 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:33:54.017366 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:45:29.327672 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:45:29.329824 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:45:29.329923 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:45:29.337546 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:45:29.344140 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:45:30.474146 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:45:30.474525 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:45:30.478322 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:45:32.483902 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:45:32.485514 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:45:32.485637 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:45:32.486542 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:45:32.490754 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:45:35.267034 #11703] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T15:45:35.275729 #11703] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T15:45:35.277743 #11703] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T15:45:42.340095 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:45:42.341552 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:45:42.341666 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:45:42.342563 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:45:42.348529 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:45:43.378074 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T15:45:43.378461 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T15:45:43.382033 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T15:45:44.534124 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T15:45:44.535988 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T15:45:44.536129 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T15:45:44.537475 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T15:45:44.542067 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T15:45:45.927578 #11703] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T15:45:45.929257 #11703] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T15:45:45.929849 #11703] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T16:03:35.298262 #11703] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T16:03:35.301091 #11703] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T16:03:35.303012 #11703] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T16:16:45.385425 #11703] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T16:16:45.387447 #11703] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T16:16:45.387780 #11703] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T16:16:50.389557 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T16:16:50.392418 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T16:16:50.392525 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T16:16:50.393422 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T16:16:50.397537 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T16:16:53.031970 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:16:53.032232 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:16:53.035251 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:17:19.536982 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:17:19.550511 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:17:19.603979 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:47:08.715583 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:47:08.716123 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:47:08.728756 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:50:51.265851 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:50:51.266468 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:50:51.274072 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:51:05.136301 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:51:05.136520 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:51:05.147067 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:51:18.394146 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T16:51:18.396217 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T16:51:18.396302 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T16:51:18.403381 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T16:51:18.410708 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T16:51:20.207241 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T16:51:20.209992 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T16:51:20.213492 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T16:51:20.214533 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T16:51:20.218027 #11703] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T16:51:21.442115 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:51:21.442713 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:51:21.446238 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:51:44.659103 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:51:44.659333 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:51:44.667151 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:52:57.394126 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:52:57.394736 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:52:57.407251 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:54:10.390184 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:54:10.390409 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:54:10.400267 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:55:35.277154 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:55:35.277815 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:55:35.288964 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T16:58:45.282913 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:58:45.283541 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:59:03.172840 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T16:59:03.173170 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T16:59:03.182332 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T17:00:13.580612 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T17:00:13.581258 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T17:00:13.590655 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T17:00:37.840993 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T17:00:37.841270 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T17:00:37.848710 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T17:01:45.769112 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T17:01:45.772278 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: "#<ActionDispatch::Http::UploadedFile:0x00007ffda62...", type1: nil, type2: nil, sex: nil, size: "100cm", max: "120cm", area: "米国", description: "おとなしい", price: 10000, sales_status: "入荷待ち", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T17:01:45.802363 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:01:45.804272 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:01:45.804392 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:01:45.810537 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:01:45.814980 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:01:45.834458 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T17:01:53.855589 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:01:53.857473 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:01:53.859392 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T17:01:53.859898 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:01:53.863099 #11703] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T17:01:57.747293 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:01:57.748689 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:01:57.750767 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = snake
+D, [2020-08-12T17:01:57.751266 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:01:57.752116 #11703] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T17:02:39.228581 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T17:02:39.229329 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T17:02:39.234475 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T17:06:37.036480 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:06:37.038881 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:06:37.039137 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:06:37.040154 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:06:37.044388 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:10:52.426517 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:10:52.428506 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:10:52.428595 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:10:52.433689 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:10:52.438110 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:12:12.475985 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:12:12.477412 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:12:12.477518 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:12:12.483260 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:12:12.486508 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:19:01.786612 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:19:05.001780 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:19:15.710733 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:19:19.250531 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:19:19.251945 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:19:19.252074 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:19:19.256941 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:19:19.263451 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:19:21.364674 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:19:21.366490 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:19:21.366621 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:19:21.367587 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:19:21.372299 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:38:16.413831 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:38:16.417368 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:38:16.417553 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:38:16.424213 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:38:16.429281 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:43:04.719836 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:43:04.721705 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:43:04.721816 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:43:04.728632 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:44:22.199144 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:44:22.200605 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:44:22.200659 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:44:22.204824 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:44:22.210577 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:50:14.584660 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:50:14.587556 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:50:14.587680 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:50:14.592451 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:50:14.598035 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:50:40.370565 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:50:40.372931 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:50:40.373062 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:50:40.378165 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:50:40.382601 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:50:52.634711 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:50:52.635851 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:50:52.635910 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:50:52.639086 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:50:52.644105 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:51:30.731187 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:52:56.174567 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:52:56.176561 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:52:56.176750 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:52:56.183760 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:52:56.190113 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:55:43.965251 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:55:43.967533 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:55:43.967607 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:55:43.972212 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:55:43.976484 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:55:52.578553 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:56:04.145449 #11703] DEBUG -- : [d] Users_Ctrl: index id: sign_out
+D, [2020-08-12T17:56:07.611142 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:56:12.368496 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T17:56:12.370257 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T17:56:12.370435 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T17:56:12.371334 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T17:56:12.374512 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T17:56:14.322178 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:56:20.969109 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:57:18.104264 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:57:25.073536 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:58:14.775929 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T17:58:21.258255 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:00:36.823515 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:00:42.546564 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:00:42.560738 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:00:52.815816 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:00:52.830640 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:01:23.786548 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:01:23.804166 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:02:46.993319 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:02:47.018299 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:03:18.702571 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:03:24.554000 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:03:26.699044 #11703] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T18:03:28.604840 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:03:30.306304 #11703] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T18:03:35.703024 #11703] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T18:03:35.703089 #11703] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T18:03:35.703129 #11703] DEBUG -- : [d] user.rb
+D, [2020-08-12T18:03:35.970667 #11703] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMD7CW2NZq_Z3vpfhKd1GI1qnRyiJDzMqRsjR8_...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 09:03:35", updated_at: "2020-08-12 09:03:35">
+D, [2020-08-12T18:03:35.970718 #11703] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T18:03:35.977315 #11703] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMD7CW2NZq_Z3vpfhKd1GI1qnRyiJDzMqRsjR8_...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 09:03:35", updated_at: "2020-08-12 09:03:35">
+D, [2020-08-12T18:03:35.977372 #11703] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T18:03:35.990344 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:03:35.992202 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:03:35.992303 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:03:35.995735 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:03:35.999825 #11703] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:03:36.016931 #11703] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T18:03:40.238979 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:03:40.240772 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:03:40.243429 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T18:03:40.244408 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:03:40.247499 #11703] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T18:03:42.914142 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:03:42.928616 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:03:54.295307 #11703] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T18:04:02.145259 #11703] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-12 06:27:25", updated_at: "2020-08-12 09:04:02">
+D, [2020-08-12T18:04:02.145362 #11703] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T18:04:02.161219 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:04:02.162896 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:04:02.162971 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:04:02.163635 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:04:02.165673 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T18:04:02.181447 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:04:15.112917 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:04:18.641693 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T18:04:18.642026 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T18:04:18.655599 #11703] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T18:04:21.700077 #11703] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:04:21.701541 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:04:21.701660 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:04:21.702656 #11703] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:04:21.771806 #11703] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T18:04:24.986887 #11703] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T18:04:24.995688 #11703] DEBUG -- : [d] view: ユーザー情報の変更 id=2
+D, [2020-08-12T18:04:24.998668 #11703] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T18:04:30.521249 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:04:30.539124 #11703] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:04:41.204845 #11703] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T18:04:54.009310 #11703] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T18:04:54.009364 #11703] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T18:04:54.009395 #11703] DEBUG -- : [d] user.rb
+D, [2020-08-12T18:04:54.011144 #11703] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMD7CW2NZq_Z3vpfhKd1GI1qnRyiJDzMqRsjR8_...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 09:03:35", updated_at: "2020-08-12 09:03:35">
+D, [2020-08-12T18:04:54.011189 #11703] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T18:04:54.019089 #11703] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMD7CW2NZq_Z3vpfhKd1GI1qnRyiJDzMqRsjR8_...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 09:03:35", updated_at: "2020-08-12 09:04:54">
+D, [2020-08-12T18:04:54.019176 #11703] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T18:04:54.031213 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:04:54.032528 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:04:54.032583 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:04:54.033030 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:04:54.035731 #11703] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:04:54.049335 #11703] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T18:05:04.032131 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:05:58.357366 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:05:59.356526 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:06:02.903522 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:06:02.905450 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:06:02.905575 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:06:02.906615 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:06:02.909874 #11703] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:06:21.978843 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:06:21.980906 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:06:21.983921 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T18:06:21.984711 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:06:21.986477 #11703] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T18:06:27.702895 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:06:27.704898 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:06:27.707464 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T18:06:27.708120 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:06:27.709054 #11703] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T18:06:35.066599 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:06:35.068359 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:06:35.071652 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T18:06:35.072452 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:06:35.073931 #11703] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T18:06:37.402454 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:06:37.404130 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:06:37.404220 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:06:37.404967 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:06:37.410066 #11703] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:06:42.214994 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:07:32.850946 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:07:49.336065 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:08:42.356454 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:12:50.090216 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:13:20.639552 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:14:28.571890 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:14:58.537122 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:16:01.631548 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:16:12.590932 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:16:17.359548 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:16:47.009337 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:16:47.011208 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:16:47.011317 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:16:47.018413 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:16:47.025332 #11703] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:17:36.076773 #11703] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:19:28.998490 #11703] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:19:29.000407 #11703] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:19:29.000508 #11703] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:19:29.001292 #11703] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:19:29.005930 #11703] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:19:34.839032 #11703] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T18:19:34.839407 #11703] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T18:19:34.848367 #11703] DEBUG -- : [d] view: reptiles/new id=3
+D, [2020-08-12T18:30:06.785704 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:30:08.677876 #13393] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:30:08.680419 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:30:08.680536 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:30:08.685698 #13393] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:30:08.692878 #13393] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:30:11.407619 #13393] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T18:30:11.419462 #13393] DEBUG -- : [d] view: ユーザー情報の変更 id=3
+D, [2020-08-12T18:30:11.422595 #13393] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T18:30:16.583382 #13393] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = destroy
+D, [2020-08-12T18:30:16.586212 #13393] DEBUG -- : [d] view: ユーザー情報の変更 id=3
+D, [2020-08-12T18:30:19.737057 #13393] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T18:30:19.738340 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:30:19.738429 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:30:19.739161 #13393] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T18:30:19.742239 #13393] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T18:30:22.933199 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:30:22.949828 #13393] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:30:25.911608 #13393] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T18:30:25.912287 #13393] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T18:30:25.937440 #13393] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T18:31:11.557321 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:31:16.066779 #13393] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T18:31:16.067516 #13393] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T18:31:16.092823 #13393] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T18:31:19.511975 #13393] DEBUG -- : [d] OmniauthCallbacks_Ctrl: facebook
+D, [2020-08-12T18:31:19.512037 #13393] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = facebook
+D, [2020-08-12T18:31:19.512070 #13393] DEBUG -- : [d] user.rb
+D, [2020-08-12T18:31:19.779739 #13393] DEBUG -- : @user = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAGXxFqBXlQad1B4se0EvD7ZAfUg0cOmssSAnR...", provider: "facebook", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 09:31:19", updated_at: "2020-08-12 09:31:19">
+D, [2020-08-12T18:31:19.779796 #13393] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T18:31:19.786899 #13393] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAGXxFqBXlQad1B4se0EvD7ZAfUg0cOmssSAnR...", provider: "facebook", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 09:31:19", updated_at: "2020-08-12 09:31:19">
+D, [2020-08-12T18:31:19.786989 #13393] DEBUG -- : [d] Application_Ctrl: resource.id = 4
+D, [2020-08-12T18:31:19.797455 #13393] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T18:31:19.798437 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:31:19.798477 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:31:19.798880 #13393] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T18:31:19.801549 #13393] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T18:31:19.815133 #13393] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T18:35:21.205437 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:36:19.601415 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:36:35.398581 #13393] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T18:36:35.400023 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:36:35.400142 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:36:35.401096 #13393] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T18:36:35.405430 #13393] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T18:44:30.209142 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:44:34.212589 #13393] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T18:44:34.214889 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:44:34.215087 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:44:34.221866 #13393] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T18:44:34.227857 #13393] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T18:44:47.996406 #13393] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T18:44:47.997771 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:44:47.997863 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:44:47.998619 #13393] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T18:44:48.002080 #13393] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T18:45:07.065464 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:45:09.584135 #13393] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T18:45:09.586277 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:45:09.586398 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:45:09.587065 #13393] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T18:45:09.591325 #13393] DEBUG -- : [d] view: userinfo id=4
+D, [2020-08-12T18:47:37.234759 #13393] DEBUG -- : [d] Users_Ctrl: index id: 4
+D, [2020-08-12T18:47:37.236966 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:47:37.262529 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T18:47:37.263318 #13393] DEBUG -- : [d] view: users/index id=4
+D, [2020-08-12T18:47:37.267432 #13393] DEBUG -- : [d] view reptileInfo id=4
+D, [2020-08-12T18:47:38.857150 #13393] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:47:38.873901 #13393] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:47:41.318187 #13393] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T18:47:46.776659 #13393] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-12 06:27:25", updated_at: "2020-08-12 09:47:46">
+D, [2020-08-12T18:47:46.776739 #13393] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T18:47:46.798535 #13393] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:47:46.799510 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:47:46.799557 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:47:46.799961 #13393] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:47:46.801987 #13393] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T18:47:46.836840 #13393] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:47:50.563595 #13393] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:47:50.565768 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:47:50.568158 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T18:47:50.568877 #13393] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:47:50.570148 #13393] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T18:48:17.234256 #13393] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T18:48:17.281582 #13393] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: nil, max: nil, area: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T18:48:17.295939 #13393] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T18:48:38.003677 #13393] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T18:48:38.006597 #13393] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, size: "1111", max: "", area: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T18:48:38.032794 #13393] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:48:38.033809 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:48:38.033864 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:48:38.034330 #13393] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:48:38.037158 #13393] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T18:48:38.052554 #13393] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:48:42.101433 #13393] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:48:42.104195 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:48:42.106821 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T18:48:42.107556 #13393] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:48:42.108616 #13393] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T18:48:44.807180 #13393] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:48:44.808556 #13393] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:48:44.811019 #13393] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T18:48:44.811612 #13393] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:48:44.812739 #13393] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T18:57:21.666471 #13738] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T18:57:24.854130 #13738] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T18:57:30.699990 #13738] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-12 09:55:15", updated_at: "2020-08-12 09:57:30">
+D, [2020-08-12T18:57:30.700075 #13738] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T18:57:30.731821 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:57:30.734191 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:57:30.734256 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:57:30.739010 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:57:30.743910 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T18:57:30.767109 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:57:46.351576 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T18:57:46.374297 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T18:57:46.383257 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T18:57:56.303344 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T18:57:56.308731 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T18:57:56.354704 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:57:56.356747 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:57:56.356813 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T18:57:56.357432 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:57:56.359857 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T18:57:56.377445 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T18:58:00.371696 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:58:00.373881 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:58:00.377266 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T18:58:00.378199 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:58:00.382210 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T18:58:49.407411 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T18:58:49.409168 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T18:58:49.412364 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T18:58:49.413643 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T18:58:49.415299 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:00:13.931835 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:00:13.933551 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:00:13.935690 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = トカゲ
+D, [2020-08-12T19:00:13.939846 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:00:13.942914 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:00:24.690009 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:00:24.691813 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:00:24.694387 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:00:24.694910 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:00:24.696052 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:02:29.163506 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:02:29.299997 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:02:29.300686 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:02:29.304093 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:02:29.314300 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:02:35.786229 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:02:35.929461 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:02:35.934383 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fbe258d3ea8>
+D, [2020-08-12T19:02:35.934978 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:02:35.936134 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:02:35.937692 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:03:19.227420 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:03:19.249482 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:03:19.262481 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T19:04:41.609366 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:04:41.648202 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:04:41.648336 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:04:41.649262 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:04:41.651884 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:04:42.362510 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:04:42.389492 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:04:42.440117 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T19:04:54.509157 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:04:54.511620 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "", type2: "ボールパイソン", sex: nil, age: "", size: "100cm", weight: "", description: "", price: 10000, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:04:54.542207 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:04:54.543660 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:04:54.543727 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:04:54.544340 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:04:54.547071 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:04:54.601156 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:04:57.959311 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:04:57.960943 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:04:57.963979 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fbe261f87e0>
+D, [2020-08-12T19:04:57.964051 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:04:57.964628 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:04:57.965618 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:08:12.155858 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:08:12.156344 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:08:12.168915 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T19:08:18.286716 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:08:18.288959 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "", type2: "ddddd", sex: nil, age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:08:18.309305 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:08:18.310944 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:08:18.311022 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:08:18.315509 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:08:18.320507 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:08:18.335576 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:08:21.848790 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:08:21.850991 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:08:21.855030 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fbe1967fb40>
+D, [2020-08-12T19:08:21.855147 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:08:21.856142 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:08:21.859535 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:13:46.342054 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:13:46.343235 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:13:46.344643 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fbe20226948>
+D, [2020-08-12T19:13:46.344688 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:13:46.350007 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:13:46.351483 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:13:51.296601 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:13:51.296869 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:13:51.304498 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T19:13:59.169282 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:13:59.172422 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "", type2: "ボールパイソンsssssssssssss", sex: nil, age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:13:59.191470 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:13:59.192524 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:13:59.192583 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:13:59.193021 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:13:59.198955 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:13:59.217789 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:14:02.722452 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:14:02.724018 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:14:02.726444 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fbe2634abe8>
+D, [2020-08-12T19:14:02.726547 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:14:02.727575 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:14:02.728824 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:16:36.014624 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:16:36.015030 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:16:36.021457 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T19:16:42.026096 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:16:42.029936 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "1", type2: "ｄｄｄｄｄ", sex: nil, age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:16:42.138008 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:16:42.139238 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:16:42.139306 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:16:42.140048 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:16:42.143531 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:16:42.165075 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:34:43.565290 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:34:43.567324 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:34:43.567395 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:34:43.575856 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:34:43.581778 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:34:47.595032 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:34:47.595386 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:34:47.603525 #13738] DEBUG -- : [d] view: reptiles/new id=2
+D, [2020-08-12T19:34:58.092688 #13738] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:34:58.095538 #13738] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "", type2: "あああああああああああああ", sex: nil, age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 2, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:34:58.115031 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:34:58.116820 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:34:58.116940 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:34:58.118645 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:34:58.122024 #13738] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:34:58.140512 #13738] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:35:12.040776 #13738] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:35:12.042486 #13738] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:35:12.044337 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fbe1e924530>
+D, [2020-08-12T19:35:12.044453 #13738] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:35:12.045040 #13738] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:35:12.047829 #13738] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:36:40.041275 #14323] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T19:36:41.507756 #14323] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T19:36:44.840495 #14323] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T19:36:44.842874 #14323] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T19:36:44.858925 #14323] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T19:36:54.562756 #14323] DEBUG -- : [d] Registrations_Ctrl: action: create
+D, [2020-08-12T19:36:54.836384 #14323] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 1, email: "sample@email.com", name: "", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 10:36:54", updated_at: "2020-08-12 10:36:54">
+D, [2020-08-12T19:36:54.836568 #14323] DEBUG -- : [d] Application_Ctrl: resource.id = 1
+D, [2020-08-12T19:36:54.842339 #14323] DEBUG -- : [d] Registrations_Ctrl: action: create id:1
+D, [2020-08-12T19:36:54.862071 #14323] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:36:54.863580 #14323] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:36:54.863633 #14323] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:36:54.866872 #14323] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:36:54.871745 #14323] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:36:54.886664 #14323] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:36:59.923239 #14323] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:36:59.925169 #14323] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:36:59.933881 #14323] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fb97a474d08>
+D, [2020-08-12T19:36:59.933998 #14323] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:36:59.935009 #14323] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:36:59.938050 #14323] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T19:37:01.128487 #14323] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:37:01.143419 #14323] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:37:01.152624 #14323] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T19:37:15.802596 #14323] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:37:15.805428 #14323] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "", type2: "iiiiiiiiiiiiiiiiiii", sex: nil, age: "24", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:37:15.828058 #14323] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:37:15.829147 #14323] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:37:15.829208 #14323] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:37:15.829689 #14323] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:37:15.832722 #14323] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:37:15.846932 #14323] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:41:37.601351 #14541] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T19:41:39.016223 #14541] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T19:41:45.657511 #14541] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T19:41:45.674174 #14541] DEBUG -- : [d] flash[:alert]
+D, [2020-08-12T19:41:59.696913 #14541] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T19:41:59.722004 #14541] DEBUG -- : [d] flash[:alert]
+D, [2020-08-12T19:43:28.327784 #14690] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T19:43:35.526615 #14690] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 2, shop_image: nil, email: "sample@email.com", name: "はぁちゅう", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: false, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３", howto_access: "中野駅から徒歩5分 ⬇︎", tel: "03-3227-5122", business_hours: "13時〜20時", holiday: "木曜日", url: "http://www.hachikura.com/", handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ", handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/...", feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.7...", twitter: "https://twitter.com/89_nakano", facebook: nil, instagram: nil, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:43:35">
+D, [2020-08-12T19:43:35.526700 #14690] DEBUG -- : [d] Application_Ctrl: resource.id = 2
+D, [2020-08-12T19:43:35.545811 #14690] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:43:35.548273 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:43:35.548525 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:43:35.552960 #14690] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:43:35.587521 #14690] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T19:43:35.605354 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:43:40.344056 #14690] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T19:43:40.345627 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:43:40.353239 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11cdf0660>
+D, [2020-08-12T19:43:40.353388 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:43:40.354451 #14690] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T19:43:40.357651 #14690] DEBUG -- : [d] view reptileInfo id=2
+D, [2020-08-12T19:44:46.850053 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T19:44:46.864783 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:44:51.171045 #14690] DEBUG -- : [d] view: ログイン画面
+D, [2020-08-12T19:45:02.081230 #14690] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 1, shop_image: nil, email: "admin@email.com", name: "Admin", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: true, shop_name: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:45:02">
+D, [2020-08-12T19:45:02.081323 #14690] DEBUG -- : [d] Application_Ctrl: resource.id = 1
+D, [2020-08-12T19:45:02.094207 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:45:02.096547 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:45:02.096633 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:45:02.097435 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:45:02.102345 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:45:02.129723 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:45:09.032429 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:45:09.033838 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:45:09.035537 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11c8670e0>
+D, [2020-08-12T19:45:09.035639 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:45:09.036217 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:45:09.037897 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T19:45:09.054810 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "ヘビ", type2: "雑種", sex: "man", age: "24", size: "100cm", weight: "10kg", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 1, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:43:15">
+D, [2020-08-12T19:46:28.968332 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:46:28.970196 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:46:28.972573 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11cd01ab0>
+D, [2020-08-12T19:46:28.972696 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T19:46:28.976595 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:46:28.978931 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T19:46:28.980463 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "ヘビ", type2: "雑種", sex: "man", age: "24", size: "100cm", weight: "10kg", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 1, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:43:15">
+D, [2020-08-12T19:46:41.153033 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:46:41.153390 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:46:41.163379 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T19:47:09.226407 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T19:47:09.228541 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: "3", type2: "陸亀", sex: nil, age: "34", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:47:09.253694 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:47:09.255820 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:47:09.255978 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:47:09.256901 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:47:09.260754 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:47:09.280129 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T19:48:16.080641 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:48:16.081066 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:48:16.084852 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T19:51:07.458799 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:51:07.461380 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:51:07.461498 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:51:07.478419 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:51:07.487773 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:51:08.539620 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:51:08.539951 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:51:08.549366 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T19:52:33.138207 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:52:33.139817 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:52:33.139909 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:52:33.144289 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:52:46.447240 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:52:46.448457 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:52:46.448539 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:52:46.453550 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:52:46.458649 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:52:49.598753 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:52:49.599027 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:52:49.610281 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T19:59:43.964596 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T19:59:46.502886 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T19:59:46.505391 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T19:59:46.505533 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T19:59:46.511956 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T19:59:46.518406 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T19:59:47.758859 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T19:59:47.778700 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T19:59:47.789677 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:00:12.220652 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T20:00:12.221527 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile1: #<Reptile id: nil, image: nil, type1: "2", type2: "ああああああああああああああ", sex: nil, age: "", size: "", weight: "ああああ", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:00:12.224656 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile2: #<Reptile id: nil, image: nil, type1: "2", type2: "ああああああああああああああ", sex: nil, age: "", size: "", weight: "ああああ", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:00:12.241205 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:00:12.243263 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:00:12.243438 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:00:12.244358 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:00:12.246796 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:00:12.263563 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:00:47.588493 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T20:00:47.589143 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:00:47.592534 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:02:37.365684 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:02:37.367693 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:02:37.367805 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:02:37.403768 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:02:37.448567 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:02:39.147806 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T20:02:39.148073 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:02:39.157395 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:02:49.438264 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T20:02:49.438828 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile1: #<Reptile id: nil, image: nil, type1: "1", type2: "ボールパイソン", sex: nil, age: "24", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:02:49.440835 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile2: #<Reptile id: nil, image: nil, type1: "1", type2: "ボールパイソン", sex: nil, age: "24", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:02:49.458340 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:02:49.459353 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:02:49.459402 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:02:49.459839 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:02:49.461870 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:02:49.476770 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:04:23.246808 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T20:04:23.247145 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:04:23.259300 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:04:24.924852 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:04:24.926672 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:04:24.926771 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:04:24.932136 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:04:24.941065 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:04:25.839281 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T20:04:25.839625 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:04:25.843455 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:04:32.372144 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T20:04:32.372848 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile1: #<Reptile id: nil, image: nil, type1: "ヘビ", type2: "ボールパイソン", sex: "1", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:04:32.375613 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile2: #<Reptile id: nil, image: nil, type1: "ヘビ", type2: "ボールパイソン", sex: "1", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:04:32.391277 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:04:32.393331 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:04:32.393424 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:04:32.394112 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:04:32.397998 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:04:32.422984 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:07:59.412645 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:07:59.414402 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:07:59.414530 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:07:59.421346 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:07:59.428810 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:08:01.733616 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:08:01.735124 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:08:01.735229 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:08:01.736176 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:08:01.740926 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:08:04.707113 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T20:08:04.707373 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:08:04.715730 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:08:20.020739 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T20:08:20.021350 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile1: #<Reptile id: nil, image: nil, type1: "ヘビ", type2: "プログラミング", sex: "メス", age: "47", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:08:20.023150 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile2: #<Reptile id: nil, image: nil, type1: "ヘビ", type2: "プログラミング", sex: "メス", age: "47", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:08:20.040878 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:08:20.041906 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:08:20.041956 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:08:20.042370 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:08:20.044863 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:08:20.059820 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:10:15.659045 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:10:15.660972 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:10:15.664151 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11caafc80>
+D, [2020-08-12T20:10:15.664261 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T20:10:15.665066 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:10:15.667952 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:10:15.671050 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "ヘビ", type2: "雑種", sex: "man", age: "24", size: "100cm", weight: "10kg", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 1, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:43:15">
+D, [2020-08-12T20:10:15.671759 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 5, image: nil, type1: "ヘビ", type2: "ボールパイソン", sex: "1", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:04:32", updated_at: "2020-08-12 11:04:32">
+D, [2020-08-12T20:10:15.672528 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 6, image: nil, type1: "ヘビ", type2: "プログラミング", sex: "メス", age: "47", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:08:20", updated_at: "2020-08-12 11:08:20">
+D, [2020-08-12T20:10:53.028503 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: new
+D, [2020-08-12T20:10:53.028838 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile: #<Reptile id: nil, image: nil, type1: nil, type2: nil, sex: nil, age: nil, size: nil, weight: nil, description: nil, price: nil, sales_status: nil, arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:10:53.032951 #14690] DEBUG -- : [d] view: reptiles/new id=1
+D, [2020-08-12T20:11:07.331892 #14690] DEBUG -- : [d] Reptiles_Ctrl: action: create
+D, [2020-08-12T20:11:07.332508 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile1: #<Reptile id: nil, image: nil, type1: "カメ", type2: "亀仙人", sex: "不明", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: nil, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:11:07.335179 #14690] DEBUG -- : [d] Reptiles_Ctrl: @reptile2: #<Reptile id: nil, image: nil, type1: "カメ", type2: "亀仙人", sex: "不明", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: nil, updated_at: nil>
+D, [2020-08-12T20:11:07.355586 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:07.357620 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:07.357733 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:11:07.358643 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:07.361760 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:11:07.384690 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:11:10.668181 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:10.669554 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:10.671872 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11cf3b010>
+D, [2020-08-12T20:11:10.671944 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T20:11:10.672430 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:10.673390 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:11:10.675380 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 7, image: nil, type1: "カメ", type2: "亀仙人", sex: "不明", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:11:07", updated_at: "2020-08-12 11:11:07">
+D, [2020-08-12T20:11:17.422098 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:17.423795 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:17.426240 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11cd72cb0>
+D, [2020-08-12T20:11:17.426314 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T20:11:17.426812 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:17.427546 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:11:17.429389 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "ヘビ", type2: "雑種", sex: "man", age: "24", size: "100cm", weight: "10kg", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 1, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:43:15">
+D, [2020-08-12T20:11:17.429975 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 5, image: nil, type1: "ヘビ", type2: "ボールパイソン", sex: "1", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:04:32", updated_at: "2020-08-12 11:04:32">
+D, [2020-08-12T20:11:17.430419 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 6, image: nil, type1: "ヘビ", type2: "プログラミング", sex: "メス", age: "47", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:08:20", updated_at: "2020-08-12 11:08:20">
+D, [2020-08-12T20:11:20.954034 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:20.955537 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:20.957519 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11c92c2f0>
+D, [2020-08-12T20:11:20.957594 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T20:11:20.958376 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:20.959536 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:11:20.962325 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 1, image: "", type1: "ヘビ", type2: "雑種", sex: "man", age: "24", size: "100cm", weight: "10kg", description: "せつめい", price: 10000, sales_status: "販売中", arrival_day: nil, user_id: 1, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:43:15">
+D, [2020-08-12T20:11:20.962891 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 5, image: nil, type1: "ヘビ", type2: "ボールパイソン", sex: "1", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:04:32", updated_at: "2020-08-12 11:04:32">
+D, [2020-08-12T20:11:20.963459 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 6, image: nil, type1: "ヘビ", type2: "プログラミング", sex: "メス", age: "47", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:08:20", updated_at: "2020-08-12 11:08:20">
+D, [2020-08-12T20:11:22.676514 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:22.678314 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:22.681069 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe116839970>
+D, [2020-08-12T20:11:22.681169 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T20:11:22.681870 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:22.682909 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:11:22.685135 #14690] DEBUG -- : [d] view reptileInfo reptile=#<Reptile id: 7, image: nil, type1: "カメ", type2: "亀仙人", sex: "不明", age: "", size: "", weight: "", description: "", price: nil, sales_status: "", arrival_day: nil, user_id: 1, created_at: "2020-08-12 11:11:07", updated_at: "2020-08-12 11:11:07">
+D, [2020-08-12T20:11:24.661656 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:24.663026 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:24.665063 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11cf7dd70>
+D, [2020-08-12T20:11:24.665138 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = トカゲ
+D, [2020-08-12T20:11:24.665652 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:24.666647 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:11:26.791163 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:11:26.792620 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:11:26.794734 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11403e8a8>
+D, [2020-08-12T20:11:26.794814 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = トカゲ
+D, [2020-08-12T20:11:26.795548 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:11:26.796830 #14690] DEBUG -- : [d] view reptileInfo id=1
+D, [2020-08-12T20:11:37.016288 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T20:11:41.616789 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T20:12:27.933518 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:12:27.935599 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:12:27.935795 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:12:27.936739 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:12:27.941406 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:12:29.885101 #14690] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T20:12:29.895309 #14690] DEBUG -- : [d] view: ユーザー情報の変更 id=1
+D, [2020-08-12T20:12:29.897307 #14690] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T20:12:39.728115 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update id:1
+D, [2020-08-12T20:12:39.729712 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T20:12:39.730556 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 1, email: "admin@email.com", name: "Admin", image: nil, password: nil, uid: nil, token: nil, provider: nil, admin: true, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 10:43:15", updated_at: "2020-08-12 10:45:02">
+D, [2020-08-12T20:12:39.730674 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"admin@email.com", "shop_name"=>"", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe11365df50 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-14690-lhbq0m.jpg>, @original_filename="shop_img03.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img03.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"", "howto_access"=>"", "tel"=>"", "business_hours"=>"", "holiday"=>"", "handling_animals"=>"", "handling_feeds"=>"", "handling_goods"=>"", "feature"=>"", "url"=>"", "twitter"=>"", "instagram"=>""}
+D, [2020-08-12T20:12:39.819281 #14690] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T20:12:39.831628 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 
+D, [2020-08-12T20:12:39.831715 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = 
+D, [2020-08-12T20:12:39.841479 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:12:39.842510 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:12:39.842557 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:12:39.843008 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:12:39.845559 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:12:39.860420 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:12:58.549119 #14690] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T20:12:58.549929 #14690] DEBUG -- : [d] view: ユーザー情報の変更 id=1
+D, [2020-08-12T20:12:58.550216 #14690] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T20:13:01.788677 #14690] DEBUG -- : [d] Users_Ctrl: index id: 1
+D, [2020-08-12T20:13:01.792846 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:13:01.792936 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:13:01.793854 #14690] DEBUG -- : [d] view: users/index id=1
+D, [2020-08-12T20:13:01.801747 #14690] DEBUG -- : [d] view: userinfo id=1
+D, [2020-08-12T20:13:03.424422 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T20:13:03.438124 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:13:05.556324 #14690] DEBUG -- : [d] view: 新規作成
+D, [2020-08-12T20:13:05.556997 #14690] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T20:13:05.582972 #14690] DEBUG -- : [d] Registrations_Ctrl: action: new
+D, [2020-08-12T20:13:12.818421 #14690] DEBUG -- : [d] OmniauthCallbacks_Ctrl: google_oauth2
+D, [2020-08-12T20:13:12.818498 #14690] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from ： provider = google_oauth2
+D, [2020-08-12T20:13:12.818562 #14690] DEBUG -- : [d] user.rb
+D, [2020-08-12T20:13:13.088622 #14690] DEBUG -- : @user = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMDJG3FyrpPN4TVmSY0lGozQ64klJqXC6Rfm3If...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 11:13:13", updated_at: "2020-08-12 11:13:13">
+D, [2020-08-12T20:13:13.088728 #14690] DEBUG -- : [d] OmniauthCallbacks_Ctrl: callback_from：if ok (@user.persisted?)
+D, [2020-08-12T20:13:13.095488 #14690] DEBUG -- : [d] Application_Ctrl: resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMDJG3FyrpPN4TVmSY0lGozQ64klJqXC6Rfm3If...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 11:13:13", updated_at: "2020-08-12 11:13:13">
+D, [2020-08-12T20:13:13.095546 #14690] DEBUG -- : [d] Application_Ctrl: resource.id = 3
+D, [2020-08-12T20:13:13.108483 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:13:13.110085 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:13:13.110235 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:13:13.111176 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:13:13.114020 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:13:13.129867 #14690] DEBUG -- : [d] flash[:success]
+D, [2020-08-12T20:13:16.317511 #14690] DEBUG -- : [d] Registrations_Ctrl: action: edit @edit_mode = info
+D, [2020-08-12T20:13:16.318297 #14690] DEBUG -- : [d] view: ユーザー情報の変更 id=3
+D, [2020-08-12T20:13:16.318728 #14690] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-12T20:13:35.443546 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update id:3
+D, [2020-08-12T20:13:35.444937 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update_resource (パスワードの確認を無効)
+D, [2020-08-12T20:13:35.445313 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc resource = #<User id: 3, email: "r2405.exe@gmail.com", name: "exe 2405", image: "https://lh3.googleusercontent.com/a-/AOh14GhQoJRZi...", password: nil, uid: "109946844009221672863", token: "ya29.a0AfH6SMDJG3FyrpPN4TVmSY0lGozQ64klJqXC6Rfm3If...", provider: "google_oauth2", admin: false, shop_name: nil, shop_image: nil, address: nil, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-12 11:13:13", updated_at: "2020-08-12 11:13:13">
+D, [2020-08-12T20:13:35.445377 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update_resourc params = {"email"=>"r2405.exe@gmail.com", "shop_name"=>"", "shop_image"=>#<ActionDispatch::Http::UploadedFile:0x00007fe11db86608 @tempfile=#<Tempfile:/var/folders/wn/s_4_h0ln18ggwvw0lkgrzf1h0000gn/T/RackMultipart20200812-14690-d8iccz.jpg>, @original_filename="shop_img01.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[shop_image]\"; filename=\"shop_img01.jpg\"\r\nContent-Type: image/jpeg\r\n">, "address"=>"", "howto_access"=>"", "tel"=>"", "business_hours"=>"", "holiday"=>"", "handling_animals"=>"", "handling_feeds"=>"", "handling_goods"=>"", "feature"=>"", "url"=>"", "twitter"=>"", "instagram"=>""}
+D, [2020-08-12T20:13:35.501259 #14690] DEBUG -- : [d] Registrations_Ctrl: action: after_update_path_for
+D, [2020-08-12T20:13:35.510912 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update ..address = 
+D, [2020-08-12T20:13:35.510981 #14690] DEBUG -- : [d] Registrations_Ctrl: action: update ..map_info = 
+D, [2020-08-12T20:13:35.522483 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:13:35.524037 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:13:35.524098 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:13:35.524573 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:13:35.527627 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:13:35.557362 #14690] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T20:14:10.717707 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:14:10.820674 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:14:10.820802 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:14:10.821846 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:14:10.825039 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:14:22.230577 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:14:22.232463 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:14:22.232584 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:14:22.233717 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:14:22.238991 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:16:03.789136 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:16:03.790562 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:16:03.790629 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:16:03.791227 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:16:03.793987 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:16:40.116200 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:16:40.117620 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:16:40.117736 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:16:40.118564 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:16:40.122388 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:18:08.931361 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:18:08.933185 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:18:08.933294 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:18:08.934151 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:18:08.938050 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:19:13.493953 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:19:13.495680 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:19:13.495770 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:19:13.496554 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:19:13.499519 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:20:12.471183 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:20:12.472878 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:20:12.472952 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:20:12.473976 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:20:12.477248 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:20:32.604594 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:20:32.606296 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:20:32.606362 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:20:32.606918 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:20:32.610097 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:20:51.327580 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T20:20:53.998209 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:20:54.000393 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:20:54.000547 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:20:54.001588 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:20:54.005137 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:21:34.810081 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:21:34.811479 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:21:34.811553 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:21:34.812061 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:21:34.814877 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:21:40.973765 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:21:40.975515 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:21:40.975609 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = user
+D, [2020-08-12T20:21:40.976528 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:21:40.980142 #14690] DEBUG -- : [d] view: userinfo id=3
+D, [2020-08-12T20:21:47.385823 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:21:47.387352 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:21:47.401319 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe1181742a0>
+D, [2020-08-12T20:21:47.401525 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = ヘビ
+D, [2020-08-12T20:21:47.402553 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:21:47.404581 #14690] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T20:21:48.747052 #14690] DEBUG -- : [d] Users_Ctrl: index id: 3
+D, [2020-08-12T20:21:48.748876 #14690] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T20:21:48.751589 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = #<Reptile::ActiveRecord_Relation:0x00007fe11ccc8198>
+D, [2020-08-12T20:21:48.751691 #14690] DEBUG -- : [d] Users_Ctrl: action: show @show_option = カメ
+D, [2020-08-12T20:21:48.752234 #14690] DEBUG -- : [d] view: users/index id=3
+D, [2020-08-12T20:21:48.753801 #14690] DEBUG -- : [d] view reptileInfo id=3
+D, [2020-08-12T20:21:50.578879 #14690] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-12T20:21:50.592649 #14690] DEBUG -- : [d] flash[:notice]
