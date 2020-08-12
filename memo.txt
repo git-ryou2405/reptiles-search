@@ -27,3 +27,18 @@ strange-looking creatures
 カメレオン
 カエル
 奇虫
+
+
+image: "",
+tyep1: "",
+tyep2: "",
+aname: "",
+sex: "",
+size: "",
+max: "",
+area: "",
+description: "",
+price: "",
+sales_status: "",
+arrival_day: "",
+user_id: "",
