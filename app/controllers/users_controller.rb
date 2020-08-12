@@ -16,16 +16,16 @@ class UsersController < ApplicationController
     
     debug_log("[d] Users_Ctrl: action: show")  # log
     
-    @reptile_list = "user"
+    @show_option = "user"
     
-    if params[:type1].present?
-      debug_log("[d] Users_Ctrl: action: show reptile_list = #{params[:type1]}")  # log
-      @reptile_list = params[:type1]
+    if params[:reptile_type].present?
+      debug_log("[d] Users_Ctrl: action: show reptile_list = #{params[:reptile_type]}")  # log
+      @show_option = params[:reptile_type]
       
-      @aa = User.where(id: Reptile.where(type1: params[:type1]).select(current_user.id))
-      debug_log("[d] Users_Ctrl: action: show @reptile_list = #{@aa}")  # log
+      @user_reptile = User.where(id: Reptile.where(type1: params[:reptile_type]).select(current_user.id))
+      debug_log("[d] Users_Ctrl: action: show @user_reptile = #{@user_reptile}")  # log
     end
-    debug_log("[d] Users_Ctrl: action: show @reptile_list = #{@reptile_list}")  # log
+    debug_log("[d] Users_Ctrl: action: show @show_option = #{@show_option}")  # log
     
     
     # gon.address = @user.address

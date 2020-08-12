@@ -6455,3 +6455,13 @@ D, [2020-08-12T12:50:58.044429 #9715] DEBUG -- : [d] Users_Ctrl: action: show @r
 D, [2020-08-12T12:50:58.045007 #9715] DEBUG -- : [d] view: users/index id=2
 D, [2020-08-12T12:50:58.048871 #9715] DEBUG -- : [d] view: userinfo id=2
 D, [2020-08-12T12:50:58.063828 #9715] DEBUG -- : [d] flash[:notice]
+D, [2020-08-12T12:53:52.812192 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T12:53:52.849570 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T12:53:52.849657 #9715] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T12:53:52.850276 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T12:53:52.852863 #9715] DEBUG -- : [d] view: userinfo id=2
+D, [2020-08-12T12:53:55.521306 #9715] DEBUG -- : [d] Users_Ctrl: index id: 2
+D, [2020-08-12T12:53:55.522874 #9715] DEBUG -- : [d] Users_Ctrl: action: show
+D, [2020-08-12T12:53:55.522987 #9715] DEBUG -- : [d] Users_Ctrl: action: show @reptile_list = user
+D, [2020-08-12T12:53:55.523707 #9715] DEBUG -- : [d] view: users/index id=2
+D, [2020-08-12T12:53:55.528087 #9715] DEBUG -- : [d] view: userinfo id=2
