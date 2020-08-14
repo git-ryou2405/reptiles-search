@@ -2,7 +2,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
   include CarrierWave::MiniMagick
-
+  
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
@@ -11,6 +11,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # This is a sensible default for uploaders that are meant to be mounted:
   # アップロードファイルの保存先
   def store_dir
+    Rails.application.config.another_logger.debug("[d] Image_uploader.rb  ac: store_dir")
     "uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
   end
 
@@ -40,7 +41,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # リサイズ設定
   # process resize_to_fit: [300, 200]
   # process resize_to_fill: [300, 200, "Center"]
-  process resize_and_pad: [400, 300, "#000000", "Center"]
+  process resize_and_pad: [400, 300, "#fff", "Center"]
   
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:
@@ -52,7 +53,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # Override the filename of the uploaded files:
   # Avoid using model.id or version_name here, see uploader/store.rb for details.
   # ファイル名は original.jpg で保存 (jpeg変換しているので拡張子は固定)
-  def filename
-    "original.jpg" if original_filename
-  end
+  # def filename
+  #   "original.jpg" if original_filename
+  # end
 end

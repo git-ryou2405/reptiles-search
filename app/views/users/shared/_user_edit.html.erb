@@ -1,3 +1,10 @@
+<script>
+  /* flashフェードアウト */
+  $(function(){
+    setTimeout("$('.flash').fadeOut('slow')", 2000);
+  });
+</script>
+
 <% Rails.application.config.another_logger.debug "[d] view: ユーザー情報の変更 id=#{@user.id}" %>
 <div class="row justify-content-center">
   <div class="col-9">
@@ -13,8 +20,8 @@
       <!-- shop_image -->
       <% if @user.shop_image.present? %>
         <p>
-        <%= image_tag @user.shop_image.url, :width => "100", id: "margin5px" %><br>
-        <%= f.check_box :remove_shop_image %><%= "画像を削除" %><br>
+        <%= image_tag @user.shop_image.url, :width => "300", :height => "200", id: "margin5px" %><br>
+        <%= link_to "画像を削除", users_delete_photo_path(id: resource.id), class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
         </p>
       <% else %>
         <%= f.label :shop_image, class: "mt-2" %><br>
@@ -70,7 +77,7 @@
       <% url.map do |official| %>  
         <div class="field">
           <%= f.label official, class: "mt-2" %>
-          <%= f.url_field official, autofocus: false, class: "form-control" %>
+          <%= f.text_field official, autofocus: false, class: "form-control" %>
         </div>
       <% end %>
     

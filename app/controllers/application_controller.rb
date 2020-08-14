@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
   end
   
   def after_sign_in_path_for(resource)
-    debug_log("[d] Application_Ctrl: resource = #{resource.inspect}")  # log
-    debug_log("[d] Application_Ctrl: resource.id = #{resource.id}")  # log
+    debug_log("[d] Application_Ctrl: ac: after_sign_in_path_for resource = #{resource.inspect}")  # log
+    debug_log("[d] Application_Ctrl: ac: after_sign_in_path_for resource.id = #{resource.id}")  # log
     
     user_path(resource.id)
   end

@@ -50,7 +50,7 @@
         </ul>
         <!-- 入荷情報 -->
         
-        <!-- お店のSNS -->
+        <!-- SNS -->
         <div class="sns-box-wrap wrap-trigger">
           <% if @user.twitter.present? || @user.instagram.present? %>
             <h2 class="sns-ttl relative mt-5">SNS
@@ -74,7 +74,7 @@
           <% end %>
           <!-- Instagram -->
         </div>
-        <!-- お店のSNS -->
+        <!-- SNS -->
         
       </div>
       <!-- サイドメニュー -->
@@ -83,8 +83,10 @@
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
         <% if @show_option == "user" %>
+          <!-- ユーザー情報の表示 -->
           <%= render "userInfo" %>
         <% else %>
+          <!-- 生体情報の表示 -->
           <%= render "reptileInfo" %>
         <% end %>
           <!--
@@ -102,13 +104,13 @@
           
           <!-- ユーザー情報の編集 -->
           <div class="col-4">
-            <%= link_to "ユーザー情報の編集",edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
+            <%= link_to "ユーザー情報の編集", edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
             
             <% unless @user.provider.present? %>
-              <%= link_to "パスワードの変更",edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary px-3 my-2" %>
+              <%= link_to "パスワードの変更", edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary px-3 my-2" %>
             <% end %>
             
-            <%= link_to "アカウントの削除",edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
+            <%= link_to "アカウントの削除", edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
           </div>
           
       </div>

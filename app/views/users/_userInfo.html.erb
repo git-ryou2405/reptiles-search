@@ -3,7 +3,7 @@
 <!-- shop_image -->
 <div class="row justify-content-center my-3">
   <% if current_user.shop_image.present? %>
-    <%= image_tag current_user.shop_image.url, :size =>'400x200' %>
+    <%= image_tag current_user.shop_image.url, :size =>'500x300' %>
   <% end %>
 </div>
 
@@ -31,13 +31,11 @@
     <dd><%= @user.tel %></dd>
   </dl>
   <dl class="shop-data-item flex">
-    <dt>ホームページ</dt>
-    <!-- 別タブでホームページに移動 -->
+    <dt>ホームページ</dt>    <!-- 別タブでホームページに移動 -->
     <dd><a href=<%= @user.url %> target="_blank"><%= @user.url %></a></dd>
   </dl>
   <dl class="shop-data-item flex">
-    <dt>SNS(twitter)</dt>
-    <!-- 別タブでSNSに移動 -->
+    <dt>SNS(twitter)</dt>    <!-- 別タブでSNSに移動 -->
     <dd><a href=<%= @user.twitter %> target="_blank"><%= @user.twitter %></a></dd>
   </dl>
   <dl class="shop-data-item flex">

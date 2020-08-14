@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   # require 'json'
 
   def show
-    debug_log("[d] Users_Ctrl: action: show")  # log
+    debug_log("[d] Users_Ctrl: ac: show")  # log
     
     @show_option = "user"
     
@@ -17,21 +17,14 @@ class UsersController < ApplicationController
       @show_option = params[:reptile_type]
       # @reptile_type = User.where(id: Reptile.where(type1: params[:reptile_type]).select(current_user.id))
       @reptile_type = Reptile.where(type1: params[:reptile_type], user_id: current_user.id)
-      debug_log("[d] Users_Ctrl: action: show @show_option = #{@reptile_type}")  # log
+      debug_log("[d] Users_Ctrl: ac: show @show_option = #{@reptile_type}")  # log
     end
-    debug_log("[d] Users_Ctrl: action: show @show_option = #{@show_option}")  # log
-    
-    # gon.address = @user.address
-    # gon.userid = @user.id
-    # if @user.map_info.empty?
-    #   @user.map_info = params[:gmap]
-    #   @user.save
-    # end
+    debug_log("[d] Users_Ctrl: ac: show @show_option = #{@show_option}")  # log
   end
   
   def set_user
     if params[:id]
-      debug_log("[d] Users_Ctrl: index id: #{params[:id]}")  # log
+      debug_log("[d] Users_Ctrl: ac: index id: #{params[:id]}")  # log
       @user = User.find(params[:id])
     end
   end

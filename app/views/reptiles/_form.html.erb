@@ -17,9 +17,9 @@
       <% end %>
       
       <!-- image -->
-      <% if @reptile.image %>
+      <% if @reptile.image.present? %>
         <p>
-        <%= image_tag reptile.image.url, :width => "100", id: "margin5px" %><br>
+        <%= image_tag @reptile.image.url, :width => "100", id: "margin5px" %><br>
         <%= f.check_box :remove_image %><%= "画像を削除" %><br>
         </p>
       <% else %>

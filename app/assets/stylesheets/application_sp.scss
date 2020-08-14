@@ -88,9 +88,14 @@ body { padding-top: 4rem; }
   transition: .3s;
 }
 
+// showのfontsizeが画面750の時に10px 10px=1rem 
+.show { font-size: 1.333333333333vw; padding: 0 0 7rem;}
+.shop-data-item dt { width: 10rem; font-size: 1.5rem;}
+.shop-data-item dd { width: 38rem; margin: 0;  font-size: 1.5rem; overflow: scroll;}
+.shop-data-item { flex-wrap: wrap; padding: 1rem 1.5rem; border-bottom: 2px #333 solid; align-items: center;}
 
 
-
+.shop-data-item dd { overflow-x: scroll; }
 }
 
 
