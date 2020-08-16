@@ -1,5 +1,10 @@
-<% Rails.application.config.another_logger.debug "[d] view reptileInfo id=#{@user.id}" %>
- 
+<% Rails.application.config.another_logger.debug "[d] view reptileInfo" %>
+
+<% if @search_result %>
+  <% @reptile_type = @search_result %>
+  <% Rails.application.config.another_logger.debug "[d] view reptileInfo @reptile_type=#{@reptile_type.inspect}" %>
+<% end %>
+
 <!-- 生体詳細 -->
 <section class="search-content"> 
   <ul class="search-list">
@@ -32,6 +37,10 @@
         <li class="txt-item flex align-center">
           <p class="price">価格</p>
           <p class="name"><%= reptile.price %></p>
+        </li>
+        <li class="txt-item flex align-center">
+          <p class="price">販売ショップ</p>
+          <p class="name"><%=  %></p>
         </li>
       </ul>
     </li>

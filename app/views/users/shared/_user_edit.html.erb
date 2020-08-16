@@ -18,14 +18,16 @@
       <% end %>
 
       <!-- shop_image -->
-      <% if @user.shop_image.present? %>
-        <p>
-        <%= image_tag @user.shop_image.url, :width => "300", :height => "200", id: "margin5px" %><br>
+      <% if current_user.shop_images.present? %>
+        <% current_user.shop_images.each do |image| %>
+          <% Rails.application.config.another_logger.debug "[d] view: userinfo #{image.inspect}" %>
+        <%= image_tag image.url, :height => "225", :width => "400" %>
+        <% end %>
+        <%#= image_tag @user.shop_images.url, :height => "225", :width => "400", id: "margin5px" %>
         <%= link_to "画像を削除", users_delete_photo_path(id: resource.id), class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
-        </p>
       <% else %>
-        <%= f.label :shop_image, class: "mt-2" %><br>
-        <%= f.file_field :shop_image, id: :resource_shop_image %><br>
+        <%= f.label :shop_images, class: "mt-2" %><br>
+        <%= f.file_field :shop_images, multiple: true, id: :resource_shop_images %><br>
       <% end %>
       <!-- shop_image -->
 
@@ -94,4 +96,4 @@
 </div>
 
 <br><br>
-<%= link_to "◀︎ マイページへ戻る", :back, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
+<%= link_to "◀︎ マイページへ戻る", @user, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>

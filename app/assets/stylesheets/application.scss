@@ -66,11 +66,14 @@ ul, li { list-style: none; }
   border-radius: 0.2rem;
 }
 
+.container-full {
+  max-width: 1000px; 
+}
 /*==============================================================================
   共通header
 ============================================================================= */
 #header { background-color: #111; color: silver; font-weight: bold; }
-#logo { font-size: 20px; }
+#logo { font-size: 20px; text-shadow: 1.5px 1.5px #444; }
 #logo:hover { color: silver; text-decoration: none; cursor: pointer; }
 
 /* header-btn */
@@ -149,20 +152,35 @@ ul, li { list-style: none; }
 }
 
 /* メインコンテンツ */
-.group-ttl {
-  width: 240px;
-  color: silver;
-  font-size: 30px;
-	margin: 0 auto;
-	padding: 0 0 10px;
-  border-bottom: 1px silver solid;
-}
+// .group-ttl {
+//   width: 240px;
+//   color: silver;
+//   font-size: 30px;
+// 	margin: 0 auto;
+// 	padding: 0 0 10px;
+//   border-bottom: 1px silver solid;
+// }
+.group-ttl { width: 240px;  color: silver; font-size: 30px; text-align: center; margin: 0 auto; padding: 0 0 15px; border-bottom: 1px silver solid;}
 
-.group .bg { background: #111 ; padding: 60px 0;}
+// .group .bg { background: #111 ; padding: 60px 0;}
+
+.reptiles-list { flex-wrap: wrap; justify-content: center; }
+
+.reptiles-item { padding: 60px 0 0 ;}
+
+.reptiles-item:not(:nth-of-type(3n)) { margin: 0 50px 0 0;}
 
 .align-center{align-items:center;}
 
-.group .content  { width: 900px; margin: 0 auto; padding: 60px 0 0; }
+// .group .content  { width: 900px; margin: 0 auto; padding: 60px 0 0; }
+
+.reptiles-list .photo img { width: 200px; border-radius: 50%; opacity: 1; border: 3px solid silver;}
+
+.reptiles-list .species { margin: 10px 0 0; font-size: 20px; font-weight: bold; color: silver; text-align: center;}
+
+.reptiles-list .species:hover { color: lemonchiffon; transition: .3s;}
+
+.reptiles-list .photo img:hover { border: 3px solid lemonchiffon; transition: .5s; transform: rotate(3deg);}
 
 /*==============================================================================
   login画面
@@ -186,11 +204,11 @@ ul, li { list-style: none; }
 .show { margin-top: 40px; }
 
 /* 生体登録 */
-.regist-pd { width: 220px; }
+.regist-pd { width: 210px; }
 .regist {
-  width: 220px;
+  width: 210px;
   padding: 10px 20px;
-  margin: 0px 0px 50px 15px;
+  margin: 0px 0px 50px 0px;
   background: lightcoral;
   color: white;
   font-size: 18px;
@@ -283,6 +301,92 @@ shop 情報
   // background-color: #292F33 !important;
   // border-color: #292F33 !important;
 }
+
+/* スライダー */
+.swiper-container {
+  cursor: grab;
+  object-fit: fit;
+}
+.swiper-container:active {
+  cursor: grabbing;
+}
+.swiper-custom-button{
+  margin: 30px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;   
+  margin-top: -16px;
+  z-index: 10;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none
+}
+.swiper-button-prev::before {
+  position: relative;
+  content: "\f104";
+  font-family: FontAwesome;
+  background: rgba(255,255,255,0.5);
+  padding: 8px 12px;
+  opacity: 1;
+  border: 1px solid #333;
+}
+.swiper-button-next::before {
+  position: relative;
+  content: "\f105";
+  font-family: FontAwesome;
+  background: rgba(255,255,255,0.5);
+  padding: 8px 12px;
+  opacity: 1;
+  border: 1px solid #333;
+}
+.swiper-button-prev:hover:before{
+  animation: arrow_prev .5s ease-out forwards;
+}
+@keyframes arrow_prev {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 5px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.swiper-button-next:hover:before{
+  animation: arrow_next .5s ease-out forwards;
+}
+  @keyframes arrow_next {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 20px;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 20px;
+  left: auto;
+}
+.swiper-image {
+  object-fit: cover;
+}
+.swiper-button-prev::after { content: none !important; }
+.swiper-button-next::after { content: none !important; }
 
 /*==============================================================================
 販売生体

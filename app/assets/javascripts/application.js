@@ -9,6 +9,25 @@ $(function(){
   setTimeout("$('.flash').fadeOut('slow')", 2000);
 });
 
+/* スライダー */
+var mySwiper = new Swiper('.swiper-container', {
+  loop: true,
+  speed: 1500,
+  effect: 'slide',
+  autoplay: { 
+      delay: 4000,
+      disableOnInteraction: false,
+  },
+  navigation: { 
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev'
+  },
+  pagination: {
+  el: '.swiper-pagination',
+  type: 'bullets',
+  clickable: true
+}
+});
 
 /* アコーディオン */
 $('.block-trigger').click(function() {
@@ -21,6 +40,29 @@ $('.block-trigger').click(function() {
   }
 });
 
+
+/* アンカーリンクのスムーススクロール */
+$('a[href^="#"]').on('click', function(e) {
+  e.preventDefault();
+  var pc_offset = 0;
+  var sp_offset = 0;
+  var speed = 400;
+  var href = $(this).attr("href");
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  var offset = window.innerWidth > 767 ? pc_offset : sp_offset;
+  var position = target.offset().top - offset
+  $('body,html').animate({scrollTop:position}, speed, 'swing');
+});
+
+$('.menu-ttl').click(function() {
+  if ($('.menu-list-wrap').hasClass('menu-list-open')){
+      $('.menu-list-wrap').removeClass('menu-list-open')
+      $('.arrow').removeClass('arrow-active')
+  } else {
+      $('.menu-list-wrap').addClass('menu-list-open')
+      $('.arrow').addClass('arrow-active')
+  }
+});
 
 // /* Geocodingで緯度経度を取得 */
 // $(function () {

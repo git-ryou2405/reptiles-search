@@ -8,18 +8,20 @@
 
 @password = "111111"
 
-# 管理者ユーザー
-User.create!(name: "Admin", email: "admin@email.com", password: @password, password_confirmation: @password, admin: true)
+User.create!( name: "Admin", email: "admin@email.com", password: @password, password_confirmation: @password, admin: true )
 
-# Testユーザー
-User.create!(name: "test_user1", email: "sample1@email.com", password: @password, password_confirmation: @password, shop_name: "爬虫類倶楽部", address: "東京都中野区中野６丁目１５−１３",
-  howto_access: "xx駅から徒歩y分 ⬇︎", tel: "03-xxxx-xxxx", business_hours: "xx時〜yy時", holiday: "○曜日", url: "http://www.hachikura.com/",
+User.create!(
+  name: "test_user1", email: "sample@email.com", password: @password, password_confirmation: @password, shop_name: "レプタイルショップ", shop_images: "",
+  address: "東京都中野区中野６丁目１５−１３", howto_access: "xx駅から徒歩y分 ⬇︎", tel: "03-xxxx-xxxx", business_hours: "xx時〜yy時", holiday: "○曜日", url: "http://www.hachikura.com/",
   handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ",
   handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品",
   feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565", twitter: "https://twitter.com/89_nakano"
 )
-User.create!(name: "test_user2", email: "sample2@email.com", password: @password, password_confirmation: @password, shop_name: "ワイルドモンスター", address: "茨城県日立市中成沢町3-14-7",
-  howto_access: "xx駅から徒歩y分 ⬇︎", tel: "02-xxxx-xxxx", business_hours: "xx時〜yy時", holiday: "○曜日", url: "https://www.w-monster.com/",
+  # File.open("./public/uploads/TestFolder/user2.jpg")
+  # File.open("./public/uploads/TestFolder/user3.jpg")
+User.create!(
+  name: "test_user2", email: "sample2@email.com", password: @password, password_confirmation: @password, shop_name: "爬虫類らんど", shop_images: "",
+  address: "茨城県日立市中成沢町3-14-7", howto_access: "xx駅から徒歩y分 ⬇︎", tel: "02-xxxx-xxxx", business_hours: "xx時〜yy時", holiday: "○曜日", url: "https://www.w-monster.com/",
   handling_animals: "ヘビ、トカゲ、ヤモリ、カメ、両生類、奇虫・昆虫", handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ",
   handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品",
   feature: "取り扱い多数、御来店お待ちしております。", map_info: "https://maps.google.co.jp/maps?output=embed&q=36.574923,140.63526", twitter: "https://twitter.com/89_nakano"
@@ -43,7 +45,7 @@ array = [
 ]
 
 array.each do |first, second, third, fourth, fifth, sixth|
-  Reptile.create!( image: "", type1: first, type2: second, sex: third, age: "1才", size: fourth, weight: "500g",
+  Reptile.create!( image: "", type1: first, type2: "", type_name: second, morph: "", sex: third, age: "1才", size: fourth, weight: "500g",
     description: "", price: fifth, sales_status: "販売中", arrival_day: "", user_id: sixth )
 end
 puts "success create reptile."

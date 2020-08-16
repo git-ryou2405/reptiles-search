@@ -68,6 +68,25 @@ class ReptilesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  # 検索フォーム
+  def search
+    debug_log("[d] Reptiles_Ctrl: ac: search")  # log
+    if params[:search].present?
+      search_result = Reptile.where('type_name LIKE ?', "%#{params[:search]}%")
+      debug_log("[d] Reptiles_Ctrl: ac: search params=#{params[:search]}")  # log
+      if search_result.exists?
+        @search_result = Reptile.where('type_name LIKE ?', "%#{params[:search]}%")
+        debug_log("[d] Reptiles_Ctrl: ac: search @search_result=#{@search_result.inspect}")  # log
+      else
+        @search_result = false
+        flash.now[:warning] = "「#{params[:search]}」の検索結果：ゼロ"
+      end
+    else
+      flash[:danger] = "値を入力してください。"
+      redirect_to root_path
+    end
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -77,6 +96,6 @@ class ReptilesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reptile_params
-      params.require(:reptile).permit(:image, :type1, :type2, :sex, :age, :size, :weight, :description, :price, :sales_status, :arrival_day)
+      params.require(:reptile).permit(:image, :type1, :type2, :type_name, :morph, :sex, :age, :size, :weight, :description, :price, :sales_status, :arrival_day)
     end
 end

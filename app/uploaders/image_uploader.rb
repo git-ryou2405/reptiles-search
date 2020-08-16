@@ -39,9 +39,17 @@ class ImageUploader < CarrierWave::Uploader::Base
   # process convert: "jpg"
   
   # リサイズ設定
-  # process resize_to_fit: [300, 200]
-  # process resize_to_fill: [300, 200, "Center"]
-  process resize_and_pad: [400, 300, "#fff", "Center"]
+  # [ width, height, 位置 ]
+  # process resize_to_fit: [700, 394]
+  # process resize_to_limit: [700, 394]
+  # process resize_to_fill: [700, 394, "Center"]  #縦横比を維持しません。
+  # process resize_and_pad: [300, 169, "#222222", "Center"]
+  # process resize_and_pad: [300, 200, "#222222", "Center"]
+  process resize_and_pad: [350, 233, "#222222", "Center"]
+  # process resize_and_pad: [400, 225, "#222222", "Center"]
+  # process resize_and_pad: [400, 267, "#222222", "Center"]
+  # process resize_and_pad: [500, 281, "#222222", "Center"]
+  # process resize_and_pad: [500, 281, "#222222", "Center"]
   
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

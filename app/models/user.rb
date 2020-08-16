@@ -4,7 +4,8 @@ class User < ApplicationRecord
   has_many :reptiles, dependent: :destroy
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
-  mount_uploader :shop_image, ImageUploader
+  mount_uploaders :shop_images, ImageUploader
+  serialize :shop_images, JSON
   
   def self.find_for_oauth(auth)
     Rails.application.config.another_logger.debug("[d] user.rb")

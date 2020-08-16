@@ -1,7 +1,9 @@
 <% Rails.application.config.another_logger.debug "[d] view: StaticPages#top" %>
 
 <main class="jumbotron text-center">
-  <h1>Reptiles Farm</h1>
+  <%# <h1>Reptiles Farm</h1> %>
+  <h1>Reptile Search</h1>
+  <%# <h1>レプタイルサーチ</h1> %>
   <div class="txt">
     <div class="txt01">全国の爬虫類ショップから<br>ヘビやトカゲなど一括検索！!</div>
     <div class="txt02">Reptiles Farmはあなたと爬虫類の出会いを全力サポート！!</div>
@@ -13,17 +15,33 @@
   <div class="search">
     <h2 class="serch-ttl">爬虫類を探す</h2>
     <div class="row justify-content-center">
-      <input class="search-box align-center" type="search" name="keyword" placeholder="種類やモルフ、ショップ名を入力して下さい">
-      <input class="search-btn align-center" type="submit" value="検索">
+      <%= form_with(url: reptiles_search_path, method: :get, local: true) do |f| %>
+        <%= f.text_field :search, :placeholder => "種類やモルフを入力して下さい", value: (@search), class:"search-box align-center" %>
+        <%= f.submit '検索', class:"search-btn align-center" %>
+      <% end %>
     </div>
   </div>
   <!-- 検索バー：end -->
   
   
   <!-- 種類から探す -->
-  <div class="content">
-      <h2 class="group-ttl">種類から探す</h2>
-  </div>
+  <h2 class="group-ttl">種類から探す</h2>
+  <ul class="reptiles-list flex">
+    <% animal_list = [ "snake", 'turtle', "lizard","gecko", "amphibian", "others" ] %>
+    <% translation = [ "ヘビ", "カメ", "トカゲ","ヤモリ", "両生類", "奇虫・その他" ] %>
+    <% @count = 0 %>
+    <% animal_list.each do |animal_type| %>
+    <li class="reptiles-item">
+        <a href="snake.html">
+            <div class="photo">
+              <%= link_to image_tag("/uploads/main/#{animal_type}.jpg"),"#" %>
+            </div>
+            <p class="species"><%= translation[@count] %></p>
+        </a>
+    </li>
+    <% @count +=1 %>
+    <% end %>
+  </ul>
   <!-- 種類から探す：end -->
 
 

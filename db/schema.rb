@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 2020_08_05_061820) do
     t.string "image"
     t.string "type1"
     t.string "type2"
+    t.string "type_name"
+    t.string "morph"
     t.string "sex"
     t.string "age"
     t.string "size"
@@ -40,7 +42,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_061820) do
     t.string "provider"
     t.boolean "admin", default: false
     t.string "shop_name"
-    t.string "shop_image"
+    t.string "shop_images"
     t.string "address"
     t.string "howto_access"
     t.string "tel"

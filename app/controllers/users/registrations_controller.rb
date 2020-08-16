@@ -49,11 +49,12 @@ class Users::RegistrationsController < Devise::RegistrationsController
     super
   end
   
+  # shop_images削除
   def delete_photo
     debug_log("[d] Registrations_Ctrl: ac: delete_photo")  # log
     debug_log("[d] Registrations_Ctrl: ac: delete_photo @user = #{@user.inspect}")  # log
-    if @user.shop_image.present?
-      @user.shop_image = ""
+    if @user.shop_images.present?
+      @user.shop_images = ""
       @user.save
       debug_log("[d] Registrations_Ctrl: ac: delete_photo")  # log
     end

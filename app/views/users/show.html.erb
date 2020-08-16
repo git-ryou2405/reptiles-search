@@ -1,5 +1,6 @@
 <% Rails.application.config.another_logger.debug "[d] view: users/index id=#{@user.id}" %>
 
+<!-- headerのぶん -->
 <div style="padding-top: 40px;">
 
 <!-- マイページ -->
@@ -50,13 +51,13 @@
         </ul>
         <!-- 入荷情報 -->
         
-        <!-- SNS -->
         <div class="sns-box-wrap wrap-trigger">
           <% if @user.twitter.present? || @user.instagram.present? %>
             <h2 class="sns-ttl relative mt-5">SNS
               <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
             </h2>
           <% end %>
+          
           <!-- twitter -->
           <% if @user.twitter.present? %>
             <div class="sns-box">
@@ -74,11 +75,9 @@
           <% end %>
           <!-- Instagram -->
         </div>
-        <!-- SNS -->
         
       </div>
       <!-- サイドメニュー -->
-      
       
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">

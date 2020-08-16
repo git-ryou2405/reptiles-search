@@ -45,7 +45,13 @@
       
       <%= f.label :type2, class: "mt-2" %>
       <%= f.text_field :type2, id: :reptile_type2, class: "form-control" %>
-
+      
+      <%= f.label :type_name, class: "mt-2" %>
+      <%= f.text_field :type_name, id: :reptile_type_name, class: "form-control" %>
+      
+      <%= f.label :morph, class: "mt-2" %>
+      <%= f.text_field :morph, id: :reptile_morph, class: "form-control" %>
+      
       <%= f.label :sex, class: "mt-2" %>
       <%= f.select :sex, [['オス', 'オス'], ['メス', 'メス'], ['不明', '不明'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select" } %>
 
@@ -78,5 +84,5 @@
 </div>
 
 <br>
-<%= link_to "◀︎ マイページへ戻る", :back, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
+<%= link_to "◀︎ マイページへ戻る", @user, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
 <br>

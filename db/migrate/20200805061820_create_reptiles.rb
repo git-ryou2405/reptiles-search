@@ -4,6 +4,8 @@ class CreateReptiles < ActiveRecord::Migration[6.0]
       t.string :image
       t.string :type1
       t.string :type2
+      t.string :type_name
+      t.string :morph
       t.string :sex
       t.string :age
       t.string :size

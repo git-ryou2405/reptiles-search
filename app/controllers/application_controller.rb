@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:account_update, keys: [
-      :name, :image, :shop_name, :shop_image, :address, :howto_access, :tel,
+      :name, :image, :shop_name, {shop_images: [] }, :address, :howto_access, :tel,
       :business_hours, :holiday, :handling_animals, :handling_feeds, :handling_goods, :feature,
       :url, :map_info, :twitter, :facebook ,:instagram] )
   end

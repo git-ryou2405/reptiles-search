@@ -11,7 +11,7 @@ ja:
           password: パスワード
           password_confirmation: パスワード再入力
           shop_name: ショップ名
-          shop_image: ショップイメージ画像
+          shop_images: ショップイメージ画像
           address: 住所
           howto_access: アクセス方法
           tel: 電話番号
@@ -26,8 +26,10 @@ ja:
           updated_at: 更新日
         reptile:
           image: 写真
-          type1: 分類
-          type2: モルフ
+          type1: 大分類
+          type2: 中分類
+          type_name: 種名
+          morph: モルフ
           sex: 性別
           size: サイズ等
           max: 最大サイズ

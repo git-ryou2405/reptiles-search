@@ -1,0 +1,66 @@
+<% Rails.application.config.another_logger.debug "[d] view: reptile/search" %>
+
+<!-- headerのぶん -->
+<div style="padding-top: 40px;">
+
+<!-- マイページ -->
+<div class="container">
+  <h1 class="shop-ttl"><%#= @user.shop_name %></h1>
+  <div class="row justify-content-center show">
+      
+      <!-- サイドメニュー -->
+      <div class="col-lg-3 col-xl-3">
+        
+        <!-- 生体カテゴリー -->
+        <h2 class="menu-ttl">販売生体
+          <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+        </h2>
+        
+        <ul class="menu-list">
+          <!-- メニュー作成 -->
+          <% reptile_list = [ "ヘビ", "カメ", "トカゲ", "ヤモリ", "両生類", "奇虫・その他" ] %>
+          <% reptile_list.each do |reptile_type| %>
+            <%= link_to "#", style:"text-decoration: none;" do %>
+              <li class="reptile-item"><%= reptile_type %>
+                <div style="float: right; margin-right: auto;">
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </li>
+            <% end %>
+          <% end %>
+        </ul>
+        <!-- 生体カテゴリー -->
+        
+        <!-- 入荷情報 -->
+        <h2 class="arrival-ttl menu-ttl relative mt-5">新入荷
+          <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+        </h2>
+        
+        <ul class="menu-list">
+          <li class="arrival-item">
+              <p class="arrival-day">2020年◯月◯日入荷</p>
+              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
+              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
+          </li>
+        </ul>
+        <!-- 入荷情報 -->
+        
+      </div>
+      <!-- サイドメニュー -->
+      
+      <!-- メイン -->
+      <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+        <%= render "./users/reptileInfo" %>
+      </div>
+      
+  </div>
+</div>
+
+<script>
+  $('.menu-ttl').click(function() {
+    $(this).next('.menu-list').slideToggle();
+  });
+  $('.sns-ttl').click(function() {
+    $('.sns-box').slideToggle();
+  });
+</script>
