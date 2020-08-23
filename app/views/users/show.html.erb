@@ -5,37 +5,36 @@
 
 <!-- マイページ -->
 <div class="container">
-  <h1 class="shop-ttl"><%= @user.shop_name %></h1>
+  <h1 class="shop-ttl" style="font-size: 50px;" ><%= @user.shop_name %></h1>
   <div class="row justify-content-center show">
       
       <!-- サイドメニュー -->
       <div class="col-lg-3 col-xl-3">
-      
         <div class="regist-pd">
           <%= link_to new_user_reptile_path(current_user), style:"text-decoration: none;" do %>
             <h2 class="regist botton-hover">生体登録</h2>
           <% end %>
         </div>
         
-        <!-- 生体カテゴリー -->
+        <!-- 販売生体一覧 -->
         <h2 class="menu-ttl">販売生体
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
-        
         <ul class="menu-list">
-          <!-- メニュー作成 -->
+          <!-- リンク先の生成 -->
           <% reptile_list = [ "ヘビ", "カメ", "トカゲ", "ヤモリ", "両生類", "奇虫・その他" ] %>
           <% reptile_list.each do |reptile_type| %>
             <%= link_to user_path(current_user, reptile_type: reptile_type), style:"text-decoration: none;" do %>
-              <li class="reptile-item"><%= reptile_type %>
-                <div style="float: right; margin-right: auto;">
-                  <i class="fas fa-chevron-right"></i>
-                </div>
-              </li>
+            <li class="reptile-item"><%= reptile_type %>
+              <div style="float: right; margin-right: auto;">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
             <% end %>
           <% end %>
+          <!-- ここまでリンク先の生成 -->
         </ul>
-        <!-- 生体カテゴリー -->
+        <!-- ここまで販売生体一覧 -->
         
         <!-- 入荷情報 -->
         <h2 class="arrival-ttl menu-ttl relative mt-5">新入荷
@@ -49,8 +48,9 @@
               <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
           </li>
         </ul>
-        <!-- 入荷情報 -->
+        <!-- ここまで入荷情報 -->
         
+        <!-- SNS -->
         <div class="sns-box-wrap wrap-trigger">
           <% if @user.twitter.present? || @user.instagram.present? %>
             <h2 class="sns-ttl relative mt-5">SNS
@@ -75,42 +75,41 @@
           <% end %>
           <!-- Instagram -->
         </div>
+        <!-- SNS -->
         
       </div>
-      <!-- サイドメニュー -->
+      <!-- ここまでサイドメニュー -->
       
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
         <% if @show_option == "user" %>
           <!-- ユーザー情報の表示 -->
-          <%= render "userInfo" %>
+          <%= render "shopinfo" %>
         <% else %>
           <!-- 生体情報の表示 -->
-          <%= render "reptileInfo" %>
+          <%= render "reptilelist" %>
         <% end %>
-          <!--
-          <div id="map"></div>
-          <script>
-            var MyLatLng = new google.maps.LatLng(35.5419941, 139.4453761);
-            var Options = {
-            zoom: 15,      //地図の縮尺値
-            center: MyLatLng,    //地図の中心座標
-            mapTypeId: 'roadmap'   //地図の種類
-            };
-            var map = new google.maps.Map(document.getElementById('map'), Options);
-          </script>
-          -->
+        <!--
+        <div id="map"></div>
+        <script>
+          var MyLatLng = new google.maps.LatLng(35.5419941, 139.4453761);
+          var Options = {
+          zoom: 15,      //地図の縮尺値
+          center: MyLatLng,    //地図の中心座標
+          mapTypeId: 'roadmap'   //地図の種類
+          };
+          var map = new google.maps.Map(document.getElementById('map'), Options);
+        </script>
+        -->
           
-          <!-- ユーザー情報の編集 -->
-          <div class="col-4">
-            <%= link_to "ユーザー情報の編集", edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
-            
-            <% unless @user.provider.present? %>
-              <%= link_to "パスワードの変更", edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary px-3 my-2" %>
-            <% end %>
-            
-            <%= link_to "アカウントの削除", edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
-          </div>
+        <!-- ユーザー情報の編集 -->
+        <div class="col-4">
+          <%= link_to "ユーザー情報の編集", edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
+          <% unless @user.provider.present? %>
+            <%= link_to "パスワードの変更", edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary px-3 my-2" %>
+          <% end %>
+          <%= link_to "アカウントの削除", edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
+        </div>
           
       </div>
       

@@ -7,8 +7,14 @@
 
 <% Rails.application.config.another_logger.debug "[d] view: ユーザー情報の変更 id=#{@user.id}" %>
 <div class="row justify-content-center">
-  <div class="col-9">
-    <h2>ユーザー情報の編集</h2>
+  <div class="col-10">
+    <% if @signup == "no_shop_name" %>
+      <h2>ショップ情報の登録</h2>
+      <% @regist_message = "ショップ情報を登録します。\nこの内容でよろしければOKを押してください。" %>
+    <% else %>
+      <h2>ショップ情報の編集</h2>
+      <% @regist_message = "ショップ情報を更新します。\nこの内容でよろしければOKを押してください。" %>
+    <% end %>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= render "users/shared/error_messages", resource: resource %>
@@ -29,12 +35,14 @@
         <%= f.label :shop_images, class: "mt-2" %><br>
         <%= f.file_field :shop_images, multiple: true, id: :resource_shop_images %><br>
       <% end %>
-      <!-- shop_image -->
-
+      <!-- ここまでshop_image -->
+      
+      <!--
       <div class="field">
         <%= f.label :email, class: "mt-2" %>
         <%= f.email_field :email, autofocus: false, autocomplete: "email", class: "form-control" %>
       </div>
+      -->
       
       <div class="field">
           <%= f.label :shop_name, class: "mt-2" %>
@@ -42,24 +50,54 @@
       </div>
       
       <div class="field">
-          <%= f.label :address, class: "mt-2" %>
-          <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control" %>
+        <%= f.label :address, class: "mt-2" %>
+        <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control" %>
       </div>
+      
+      <div style="margin: 15px 0 15px 0; padding: 10px; background: #555; border-radius: 5px;">
+        <div style="float: left; margin-right: 25px;">
+          <img src="https://img.icons8.com/color/48/000000/google-maps.png" width="30px" height="30px" /><%= f.label :search_map, class: "mt-1" %>
+        </div>
+        <div class="mt-2" style="font-size: 12px; text-decoration:underline; text-decoration-color: green;">登録内容からGoogleマップを表示できます。</div>
         
+        <div style="padding: 10px 0 0 14px; clear: both;">
+          <label style="font-size: 14px">
+            <%= f.radio_button :search_map, "1" %>"ショップ名" でマップ検索
+          </label><br>
+          <%#= f.label :search_map_shop, "ショップ名" %>
+          
+          <div style="float: right; font-size: 10px;">
+            ※Googleマップで店舗情報を登録済の場合　<br>
+            　"ショップ名"の検索がオススメです。
+            <%# マップ検索する情報をどちらかご選択ください。<br> %>
+          </div>
+          
+          <label style="font-size: 14px">
+            <%= f.radio_button :search_map, "2" %>"住所" でマップ検索
+          </label>
+          <label style="font-size: 14px">
+            <%= f.radio_button :search_map, "3" %>マップを使用しない
+          </label>
+          <%#= f.label :search_map_address, "住所" %>
+        </div>
+      </div>
+      
+      <!-- アクセス方法、電話、営業時間、定休日 -->
       <% arrey = [
         [:howto_access, "howto_access"],
         [:tel, "tel"],
         [:business_hours, "business_hours"],
         [:holiday, "holiday"]
         ] %>
-
+      
       <% arrey.map do |first,second| %>  
         <div class="field">
           <%= f.label first, class: "mt-2" %>
           <%= f.text_field first, autofocus: false, autocomplete: second, class: "form-control" %>
         </div>
       <% end %>
-
+      
+      <!-- 取り扱い、店舗の特徴 -->
       <% text_area = [
         [:handling_animals, "handling_animals","2x2"],
         [:handling_feeds, "handling_feeds","2x2"],
@@ -73,7 +111,8 @@
           <%= f.text_area first, autofocus: false, autocomplete: second, size: third, class: "form-control" %>
         </div>
       <% end %>
-
+      
+      <!-- URL、SNS -->
       <% url = [:url,:twitter] %>
         
       <% url.map do |official| %>  
@@ -87,13 +126,19 @@
         <%= f.label :instagram, class: "mt-2" %>（埋め込みコードを入力してください。）
         <%= f.text_field :instagram, autofocus: false, class: "form-control" %>
       </div>
-        
+      
       <div class="actions">
-        <%= f.submit "更新", class: "btn btn-primary w-100 mt-4",data: { confirm: "ユーザー情報を更新します。\nこの内容でよろしければOKを押してください。" } %>
+        <%= f.submit "更新", class: "btn btn-primary w-100 mt-4",data: { confirm: @regist_message } %>
       </div>
     <% end %>
   </div>
 </div>
 
-<br><br>
-<%= link_to "◀︎ マイページへ戻る", @user, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
+<% unless @signup == "no_shop_name" %>
+  <br><br>
+  <%= link_to "◀︎ マイページへ戻る", @user, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
+<% end %>
+
+<div style="margin-top: 50px; float: right; font-size: 10px; color: black;">
+  <a href="https://icons8.com/icon/32215/google-maps-old" target="_blank" >Google Maps Old icon by Icons8</a>
+</div>

@@ -11,18 +11,18 @@
 </main>
 
 <div class="container text-center">
-  <!-- 検索バー -->
+  <!-- 検索フォーム -->
   <div class="search">
     <h2 class="serch-ttl">爬虫類を探す</h2>
     <div class="row justify-content-center">
-      <%= form_with(url: reptiles_search_path, method: :get, local: true) do |f| %>
-        <%= f.text_field :search, :placeholder => "種類やモルフを入力して下さい", value: (@search), class:"search-box align-center" %>
+      <%= form_with(url: reptiles_search_page_path, method: :get, local: true) do |f| %>
+        <%= f.hidden_field :searchtype, :value => "form" %>
+        <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
         <%= f.submit '検索', class:"search-btn align-center" %>
       <% end %>
     </div>
   </div>
-  <!-- 検索バー：end -->
-  
+  <!-- 検索フォーム -->
   
   <!-- 種類から探す -->
   <h2 class="group-ttl">種類から探す</h2>
@@ -34,7 +34,8 @@
     <li class="reptiles-item">
         <a href="snake.html">
             <div class="photo">
-              <%= link_to image_tag("/uploads/main/#{animal_type}.jpg"),"#" %>
+              <%= link_to image_tag("/uploads/main/#{animal_type}.jpg"),
+               reptiles_search_page_path(Reptile, type1: translation[@count], searchtype: "ctg_btn" ) %>
             </div>
             <p class="species"><%= translation[@count] %></p>
         </a>

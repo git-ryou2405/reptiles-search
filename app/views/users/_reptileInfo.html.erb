@@ -1,52 +1,50 @@
-<% Rails.application.config.another_logger.debug "[d] view reptileInfo" %>
+<% Rails.application.config.another_logger.debug "[d] view: reptileinfo" %>
 
-<% if @search_result %>
-  <% @reptile_type = @search_result %>
-  <% Rails.application.config.another_logger.debug "[d] view reptileInfo @reptile_type=#{@reptile_type.inspect}" %>
+<!-- レプタイル情報 -->
+<% if @disp_reptileinfo.present? %>
+  <% @reptile = @disp_reptileinfo %>
+  <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
 <% end %>
 
-<!-- 生体詳細 -->
-<section class="search-content"> 
-  <ul class="search-list">
-    <% @reptile_type.each do |reptile| %>
-    <% Rails.application.config.another_logger.debug "[d] view reptileInfo reptile=#{reptile.inspect}" %>
-    <!-- ループ -->
-    <li class="search-item flex align-center">
-      <div class="photo">
-        <% if reptile.image.present? %>
-          <%#= image_tag reptile.image.url, "#" %>
-          <%= image_tag reptile.image.url, :width => "300", :height => "200", id: "margin5px" %>
-        <% else %>
-          <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), "#" %>
-        <% end %>
+<!-- image スライダー -->
+<% if @reptile.images.present? %>
+  <div class="swiper-container text-center">
+    <div class="swiper-wrapper">
+      <% @reptile.images.each do |image| %>
+      <div class="swiper-slide">
+        <%= image_tag image.url, class:"swiper-image" %>
+      <%# <%= image_tag image.url, :size =>'450x253' %>
+      <%#= image_tag image.url, :size =>'533x300' %>
       </div>
-      
-      <ul class="txt-list">
-        <li class="txt-item flex align-center">
-          <p class="species">種類</p>
-          <p class="name"><%= reptile.type1 %></p>
-        </li>
-        <li class="txt-item flex align-center">
-          <p class="morph">モルフ</p>
-          <p class="name"><%= reptile.type2 %></p>
-        </li>
-        <li class="txt-item flex align-center">
-          <p class="gender">性別</p>
-          <p class="name"><%= reptile.sex %></p>
-        </li>
-        <li class="txt-item flex align-center">
-          <p class="price">価格</p>
-          <p class="name"><%= reptile.price %></p>
-        </li>
-        <li class="txt-item flex align-center">
-          <p class="price">販売ショップ</p>
-          <p class="name"><%=  %></p>
-        </li>
-      </ul>
-    </li>
-    <!-- ループ：end -->
-    <% end %>
-    <li class="search-item flex align-center"></li>
-  </ul>
-</section>
-<!-- 生体詳細：end -->
+      <% end %>
+      </div>
+    <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
+    <div class="swiper-button-next swiper-button-black swiper-custom-button"></div>
+    <div class="swiper-pagination swiper-pagination-white"></div>
+  </div>
+<% else %>
+  <div style="margin-top: 188px"></div>
+<% end %>
+<!-- image スライダー -->
+
+<%# <h3>店舗情報</h3> %>
+<div class="shop-data-list">
+  <dl class="shop-data-item flex">
+    <dt>種名</dt>
+    <dd><%= @reptile.type_name %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>モルフ</dt>
+    <dd><%= @reptile.morph %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>性別</dt>
+    <dd><%= @reptile.sex %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>価格</dt>
+    <dd><%= @reptile.price %></dd>
+  </dl>
+</div>
+
+<%= javascript_include_tag 'application' %>

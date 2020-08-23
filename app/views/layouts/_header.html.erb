@@ -7,7 +7,15 @@
           <% if current_user.image.present? %>
             <%= image_tag current_user.image, :size =>'30x30' %>
           <% end %>
-          <li><%= link_to 'マイページ', user_path(current_user), class:"btn btn-sm mypage btn-hover" %></li>
+          
+          <li>
+          <% if current_user.shop_name.present? %>
+            <%= link_to 'マイページ', user_path(current_user), class:"btn btn-sm mypage btn-hover" %>
+          <% else %>
+            <%= link_to 'マイページ', edit_user_registration_path(edit_mode: "info", jadge_shop_name: "no_shop_name"), class:"btn btn-sm mypage btn-hover" %>
+          <% end %>
+          </li>
+          
           <li class="btn-padding"><%= link_to 'ログアウト', destroy_user_session_path, class:"btn btn-sm login_out btn-hover", method: :delete %></li>
         <% else %>
           <li><%= link_to "SHOP登録", new_user_registration_path, class:"btn btn-sm btn-danger newcreate btn-hover" %></li>

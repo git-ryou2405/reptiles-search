@@ -15,32 +15,66 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def create
     debug_log("[d] Registrations_Ctrl: ac: create")  # log
     super
-    debug_log("[d] Registrations_Ctrl: ac: create id:#{current_user.id}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: create id=#{current_user.id}")  # log
   end
 
   # GET /resource/edit
   def edit
     @edit_mode = params[:edit_mode]
-    debug_log("[d] Registrations_Ctrl: ac: edit @edit_mode = #{@edit_mode}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: edit @edit_mode=#{@edit_mode}")  # log
+    
+    # ショップ情報の入力を催促
+    if params[:jadge_shop_name] == "no_shop_name"
+      flash[:danger] = "ショップ情報をご登録ください。"
+      @signup = "no_shop_name"
+    end
+      @signup = "no_shop_name" if params[:signup] == "no_shop_name"
     super
   end
 
   # PUT /resource
   def update
-    debug_log("[d] Registrations_Ctrl: ac: update id:#{current_user.id}")  # log
-    
+    debug_log("[d] Registrations_Ctrl: ac: update id=#{current_user.id}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: update search_map=#{params[:search_map]}")  # log
     super
     
     # googleMap_緯度経度の取得
-    unless @user.address.present?
-      @user.map_info = ""
-      @user.save
-    else
-      search_map_set_latlng if @user.saved_change_to_address?
+    if @user.saved_change_to_shop_name? || @user.saved_change_to_address? || @user.saved_change_to_search_map?
+      debug_log("[d] Registrations_Ctrl: ac: update first if")  # log
+      
+      # ショップ名で検索
+      if @user.search_map == 1
+        debug_log("[d] Registrations_Ctrl: ac: update second if")  # log
+        if @user.shop_name.blank?
+          @user.map_info = ""
+          if @user.address.present?
+            search_map_set_latlng
+            @user.search_map = 2
+          end
+          @user.save
+          debug_log("[d] Registrations_Ctrl: ac: update ..shop_name=#{@user.shop_name}")  # log
+        else
+          base_url = "https://maps.google.co.jp/maps?output=embed&q="
+          @user.map_info = base_url + @user.shop_name
+          @user.save
+          debug_log("[d] Registrations_Ctrl: ac: search_map_set_latlng @user.map_info(search_map)=#{@user.map_info}")  # log
+        end
+      # 住所で検索
+      elsif @user.search_map == 2
+        debug_log("[d] Registrations_Ctrl: ac: update second if")  # log
+        if @user.address.blank?
+          @user.map_info = ""
+          @user.save
+          debug_log("[d] Registrations_Ctrl: ac: update ..address=#{@user.address}")  # log
+        else
+          search_map_set_latlng
+        end
+      elsif @user.search_map == 3
+        @user.map_info = ""
+        @user.save
+      end
     end
-    
-    debug_log("[d] Registrations_Ctrl: ac: update ..address = #{@user.address}")  # log
-    debug_log("[d] Registrations_Ctrl: ac: update ..map_info = #{@user.map_info}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: update ..map_info=#{@user.map_info}")  # log
   end
 
   # DELETE /resource
@@ -52,7 +86,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # shop_images削除
   def delete_photo
     debug_log("[d] Registrations_Ctrl: ac: delete_photo")  # log
-    debug_log("[d] Registrations_Ctrl: ac: delete_photo @user = #{@user.inspect}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: delete_photo @user=#{@user.inspect}")  # log
     if @user.shop_images.present?
       @user.shop_images = ""
       @user.save
@@ -89,15 +123,15 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # ユーザ情報変更時の「パスワードの確認」を無効にする
   def update_resource(resource, params)
     debug_log("[d] Registrations_Ctrl: ac: update_resource (パスワードの確認を無効)")  # log
-    debug_log("[d] Registrations_Ctrl: ac: update_resourc resource = #{resource.inspect}")  # log
-    debug_log("[d] Registrations_Ctrl: ac: update_resourc params = #{params.inspect}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: update_resourc resource=#{resource.inspect}")  # log
+    debug_log("[d] Registrations_Ctrl: ac: update_resourc params=#{params.inspect}")  # log
     resource.update_without_password(params)
   end
   
   # ユーザーID取得
   def set_user
     if params[:id]
-      debug_log("[d] Registrations_Ctrl: ac: set_user id: #{params[:id]}")  # log
+      debug_log("[d] Registrations_Ctrl: ac: set_user id=#{params[:id]}")  # log
       @user = User.find(params[:id])
     end
   end
@@ -105,7 +139,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # geocodingを用いてGoogleMap用のURLを作成と格納
   def search_map_set_latlng
     base_url = "https://maps.google.co.jp/maps?output=embed&q="
-    
     geocoding_search_url = "https://www.geocoding.jp/api/?q=" + @user.address
     
     uriencode = URI.encode(geocoding_search_url)
@@ -118,7 +151,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     
     @user.map_info = base_url + lat + "," + lng
     @user.save
-    debug_log("[d] Registrations_Ctrl: ac: search_map_set_latlng")  # log
+    debug_log("[d] Registrations_Ctrl: ac: search_map_set_latlng @user.map_info(address)=#{@user.map_info}")  # log
   end
   
   # If you have extra params to permit, append them to the sanitizer.

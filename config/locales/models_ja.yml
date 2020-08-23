@@ -13,6 +13,7 @@ ja:
           shop_name: ショップ名
           shop_images: ショップイメージ画像
           address: 住所
+          search_map: マップ検索
           howto_access: アクセス方法
           tel: 電話番号
           business_hours: 営業時間

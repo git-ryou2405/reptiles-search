@@ -7,7 +7,6 @@
       <% if @reptile.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(reptile.errors.count, "error") %> prohibited this reptile from being saved:</h2>
-
           <ul>
             <% @reptile.errors.full_messages.each do |message| %>
               <li><%= message %></li>
@@ -17,14 +16,14 @@
       <% end %>
       
       <!-- image -->
-      <% if @reptile.image.present? %>
+      <% if @reptile.images.present? %>
         <p>
-        <%= image_tag @reptile.image.url, :width => "100", id: "margin5px" %><br>
+        <%= image_tag @reptile.images.url, :width => "100", id: "margin5px" %><br>
         <%= f.check_box :remove_image %><%= "画像を削除" %><br>
         </p>
       <% else %>
-        <%= f.label :image, class: "mt-2" %><br>
-        <%= f.file_field :image, id: :reptile_image %><br>
+        <%= f.label :images, class: "mt-2" %><br>
+        <%= f.file_field :images, multiple: true, id: :reptile_images %><br>
       <% end %>
       <!-- image -->
       

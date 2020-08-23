@@ -45,7 +45,7 @@ array = [
 ]
 
 array.each do |first, second, third, fourth, fifth, sixth|
-  Reptile.create!( image: "", type1: first, type2: "", type_name: second, morph: "", sex: third, age: "1才", size: fourth, weight: "500g",
+  Reptile.create!( images: "", type1: first, type2: "", type_name: second, morph: "", sex: third, age: "1才", size: fourth, weight: "500g",
     description: "", price: fifth, sales_status: "販売中", arrival_day: "", user_id: sixth )
 end
 puts "success create reptile."

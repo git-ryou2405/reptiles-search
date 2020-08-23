@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_08_05_061820) do
 
   create_table "reptiles", force: :cascade do |t|
-    t.string "image"
+    t.string "images"
     t.string "type1"
     t.string "type2"
     t.string "type_name"
@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_061820) do
     t.string "sales_status"
     t.date "arrival_day"
     t.integer "user_id"
+    t.string "shop_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_061820) do
     t.string "shop_name"
     t.string "shop_images"
     t.string "address"
+    t.integer "search_map", default: 3
     t.string "howto_access"
     t.string "tel"
     t.string "business_hours"

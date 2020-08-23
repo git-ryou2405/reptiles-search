@@ -7,6 +7,8 @@ class User < ApplicationRecord
   mount_uploaders :shop_images, ImageUploader
   serialize :shop_images, JSON
   
+  validates :search_map, presence: true, if: Proc.new { |user| user.shop_name.present? || user.address.present? }
+  
   def self.find_for_oauth(auth)
     Rails.application.config.another_logger.debug("[d] user.rb")
     

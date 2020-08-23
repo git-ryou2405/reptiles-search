@@ -17,6 +17,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :shop_name
       t.string :shop_images
       t.string :address
+      t.integer :search_map,        default: 3
       t.string :howto_access
       t.string :tel
       t.string :business_hours

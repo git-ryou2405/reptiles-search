@@ -1,21 +1,16 @@
-<% Rails.application.config.another_logger.debug "[d] view: userinfo id=#{@user.id}" %>
-<!--
-<div class="row justify-content-center my-3">
-  <% if current_user.shop_images.present? %>
-    <% current_user.shop_images.each do |image| %>
-      <% Rails.application.config.another_logger.debug "[d] view: userinfo #{image.inspect}" %>
-    <%= image_tag image.url, :size =>'500x281' %>
-    <% end %>
-  <% end %>
-</div>
--->
+<% Rails.application.config.another_logger.debug "[d] view: shopinfo" %>
 
-<!-- shop_image -->
-<!-- スライダー -->
-<% if current_user.shop_images.present? %>
+<!-- ショップ情報 -->
+<% if @disp_shopinfo.present? %>
+  <% @user = @disp_shopinfo %>
+  <% Rails.application.config.another_logger.debug "[d] view: shopinfo @user=#{@user.inspect}" %>
+<% end %>
+
+<!-- shop_image スライダー -->
+<% if @user.shop_images.present? %>
   <div class="swiper-container text-center">
     <div class="swiper-wrapper">
-      <% current_user.shop_images.each do |image| %>
+      <% @user.shop_images.each do |image| %>
       <div class="swiper-slide">
         <%= image_tag image.url, class:"swiper-image" %>
       <%# <%= image_tag image.url, :size =>'450x253' %>
@@ -30,19 +25,21 @@
 <% else %>
   <div style="margin-top: 188px"></div>
 <% end %>
-<!-- スライダー -->
+<!-- shop_image スライダー -->
 
 <%# <h3>店舗情報</h3> %>
 <div class="shop-data-list">
   <dl class="shop-data-item flex align-center">
-    <dt>所在地</dt>
+    <dt>所在地（住所）</dt>
     <dd><%= @user.address %></dd>
   </dl>
+  <% if @user.howto_access.present? %>
   <dl class="shop-data-item flex align-center">
     <dt>アクセス方法</dt>
     <!-- googlemapへスクロール -->
     <dd class="anchor"><a href="#googlemap"><%= @user.howto_access %></a></span></dd>
   </dl>
+  <% end %>
   <dl class="shop-data-item flex">
     <dt>営業時間</dt>
     <dd><%= @user.business_hours %></dd>
@@ -55,30 +52,42 @@
     <dt>電話番号</dt>
     <dd><%= @user.tel %></dd>
   </dl>
+  <% if @user.url.present? %>
   <dl class="shop-data-item flex">
     <dt>ホームページ</dt>    <!-- 別タブでホームページに移動 -->
     <dd><a href=<%= @user.url %> target="_blank"><%= @user.url %></a></dd>
   </dl>
+  <% end %>
+  <% if @user.twitter.present? %>
   <dl class="shop-data-item flex">
     <dt>SNS(twitter)</dt>    <!-- 別タブでSNSに移動 -->
     <dd><a href=<%= @user.twitter %> target="_blank"><%= @user.twitter %></a></dd>
   </dl>
+  <% end %>
+  <% if @user.handling_animals.present? %>
   <dl class="shop-data-item flex">
     <dt>取扱い生体</dt>
     <dd><%= simple_format(@user.handling_animals) %></dd>
   </dl>
+  <% end %>
+  <% if @user.handling_feeds.present? %>
   <dl class="shop-data-item flex">
     <dt>取扱い餌</dt>
     <dd><%= simple_format(@user.handling_feeds) %></dd>
   </dl>
+  <% end %>
+  <% if @user.handling_goods.present? %>
   <dl class="shop-data-item flex">
     <dt>取扱い用品</dt>
     <dd><%= simple_format(@user.handling_goods) %></dd>
   </dl>
+  <% end %>
+  <% if @user.feature.present? %>
   <dl class="shop-data-item flex">
     <dt>当店の特徴</dt>
     <dd><%= simple_format(@user.feature) %></dd>
   </dl>
+  <% end %>
 </div>
 
 <!-- google Map -->
