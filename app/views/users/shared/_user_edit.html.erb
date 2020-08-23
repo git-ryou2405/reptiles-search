@@ -49,6 +49,13 @@
           <%= f.text_field :shop_name, autofocus: false, autocomplete: "shop_name", class: "form-control" %>
       </div>
       
+      <% @prefectures = Prefecture.all %>
+      
+      <div class="field">
+        <%= f.label :prefectures, class: "mt-2" %>
+        <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true, autocomplete: "prefectures"}, { class: "form-control" } %>
+      </div>
+      
       <div class="field">
         <%= f.label :address, class: "mt-2" %>
         <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control" %>

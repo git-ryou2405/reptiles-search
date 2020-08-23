@@ -12,7 +12,8 @@ ja:
           password_confirmation: パスワード再入力
           shop_name: ショップ名
           shop_images: ショップイメージ画像
-          address: 住所
+          prefectures: 都道府県
+          address: ショップ住所
           search_map: マップ検索
           howto_access: アクセス方法
           tel: 電話番号
@@ -32,9 +33,9 @@ ja:
           type_name: 種名
           morph: モルフ
           sex: 性別
-          size: サイズ等
-          max: 最大サイズ
-          area: 生息地
+          age: 年齢
+          size: サイズ
+          weight: 重さ
           description: 説明
           price: 価格
           sales_status: 販売状況

@@ -16,6 +16,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.boolean :admin,             default: false
       t.string :shop_name
       t.string :shop_images
+      t.string :prefectures
       t.string :address
       t.integer :search_map,        default: 3
       t.string :howto_access

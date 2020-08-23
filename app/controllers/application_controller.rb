@@ -18,10 +18,14 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  def test
+    redirect_to root_path
+  end
+  
   # ショップ情報 ストロングパラメーター
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:account_update, keys: [
-      :name, :image, :shop_name, {shop_images: [] }, :address, :search_map,:howto_access, :tel,
+      :name, :image, :shop_name, {shop_images: [] }, :prefectures,:address, :search_map,:howto_access, :tel,
       :business_hours, :holiday, :handling_animals, :handling_feeds, :handling_goods, :feature,
       :url, :map_info, :twitter, :facebook ,:instagram] )
   end

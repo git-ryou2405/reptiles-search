@@ -1,7 +1,7 @@
 <% flash.each do |msg_type, msg| %>
   <!-- msg_typeのハッシュを文字列として取得後、応じたbootstrapを当てる -->
   <% @key = msg_type.to_s %>
-  <% Rails.application.config.another_logger.debug "[d] flash[:#{@key}]" %>
+  <% Rails.application.config.another_logger.debug "[d] flash_messages flash[:#{@key}]" %>
   
   <div class="flash">
     <% if @key == "alert" %>

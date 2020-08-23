@@ -7,6 +7,7 @@ class User < ApplicationRecord
   mount_uploaders :shop_images, ImageUploader
   serialize :shop_images, JSON
   
+  # validates :shop_name, presence: true
   validates :search_map, presence: true, if: Proc.new { |user| user.shop_name.present? || user.address.present? }
   
   def self.find_for_oauth(auth)

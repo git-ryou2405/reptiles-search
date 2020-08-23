@@ -1,6 +1,6 @@
 <% Rails.application.config.another_logger.debug "[d] view: shopinfo" %>
 
-<!-- ショップ情報 -->
+<!-- ショップ情報 取得判定 -->
 <% if @disp_shopinfo.present? %>
   <% @user = @disp_shopinfo %>
   <% Rails.application.config.another_logger.debug "[d] view: shopinfo @user=#{@user.inspect}" %>

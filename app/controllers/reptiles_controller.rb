@@ -81,13 +81,11 @@ class ReptilesController < ApplicationController
         
         # 種別とモルフから検索
         if search_type_name.exists? || search_morph.exists?
-          @search_type_name = search_type_name
-          @search_morph = search_morph
-          
           @search_result = search_type_name + search_morph
-          debug_log("[d] Reptiles_Ctrl: ac: search @search_result=#{@search_type_name.inspect}")  # log
-          debug_log("[d] Reptiles_Ctrl: ac: search @search_result=#{@search_morph.inspect}")  # log
           flash.now[:warning] = "「#{params[:search]}」の検索結果：#{@search_result.count}件"
+          
+          debug_log("[d] Reptiles_Ctrl: ac: search search_type_name=#{search_type_name.inspect}")  # log
+          debug_log("[d] Reptiles_Ctrl: ac: search search_morph=#{search_morph.inspect}")  # log
         else
           flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
         end
@@ -109,6 +107,24 @@ class ReptilesController < ApplicationController
     elsif params[:searchtype] == "reptileinfo"
       @disp_reptileinfo = Reptile.find(params[:id])
       debug_log("[d] Reptiles_Ctrl: ac: search @disp_reptileinfo=#{@disp_reptileinfo.inspect}")  # log
+    
+    # 全国登録データ_選択レプタイル_タイプからの検索フォーム
+    else
+      search_type_name = Reptile.where(type1: params[:searchtype], type_name: params[:search])
+      search_morph = Reptile.where(type1: params[:searchtype], morph: params[:search])
+      debug_log("[d] Reptiles_Ctrl: ac: search search_type_name=#{search_type_name.inspect}")  # log
+      debug_log("[d] Reptiles_Ctrl: ac: search search_morph=#{search_morph.inspect}")  # log
+      
+      # 種別とモルフから検索
+      if search_type_name.exists? || search_morph.exists?
+        @search_result = search_type_name + search_morph
+        flash.now[:warning] = "「#{params[:search]}」の検索結果：#{@search_result.count}件"
+        
+        debug_log("[d] Reptiles_Ctrl: ac: search search_type_name=#{search_type_name.inspect}")  # log
+        debug_log("[d] Reptiles_Ctrl: ac: search search_morph=#{search_morph.inspect}")  # log
+      else
+        flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+      end
     end
   end
   

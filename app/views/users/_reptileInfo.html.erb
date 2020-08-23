@@ -1,6 +1,6 @@
 <% Rails.application.config.another_logger.debug "[d] view: reptileinfo" %>
 
-<!-- レプタイル情報 -->
+<!-- レプタイル情報 取得判定 -->
 <% if @disp_reptileinfo.present? %>
   <% @reptile = @disp_reptileinfo %>
   <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
@@ -11,11 +11,11 @@
   <div class="swiper-container text-center">
     <div class="swiper-wrapper">
       <% @reptile.images.each do |image| %>
-      <div class="swiper-slide">
-        <%= image_tag image.url, class:"swiper-image" %>
-      <%# <%= image_tag image.url, :size =>'450x253' %>
-      <%#= image_tag image.url, :size =>'533x300' %>
-      </div>
+        <div class="swiper-slide">
+          <%= image_tag image.url, class:"swiper-image" %>
+        <%# <%= image_tag image.url, :size =>'450x253' %>
+        <%#= image_tag image.url, :size =>'533x300' %>
+        </div>
       <% end %>
       </div>
     <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
@@ -42,8 +42,38 @@
     <dd><%= @reptile.sex %></dd>
   </dl>
   <dl class="shop-data-item flex">
+    <dt>年齢</dt>
+    <dd><%= @reptile.age %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>重さ</dt>
+    <dd><%= @reptile.weight %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>説明</dt>
+    <dd><%= @reptile.description %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
     <dt>価格</dt>
     <dd><%= @reptile.price %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>価格</dt>
+    <dd><%= @reptile.sales_status %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>入荷時期</dt>
+    <dd><%= @reptile.arrival_day %></dd>
+  </dl>
+  <dl class="shop-data-item flex">
+    <dt>販売ショップ</dt>
+    <dd>
+      <% if @reptile.shop_name %>
+        <%= link_to @reptile.shop_name, reptiles_shop_page_path(shop_id: @reptile.user_id) %>
+      <% else %>
+        <%= link_to "ショップ名未登録", reptiles_shop_page_path(shop_id: @reptile.user_id) %>
+      <% end %>
+    </dd>
   </dl>
 </div>
 

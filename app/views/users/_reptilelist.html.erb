@@ -1,12 +1,29 @@
 <% Rails.application.config.another_logger.debug "[d] view: reptilelist" %>
 
-<% if @search_result %><!-- 検索フォーム -->
+<!-- レプタイル情報 取得判定 -->
+<% if @search_result %>
+<!-- 検索フォーム -->
   <% @reptile_type = @search_result %>
   <% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
-<% elsif @search_type1_list %><!-- 種類から探す --><!-- 販売生体ボタンから -->
+<% elsif @search_type1_list %>
+<!-- 種類から探す or 販売生体ボタンから -->
   <% @reptile_type = @search_type1_list %>
   <% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
 <% end %>
+
+<!-- 検索フォーム -->
+<section class="search-content">
+  <% if @reptile_type.present? %>
+    <% @searchtype = @reptile_type[0].type1 %>
+  <% else %>
+    <% @searchtype = "form" %>
+  <% end %>
+  <%= form_with(url: reptiles_search_page_path, method: :get, local: true) do |f| %>
+    <%= f.hidden_field :searchtype, :value => @searchtype %>
+    <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
+    <%= f.submit '検索', class:"search-btn align-center" %>
+  <% end %>
+</section>
 
 <% if @reptile_type %>
   <!-- 生体詳細 -->
@@ -26,12 +43,12 @@
         
         <ul class="txt-list">
           <li class="txt-item flex align-center">
-            <p class="species">種類</p>
-            <p class="name"><%= reptile.type1 %></p>
+            <p class="species">種名</p>
+            <p class="name"><%= reptile.type_name %></p>
           </li>
           <li class="txt-item flex align-center">
             <p class="morph">モルフ</p>
-            <p class="name"><%= reptile.type2 %></p>
+            <p class="name"><%= reptile.morph %></p>
           </li>
           <li class="txt-item flex align-center">
             <p class="gender">性別</p>
@@ -46,7 +63,6 @@
             <p class="price">販売ショップ</p>
             <p class="name">
             <% if reptile.shop_name %>
-              <%#= link_to reptile.shop_name, reptiles_search_page_path(searchtype: "shopinfo", shop_id: reptile.user_id) %>
               <%= link_to reptile.shop_name, reptiles_shop_page_path(shop_id: reptile.user_id) %>
             <% else %>
               <%= link_to "ショップ名未登録", reptiles_shop_page_path(shop_id: reptile.user_id) %>

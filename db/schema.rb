@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_05_061820) do
+ActiveRecord::Schema.define(version: 2020_08_23_064627) do
+
+  create_table "prefectures", force: :cascade do |t|
+    t.string "pref"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "reptiles", force: :cascade do |t|
     t.string "images"
@@ -44,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_08_05_061820) do
     t.boolean "admin", default: false
     t.string "shop_name"
     t.string "shop_images"
+    t.string "prefectures"
     t.string "address"
     t.integer "search_map", default: 3
     t.string "howto_access"

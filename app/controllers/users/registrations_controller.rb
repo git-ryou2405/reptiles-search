@@ -3,7 +3,7 @@
 class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
-  before_action :set_user, only:[:edit, :delete_photo]
+  before_action :set_user, only:[:edit, :update, :delete_photo]
   
   # GET /resource/sign_up
   def new
@@ -30,6 +30,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     end
       @signup = "no_shop_name" if params[:signup] == "no_shop_name"
     super
+    debug_log("[d] Registrations_Ctrl: ac: edit test")  # log
   end
 
   # PUT /resource
@@ -42,7 +43,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     if @user.saved_change_to_shop_name? || @user.saved_change_to_address? || @user.saved_change_to_search_map?
       debug_log("[d] Registrations_Ctrl: ac: update first if")  # log
       
-      # ショップ名で検索
+      # ショップ名でマップ検索
       if @user.search_map == 1
         debug_log("[d] Registrations_Ctrl: ac: update second if")  # log
         if @user.shop_name.blank?
@@ -59,7 +60,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
           @user.save
           debug_log("[d] Registrations_Ctrl: ac: search_map_set_latlng @user.map_info(search_map)=#{@user.map_info}")  # log
         end
-      # 住所で検索
+        
+      # 住所でマップ検索
       elsif @user.search_map == 2
         debug_log("[d] Registrations_Ctrl: ac: update second if")  # log
         if @user.address.blank?

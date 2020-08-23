@@ -44,7 +44,20 @@
     <% end %>
   </ul>
   <!-- 種類から探す：end -->
+  
 
+  <!-- ショップ検索フォーム -->
+  <div class="search">
+    <h2 class="serch-ttl-shop">爬虫類ショップを探す</h2>
+    <div class="row justify-content-center">
+      <%= form_with(url: reptiles_search_page_path, method: :get, local: true) do |f| %>
+        <%= f.hidden_field :searchtype, :value => "form" %>
+        <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
+        <%= f.submit '検索', class:"search-btn align-center" %>
+      <% end %>
+    </div>
+  </div>
+  <!-- ショップ検索フォーム -->
 
   <!-- スクロール用 -->
   <div class="box"></div>
