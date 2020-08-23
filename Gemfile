@@ -26,6 +26,7 @@ gem 'carrierwave'                              # 画像のアップロード
 gem 'mini_magick'                              # 画像リサイズ（ImageMagickのラッパー）
 gem 'colorize'                                 # ログの色付け
 # gem 'font-awesome-sass'                        # FontAwesome
+gem 'jp_prefecture'                            # 郵便番号から住所検索
 gem 'gretel'                                   # パンくずリスト
 gem 'gon'                                      # JavascriptとRails連携
 

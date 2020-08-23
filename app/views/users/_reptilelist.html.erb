@@ -18,7 +18,7 @@
   <% else %>
     <% @searchtype = "form" %>
   <% end %>
-  <%= form_with(url: reptiles_search_page_path, method: :get, local: true) do |f| %>
+  <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
     <%= f.hidden_field :searchtype, :value => @searchtype %>
     <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
     <%= f.submit '検索', class:"search-btn align-center" %>
@@ -35,9 +35,9 @@
       <li class="search-item flex align-center">
         <div class="photo">
           <% if reptile.images.present? %>
-            <%= link_to image_tag(reptile.images[0].url), reptiles_search_page_path(Reptile, id: reptile.id, searchtype: "reptileinfo" ) %>
+            <%= link_to image_tag(reptile.images[0].url), search_page_path(Reptile, id: reptile.id, searchtype: "reptileinfo" ) %>
           <% else %>
-            <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), reptiles_search_page_path(Reptile, id: reptile.id, searchtype: "reptileinfo" ) %>
+            <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), search_page_path(Reptile, id: reptile.id, searchtype: "reptileinfo" ) %>
           <% end %>
         </div>
         
@@ -63,9 +63,9 @@
             <p class="price">販売ショップ</p>
             <p class="name">
             <% if reptile.shop_name %>
-              <%= link_to reptile.shop_name, reptiles_shop_page_path(shop_id: reptile.user_id) %>
+              <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
             <% else %>
-              <%= link_to "ショップ名未登録", reptiles_shop_page_path(shop_id: reptile.user_id) %>
+              <%= link_to "ショップ名未登録", shop_page_path(shop_id: reptile.user_id) %>
             <% end %>
             </p>
           </li>

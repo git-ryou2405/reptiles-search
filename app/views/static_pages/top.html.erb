@@ -15,7 +15,7 @@
   <div class="search">
     <h2 class="serch-ttl">爬虫類を探す</h2>
     <div class="row justify-content-center">
-      <%= form_with(url: reptiles_search_page_path, method: :get, local: true) do |f| %>
+      <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
         <%= f.hidden_field :searchtype, :value => "form" %>
         <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
         <%= f.submit '検索', class:"search-btn align-center" %>
@@ -35,7 +35,7 @@
         <a href="snake.html">
             <div class="photo">
               <%= link_to image_tag("/uploads/main/#{animal_type}.jpg"),
-               reptiles_search_page_path(Reptile, type1: translation[@count], searchtype: "ctg_btn" ) %>
+               search_page_path(Reptile, type1: translation[@count], searchtype: "ctg_btn" ) %>
             </div>
             <p class="species"><%= translation[@count] %></p>
         </a>
@@ -44,20 +44,19 @@
     <% end %>
   </ul>
   <!-- 種類から探す：end -->
-  
 
-  <!-- ショップ検索フォーム -->
+  <!-- 検索フォーム -->
   <div class="search">
-    <h2 class="serch-ttl-shop">爬虫類ショップを探す</h2>
+    <h2 class="serch-ttl">爬虫類ショップを探す</h2>
     <div class="row justify-content-center">
-      <%= form_with(url: reptiles_search_page_path, method: :get, local: true) do |f| %>
-        <%= f.hidden_field :searchtype, :value => "form" %>
+      <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+        <%= f.hidden_field :searchtype, :value => "shop_name" %>
         <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
         <%= f.submit '検索', class:"search-btn align-center" %>
       <% end %>
     </div>
   </div>
-  <!-- ショップ検索フォーム -->
+  <!-- 検索フォーム -->
 
   <!-- スクロール用 -->
   <div class="box"></div>

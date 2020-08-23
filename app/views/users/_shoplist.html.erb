@@ -1,0 +1,58 @@
+<% Rails.application.config.another_logger.debug "[d] view: shoplist" %>
+
+<!-- ショップ情報 取得判定 -->
+<% if @search_shop_result %>
+<!-- 検索フォーム -->
+  <% @shoplist = @search_shop_result %>
+  <% Rails.application.config.another_logger.debug "[d] view: shoplist @shoplist=#{@shoplist.inspect}" %>
+<% elsif @search_shop_prefectures %>
+<!-- 都道府県から探す -->
+  <% @shoplist = @search_shop_prefectures %>
+  <% Rails.application.config.another_logger.debug "[d] view: shoplist @shoplist=#{@shoplist.inspect}" %>
+<% end %>
+
+<!-- 検索フォーム -->
+<section class="search-content">
+  <%= form_with(url: shop_page_path, method: :get, local: true) do |f| %>
+    <%= f.hidden_field :searchtype, :value => "shop" %>
+    <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
+    <%= f.submit '検索', class:"search-btn align-center" %>
+  <% end %>
+</section>
+
+<% if @shoplist %>
+  <!-- ショップリスト -->
+  <section class="search-content">
+    <ul class="search-list">
+      <% @shoplist.each do |shop| %>
+      <% Rails.application.config.another_logger.debug "[d] view: reptilelist reptile=#{shop.inspect}" %>
+      <!-- ループ -->
+      <li class="search-item flex align-center">
+        <div class="photo">
+          <% if shop.shop_images.present? %>
+            <%= link_to image_tag(shop.shop_images[0].url), shop_page_path(shop_id: shop.id) %>
+          <% else %>
+            <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), shop_page_path(shop_id: shop.id) %>
+          <% end %>
+        </div>
+        
+        <ul class="txt-list">
+          <li class="txt-item flex align-center">
+            <p class="species">ショップ名</p>
+            <p class="name"><%= shop.shop_name %></p>
+          </li>
+          <li class="txt-item flex align-center">
+            <p class="morph">都道府県</p>
+            <p class="name"><%= shop.prefectures %></p>
+          </li>
+          
+        </ul>
+      </li>
+      <!-- ここまでループ -->
+      <% end %>
+      <li class="search-item flex align-center"></li>
+    </ul>
+  </section>
+  <!-- ここまでショップリスト -->
+
+<% end %>

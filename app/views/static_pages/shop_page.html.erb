@@ -1,0 +1,113 @@
+<% Rails.application.config.another_logger.debug "[d] view: reptile/shop" %>
+
+<!-- headerのぶん -->
+<div style="padding-top: 40px;">
+
+<!-- マイページ -->
+<div class="container">
+  <h1 class="shop-ttl" style="font-size: 40px;" ><%= @disp_shopinfo.shop_name %></h1>
+  
+  <% if @type1_name.present? %>
+    <h1 class="shop-ttl" style="font-size: 20px;" ><%= "\"#{@type1_name}\" 一覧" %></h1>
+  <% end %>
+  <div class="row justify-content-center show">
+      
+      <!-- サイドメニュー -->
+      <div class="col-lg-3 col-xl-3">
+        
+        <!-- 販売生体一覧 -->
+        <h2 class="menu-ttl">
+          <div style="font-size:14px;"><%= @disp_shopinfo.shop_name %><br></div>
+          販売生体
+          <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+        </h2>
+        <ul class="menu-list">
+          <!-- リンク先の生成 -->
+          <% reptile_list = [ "ヘビ", "カメ", "トカゲ", "ヤモリ", "両生類", "奇虫・その他" ] %>
+          <% reptile_list.each do |reptile_type| %>
+            <%= link_to shop_page_path(Reptile, type1: reptile_type, shop_id: @disp_shopinfo.id ), style:"text-decoration: none;" do %>
+            <li class="reptile-item"><%= reptile_type %>
+              <div style="float: right; margin-right: auto;">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </li>
+            <% end %>
+          <% end %>
+          <!-- ここまでリンク先の生成 -->
+        </ul>
+        <!-- ここまで販売生体一覧 -->
+        
+        <!-- 入荷情報 -->
+        <h2 class="arrival-ttl menu-ttl relative mt-5">
+          <div style="font-size:14px;"><%= @disp_shopinfo.shop_name %><br></div>
+          新入荷
+          <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+        </h2>
+        
+        <ul class="menu-list">
+          <li class="arrival-item">
+              <p class="arrival-day">2020年◯月◯日入荷</p>
+              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
+              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
+          </li>
+        </ul>
+        <!-- ここまで入荷情報 -->
+        
+        <!-- SNS -->
+        <div class="sns-box-wrap wrap-trigger">
+          <% if @disp_shopinfo.twitter.present? || @disp_shopinfo.instagram.present? %>
+            <h2 class="sns-ttl relative mt-5">SNS
+              <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+            </h2>
+          <% end %>
+          
+          <!-- twitter -->
+          <% if @disp_shopinfo.twitter.present? %>
+            <div class="sns-box">
+              <a class="twitter-timeline" data-width="100%" data-height="100%" data-theme="dark" href=<%= @disp_shopinfo.twitter %> ></a>
+              <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          <% end %>
+          <!-- twitter -->
+          
+          <!-- Instagram -->
+          <% if @disp_shopinfo.instagram.present? %>
+            <div style="padding: 10px 0;">
+              <%= @disp_shopinfo.instagram.html_safe %>
+            </div>
+          <% end %>
+          <!-- Instagram -->
+        </div>
+        <!-- SNS -->
+        
+      </div>
+      <!-- ここまでサイドメニュー -->
+      
+      <!-- メイン -->
+      <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
+        <% if @disp_shopinfo.present? && @search_type1_list == "nodata" %>
+          <!-- ショップ情報 -->
+          <%= render "./users/shopinfo" %>
+        <% elsif @disp_reptileinfo.present? %>
+          <!-- レプタイル情報 -->
+          <%= render "./users/reptileinfo" %>
+        <% elsif @disp_shopinfo.present? && @search_type1_list %>
+          <!-- ショップの生体リスト情報 -->
+          <%= render "./users/reptilelist" %>
+        <% else %>
+          <!-- 生体リスト情報 -->
+          <%= render "./users/reptilelist" %>
+        <% end %>
+      </div>
+      
+  </div>
+</div>
+
+<script>
+  $('.menu-ttl').click(function() {
+    $(this).next('.menu-list').slideToggle();
+  });
+  $('.sns-ttl').click(function() {
+    $('.sns-box').slideToggle();
+  });
+</script>

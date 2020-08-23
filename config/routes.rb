@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root 'static_pages#top'
+  get 'search_page' => 'static_pages#search_page'
+  get 'shop_page' => 'static_pages#shop_page'
   
   devise_for :users, controllers: {
     :omniauth_callbacks => 'users/omniauth_callbacks',
@@ -15,9 +17,6 @@ Rails.application.routes.draw do
   get '/users', to: 'devise/registrations#new'
   get '/users/password', to: 'devise/passwords#new'
   get '/users/password/edit', to: 'devise/passwords#edit'
-  
-  get 'reptiles/search_page' => 'reptiles#search_page'
-  get 'reptiles/shop_page' => 'reptiles#shop_page'
   
   resources :users, :only => [:show, :edit] do
     resources :reptiles

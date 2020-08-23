@@ -44,19 +44,19 @@ array = [
   # 名前　性別　サイズ　価格　user_id
   
   # ユーザー2
-  [ "ヘビ","レオパードパステルモハベ", "不明", "不明", 42000, 2 ],
-  [ "ヘビ","アンゴラパイソン", "不明", "60cm前後", 300000, 2 ],
-  [ "ヘビ","コーンスネーク キャラメル", "不明", "20cm前後", 12800, 2 ],
+  [ "ヘビ","レオパードパステルモハベ", "不明", "不明", 42000, 2, "レプタイルショップ" ],
+  [ "ヘビ","アンゴラパイソン", "不明", "60cm前後", 300000, 2, "レプタイルショップ" ],
+  [ "ヘビ","コーンスネーク キャラメル", "不明", "20cm前後", 12800, 2, "レプタイルショップ" ],
 
   # ユーザー3
-  [ "ヘビ","コーラルピンクボア", "不明", "180cm前後", 58000, 3 ],
-  [ "ヘビ","コロンビアボア", "不明", "140cm前後", 60000, 3 ],
-  [ "ヘビ","セントラルアメリカンボア", "不明", "140cm前後", 58000, 3 ]
+  [ "ヘビ","コーラルピンクボア", "不明", "180cm前後", 58000, 3, "爬虫類らんど" ],
+  [ "ヘビ","コロンビアボア", "不明", "140cm前後", 60000, 3, "爬虫類らんど" ],
+  [ "ヘビ","セントラルアメリカンボア", "不明", "140cm前後", 58000, 3, "爬虫類らんど" ]
 ]
 
-array.each do |first, second, third, fourth, fifth, sixth|
+array.each do |first, second, third, fourth, fifth, sixth, seventh|
   Reptile.create!( images: "", type1: first, type2: "", type_name: second, morph: "", sex: third, age: "1才", size: fourth, weight: "500g",
-    description: "", price: fifth, sales_status: "販売中", arrival_day: "", user_id: sixth )
+    description: "", price: fifth, sales_status: "販売中", arrival_day: "", user_id: sixth, shop_name: seventh )
 end
 puts "success create reptile."
 
