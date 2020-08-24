@@ -126,5 +126,3 @@ DerivedData/
 # secret key
 /.env
 
-# .bundle/config
-BUNDLE_WITHOUT: "production"

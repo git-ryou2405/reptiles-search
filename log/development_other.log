@@ -1215,3 +1215,22 @@ D, [2020-08-24T01:22:00.117191 #2981] DEBUG -- : [d] view: reptileinfo @reptile=
 D, [2020-08-24T01:50:16.228110 #2981] DEBUG -- : [d] view: 新規作成
 D, [2020-08-24T01:50:16.233133 #2981] DEBUG -- : [d] error_messages.html.erb
 D, [2020-08-24T01:50:16.320933 #2981] DEBUG -- : [d] Registrations_Ctrl: ac: new
+D, [2020-08-24T11:45:51.184854 #8954] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-24T11:45:54.459114 #8954] DEBUG -- : [d] view: 新規作成
+D, [2020-08-24T11:45:54.463094 #8954] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-24T11:45:54.491479 #8954] DEBUG -- : [d] Registrations_Ctrl: ac: new
+D, [2020-08-24T11:46:02.566868 #8954] DEBUG -- : [d] OmniauthCallbacks_Ctrl: ac: facebook
+D, [2020-08-24T11:46:02.566933 #8954] DEBUG -- : [d] OmniauthCallbacks_Ctrl: ac: callback_from ： provider = facebook
+D, [2020-08-24T11:46:02.566968 #8954] DEBUG -- : [d] user.rb
+D, [2020-08-24T11:46:02.839413 #8954] DEBUG -- : @user = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAASkDv55XuleYOllHey3CU55Hee6ZAEv6hk4K...", provider: "facebook", admin: false, shop_name: nil, shop_images: nil, prefectures: nil, address: nil, search_map: 3, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-24 02:46:02", updated_at: "2020-08-24 02:46:02">
+D, [2020-08-24T11:46:02.839500 #8954] DEBUG -- : [d] OmniauthCallbacks_Ctrl: ac: callback_from：if ok (@user.persisted?)
+D, [2020-08-24T11:46:03.245237 #8954] DEBUG -- : [d] Application_Ctrl: ac: after_sign_in_path_for resource = #<User id: 4, email: "ryou2405@yahoo.co.jp", name: "山口 亮", image: "http://graph.facebook.com/v3.0/3936505469758017/pi...", password: nil, uid: "3936505469758017", token: "EAAEr0QCWMz4BAASkDv55XuleYOllHey3CU55Hee6ZAEv6hk4K...", provider: "facebook", admin: false, shop_name: nil, shop_images: nil, prefectures: nil, address: nil, search_map: 3, howto_access: nil, tel: nil, business_hours: nil, holiday: nil, url: nil, handling_animals: nil, handling_feeds: nil, handling_goods: nil, feature: nil, map_info: nil, twitter: nil, facebook: nil, instagram: nil, created_at: "2020-08-24 02:46:02", updated_at: "2020-08-24 02:46:03">
+D, [2020-08-24T11:46:03.245296 #8954] DEBUG -- : [d] Application_Ctrl: ac: after_sign_in_path_for resource.id = 4
+D, [2020-08-24T11:46:03.258691 #8954] DEBUG -- : [d] Registrations_Ctrl: ac: edit @edit_mode=info
+D, [2020-08-24T11:46:03.264309 #8954] DEBUG -- : [d] view: ユーザー情報の変更 id=4
+D, [2020-08-24T11:46:03.265212 #8954] DEBUG -- : [d] error_messages.html.erb
+D, [2020-08-24T11:46:03.302377 #8954] DEBUG -- : [d] flash_messages flash[:success]
+D, [2020-08-24T11:46:03.303271 #8954] DEBUG -- : [d] Registrations_Ctrl: ac: edit test
+D, [2020-08-24T11:46:07.310314 #8954] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-24T11:46:10.002400 #8954] DEBUG -- : [d] view: StaticPages#top
+D, [2020-08-24T11:46:10.015742 #8954] DEBUG -- : [d] flash_messages flash[:notice]
