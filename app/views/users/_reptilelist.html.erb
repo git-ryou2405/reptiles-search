@@ -62,7 +62,7 @@
               <p class="price">販売ショップ</p>
               <p class="name">
               <% if reptile.shop_name %>
-                <% if reptile.user_id == current_user.id %>
+                <% if current_user && reptile.user_id == current_user.id%>
                   <%= reptile.shop_name %>
                 <% else %>
                   <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
