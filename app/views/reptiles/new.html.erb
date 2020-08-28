@@ -1,5 +1,6 @@
+<% Rails.application.config.another_logger.debug "[d] view: reptiles/new id=#{current_user.id}" %>
 <% provide(:button_text, '生体登録') %>
-<% provide(:routes_url, user_reptiles_path(current_user) ) %>
+<% provide(:routes_url, user_reptiles_path(current_user)) %>
 
 <div class="container-fluid">
   <div class="row justify-content-center">

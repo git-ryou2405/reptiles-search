@@ -43,12 +43,20 @@ class StaticPagesController < ApplicationController
     
     # 全国登録データ_ショップ検索
     elsif params[:searchtype] == "shop_name"
-      @search_shop_name = params[:search]
-      # @search_shop_result = User.where(shop_name: params[:search])
-      @search_shop_result = User.where('shop_name LIKE ?', "%#{params[:search]}%") #部分一致
-      debug_log("[d] StaticPages_Ctrl: ac: search @search_shop_result=#{@search_shop_result.inspect}")  # log
-      unless @search_shop_result.exists?
-        flash.now[:warning] = "「#{params[:search]}」が該当するショップ名の登録は現在ありません"
+      # 検索フォーム
+      if @search_shop_name = params[:search]
+        @search_shop_result = User.where('shop_name LIKE ?', "%#{params[:search]}%") #部分一致
+        debug_log("[d] StaticPages_Ctrl: ac: search @search_shop_result=#{@search_shop_result.inspect}")  # log
+        unless @search_shop_result.exists?
+          flash.now[:warning] = "「#{params[:search]}」が該当するショップ名の登録は現在ありません"
+        end
+      # 都道府県から検索
+      elsif @search_shop_prefectures = params[:prefectures]
+        @search_shop_prefectures = User.where(prefectures: params[:prefectures]) #部分一致
+        debug_log("[d] StaticPages_Ctrl: ac: search @prefectures=#{@search_shop_prefectures.inspect}")  # log
+        unless @search_shop_prefectures.exists?
+          flash.now[:warning] = "「#{params[:prefectures]}」で登録しているショップは現在ありません"
+        end
       end
       
     # 全国登録データ_選択レプタイル_タイプからの検索フォーム

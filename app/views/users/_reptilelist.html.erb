@@ -58,17 +58,20 @@
             <p class="price">価格</p>
             <p class="name"><%= reptile.price %></p>
           </li>
-          <% %>
-          <li class="txt-item flex align-center">
-            <p class="price">販売ショップ</p>
-            <p class="name">
-            <% if reptile.shop_name %>
-              <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
-            <% else %>
-              <%= link_to "ショップ名未登録", shop_page_path(shop_id: reptile.user_id) %>
-            <% end %>
-            </p>
-          </li>
+            <li class="txt-item flex align-center">
+              <p class="price">販売ショップ</p>
+              <p class="name">
+              <% if reptile.shop_name %>
+                <% if reptile.user_id == current_user.id %>
+                  <%= reptile.shop_name %>
+                <% else %>
+                  <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
+                <% end %>
+              <% else %>
+                <%= link_to "ショップ名未登録", shop_page_path(shop_id: reptile.user_id) %>
+              <% end %>
+              </p>
+            </li>
         </ul>
       </li>
       <!-- ここまでループ -->

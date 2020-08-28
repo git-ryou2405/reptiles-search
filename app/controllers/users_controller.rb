@@ -20,6 +20,20 @@ class UsersController < ApplicationController
       debug_log("[d] Users_Ctrl: ac: show @show_option=#{@reptile_type}")  # log
     end
     
+    # 新入荷レプタイル情報を取得
+    if @current_reptile = Reptile.where(user_id: current_user)
+      @created_at_desc = @current_reptile.all.order(created_at: "DESC")
+      debug_log("[d] Users_Ctrl: ac: show @created_at_desc.count=#{@created_at_desc.count}")  # log
+      
+      if @created_at_desc.count <= 5
+        @new_arrivals = @created_at_desc.first(@created_at_desc.count)
+      else
+        @new_arrivals = @created_at_desc.first(5)
+      end
+      debug_log("[d] Users_Ctrl: ac: show @new_arrivals=#{@new_arrivals.inspect}")  # log
+      debug_log("[d] Users_Ctrl: ac: show @new_arrivals.count=#{@new_arrivals.count}")  # log
+    end
+    
     debug_log("[d] Users_Ctrl: ac: show @show_option=#{@show_option}")  # log
   end
   

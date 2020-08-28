@@ -23,19 +23,19 @@
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
 
-      <!-- shop_image -->
+      <!-- shop_images -->
       <% if current_user.shop_images.present? %>
         <% current_user.shop_images.each do |image| %>
           <% Rails.application.config.another_logger.debug "[d] view: userinfo #{image.inspect}" %>
-        <%= image_tag image.url, :height => "225", :width => "400" %>
+        <%= image_tag image.url, :width => "100", id: "margin5px" %>
         <% end %>
-        <%#= image_tag @user.shop_images.url, :height => "225", :width => "400", id: "margin5px" %>
+        <br>
         <%= link_to "画像を削除", users_delete_photo_path(id: resource.id), class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
       <% else %>
         <%= f.label :shop_images, class: "mt-2" %><br>
         <%= f.file_field :shop_images, multiple: true, id: :resource_shop_images %><br>
       <% end %>
-      <!-- ここまでshop_image -->
+      <!-- ここまでshop_images -->
       
       <!--
       <div class="field">
@@ -50,7 +50,6 @@
       </div>
       
       <% @prefectures = Prefecture.all %>
-      
       <div class="field">
         <%= f.label :prefectures, class: "mt-2" %>
         <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true, autocomplete: "prefectures"}, { class: "form-control" } %>

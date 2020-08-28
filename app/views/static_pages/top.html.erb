@@ -23,7 +23,7 @@
   <!-- 検索フォーム -->
   
   <!-- 種類から探す -->
-  <h2 class="group-ttl">種類から探す</h2>
+  <h2 class="group-ttl pt-5">種類から探す</h2>
   <ul class="reptiles-list flex">
     <% animal_list = [ "snake", 'turtle', "lizard","gecko", "amphibian", "others" ] %>
     <% translation = [ "ヘビ", "カメ", "トカゲ","ヤモリ", "両生類", "奇虫・その他" ] %>
@@ -45,7 +45,7 @@
 
   <!-- 検索フォーム -->
   <div class="search">
-    <h2 class="serch-ttl">爬虫類ショップを探す</h2>
+    <h2 class="serch-ttl pt-5", style="width: 350px;">爬虫類ショップを探す</h2>
     <div class="row justify-content-center">
       <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
         <%= f.hidden_field :searchtype, :value => "shop_name" %>
@@ -55,6 +55,21 @@
     </div>
   </div>
   <!-- 検索フォーム -->
+  
+  <!-- 都道府県から検索 -->
+  <div class="search">
+    <h2 class="serch-ttl pt-5", style="width: 350px;">都道府県から検索</h2>
+    <div class="row justify-content-center">
+    <% @prefectures = Prefecture.all %>
+      <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+        <%= f.hidden_field :searchtype, :value => "shop_name" %>
+        <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true}, { class: "search-box align-center", style: "width: 200px;" } %>
+        <%= f.submit '検索', class:"search-btn align-center" %>
+      <% end %>
+    </div>
+  </div>
+  <!-- 都道府県から検索 -->
+  
 
   <!-- スクロール用 -->
   <div class="box"></div>

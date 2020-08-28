@@ -6,21 +6,32 @@
   <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
 <% end %>
 
+<!-- ユーザー情報の編集 -->
+<div class="col-4">
+  <%= link_to "生体情報の編集", edit_user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), class:"btn btn-sm btn-primary px-2 my-2" %>
+  <%= link_to "削除", user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), method: :delete, class:"btn btn-sm login_out btn-hover px-3 my-2", data: { confirm: "生体を削除します。\n本当によろしいですか？" } %>
+</div>
+<!-- ユーザー情報の編集 -->
+
 <!-- image スライダー -->
 <% if @reptile.images.present? %>
   <div class="swiper-container text-center">
-    <div class="swiper-wrapper">
-      <% @reptile.images.each do |image| %>
-        <div class="swiper-slide">
-          <%= image_tag image.url, class:"swiper-image" %>
-        <%# <%= image_tag image.url, :size =>'450x253' %>
-        <%#= image_tag image.url, :size =>'533x300' %>
+    <!-- １枚しかなければ１枚のみ表示 -->
+    <% if @reptile.images[1].present? %>
+      <div class="swiper-wrapper">
+        <% @reptile.images.each do |image| %>
+          <div class="swiper-slide">
+            <%= image_tag image.url, class:"swiper-image" %>
+          </div>
+        <% end %>
         </div>
-      <% end %>
-      </div>
-    <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
-    <div class="swiper-button-next swiper-button-black swiper-custom-button"></div>
-    <div class="swiper-pagination swiper-pagination-white"></div>
+      <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
+      <div class="swiper-button-next swiper-button-black swiper-custom-button"></div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+    <% else %>
+      <%= image_tag @reptile.images[0].url, :size =>'450x253' %>
+      <%#= image_tag @reptile.images[0].url, :size =>'533x300' %>
+    <% end %>
   </div>
 <% else %>
   <div style="margin-top: 188px"></div>
@@ -69,7 +80,11 @@
     <dt>販売ショップ</dt>
     <dd>
       <% if @reptile.shop_name %>
-        <%= link_to @reptile.shop_name, shop_page_path(shop_id: @reptile.user_id) %>
+        <% if @reptile.user_id == current_user.id %>
+          <%= @reptile.shop_name %>
+        <% else %>
+          <%= link_to @reptile.shop_name, shop_page_path(shop_id: @reptile.user_id) %>
+        <% end %>
       <% else %>
         <%= link_to "ショップ名未登録", shop_page_path(shop_id: @reptile.user_id) %>
       <% end %>

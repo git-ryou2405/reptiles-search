@@ -41,13 +41,21 @@
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
         
-        <ul class="menu-list">
-          <li class="arrival-item">
-              <p class="arrival-day">2020年◯月◯日入荷</p>
-              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
-              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
-          </li>
-        </ul>
+        <% if @new_arrivals %>
+          <% @new_arrivals.each do |new_reptile| %>
+            <ul class="menu-list">
+              <li class="arrival-item">
+                  <p class="arrival-day">
+                    <%= new_reptile.created_at %>
+                  </p>
+                  <!-- ↓リンク入れて商品ページに飛ぶようにする -->
+                  <p class="arrival-animal">
+                    <%= new_reptile.type_name %>
+                  </p>
+              </li>
+            </ul>
+          <% end %>
+        <% end %>
         <!-- ここまで入荷情報 -->
         
         <!-- SNS -->
@@ -89,14 +97,15 @@
           <!-- 生体情報の表示 -->
           <%= render "reptilelist" %>
         <% end %>
+        
         <!--
         <div id="map"></div>
         <script>
           var MyLatLng = new google.maps.LatLng(35.5419941, 139.4453761);
           var Options = {
-          zoom: 15,      //地図の縮尺値
-          center: MyLatLng,    //地図の中心座標
-          mapTypeId: 'roadmap'   //地図の種類
+          zoom: 15,             //地図の縮尺値
+          center: MyLatLng,     //地図の中心座標
+          mapTypeId: 'roadmap'  //地図の種類
           };
           var map = new google.maps.Map(document.getElementById('map'), Options);
         </script>
@@ -110,6 +119,7 @@
           <% end %>
           <%= link_to "アカウントの削除", edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
         </div>
+        <!-- ユーザー情報の編集 -->
           
       </div>
       

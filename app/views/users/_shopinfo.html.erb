@@ -9,18 +9,22 @@
 <!-- shop_image スライダー -->
 <% if @user.shop_images.present? %>
   <div class="swiper-container text-center">
-    <div class="swiper-wrapper">
-      <% @user.shop_images.each do |image| %>
-      <div class="swiper-slide">
-        <%= image_tag image.url, class:"swiper-image" %>
-      <%# <%= image_tag image.url, :size =>'450x253' %>
-      <%#= image_tag image.url, :size =>'533x300' %>
-      </div>
-      <% end %>
-      </div>
-    <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
-    <div class="swiper-button-next swiper-button-black swiper-custom-button"></div>
-    <div class="swiper-pagination swiper-pagination-white"></div>
+    <!-- １枚しかなければ１枚のみ表示 -->
+    <% if @user.shop_images[1].present? %>
+      <div class="swiper-wrapper">
+        <% @user.shop_images.each do |image| %>
+        <div class="swiper-slide">
+          <%= image_tag image.url, class:"swiper-image" %>
+        </div>
+        <% end %>
+        </div>
+      <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
+      <div class="swiper-button-next swiper-button-black swiper-custom-button"></div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+    <% else %>
+      <%= image_tag @user.shop_images[0].url, :size =>'450x253' %>
+      <%#= image_tag @user.shop_images[0].url, :size =>'533x300' %>
+    <% end %>
   </div>
 <% else %>
   <div style="margin-top: 188px"></div>

@@ -61,7 +61,7 @@
         <% if @disp_reptileinfo.present? %>
           <!-- レプタイル情報 -->
           <%= render "./users/reptileinfo" %>
-        <% elsif @search_shop_result.present? %>
+        <% elsif @search_shop_result.present? || @search_shop_prefectures.present? %>
           <!-- ショップリスト情報 -->
           <%= render "./users/shoplist" %>
         <% else %>

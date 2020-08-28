@@ -22,6 +22,7 @@ class ReptilesController < ApplicationController
 
   # GET /reptiles/1/edit
   def edit
+    debug_log("[d] Reptiles_Ctrl: action: edit")  # log
   end
 
   # POST /reptiles

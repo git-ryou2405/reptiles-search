@@ -4,11 +4,11 @@
 <% if @search_shop_result %>
 <!-- 検索フォーム -->
   <% @shoplist = @search_shop_result %>
-  <% Rails.application.config.another_logger.debug "[d] view: shoplist @shoplist=#{@shoplist.inspect}" %>
+  <% Rails.application.config.another_logger.debug "[d] view: shoplist @search_shop_result -> @shoplist=#{@shoplist.inspect}" %>
 <% elsif @search_shop_prefectures %>
 <!-- 都道府県から探す -->
   <% @shoplist = @search_shop_prefectures %>
-  <% Rails.application.config.another_logger.debug "[d] view: shoplist @shoplist=#{@shoplist.inspect}" %>
+  <% Rails.application.config.another_logger.debug "[d] view: shoplist @search_shop_prefectures -> @shoplist=#{@shoplist.inspect}" %>
 <% end %>
 
 <!-- 検索フォーム -->
@@ -25,7 +25,7 @@
   <section class="search-content">
     <ul class="search-list">
       <% @shoplist.each do |shop| %>
-      <% Rails.application.config.another_logger.debug "[d] view: reptilelist reptile=#{shop.inspect}" %>
+      <% Rails.application.config.another_logger.debug "[d] view: reptilelist shop=#{shop.inspect}" %>
       <!-- ループ -->
       <li class="search-item flex align-center">
         <div class="photo">
