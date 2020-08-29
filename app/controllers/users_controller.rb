@@ -12,17 +12,16 @@ class UsersController < ApplicationController
     
     @show_option = "user"
     
-    # ユーザーが持つ、タイプ毎のReptile情報を取得
+    # ショップが持つ、タイプ毎のReptile情報を取得
     if params[:reptile_type].present?
       @show_option = params[:reptile_type]
-      # @reptile_type = User.where(id: Reptile.where(type1: params[:reptile_type]).select(current_user.id))
       @reptile_type = Reptile.where(type1: params[:reptile_type], user_id: current_user.id)
       debug_log("[d] Users_Ctrl: ac: show @show_option=#{@reptile_type}")  # log
     end
     
-    # 新入荷レプタイル情報を取得
+    # ショップが持つ、新入荷レプタイル情報を取得
     if @current_reptile = Reptile.where(user_id: current_user)
-      @created_at_desc = @current_reptile.all.order(created_at: "DESC")
+      @created_at_desc = @current_reptile.all.order(created_at: "DESC")  # 降順
       debug_log("[d] Users_Ctrl: ac: show @created_at_desc.count=#{@created_at_desc.count}")  # log
       
       if @created_at_desc.count <= 5
@@ -37,6 +36,7 @@ class UsersController < ApplicationController
     debug_log("[d] Users_Ctrl: ac: show @show_option=#{@show_option}")  # log
   end
   
+  # ショップidを取得
   def set_user
     if params[:id]
       debug_log("[d] Users_Ctrl: ac: index id=#{params[:id]}")  # log

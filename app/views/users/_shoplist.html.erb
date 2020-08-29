@@ -2,11 +2,11 @@
 
 <!-- ショップ情報 取得判定 -->
 <% if @search_shop_result %>
-<!-- 検索フォーム -->
+  <!-- 検索フォーム -->
   <% @shoplist = @search_shop_result %>
   <% Rails.application.config.another_logger.debug "[d] view: shoplist @search_shop_result -> @shoplist=#{@shoplist.inspect}" %>
 <% elsif @search_shop_prefectures %>
-<!-- 都道府県から探す -->
+  <!-- 都道府県から探す -->
   <% @shoplist = @search_shop_prefectures %>
   <% Rails.application.config.another_logger.debug "[d] view: shoplist @search_shop_prefectures -> @shoplist=#{@shoplist.inspect}" %>
 <% end %>

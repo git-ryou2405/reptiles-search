@@ -68,6 +68,8 @@
                   <% else %>
                     <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
                   <% end %>
+                <% else %>
+                  <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
                 <% end %>
               <% else %>
                 <%= link_to "ショップ名未登録", shop_page_path(shop_id: reptile.user_id) %>

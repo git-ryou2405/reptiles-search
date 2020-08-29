@@ -51,7 +51,7 @@ class ReptilesController < ApplicationController
   def update
     respond_to do |format|
       if @reptile.update(reptile_params)
-        format.html { redirect_to @reptile, notice: 'Reptile was successfully updated.' }
+        format.html { redirect_to @reptile, notice: '種名：\"#{@reptile.type_name}\"の登録情報を更新しました。' }
         format.json { render :show, status: :ok, location: @reptile }
       else
         format.html { render :edit }
@@ -65,7 +65,7 @@ class ReptilesController < ApplicationController
   def destroy
     @reptile.destroy
     respond_to do |format|
-      format.html { redirect_to reptiles_url, notice: 'Reptile was successfully destroyed.' }
+      format.html { redirect_to reptiles_url, notice: '生体情報を削除しました。' }
       format.json { head :no_content }
     end
   end

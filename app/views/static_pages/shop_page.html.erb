@@ -44,13 +44,22 @@
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
         
-        <ul class="menu-list">
-          <li class="arrival-item">
-              <p class="arrival-day">2020年◯月◯日入荷</p>
-              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
-              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
-          </li>
-        </ul>
+        <!-- 降順で表示 -->
+        <% if @new_arrivals %>
+          <% @new_arrivals.each do |new_reptile| %>
+            <ul class="menu-list">
+              <li class="arrival-item">
+                  <p class="arrival-day">
+                    <%= new_reptile.created_at %>
+                  </p>
+                  <!-- ↓リンク入れて商品ページに飛ぶようにする -->
+                  <p class="arrival-animal">
+                    <%= new_reptile.type_name %>
+                  </p>
+              </li>
+            </ul>
+          <% end %>
+        <% end %>
         <!-- ここまで入荷情報 -->
         
         <!-- SNS -->

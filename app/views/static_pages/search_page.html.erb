@@ -17,8 +17,7 @@
         
         <!-- 販売生体一覧 -->
         <h2 class="menu-ttl">
-          <div style="font-size:14px;"><%= "全国" %><br></div>
-          販売生体
+          <div style="font-size:14px;">全国<br></div>販売生体
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
         <ul class="menu-list">
@@ -39,18 +38,26 @@
         
         <!-- 入荷情報 -->
         <h2 class="arrival-ttl menu-ttl relative mt-5">
-          <div style="font-size:14px;"><%= "全国" %><br></div>
-          新入荷
+          <div style="font-size:14px;">全国<br></div>新入荷
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
         
-        <ul class="menu-list">
-          <li class="arrival-item">
-              <p class="arrival-day">2020年◯月◯日入荷</p>
-              <!-- ↓リンク入れて商品ページに飛ぶようにする -->
-              <p class="arrival-animal"><a href="#">メキシカンブラックキングスネーク</a></p>
-          </li>
-        </ul>
+        <!-- 降順で表示 -->
+        <% if @new_arrivals %>
+          <% @new_arrivals.each do |new_reptile| %>
+            <ul class="menu-list">
+              <li class="arrival-item">
+                  <p class="arrival-day">
+                    <%= new_reptile.created_at %>
+                  </p>
+                  <!-- ↓リンク入れて商品ページに飛ぶようにする -->
+                  <p class="arrival-animal">
+                    <%= new_reptile.type_name %>
+                  </p>
+              </li>
+            </ul>
+          <% end %>
+        <% end %>
         <!-- ここまで入荷情報 -->
         
       </div>
