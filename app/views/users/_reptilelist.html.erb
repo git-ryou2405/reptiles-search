@@ -62,10 +62,12 @@
               <p class="price">販売ショップ</p>
               <p class="name">
               <% if reptile.shop_name %>
-                <% if current_user && reptile.user_id == current_user.id%>
-                  <%= reptile.shop_name %>
-                <% else %>
-                  <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
+                <% if current_user %>
+                  <% if reptile.user_id == current_user.id %>
+                    <%= reptile.shop_name %>
+                  <% else %>
+                    <%= link_to reptile.shop_name, shop_page_path(shop_id: reptile.user_id) %>
+                  <% end %>
                 <% end %>
               <% else %>
                 <%= link_to "ショップ名未登録", shop_page_path(shop_id: reptile.user_id) %>
