@@ -1,14 +1,18 @@
 <% Rails.application.config.another_logger.debug "[d] view: reptileinfo" %>
 
 <!-- レプタイル情報 取得判定 -->
-<% if @disp_reptileinfo.present? %>
-  <% @reptile = @disp_reptileinfo %>
-  <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
+<% if @select_reptile.present? %>
+  <!-- 選択したレプタイル情報 -->
+  <% @reptile = @select_reptile %>
+<% elsif @new_regist_reptile.present? %>
+  <!-- 新入荷レプタイル情報 -->
+  <% @reptile = @new_regist_reptile %>
 <% end %>
+<% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
 
 <!-- ユーザー情報の編集 -->
 <% if current_user %>
-  <% if reptile.user_id == current_user.id %>
+  <% if @reptile.user_id == current_user.id %>
     <div class="col-4">
       <%= link_to "生体情報の編集", edit_user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), class:"btn btn-sm btn-primary px-2 my-2" %>
       <%= link_to "削除", user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), method: :delete, class:"btn btn-sm login_out btn-hover px-3 my-2", data: { confirm: "生体を削除します。\n本当によろしいですか？" } %>
@@ -99,4 +103,5 @@
   </dl>
 </div>
 
+<!-- flash動作用 -->
 <%= javascript_include_tag 'application' %>

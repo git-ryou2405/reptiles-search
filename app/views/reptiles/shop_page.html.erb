@@ -88,7 +88,7 @@
         <% if @disp_shopinfo.present? && @search_type1_list == "nodata" %>
           <!-- ショップ情報 -->
           <%= render "./users/shopinfo" %>
-        <% elsif @disp_reptileinfo.present? %>
+        <% elsif @select_reptile.present? %>
           <!-- レプタイル情報 -->
           <%= render "./users/reptileinfo" %>
         <% elsif @disp_shopinfo.present? && @search_type1_list %>

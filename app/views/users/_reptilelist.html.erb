@@ -2,15 +2,14 @@
 
 <!-- レプタイル情報 取得判定 -->
 <% if @search_result %>
-<!-- 検索フォーム -->
+  <!-- 検索フォーム -->
   <% @reptile_type = @search_result %>
-  <% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
 <% elsif @search_type1_list %>
-<!-- 種類から探す or 販売生体ボタンから -->
+  <!-- 種類から探す or 販売生体ボタンから -->
   <% @reptile_type = @search_type1_list %>
-  <% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
 <% end %>
-
+<% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
+  
 <!-- 検索フォーム -->
 <section class="search-content">
   <% if @reptile_type.present? %>
@@ -86,3 +85,6 @@
   <!-- ここまで生体詳細 -->
 
 <% end %>
+
+<!-- flash動作用 -->
+<%= javascript_include_tag 'application' %>

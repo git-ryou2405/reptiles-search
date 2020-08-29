@@ -40,18 +40,15 @@
         <h2 class="arrival-ttl menu-ttl relative mt-5">新入荷
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
-        
-        <!-- 降順で表示 -->
         <% if @new_arrivals %>
-          <% @new_arrivals.each do |new_reptile| %>
+          <% @new_arrivals.each do |new_regist| %>
             <ul class="menu-list">
               <li class="arrival-item">
                   <p class="arrival-day">
-                    <%= new_reptile.created_at %>
+                    <%= new_regist.created_at %>
                   </p>
-                  <!-- ↓リンク入れて商品ページに飛ぶようにする -->
                   <p class="arrival-animal">
-                    <%= new_reptile.type_name %>
+                    <%= link_to new_regist.type_name, user_path(current_user, new_regist: new_regist.id) %>
                   </p>
               </li>
             </ul>
@@ -92,11 +89,16 @@
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
         <% if @show_option == "user" %>
-          <!-- ユーザー情報の表示 -->
+          <!-- ショップ情報 -->
           <%= render "shopinfo" %>
         <% else %>
-          <!-- 生体情報の表示 -->
-          <%= render "reptilelist" %>
+          <% if @reptile_type.present? %>
+            <!-- 生体リスト情報 -->
+            <%= render "reptilelist" %>
+          <% elsif @new_regist_reptile.present? %>
+            <!-- レプタイル情報 -->
+            <%= render "reptileinfo" %>
+          <% end %>
         <% end %>
         
         <!--
@@ -135,3 +137,6 @@ $('.sns-ttl').click(function() {
   $('.sns-box').slideToggle();
 });
 </script>
+
+<!-- flash動作用 -->
+<%= javascript_include_tag 'application' %>

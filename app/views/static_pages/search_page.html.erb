@@ -41,18 +41,15 @@
           <div style="font-size:14px;">全国<br></div>新入荷
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
-        
-        <!-- 降順で表示 -->
         <% if @new_arrivals %>
-          <% @new_arrivals.each do |new_reptile| %>
+          <% @new_arrivals.each do |new_regist| %>
             <ul class="menu-list">
               <li class="arrival-item">
                   <p class="arrival-day">
-                    <%= new_reptile.created_at %>
+                    <%= new_regist.created_at %>
                   </p>
-                  <!-- ↓リンク入れて商品ページに飛ぶようにする -->
                   <p class="arrival-animal">
-                    <%= new_reptile.type_name %>
+                    <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptileinfo" ) %>
                   </p>
               </li>
             </ul>
@@ -65,7 +62,7 @@
       
       <!-- メイン -->
       <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
-        <% if @disp_reptileinfo.present? %>
+        <% if @select_reptile.present? %>
           <!-- レプタイル情報 -->
           <%= render "./users/reptileinfo" %>
         <% elsif @search_shop_result.present? || @search_shop_prefectures.present? %>

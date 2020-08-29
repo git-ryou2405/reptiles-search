@@ -52,8 +52,8 @@ class StaticPagesController < ApplicationController
     
     # 全国Data_選択したレプタイル情報
     elsif params[:searchtype] == "reptileinfo"
-      @disp_reptileinfo = Reptile.find(params[:id])
-      debug_log("[d] StaticPages_Ctrl: ac: search_page @disp_reptileinfo=#{@disp_reptileinfo.inspect}")  # log
+      @select_reptile = Reptile.find(params[:id])
+      debug_log("[d] StaticPages_Ctrl: ac: search_page @select_reptile=#{@select_reptile.inspect}")  # log
     
     # 全国Data_ショップ検索
     elsif params[:searchtype] == "shop_name"
@@ -99,20 +99,13 @@ class StaticPagesController < ApplicationController
   def shop_page
     # ショップ情報を取得
     @disp_shopinfo = User.find(params[:shop_id])
-    debug_log("[d] StaticPages_Ctrl: ac: shop_page @disp_shopinfo=#{@disp_shopinfo.inspect}")  # log
-    @search_type1_list = "nodata"
+    @search_cate = "nodata"
     
-    # レプタイル情報を表示
-    if params[:type1].present?
-      @type1_name = params[:type1]
-      @search_type1_list = Reptile.where(type1: params[:type1], user_id: params[:shop_id])
-      unless @search_type1_list.exists?
-        flash.now[:warning] = "「#{params[:type1]}」の登録は現在ありません"
-      end
-    end
+    # レプタイル情報を取得
+    @shop_reptile = Reptile.where(user_id: params[:shop_id])
     
     # 新入荷レプタイル情報を取得
-    if @shop_reptile = Reptile.where(user_id: params[:shop_id])
+    if @shop_reptile
       @created_at_desc = @shop_reptile.all.order(created_at: "DESC")  # 降順
       debug_log("[d] StaticPages_Ctrl: ac: shop_page @created_at_desc.count=#{@created_at_desc.count}")  # log
       
@@ -121,8 +114,22 @@ class StaticPagesController < ApplicationController
       else
         @new_arrivals = @created_at_desc.first(5)
       end
-      debug_log("[d] StaticPages_Ctrl: ac: shop_page @new_arrivals=#{@new_arrivals.inspect}")  # log
-      debug_log("[d] StaticPages_Ctrl: ac: shop_page @new_arrivals.count=#{@new_arrivals.count}")  # log
+    end
+    
+    # レプタイル情報（type1）を表示
+    if params[:type1].present?
+      @type1_name = params[:type1]
+      @search_cate = "type1"
+      @reptile_type1 = Reptile.where(type1: params[:type1], user_id: params[:shop_id])
+      unless @reptile_type1.exists?
+        flash.now[:warning] = "「#{params[:type1]}」の登録は現在ありません"
+      end
+    end
+    
+    # 選択したレプタイル情報を表示
+    if params[:reptile_id].present?
+      @search_cate = "reptileinfo"
+      @select_reptile = @shop_reptile.find(params[:reptile_id])
     end
   end
 
