@@ -45,12 +45,9 @@
           <% @new_arrivals.each do |new_regist| %>
             <ul class="menu-list">
               <li class="arrival-item">
-                  <p class="arrival-day">
-                    <%= new_regist.created_at %>
-                  </p>
-                  <p class="arrival-animal">
-                    <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptileinfo" ) %>
-                  </p>
+                <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
+                <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptileinfo" ), class:"arrival-animal" %>
+                <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
               </li>
             </ul>
           <% end %>

@@ -10,7 +10,7 @@
 <% end %>
 <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
 
-<!-- ユーザー情報の編集 -->
+<!-- 生体情報の編集 -->
 <% if current_user %>
   <% if @reptile.user_id == current_user.id %>
     <div class="col-4">
