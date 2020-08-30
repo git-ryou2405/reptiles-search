@@ -82,7 +82,7 @@
             <p class="name"><%= reptile.price %></p>
           </li>
             <li class="txt-item flex align-center">
-              <p class="price">販売ショップ</p>
+              <p class="shop">販売ショップ</p>
               <p class="name">
               <% if reptile.shop_name %>
                 <% if current_user %>
@@ -109,6 +109,3 @@
   <!-- ここまで生体詳細 -->
 
 <% end %>
-
-<!-- flash動作用 -->
-<%= javascript_include_tag 'application' %>

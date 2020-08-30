@@ -29,19 +29,8 @@ var mySwiper = new Swiper('.swiper-container', {
 }
 });
 
-/* アコーディオン */
-$('.block-trigger').click(function() {
-  if ($(this).find('.wrap-trigger').hasClass('list-open')){
-      $(this).find('.wrap-trigger').removeClass('list-open')
-      $(this).find('.arrow').removeClass('arrow-active')
-  } else {
-      $(this).find('.wrap-trigger').addClass('list-open')
-      $(this).find('.arrow').addClass('arrow-active')
-  }
-});
 
-
-/* アンカーリンクのスムーススクロール */
+/* スムーススクロール */
 $('a[href^="#"]').on('click', function(e) {
   e.preventDefault();
   var pc_offset = 0;
@@ -54,15 +43,21 @@ $('a[href^="#"]').on('click', function(e) {
   $('body,html').animate({scrollTop:position}, speed, 'swing');
 });
 
+// アコーディオン
 $('.menu-ttl').click(function() {
-  if ($('.menu-list-wrap').hasClass('menu-list-open')){
-      $('.menu-list-wrap').removeClass('menu-list-open')
-      $('.arrow').removeClass('arrow-active')
-  } else {
-      $('.menu-list-wrap').addClass('menu-list-open')
-      $('.arrow').addClass('arrow-active')
-  }
+  $('menu-list').slideToggle();
 });
+
+// レスポンシブデバイスジャッジ
+function deviceJudgment() {
+  var ua = navigator.userAgent;
+  if (ua.indexOf('iPhone') > 0 || ua.indexOf('iPod') > 0 || ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) {
+      $('head').prepend('<meta name="viewport" content="width=device-width,initial-scale=1">');
+  } else {
+      $('head').prepend('<meta name="viewport" content="width=1100">');
+  }
+}
+deviceJudgment();
 
 // /* Geocodingで緯度経度を取得 */
 // $(function () {
