@@ -10,15 +10,16 @@
 <% end %>
 <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
 
+<% if @reptile_type.present? %>
+  <% @searchtype = @reptile_type[0].type1 %>
+<% else %>
+  <% @searchtype = "form" %>
+<% end %>
+
 <!-- 検索フォーム -->
 <section class="search-content">
+  <!-- 全国_検索 -->
   <% if @disp_type == "全国" %>
-    <!-- 全国_検索 -->
-    <% if @reptile_type.present? %>
-      <% @searchtype = @reptile_type[0].type1 %>
-    <% else %>
-      <% @searchtype = "form" %>
-    <% end %>
     <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
       <%= f.hidden_field :searchtype, :value => @searchtype %>
       <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
@@ -27,7 +28,7 @@
   <% else %>
     <!-- ショップ内_検索 -->
     <%= form_with(url: shop_page_path, method: :get, local: true) do |f| %>
-    <%= f.hidden_field :shop_id, :value => @reptile_type[0].user_id %>
+    <%= f.hidden_field :shop_id, :value => @reptile.user_id %>
     <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
     <%= f.submit '検索', class:"search-btn align-center" %>
     <% end %>
@@ -64,8 +65,6 @@
       <%= image_tag @reptile.images[0].url, :size =>'450x253' %>
     <% end %>
   </div>
-<% else %>
-  <div style="margin-top: 188px"></div>
 <% end %>
 <!-- image スライダー -->
 
