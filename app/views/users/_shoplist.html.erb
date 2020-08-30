@@ -13,10 +13,10 @@
 
 <!-- 検索フォーム -->
 <section class="search-content">
-  <%= form_with(url: shop_page_path, method: :get, local: true) do |f| %>
-    <%= f.hidden_field :searchtype, :value => "shop" %>
-    <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
-    <%= f.submit '検索', class:"search-btn align-center" %>
+  <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+  <%= f.hidden_field :searchtype, :value => "shop_name" %>
+  <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
+  <%= f.submit '検索', class:"search-btn align-center" %>
   <% end %>
 </section>
 

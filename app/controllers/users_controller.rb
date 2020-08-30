@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only:[:show]
+  before_action :set_user, only: [:show]
   # require 'active_support'
   # require 'active_support/core_ext'
   # require 'open-uri'

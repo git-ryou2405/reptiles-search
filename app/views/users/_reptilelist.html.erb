@@ -7,20 +7,36 @@
 <% elsif @search_type1_list %>
   <!-- 種類から探す or 販売生体ボタンから -->
   <% @reptile_type = @search_type1_list %>
+<% elsif @shop_search_reptile %>
+  <!-- ショップ内レプタイル検索結果 -->
+  <% @reptile_type = @shop_search_reptile %>
+<% elsif @shop_reptile_type1 %>
+  <!-- ショップ内_レプタイル_type1選択 -->
+  <% @reptile_type = @shop_reptile_type1 %>
 <% end %>
 <% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
-  
+
 <!-- 検索フォーム -->
 <section class="search-content">
-  <% if @reptile_type.present? %>
-    <% @searchtype = @reptile_type[0].type1 %>
+  <% if @disp_type == "全国" %>
+    <!-- 全国_検索 -->
+    <% if @reptile_type.present? %>
+      <% @searchtype = @reptile_type[0].type1 %>
+    <% else %>
+      <% @searchtype = "form" %>
+    <% end %>
+    <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+      <%= f.hidden_field :searchtype, :value => @searchtype %>
+      <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
+      <%= f.submit '検索', class:"search-btn align-center" %>
+    <% end %>
   <% else %>
-    <% @searchtype = "form" %>
-  <% end %>
-  <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
-    <%= f.hidden_field :searchtype, :value => @searchtype %>
+    <!-- ショップ内_検索 -->
+    <%= form_with(url: shop_page_path, method: :get, local: true) do |f| %>
+    <%= f.hidden_field :shop_id, :value => @reptile_type[0].user_id %>
     <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
     <%= f.submit '検索', class:"search-btn align-center" %>
+    <% end %>
   <% end %>
 </section>
 

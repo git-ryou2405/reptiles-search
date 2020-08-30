@@ -10,6 +10,30 @@
 <% end %>
 <% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
 
+<!-- 検索フォーム -->
+<section class="search-content">
+  <% if @disp_type == "全国" %>
+    <!-- 全国_検索 -->
+    <% if @reptile_type.present? %>
+      <% @searchtype = @reptile_type[0].type1 %>
+    <% else %>
+      <% @searchtype = "form" %>
+    <% end %>
+    <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+      <%= f.hidden_field :searchtype, :value => @searchtype %>
+      <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
+      <%= f.submit '検索', class:"search-btn align-center" %>
+    <% end %>
+  <% else %>
+    <!-- ショップ内_検索 -->
+    <%= form_with(url: shop_page_path, method: :get, local: true) do |f| %>
+    <%= f.hidden_field :shop_id, :value => @reptile_type[0].user_id %>
+    <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
+    <%= f.submit '検索', class:"search-btn align-center" %>
+    <% end %>
+  <% end %>
+</section>
+
 <!-- 生体情報の編集 -->
 <% if current_user %>
   <% if @reptile.user_id == current_user.id %>

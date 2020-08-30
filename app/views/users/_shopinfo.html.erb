@@ -6,6 +6,15 @@
   <% Rails.application.config.another_logger.debug "[d] view: shopinfo @user=#{@user.inspect}" %>
 <% end %>
 
+<!-- 検索フォーム -->
+<section class="search-content">
+  <%= form_with(url: shop_page_path, method: :get, local: true) do |f| %>
+  <%= f.hidden_field :shop_id, :value => @user.id %>
+  <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
+  <%= f.submit '検索', class:"search-btn align-center" %>
+  <% end %>
+</section>
+
 <!-- shop_image スライダー -->
 <% if @user.shop_images.present? %>
   <div class="swiper-container text-center">

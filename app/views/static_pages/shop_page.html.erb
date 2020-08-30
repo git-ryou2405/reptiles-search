@@ -15,9 +15,12 @@
       <!-- サイドメニュー -->
       <div class="col-lg-3 col-xl-3">
         
+        <!-- 表示タイプ -->
+        <% @disp_type = @disp_shopinfo.shop_name %>
+        
         <!-- 販売生体一覧 -->
         <h2 class="menu-ttl">
-          <div style="font-size:14px;"><%= @disp_shopinfo.shop_name %><br></div>
+          <div style="font-size:14px;"><%= @disp_type %><br></div>
           販売生体
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
@@ -39,7 +42,7 @@
         
         <!-- 入荷情報 -->
         <h2 class="arrival-ttl menu-ttl relative mt-5">
-          <div style="font-size:14px;"><%= @disp_shopinfo.shop_name %><br></div>
+          <div style="font-size:14px;"><%= @disp_type %><br></div>
           新入荷
           <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
         </h2>
@@ -91,8 +94,11 @@
         <% if @disp_shopinfo.present? && @search_cate == "nodata" %>
           <!-- ショップ情報 -->
           <%= render "./users/shopinfo" %>
-        <% elsif @reptile_type1.present? && @search_cate == "type1" %>
+        <% elsif @shop_reptile_type1.present? && @search_cate == "type1" %>
           <!-- ショップの生体リスト情報 -->
+          <%= render "./users/reptilelist" %>
+        <% elsif @shop_search_reptile.present? && @search_cate == "search_shop_reptile" %>
+          <!-- ショップ内レプタイル検索結果 -->
           <%= render "./users/reptilelist" %>
         <% elsif @select_reptile.present? && @search_cate == "reptileinfo" %>
           <!-- レプタイル情報 -->

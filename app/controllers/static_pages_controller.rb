@@ -77,8 +77,9 @@ class StaticPagesController < ApplicationController
       
     # 全国Data_選択したレプタイル_type1から検索
     else
-      search_type_name = Reptile.where(type1: params[:searchtype], type_name: params[:search])
-      search_morph = Reptile.where(type1: params[:searchtype], morph: params[:search])
+      search_type1 = Reptile.where(type1: params[:searchtype])
+      search_type_name = search_type1.where('type_name like ?',"%#{params[:search]}%")
+      search_morph = search_type1.where('morph like ?',"%#{params[:search]}%")
       debug_log("[d] StaticPages_Ctrl: ac: search_page search_type_name=#{search_type_name.inspect}")  # log
       debug_log("[d] StaticPages_Ctrl: ac: search_page search_morph=#{search_morph.inspect}")  # log
       
@@ -104,7 +105,7 @@ class StaticPagesController < ApplicationController
     # レプタイル情報を取得
     @shop_reptile = Reptile.where(user_id: params[:shop_id])
     
-    # 新入荷レプタイル情報を取得
+    # ショップ内_新入荷レプタイル情報を取得
     if @shop_reptile
       @created_at_desc = @shop_reptile.all.order(created_at: "DESC")  # 降順
       debug_log("[d] StaticPages_Ctrl: ac: shop_page @created_at_desc.count=#{@created_at_desc.count}")  # log
@@ -116,17 +117,32 @@ class StaticPagesController < ApplicationController
       end
     end
     
-    # レプタイル情報（type1）を表示
+    # ショップ内_レプタイル検索
+    if params[:search].present?
+      @search_cate = "search_shop_reptile"
+      search_type_name = @shop_reptile.where('type_name like ?', "%#{params[:search]}%")
+      search_morph = @shop_reptile.where('morph like ?', "%#{params[:search]}%")
+      @shop_search_reptile = search_type_name + search_morph
+      debug_log("[d] StaticPages_Ctrl: ac: shop_page @shop_search_reptile=#{@shop_search_reptile}")  # log
+      
+      unless @shop_search_reptile.present?
+        flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+      end
+    end
+    
+    # ショップ内_レプタイル_type1選択
     if params[:type1].present?
-      @type1_name = params[:type1]
       @search_cate = "type1"
-      @reptile_type1 = Reptile.where(type1: params[:type1], user_id: params[:shop_id])
-      unless @reptile_type1.exists?
+      @shop_reptile_type1 = Reptile.where(type1: params[:type1], user_id: params[:shop_id])
+      debug_log("[d] StaticPages_Ctrl: ac: shop_page @shop_reptile_type1=#{@shop_reptile_type1}")  # log
+      
+      @type1_name = params[:type1]
+      unless @shop_reptile_type1.exists?
         flash.now[:warning] = "「#{params[:type1]}」の登録は現在ありません"
       end
     end
     
-    # 選択したレプタイル情報を表示
+    # ショップ内_選択したレプタイル情報
     if params[:reptile_id].present?
       @search_cate = "reptileinfo"
       @select_reptile = @shop_reptile.find(params[:reptile_id])
