@@ -17,7 +17,7 @@
 
 <!-- shop_image スライダー -->
 <% if @user.shop_images.present? %>
-  <div class="swiper-container text-center">
+  <div class="swiper-container">
     <!-- １枚しかなければ１枚のみ表示 -->
     <% if @user.shop_images[1].present? %>
       <div class="swiper-wrapper">

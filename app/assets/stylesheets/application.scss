@@ -279,7 +279,7 @@
  // フォーム
    form { 
      width: 700px;
-     margin: -12px 0 0 40px;
+     margin: -12px 0 0 0;
      .search-box {
        width: 500px;
        height: 40px;
@@ -380,9 +380,12 @@
  スライダー設定
  ============================================================================= */
  .swiper-container {
+   width: 700px;
+   margin: 0 0 0 auto!important;
    cursor: grab;
-   object-fit: fit;
+   object-fit: cover;
  }
+ .swiper-slide { text-align: center;}
  .swiper-container:active {
    cursor: grabbing;
  }

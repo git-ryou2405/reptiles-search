@@ -80,16 +80,16 @@
         <!-- メイン -->
         <div class="main-content">
           <% if @show_option == "user" %>
-          <!-- ショップ情報 -->
-          <%= render "shopinfo" %>
-          <% else %>
-          <% if @reptile_type.present? %>
-          <!-- 生体リスト情報 -->
-          <%= render "reptilelist" %>
-          <% elsif @new_regist_reptile.present? %>
-          <!-- レプタイル情報 -->
-          <%= render "reptileinfo" %>
-          <% end %>
+            <!-- ショップ情報 -->
+            <%= render "shopping" %>
+            <% else %>
+            <% if @reptile_type.present? %>
+            <!-- 生体リスト情報 -->
+            <%= render "reptilelist" %>
+            <% elsif @new_regist_reptile.present? %>
+            <!-- レプタイル情報 -->
+            <%= render "reptileinfo" %>
+            <% end %>
           <% end %>
 
           <!--
