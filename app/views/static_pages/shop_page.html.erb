@@ -92,16 +92,16 @@
         <div class="main-content">
           <% if @disp_shopinfo.present? && @search_cate == "nodata" %>
           <!-- ショップ情報 -->
-          <%= render "./users/shopinfo" %>
+          <%= render "./users/shop_info" %>
           <% elsif @shop_reptile_type1.present? && @search_cate == "type1" %>
           <!-- ショップの生体リスト情報 -->
-          <%= render "./users/reptilelist" %>
+          <%= render "./users/reptile_list" %>
           <% elsif @shop_search_reptile.present? && @search_cate == "search_shop_reptile" %>
           <!-- ショップ内レプタイル検索結果 -->
-          <%= render "./users/reptilelist" %>
-          <% elsif @select_reptile.present? && @search_cate == "reptileinfo" %>
+          <%= render "./users/reptile_list" %>
+          <% elsif @select_reptile.present? && @search_cate == "reptile_info" %>
           <!-- レプタイル情報 -->
-          <%= render "./users/reptileinfo" %>
+          <%= render "./users/reptile_info" %>
           <% end %>
         </div><!-- main-content -->
         

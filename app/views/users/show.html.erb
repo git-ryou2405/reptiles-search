@@ -81,14 +81,14 @@
         <div class="main-content">
           <% if @show_option == "user" %>
             <!-- ショップ情報 -->
-            <%= render "shopinfo" %>
+            <%= render "shop_info" %>
             <% else %>
             <% if @reptile_type.present? %>
             <!-- 生体リスト情報 -->
-            <%= render "reptilelist" %>
+            <%= render "reptile_list" %>
             <% elsif @new_regist_reptile.present? %>
             <!-- レプタイル情報 -->
-            <%= render "reptileinfo" %>
+            <%= render "reptile_info" %>
             <% end %>
           <% end %>
 

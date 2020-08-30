@@ -1,4 +1,4 @@
-<% Rails.application.config.another_logger.debug "[d] view: reptileinfo" %>
+<% Rails.application.config.another_logger.debug "[d] view: reptile_info" %>
 
 <!-- レプタイル情報 取得判定 -->
 <% if @select_reptile.present? %>
@@ -8,7 +8,7 @@
   <!-- 新入荷レプタイル情報 -->
   <% @reptile = @new_regist_reptile %>
 <% end %>
-<% Rails.application.config.another_logger.debug "[d] view: reptileinfo @reptile=#{@reptile.inspect}" %>
+<% Rails.application.config.another_logger.debug "[d] view: reptile_info @reptile=#{@reptile.inspect}" %>
 
 <% if @reptile_type.present? %>
   <% @searchtype = @reptile_type[0].type1 %>

@@ -51,7 +51,7 @@ class StaticPagesController < ApplicationController
       end
     
     # 全国Data_選択したレプタイル情報
-    elsif params[:searchtype] == "reptileinfo"
+    elsif params[:searchtype] == "reptile_info"
       @select_reptile = Reptile.find(params[:id])
       debug_log("[d] StaticPages_Ctrl: ac: search_page @select_reptile=#{@select_reptile.inspect}")  # log
     
@@ -144,7 +144,7 @@ class StaticPagesController < ApplicationController
     
     # ショップ内_選択したレプタイル情報
     if params[:reptile_id].present?
-      @search_cate = "reptileinfo"
+      @search_cate = "reptile_info"
       @select_reptile = @shop_reptile.find(params[:reptile_id])
     end
   end

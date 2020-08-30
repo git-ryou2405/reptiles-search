@@ -46,7 +46,7 @@
             <ul class="menu-list">
               <li class="arrival-item">
                 <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
-                <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptileinfo" ), class:"arrival-animal" %>
+                <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptile_info" ), class:"arrival-animal" %>
                 <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
               </li>
             </ul>
@@ -61,13 +61,13 @@
           <div class="main-content">
             <% if @select_reptile.present? %>
             <!-- レプタイル情報 -->
-            <%= render "./users/reptileinfo" %>
+            <%= render "./users/reptile_info" %>
             <% elsif @search_shop_result.present? || @search_shop_prefectures.present? %>
             <!-- ショップリスト情報 -->
-            <%= render "./users/shoplist" %>
+            <%= render "./users/shop_list" %>
             <% else %>
             <!-- 生体リスト情報 -->
-            <%= render "./users/reptilelist" %>
+            <%= render "./users/reptile_list" %>
             <% end %>
           </div>
       </div>

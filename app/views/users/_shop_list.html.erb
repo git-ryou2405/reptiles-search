@@ -1,14 +1,14 @@
-<% Rails.application.config.another_logger.debug "[d] view: shoplist" %>
+<% Rails.application.config.another_logger.debug "[d] view: shop_list" %>
 
 <!-- ショップ情報 取得判定 -->
 <% if @search_shop_result %>
   <!-- 検索フォーム -->
-  <% @shoplist = @search_shop_result %>
-  <% Rails.application.config.another_logger.debug "[d] view: shoplist @search_shop_result -> @shoplist=#{@shoplist.inspect}" %>
+  <% @shop_list = @search_shop_result %>
+  <% Rails.application.config.another_logger.debug "[d] view: shop_list @search_shop_result -> @shop_list=#{@shop_list.inspect}" %>
 <% elsif @search_shop_prefectures %>
   <!-- 都道府県から探す -->
-  <% @shoplist = @search_shop_prefectures %>
-  <% Rails.application.config.another_logger.debug "[d] view: shoplist @search_shop_prefectures -> @shoplist=#{@shoplist.inspect}" %>
+  <% @shop_list = @search_shop_prefectures %>
+  <% Rails.application.config.another_logger.debug "[d] view: shop_list @search_shop_prefectures -> @shop_list=#{@shop_list.inspect}" %>
 <% end %>
 
 <!-- 検索フォーム -->
@@ -21,12 +21,12 @@
   <% end %>
 </section>
 
-<% if @shoplist %>
+<% if @shop_list %>
   <!-- ショップリスト -->
   <section class="search-content">
     <ul class="search-list">
-      <% @shoplist.each do |shop| %>
-      <% Rails.application.config.another_logger.debug "[d] view: reptilelist shop=#{shop.inspect}" %>
+      <% @shop_list.each do |shop| %>
+      <% Rails.application.config.another_logger.debug "[d] view: reptile_list shop=#{shop.inspect}" %>
       <!-- ループ -->
       <li class="search-item flex align-center">
         <div class="photo">

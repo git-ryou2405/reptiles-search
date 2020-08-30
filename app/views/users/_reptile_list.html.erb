@@ -1,4 +1,4 @@
-<% Rails.application.config.another_logger.debug "[d] view: reptilelist" %>
+<% Rails.application.config.another_logger.debug "[d] view: reptile_list" %>
 
 <!-- レプタイル情報 取得判定 -->
 <% if @search_result %>
@@ -14,7 +14,7 @@
   <!-- ショップ内_レプタイル_type1選択 -->
   <% @reptile_type = @shop_reptile_type1 %>
 <% end %>
-<% Rails.application.config.another_logger.debug "[d] view: reptilelist @reptile_type=#{@reptile_type.inspect}" %>
+<% Rails.application.config.another_logger.debug "[d] view: reptile_list @reptile_type=#{@reptile_type.inspect}" %>
 
 <!-- 検索フォーム -->
 <section class="search-content">
@@ -45,19 +45,19 @@
   <section class="search-content">
     <ul class="search-list">
       <% @reptile_type.each do |reptile| %>
-      <% Rails.application.config.another_logger.debug "[d] view: reptilelist reptile=#{reptile.inspect}" %>
+      <% Rails.application.config.another_logger.debug "[d] view: reptile_list reptile=#{reptile.inspect}" %>
       <!-- ループ -->
       <li class="search-item flex align-center">
         <div class="photo">
           <% if reptile.images.present? %>
             <% if @disp_type == "全国" %>
-              <%= link_to image_tag(reptile.images[0].url), search_page_path(Reptile, id: reptile.id, searchtype: "reptileinfo" ) %>
+              <%= link_to image_tag(reptile.images[0].url), search_page_path(Reptile, id: reptile.id, searchtype: "reptile_info" ) %>
             <% else %>
               <%= link_to image_tag(reptile.images[0].url), shop_page_path(reptile_id: reptile.id, shop_id: reptile.user_id) %>
             <% end %>
           <% else %>
             <% if @disp_type == "全国" %>
-              <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), search_page_path(Reptile, id: reptile.id, searchtype: "reptileinfo" ) %>
+              <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), search_page_path(Reptile, id: reptile.id, searchtype: "reptile_info" ) %>
             <% else %>
               <%= link_to image_tag("/uploads/TestFolder/noimage.jpg"), shop_page_path(reptile_id: reptile.id, shop_id: reptile.user_id) %>
             <% end %>
