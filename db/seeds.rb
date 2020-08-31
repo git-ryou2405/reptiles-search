@@ -23,8 +23,8 @@ puts "success create pref."
 
 User.create!( name: "Admin", email: "admin@email.com", password: @password, password_confirmation: @password, shop_name: "管理者", admin: true )
 
-@user1 = User.first
-@user.shop_images
+# @user1 = User.first
+# @user.shop_images
 
 User.create!(
   name: "test_user1",
