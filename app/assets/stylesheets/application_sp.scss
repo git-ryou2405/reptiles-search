@@ -10,6 +10,9 @@
   /*==============================================================================
     topページ
   ============================================================================= */
+  .header-pd {
+    padding-top: 6rem;
+  }
   .jumbotron {
     background:url(/images/hero.jpg) no-repeat 30% 40%/ cover;
   }
@@ -198,6 +201,7 @@
           font-size: 1.35rem;
         }
         .search-box {
+          margin:0 0 0 1rem;
           width: 59rem;
           height: 4rem;
           margin: .5rem 0 0;
@@ -256,6 +260,9 @@
         height: 40rem;
       }
       // スライダー
+      .swiper-container {
+        width: auto;
+      }
       .swiper-slide {  
         .swiper-image {
           width: 28rem;

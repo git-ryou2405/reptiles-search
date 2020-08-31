@@ -5,9 +5,9 @@
 
 
 /* flashフェードアウト */
-$(function(){
-  setTimeout("$('.flash').fadeOut('slow')", 2000);
-});
+// $(function(){
+//   setTimeout("$('.flash').fadeOut('slow')", 2000);
+// });
 
 /* スライダー */
 var mySwiper = new Swiper('.swiper-container', {

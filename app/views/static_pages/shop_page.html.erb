@@ -1,12 +1,10 @@
 <% Rails.application.config.another_logger.debug "[d] view: reptile/shop" %>
 
-<!-- headerのぶん -->
-<div style="padding-top: 40px;">
-
 <!-- マイページ -->
 <div id="wrapper">
   <div class="bg">
     <div class="inner">
+    
       <!-- ショップ名orレプタイル種別 -->
       <h1 class="shop-ttl" style="font-size: 40px;"><%= @disp_shopinfo.shop_name %></h1>
       <% if @type1_name.present? %>
@@ -112,7 +110,7 @@
     </div><!-- inner -->
   </div><!-- bg -->
 </div><!-- wrapper -->
-</div>
+
 <script>
   $('.menu-ttl').click(function () {
     $(this).next('.menu-list').slideToggle();
