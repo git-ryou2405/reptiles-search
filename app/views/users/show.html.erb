@@ -1,5 +1,8 @@
 <% Rails.application.config.another_logger.debug "[d] view: users/index id=#{@user.id}" %>
 
+<!-- headerの分 -->
+<div style="margin-top: 60px;"></div>
+
 <!-- マイページ -->
 <div id="wrapper">
   <div class="bg">
@@ -34,18 +37,17 @@
           <!-- ここまで販売生体一覧 -->
   
           <!-- 入荷情報 -->
-          <h2 class="arrival-ttl menu-ttl relative">新入荷
-          </h2>
-          <% if @new_arrivals %>
-          <% @new_arrivals.each do |new_regist| %>
-          <ul class="menu-list">
-            <li class="arrival-item">
-              <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
-              <%= link_to new_regist.type_name, user_path(current_user, new_regist: new_regist.id), class:"arrival-animal" %>
-              <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
-            </li>
-          </ul>
-          <% end %>
+          <% if @new_arrivals.present? %>
+            <h2 class="arrival-ttl menu-ttl relative">新入荷</h2>
+            <% @new_arrivals.each do |new_regist| %>
+            <ul class="menu-list">
+              <li class="arrival-item">
+                <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
+                <%= link_to new_regist.type_name, user_path(current_user, new_regist: new_regist.id), class:"arrival-animal" %>
+                <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
+              </li>
+            </ul>
+            <% end %>
           <% end %>
           <!-- ここまで入荷情報 -->
   
@@ -74,8 +76,8 @@
             <!-- Instagram -->
           </div>
           <!-- SNS -->
-          <!-- ここまでサイドメニュー -->
         </div>
+        <!-- ここまでサイドメニュー -->
 
         <!-- メイン -->
         <div class="main-content">

@@ -11,7 +11,7 @@ ja:
           password: パスワード
           password_confirmation: パスワード再入力
           shop_name: ショップ名
-          shop_images: ショップイメージ画像
+          shop_images: ショップ画像
           prefectures: 都道府県
           address: ショップ住所
           search_map: マップ検索
@@ -27,7 +27,7 @@ ja:
           created_at: 作成日
           updated_at: 更新日
         reptile:
-          image: 写真
+          images: 画像
           type1: 大分類
           type2: 中分類
           type_name: 種名

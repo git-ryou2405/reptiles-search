@@ -32,8 +32,10 @@
         <br>
         <%= link_to "画像を削除", users_delete_photo_path(id: resource.id), class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
       <% else %>
-        <%= f.label :shop_images, class: "mt-2" %><br>
-        <%= f.file_field :shop_images, multiple: true, id: :resource_shop_images %><br>
+        <div class="field">
+          <%= f.label :shop_images, class: "mt-2" %><br>
+          <%= f.file_field :shop_images, multiple: true, id: :resource_shop_images, class: "mg-tb-6" %><br>
+        </div>
       <% end %>
       <!-- ここまでshop_images -->
       
@@ -45,19 +47,20 @@
       -->
       
       <div class="field">
-          <%= f.label :shop_name, class: "mt-2" %>
-          <%= f.text_field :shop_name, autofocus: false, autocomplete: "shop_name", class: "form-control" %>
+        <%= f.label :shop_name, class: "mt-2" %><span>必須</span>
+        <%= f.text_field :shop_name, autofocus: false, autocomplete: "shop_name", class: "form-control mg-tb-6" %>
       </div>
       
+      <!-- 都道府県の選択 -->
       <% @prefectures = Prefecture.all %>
       <div class="field">
-        <%= f.label :prefectures, class: "mt-2" %>
-        <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true, autocomplete: "prefectures"}, { class: "form-control" } %>
+        <%= f.label :prefectures, class: "mt-2" %><span>必須</span>
+        <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true, autocomplete: "prefectures"}, { class: "form-control mg-tb-6" } %>
       </div>
       
       <div class="field">
-        <%= f.label :address, class: "mt-2" %>
-        <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control" %>
+        <%= f.label :address, class: "mt-2" %><span>必須</span>
+        <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control mg-tb-6" %>
       </div>
       
       <div style="margin: 15px 0 15px 0; padding: 10px; background: #555; border-radius: 5px;">
@@ -80,7 +83,7 @@
           
           <label style="font-size: 14px">
             <%= f.radio_button :search_map, "2" %>"住所" でマップ検索
-          </label>
+          </label><br>
           <label style="font-size: 14px">
             <%= f.radio_button :search_map, "3" %>マップを使用しない
           </label>
@@ -99,7 +102,7 @@
       <% arrey.map do |first,second| %>  
         <div class="field">
           <%= f.label first, class: "mt-2" %>
-          <%= f.text_field first, autofocus: false, autocomplete: second, class: "form-control" %>
+          <%= f.text_field first, autofocus: false, autocomplete: second, class: "form-control mg-tb-6" %>
         </div>
       <% end %>
       
@@ -108,15 +111,19 @@
         [:handling_animals, "handling_animals","2x2"],
         [:handling_feeds, "handling_feeds","2x2"],
         [:handling_goods, "handling_goods","2x2"],
-        [:feature, "feature","5x5"],
         ] %>
 
       <% text_area.map do |first,second,third| %>  
         <div class="field">
           <%= f.label first, class: "mt-2" %>
-          <%= f.text_area first, autofocus: false, autocomplete: second, size: third, class: "form-control" %>
+          <%= f.text_area first, autofocus: false, autocomplete: second, size: third, class: "form-control mg-tb-6" %>
         </div>
       <% end %>
+      
+      <div class="field">
+        <%= f.label :feature, class: "mt-2" %><span>必須</span>
+        <%= f.text_area :feature, autofocus: false, autocomplete: "feature", size: "5x5", class: "form-control mg-tb-6" %>
+      </div>
       
       <!-- URL、SNS -->
       <% url = [:url,:twitter] %>
@@ -124,13 +131,13 @@
       <% url.map do |official| %>  
         <div class="field">
           <%= f.label official, class: "mt-2" %>
-          <%= f.text_field official, autofocus: false, class: "form-control" %>
+          <%= f.text_field official, autofocus: false, class: "form-control mg-tb-6" %>
         </div>
       <% end %>
     
       <div class="field">
         <%= f.label :instagram, class: "mt-2" %>（埋め込みコードを入力してください。）
-        <%= f.text_field :instagram, autofocus: false, class: "form-control" %>
+        <%= f.text_field :instagram, autofocus: false, class: "form-control mg-tb-6" %>
       </div>
       
       <div class="actions">

@@ -23,8 +23,10 @@
         <br>
         <%= link_to "画像を削除", "#", class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
       <% else %>
+      <div class="field">
         <%= f.label :images, class: "mt-2" %><br>
-        <%= f.file_field :images, multiple: true, id: :reptile_images %><br>
+        <%= f.file_field :images, multiple: true, id: :reptile_images, class: "mg-tb-6" %><br>
+      </div>
       <% end %>
       <!-- ここまでimages -->
       
@@ -39,42 +41,65 @@
         [:description,:reptile_description]
         ] %>
       -->
+      <div class="field">
+        <%= f.label :type1, class: "mt-2" %><span>必須</span>
+        <%= f.select :type1, [ ['ヘビ', 'ヘビ'], ['カメ', 'カメ'], ['トカゲ', 'トカゲ'], ['ヤモリ', 'ヤモリ'], ['両生類', '両生類'], ['奇虫・その他', '奇虫・その他'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select mg-tb-6" } %>
+      </div>
       
-      <%= f.label :type1, class: "mt-2" %>
-      <%= f.select :type1, [ ['ヘビ', 'ヘビ'], ['カメ', 'カメ'], ['トカゲ', 'トカゲ'], ['ヤモリ', 'ヤモリ'], ['両生類', '両生類'], ['奇虫・その他', '奇虫・その他'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select" } %>
+      <div class="field">
+        <%= f.label :type2, class: "mt-2" %><span>必須</span>
+        <%= f.text_field :type2, id: :reptile_type2, class: "form-control mg-tb-6" %>
+      </div>
       
-      <%= f.label :type2, class: "mt-2" %>
-      <%= f.text_field :type2, id: :reptile_type2, class: "form-control" %>
+      <div class="field">
+        <%= f.label :type_name, class: "mt-2" %><span>必須</span>
+        <%= f.text_field :type_name, id: :reptile_type_name, class: "form-control mg-tb-6" %>
+      </div>
       
-      <%= f.label :type_name, class: "mt-2" %>
-      <%= f.text_field :type_name, id: :reptile_type_name, class: "form-control" %>
+      <div class="field"> 
+        <%= f.label :morph, class: "mt-2" %>
+        <%= f.text_field :morph, id: :reptile_morph, class: "form-control mg-tb-6" %>
+      </div>
       
-      <%= f.label :morph, class: "mt-2" %>
-      <%= f.text_field :morph, id: :reptile_morph, class: "form-control" %>
+      <div class="field">
+        <%= f.label :sex, class: "mt-2" %>
+        <%= f.select :sex, [['男の子', '男の子'], ['女の子', '女の子'], ['不明', '不明'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select mg-tb-6" } %>
+      </div>
       
-      <%= f.label :sex, class: "mt-2" %>
-      <%= f.select :sex, [['オス', 'オス'], ['メス', 'メス'], ['不明', '不明'] ], { include_blank: true }, { id: :reptile_type1, class: "form-control custom-select" } %>
+      <div class="field">
+        <%= f.label :age, class: "mt-2" %>
+        <%= f.text_field :age, id: :reptile_age, class: "form-control mg-tb-6" %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :size, class: "mt-2" %>
+        <%= f.text_field :size, id: :reptile_size, class: "form-control mg-tb-6" %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :weight, class: "mt-2" %>
+        <%= f.text_field :weight, id: :reptile_weight, class: "form-control mg-tb-6" %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :description, class: "mt-2" %>
+        <%= f.text_area :description, id: :reptile_description, size: "3x3", class: "form-control mg-tb-6" %>
+      </div>
+      
+      <div class="field">
+        <%= f.label :price, class: "mt-2" %>
+        <%= f.number_field :price, id: :reptile_price, class: "form-control mg-tb-6" %>
+      </div>
 
-      <%= f.label :age, class: "mt-2" %>
-      <%= f.text_field :age, id: :reptile_age, class: "form-control" %>
-
-      <%= f.label :size, class: "mt-2" %>
-      <%= f.text_field :size, id: :reptile_size, class: "form-control" %>
+      <div class="field">
+        <%= f.label :sales_status, class: "mt-2" %>
+        <%= f.text_field :sales_status, id: :reptile_sales_status, class: "form-control mg-tb-6" %>
+      </div>
       
-      <%= f.label :weight, class: "mt-2" %>
-      <%= f.text_field :weight, id: :reptile_weight, class: "form-control" %>
-      
-      <%= f.label :description, class: "mt-2" %>
-      <%= f.text_area :description, id: :reptile_description, size: "3x3", class: "form-control" %>
-      
-      <%= f.label :price, class: "mt-2" %>
-      <%= f.number_field :price, id: :reptile_price, class: "form-control" %>
-      
-      <%= f.label :sales_status, class: "mt-2" %>
-      <%= f.text_field :sales_status, id: :reptile_sales_status, class: "form-control" %>
-      
-      <%= f.label :arrival_day, class: "mt-2" %>
-      <%= f.date_field :arrival_day, id: :reptile_arrival_day, class: "form-control" %>
+      <div class="field">
+        <%= f.label :arrival_day, class: "mt-2" %>
+        <%= f.date_field :arrival_day, id: :reptile_arrival_day, class: "form-control mg-tb-6" %>
+      </div>
       
       <div class="actions">
         <%= f.submit yield(:button_text), class: "btn btn-primary w-100 my-3",data: { confirm: "生体を新規登録します。\nこの内容でよろしければOKを押してください。" } %>

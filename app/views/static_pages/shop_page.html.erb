@@ -1,12 +1,16 @@
 <% Rails.application.config.another_logger.debug "[d] view: reptile/shop" %>
 
+<!-- headerのぶん -->
+<div style="padding-top: 40px;">
+
 <!-- マイページ -->
 <div id="wrapper">
   <div class="bg">
     <div class="inner">
+      <!-- ショップ名orレプタイル種別 -->
       <h1 class="shop-ttl" style="font-size: 40px;"><%= @disp_shopinfo.shop_name %></h1>
       <% if @type1_name.present? %>
-      <h1 class="shop-ttl" style="font-size: 20px;"><%= "\"#{@type1_name}\" 一覧" %></h1>
+        <h1 class="shop-ttl" style="font-size: 20px;"><%= "\"#{@type1_name}\" 一覧" %></h1>
       <% end %>
       <div class="show">
 
@@ -39,21 +43,21 @@
           <!-- ここまで販売生体一覧 -->
 
           <!-- 入荷情報 -->
-          <h2 class="arrival-ttl menu-ttl relative">
-            <div style="font-size:14px;"><%= @disp_type %><br></div>
-            新入荷
-            <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
-          </h2>
-          <% if @new_arrivals %>
-          <% @new_arrivals.each do |new_regist| %>
-          <ul class="menu-list">
-            <li class="arrival-item">
-              <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
-              <%= link_to new_regist.type_name, shop_page_path(reptile_id: new_regist.id, shop_id: @disp_shopinfo.id), class:"arrival-animal" %>
-              <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
-            </li>
-          </ul>
-          <% end %>
+          <% if @new_arrivals.present? %>
+            <h2 class="arrival-ttl menu-ttl relative">
+              <div style="font-size:14px;"><%= @disp_type %><br></div>
+              新入荷
+              <div class="arrow absolute ds-sp"><img src="image/arrow.png" alt=""></div>
+            </h2>
+            <% @new_arrivals.each do |new_regist| %>
+            <ul class="menu-list">
+              <li class="arrival-item">
+                <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
+                <%= link_to new_regist.type_name, shop_page_path(reptile_id: new_regist.id, shop_id: @disp_shopinfo.id), class:"arrival-animal" %>
+                <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
+              </li>
+            </ul>
+            <% end %>
           <% end %>
           <!-- ここまで入荷情報 -->
 
@@ -84,7 +88,6 @@
             <!-- Instagram -->
           </div>
           <!-- SNS -->
-
         </div>
         <!-- ここまでサイドメニュー -->
 
@@ -109,7 +112,7 @@
     </div><!-- inner -->
   </div><!-- bg -->
 </div><!-- wrapper -->
-
+</div>
 <script>
   $('.menu-ttl').click(function () {
     $(this).next('.menu-list').slideToggle();

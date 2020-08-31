@@ -467,3 +467,24 @@
  .swiper-button-prev::after { content: none !important; }
  .swiper-button-next::after { content: none !important; }
  
+
+ /*==============================================================================
+  追加css
+ ============================================================================= */
+ 
+ .field span {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  // background-color: #3EC1C9;
+  background-color: red;
+  // vertical-align: text-top;
+  vertical-align: 30%;
+ }
+
+ .field .mg-tb-6 {
+   margin: 6px 0 6px 0;
+ }

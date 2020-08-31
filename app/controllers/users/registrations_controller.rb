@@ -15,7 +15,6 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def create
     debug_log("[d] Registrations_Ctrl: ac: create")  # log
     super
-    debug_log("[d] Registrations_Ctrl: ac: create id=#{current_user.id}")  # log
   end
 
   # GET /resource/edit

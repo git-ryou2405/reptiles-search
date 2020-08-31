@@ -38,22 +38,21 @@
             <!-- ここまで販売生体一覧 -->
 
             <!-- 入荷情報 -->
-            <h2 class="arrival-ttl menu-ttl relative">
-              <div class="menu-ttl-sm"><%= @disp_type %></div>新入荷
-            </h2>
-            <% if @new_arrivals %>
-            <% @new_arrivals.each do |new_regist| %>
-            <ul class="menu-list">
-              <li class="arrival-item">
-                <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
-                <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptile_info" ), class:"arrival-animal" %>
-                <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
-              </li>
-            </ul>
-            <% end %>
+            <% if @new_arrivals.present? %>
+              <h2 class="arrival-ttl menu-ttl relative">
+                <div class="menu-ttl-sm"><%= @disp_type %></div>新入荷
+              </h2>
+              <% @new_arrivals.each do |new_regist| %>
+              <ul class="menu-list">
+                <li class="arrival-item">
+                  <p class="arrival-day"><%= l(new_regist.created_at, format: :default2 ) %></p>
+                  <%= link_to new_regist.type_name, search_page_path(Reptile, id: new_regist.id, searchtype: "reptile_info" ), class:"arrival-animal" %>
+                  <div class="arrival-day"><%= "（ 種別1: #{new_regist.type1} ）" %></div>
+                </li>
+              </ul>
+              <% end %>
             <% end %>
             <!-- ここまで入荷情報 -->
-
           </div>
           <!-- ここまでサイドメニュー -->
 
