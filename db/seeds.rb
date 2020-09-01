@@ -31,10 +31,11 @@ User.create!(
   email: "sample@email.com",
   password: @password,
   password_confirmation: @password,
-  shop_name: "レプタイルショップ",
+  shop_name: "爬虫類倶楽部中野店",
   shop_images: "",
   prefectures: "東京都",
   address: "東京都中野区中野６丁目１５−１３",
+  search_map: 1,
   howto_access: "xx駅から徒歩y分 ⬇︎",
   tel: "03-xxxx-xxxx",
   business_hours: "xx時〜yy時",
@@ -44,7 +45,8 @@ User.create!(
   handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ",
   handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品",
   feature: "取り扱い多数、御来店お待ちしております。",
-  map_info: "https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565",
+  map_info: "https://maps.google.co.jp/maps?output=embed&q=爬虫類倶楽部中野店",
+  # map_info: "https://maps.google.co.jp/maps?output=embed&q=35.708408,139.675565",
   twitter: "https://twitter.com/89_nakano"
 )
   # File.open("./public/uploads/TestFolder/user2.jpg")
@@ -56,10 +58,11 @@ User.create!(
   email: "sample2@email.com",
   password: @password,
   password_confirmation: @password,
-  shop_name: "爬虫類らんど",
+  shop_name: "ワイルドモンスター",
   shop_images: "",
   prefectures: "茨城県",
   address: "茨城県日立市中成沢町3-14-7",
+  search_map: 1,
   howto_access: "xx駅から徒歩y分 ⬇︎",
   tel: "02-xxxx-xxxx",
   business_hours: "xx時〜yy時",
@@ -69,7 +72,8 @@ User.create!(
   handling_feeds: "活エサ・冷凍エサ・人工飼料・栄養剤・補助品・その他のエサ",
   handling_goods: "飼育セット/飼育ケージ/照明器具/保温器具/床材/レイアウト用品/水入れ・餌入れ/ナミバテラ社製品/本・ＤＶＤ/その他の飼育用品",
   feature: "取り扱い多数、御来店お待ちしております。",
-  map_info: "https://maps.google.co.jp/maps?output=embed&q=36.574923,140.63526",
+  map_info: "https://maps.google.co.jp/maps?output=embed&q=ワイルドモンスター",
+  # map_info: "https://maps.google.co.jp/maps?output=embed&q=36.574923,140.63526",
   twitter: "https://twitter.com/89_nakano"
 )
 
@@ -81,14 +85,14 @@ array = [
   # 名前　性別　サイズ　価格　user_id
   
   # ユーザー2
-  [ "ヘビ","レオパードパステルモハベ", "不明", "不明", 42000, 2, "レプタイルショップ" ],
-  [ "ヘビ","アンゴラパイソン", "不明", "60cm前後", 300000, 2, "レプタイルショップ" ],
-  [ "ヘビ","コーンスネーク キャラメル", "不明", "20cm前後", 12800, 2, "レプタイルショップ" ],
+  [ "ヘビ","レオパードパステルモハベ", "不明", "不明", 42000, 2, "爬虫類倶楽部中野店" ],
+  [ "ヘビ","アンゴラパイソン", "不明", "60cm前後", 300000, 2, "爬虫類倶楽部中野店" ],
+  [ "ヘビ","コーンスネーク キャラメル", "不明", "20cm前後", 12800, 2, "爬虫類倶楽部中野店" ],
 
   # ユーザー3
-  [ "ヘビ","コーラルピンクボア", "不明", "180cm前後", 58000, 3, "爬虫類らんど" ],
-  [ "ヘビ","コロンビアボア", "不明", "140cm前後", 60000, 3, "爬虫類らんど" ],
-  [ "ヘビ","セントラルアメリカンボア", "不明", "140cm前後", 58000, 3, "爬虫類らんど" ]
+  [ "ヘビ","コーラルピンクボア", "不明", "180cm前後", 58000, 3, "ワイルドモンスター" ],
+  [ "ヘビ","コロンビアボア", "不明", "140cm前後", 60000, 3, "ワイルドモンスター" ],
+  [ "ヘビ","セントラルアメリカンボア", "不明", "140cm前後", 58000, 3, "ワイルドモンスター" ]
 ]
 
 array.each do |first, second, third, fourth, fifth, sixth, seventh|
