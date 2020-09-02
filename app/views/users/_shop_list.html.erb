@@ -14,7 +14,7 @@
 <!-- 検索フォーム -->
 <section class="search-content">
   <p class="form-txt01">こちらのショップで販売中の生体を検索</p>
-  <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+  <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
   <%= f.hidden_field :searchtype, :value => "shop_name" %>
   <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
   <%= f.submit '検索', class:"search-btn align-center" %>

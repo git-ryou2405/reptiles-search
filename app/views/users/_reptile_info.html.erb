@@ -20,7 +20,7 @@
 <div class="search-content">
   <!-- 全国_検索 -->
   <% if @disp_type == "全国" %>
-    <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+    <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
       <%= f.hidden_field :searchtype, :value => @searchtype %>
       <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
       <%= f.submit '検索', class:"search-btn align-center" %>

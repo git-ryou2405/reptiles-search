@@ -8,13 +8,17 @@
   <div class="section-breadcrumbs">
     <div class="container-breadcrumbs">
       <% if params[:current_reptile_type].present? %>
-        <% breadcrumb :shop_reptile_search %>
+        <% breadcrumb :mypage_reptile_list %>
+      <% elsif params[:current_select].present? %>
+        <% breadcrumb :mypage_select_reptile %>
       <% else %>
         <% breadcrumb :mypage %>
       <% end %>
+      
       <%= breadcrumbs pretext: "", separator: " &rsaquo; " %>
     </div>
   </div>
+  <!-- /パンくずリスト -->
   
   <div class="inner">
     <div class="show">

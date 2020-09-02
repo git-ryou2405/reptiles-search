@@ -10,14 +10,18 @@
   <!-- パンくずリスト -->
   <div class="section-breadcrumbs">
     <div class="container-breadcrumbs">
-      <% if params[:current_reptile_type].present? %>
-        <% breadcrumb :shop_reptile_search %>
+      <% if params[:type1].present? %>
+        <% breadcrumb :shop_reptile_list %>
+      <% elsif params[:reptile_id].present? %>
+        <% breadcrumb :shop_select_reptile %>
       <% else %>
         <% breadcrumb :shop_page %>
       <% end %>
+      
       <%= breadcrumbs pretext: "", separator: " &rsaquo; " %>
     </div>
   </div>
+  <!-- /パンくずリスト -->
   
   <div class="inner">
     <div class="show">
@@ -37,7 +41,7 @@
           <!-- リンク先の生成 -->
           <% reptile_list = [ "ヘビ", "カメ", "トカゲ", "ヤモリ", "両生類", "奇虫・その他" ] %>
             <% reptile_list.each do |reptile_type| %>
-            <%= link_to shop_page_path(Reptile, type1: reptile_type, shop_id: @disp_shopinfo.id), style:"text-decoration: none;" do %>
+            <%= link_to shop_page_path(type1: reptile_type, shop_id: @disp_shopinfo.id), style:"text-decoration: none;" do %>
             <li class="reptile-item"><%= reptile_type %>
               <div style="float: right; margin-right: auto;">
                 <i class="fas fa-chevron-right"></i>

@@ -13,7 +13,7 @@
   <div class="search">
     <h2 class="serch-ttl">爬虫類を探す</h2>
     <div class="row justify-content-center">
-      <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+      <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
         <%= f.hidden_field :searchtype, :value => "form" %>
         <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
         <%= f.submit '検索', class:"search-btn align-center" %>
@@ -33,7 +33,7 @@
         <a href="snake.html">
             <div class="photo">
               <%= link_to image_tag("/uploads/main/#{animal_type}.jpg"),
-               search_page_path(Reptile, type1: translation[@count], searchtype: "ctg_btn" ) %>
+               alljapan_page_path(type1: translation[@count], searchtype: "ctg_btn" ) %>
             </div>
             <p class="species"><%= translation[@count] %></p>
         </a>
@@ -47,7 +47,7 @@
   <div class="search">
     <h2 class="serch-ttl pt-5", style="width: 350px;">爬虫類ショップを探す</h2>
     <div class="row justify-content-center">
-      <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+      <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
         <%= f.hidden_field :searchtype, :value => "shop_name" %>
         <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
         <%= f.submit '検索', class:"search-btn align-center" %>
@@ -61,7 +61,7 @@
     <h2 class="serch-ttl pt-5", style="width: 350px;">都道府県から検索</h2>
     <div class="row justify-content-center">
     <% @prefectures = Prefecture.all %>
-      <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+      <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
         <%= f.hidden_field :searchtype, :value => "shop_name" %>
         <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true}, { class: "search-box align-center", style: "width: 200px;" } %>
         <%= f.submit '検索', class:"search-btn align-center" %>

@@ -28,7 +28,7 @@
     <% else %>
       <% @searchtype = "form" %>
     <% end %>
-    <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
+    <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
       <%= f.hidden_field :searchtype, :value => @searchtype %>
       <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
       <%= f.submit '検索', class:"search-btn align-center" %>
@@ -64,7 +64,7 @@
             <%= link_to image_tag(@disp_image), user_path(current_user, current_select: reptile.id) %>
           <% else %>
             <% if @disp_type == "全国" %>
-              <%= link_to image_tag(@disp_image), search_page_path(Reptile, id: reptile.id, searchtype: "reptile_info" ), class:"photo-frame" %>
+              <%= link_to image_tag(@disp_image), alljapan_page_path(id: reptile.id, searchtype: "reptile_info" ), class:"photo-frame" %>
             <% else %>
               <%= link_to image_tag(@disp_image), shop_page_path(reptile_id: reptile.id, shop_id: reptile.user_id) %>
             <% end %>

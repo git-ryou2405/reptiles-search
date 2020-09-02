@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'static_pages#top'
-  get 'search_page' => 'static_pages#search_page'
+  get 'alljapan_page' => 'static_pages#alljapan_page'
   get 'shop_page' => 'static_pages#shop_page'
   
   devise_for :users, controllers: {
