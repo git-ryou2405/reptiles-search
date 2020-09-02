@@ -397,8 +397,10 @@
  .swiper-container {
    width: 700px;
    margin: 0 0 0 40px!important;
-   cursor: grab;
    object-fit: cover;
+ }
+ .grab {
+  cursor: grab;
  }
  .swiper-slide { text-align: center;}
  .swiper-container:active {
@@ -481,28 +483,12 @@
  }
  .swiper-button-prev::after { content: none !important; }
  .swiper-button-next::after { content: none !important; }
- 
-// 入力フォーム [必須マーク] 
- .field span {
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0 0 0 8px;
-  padding: 2px 4px;
-  border-radius: 2px;
-  color: #fff;
-  background-color: red;
-  vertical-align: 30%;
- }
 
- .field .mg-tb-6 {
-   margin: 6px 0 6px 0;
- }
-
-// パンくずリスト
+/*==============================================================================
+パンくずリスト
+============================================================================= */
 .breadcrumbs {
   font-size: 12px;
-}
-.breadcrumbs {
   &:first-child {
     &:before {
       color: #fff;
@@ -527,4 +513,20 @@
    width: 1000px;
    margin: 0 auto;
    padding: 10px 20px;
+ }
+
+ // 入力フォーム [必須マーク] 
+ .field span {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 0 0 8px;
+  padding: 2px 4px;
+  border-radius: 2px;
+  color: #fff;
+  background-color: red;
+  vertical-align: 30%;
+ }
+
+ .field .mg-tb-6 {
+   margin: 6px 0 6px 0;
  }

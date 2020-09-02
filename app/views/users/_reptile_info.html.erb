@@ -48,22 +48,26 @@
 
 <!-- image スライダー -->
 <% if @reptile.images.present? %>
-  <div class="swiper-container text-center">
+  <div class="swiper-container text-center grab">
     <!-- １枚しかなければ１枚のみ表示 -->
     <% if @reptile.images[1].present? %>
       <div class="swiper-wrapper">
         <% @reptile.images.each do |image| %>
-          <div class="swiper-slide">
-            <%= image_tag image.url, class:"swiper-image" %>
-          </div>
+        <div class="swiper-slide">
+          <%= image_tag image.url, class:"swiper-image" %>
+        </div>
         <% end %>
         </div>
       <div class="swiper-button-prev swiper-button-black swiper-custom-button"></div>
       <div class="swiper-button-next swiper-button-black swiper-custom-button"></div>
       <div class="swiper-pagination swiper-pagination-white"></div>
     <% else %>
-      <%= image_tag @reptile.images[0].url, :size =>'450x253' %>
+      <%= image_tag @reptile.images[0].url, class:"photo", :size =>'450x253' %>
     <% end %>
+  </div>
+<% else %>
+  <div class="swiper-container text-center">
+    <%= image_tag "/uploads/TestFolder/noimage.jpg", class:"photo", :size =>'253x253' %>
   </div>
 <% end %>
 <!-- image スライダー -->

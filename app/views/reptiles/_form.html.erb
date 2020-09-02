@@ -24,7 +24,7 @@
         <%= link_to "画像を削除", "#", class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
       <% else %>
       <div class="field">
-        <%= f.label :images, class: "mt-2" %><br>
+        <%= f.label :images, class: "mt-2" %><span>必須</span><br>
         <%= f.file_field :images, multiple: true, id: :reptile_images, class: "mg-tb-6" %><br>
       </div>
       <% end %>
