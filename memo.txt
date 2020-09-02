@@ -23,11 +23,11 @@ amphibian
 strange-looking creatures
 
 ヘビ
+カメ
 トカゲ
 ヤモリ
-カメ
 両生類
-奇虫
+奇虫・その他
 
 
 image: "",

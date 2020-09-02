@@ -5,9 +5,9 @@
 
 
 /* flashフェードアウト */
-// $(function(){
-//   setTimeout("$('.flash').fadeOut('slow')", 2000);
-// });
+$(function(){
+  setTimeout("$('.flash').fadeOut('slow')",2000);
+});
 
 /* スライダー */
 var mySwiper = new Swiper('.swiper-container', {
@@ -28,7 +28,6 @@ var mySwiper = new Swiper('.swiper-container', {
   clickable: true
 }
 });
-
 
 /* スムーススクロール */
 $('a[href^="#"]').on('click', function(e) {

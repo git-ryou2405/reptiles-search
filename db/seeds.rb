@@ -28,7 +28,7 @@ User.create!( name: "Admin", email: "admin@email.com", password: @password, pass
 
 User.create!(
   name: "test_user1",
-  email: "sample@email.com",
+  email: "sample1@email.com",
   password: @password,
   password_confirmation: @password,
   shop_name: "爬虫類倶楽部中野店",
@@ -74,7 +74,7 @@ User.create!(
   feature: "取り扱い多数、御来店お待ちしております。",
   map_info: "https://maps.google.co.jp/maps?output=embed&q=ワイルドモンスター",
   # map_info: "https://maps.google.co.jp/maps?output=embed&q=36.574923,140.63526",
-  twitter: "https://twitter.com/89_nakano"
+  twitter: "https://twitter.com/webmast76129166"
 )
 
 puts "success create user."

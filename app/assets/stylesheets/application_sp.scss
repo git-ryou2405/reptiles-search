@@ -3,16 +3,13 @@
     共通設定
   ============================================================================= */
   html { font-size: 1.333333333333vw;}
-  .bg { padding: 8rem 0;}
+  body { padding-top: 8rem; }
   .inner { margin: 0 3rem; width: auto; }
   .ds-pc { display: none; }
   
   /*==============================================================================
     topページ
   ============================================================================= */
-  .header-pd {
-    padding-top: 6rem;
-  }
   .jumbotron {
     background:url(/images/hero.jpg) no-repeat 30% 40%/ cover;
   }

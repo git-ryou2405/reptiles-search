@@ -37,7 +37,7 @@ class ReptilesController < ApplicationController
 
     respond_to do |format|
       if @reptile.save
-        format.html { redirect_to user_url(@reptile.user_id), notice: "種名：\"#{@reptile.type_name}\"を登録しました。" }
+        format.html { redirect_to user_url(@reptile.user_id, current_select: @reptile.id), notice: "種名：\"#{@reptile.type_name}\"を登録しました。" }
         format.json { render :show, status: :created, location: @reptile }
       else
         format.html { render :new }

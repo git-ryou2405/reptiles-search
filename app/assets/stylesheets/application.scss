@@ -25,7 +25,8 @@
  .inner { width:1000px; margin: 0 auto; padding: 0; position:relative; }
  .fixed { position:fixed; left:0; top:0; z-index:9999; }
  div,p,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,form,input,button,textarea,table,tr,th,td,article,aside,header,footer,section,nav{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
- body { background-color: #111; color: #fff;}
+ 
+ body { background-color: #111; color: #fff; padding-top: 60px; font-family: "Hiragino Kaku Gothic ProN";}
  h1,h2,h3,h4,h5,h6 { font-weight:bold; line-height: 1.8; letter-spacing: .06rem; text-align: center;overflow-wrap: break-word;}
  .align-center {align-items:center;}
  /*==============================================================================
@@ -41,7 +42,6 @@
    PC基本設定
  ============================================================================= */
  .ds-sp { display: none; }
- .bg { padding: 50px 0;}
  /*==============================================================================
    login画面
  ============================================================================= */
@@ -96,12 +96,17 @@
      border-color: #c11e2e;
    } 
  }
+ .login_out { color: white; background-color: #666;}
+ .login_out:hover {
+   color: white;
+   background-color: #444;
+ }
  .shop-ttl { width: 1000px; margin: 0 auto; font-size: 40px;}
  /*==============================================================================
    topページ
  ============================================================================= */
  .header-pd {
-    padding-top: 40px;
+    padding-top: 4rem;
   }
  .jumbotron {
    background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
@@ -202,7 +207,7 @@
        line-height: 1.4;
        .menu-ttl-sm { font-size: 14px;}
      }
-     .menu-ttl:first-of-type { margin: 26px 0 0;}
+     .menu-ttl:first-of-type { margin: 14px 0 0;}
      .menu-list {
        padding-left: 0;
        margin: 3px 0 0;
@@ -284,7 +289,7 @@
      width: 700px;
      margin: -12px 0 0 0;
      .search-box {
-       width: 500px;
+       width: 600px;
        height: 40px;
        color: #111;
        font-size: 13.5px;
@@ -322,6 +327,10 @@
          }
        }
      }
+    .shop-data-edit {
+      width: 700px;
+      margin: 0 0 20px 40px;
+    }
  // グーグルマップ
    .googlemap { 
      width: 700px;
@@ -331,25 +340,28 @@
  
  // 商品ページ
    .search-content {
-     width: 700px; margin: 29px 0 0 50px;
+     width: 700px; margin: 25px 0 26px 40px;
      .search-item { 
-       padding: 20px 0 0;
+       padding: 10px 0 0;
        border-top: 3px solid #333;
      }
      .search-item:not(:first-of-type) {
-       margin: 20px 0 0;
+       margin: 10px 0 0;
      }
      .photo { 
-       width: 160px;
-       padding: 0 20px 0 0;
+       width: 200px;
+       padding: 0 18px 0 0;
      }
+    //  img {
+    //    border: 3px solid #303030;
+    //  }
      .txt-list { 
-       width: 90%;
+       width: 75%;
      }
      .txt-item {
-       font-size: 20px;
+       font-size: 18px;
        p:first-of-type {
-         width: 170px;
+         width: 140px;
          padding: 5px 5px 5px 0;
          font-weight: bold;
        }
@@ -384,7 +396,7 @@
  ============================================================================= */
  .swiper-container {
    width: 700px;
-   margin: 0 0 0 auto!important;
+   margin: 0 0 0 40px!important;
    cursor: grab;
    object-fit: cover;
  }
@@ -470,11 +482,7 @@
  .swiper-button-prev::after { content: none !important; }
  .swiper-button-next::after { content: none !important; }
  
-
- /*==============================================================================
-  追加css
- ============================================================================= */
- 
+// 入力フォーム [必須マーク] 
  .field span {
   font-size: 12px;
   font-weight: 500;
@@ -482,12 +490,41 @@
   padding: 2px 4px;
   border-radius: 2px;
   color: #fff;
-  // background-color: #3EC1C9;
   background-color: red;
-  // vertical-align: text-top;
   vertical-align: 30%;
  }
 
  .field .mg-tb-6 {
    margin: 6px 0 6px 0;
+ }
+
+// パンくずリスト
+.breadcrumbs {
+  font-size: 12px;
+}
+.breadcrumbs {
+  &:first-child {
+    &:before {
+      color: #fff;
+      font-family: FontAwesome;
+      content: "\f015";
+      margin-right: 6px;
+    }
+  }
+}
+.breadcrumbs a:hover {
+  color: #888;
+  text-decoration: underline;
+}
+.section-breadcrumbs {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+ // box-shadow: 0px 9px 3px -3px #444;
+}
+ .container-breadcrumbs {
+   width: 1000px;
+   margin: 0 auto;
+   padding: 10px 20px;
  }

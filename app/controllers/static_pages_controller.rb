@@ -19,7 +19,7 @@ class StaticPagesController < ApplicationController
       debug_log("[d] StaticPages_Ctrl: ac: search_page @new_arrivals.count=#{@new_arrivals.count}")  # log
     end
     
-    # 全国Data_検索フォーム
+    # Topページ_searchページ共通_全国Data_検索フォーム
     if params[:searchtype] == "form"
       if params[:search].present?
         debug_log("[d] StaticPages_Ctrl: ac: search_page params_search=#{params[:search]}")  # log
@@ -34,14 +34,16 @@ class StaticPagesController < ApplicationController
           debug_log("[d] StaticPages_Ctrl: ac: search_page search_type_name=#{search_type_name.inspect}")  # log
           debug_log("[d] StaticPages_Ctrl: ac: search_page search_morph=#{search_morph.inspect}")  # log
         else
-          flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+          if params[:search].present?
+            flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+          end
         end
       else
         flash[:danger] = "値を入力してください。"
         redirect_to root_path
       end
     
-    # 全国Data_種類から探す
+    # Topページ_全国Data_種類から探す
     elsif params[:searchtype] == "ctg_btn"
       @type1_name = params[:type1]
       @search_type1_list = Reptile.where('type1 LIKE ?', "%#{params[:type1]}%")
@@ -91,9 +93,12 @@ class StaticPagesController < ApplicationController
         debug_log("[d] StaticPages_Ctrl: ac: search_page search_type_name=#{search_type_name.inspect}")  # log
         debug_log("[d] StaticPages_Ctrl: ac: search_page search_morph=#{search_morph.inspect}")  # log
       else
-        flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+        if params[:search].present?
+          flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+        end
       end
     end
+    
   end
   
   # ショップページ
@@ -126,7 +131,9 @@ class StaticPagesController < ApplicationController
       debug_log("[d] StaticPages_Ctrl: ac: shop_page @shop_search_reptile=#{@shop_search_reptile}")  # log
       
       unless @shop_search_reptile.present?
-        flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+        if params[:search].present?
+          flash.now[:warning] = "「#{params[:search]}」の検索結果：0件"
+        end
       end
     end
     

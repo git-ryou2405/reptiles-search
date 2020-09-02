@@ -4,9 +4,9 @@
 <% if @select_reptile.present? %>
   <!-- 選択したレプタイル情報 -->
   <% @reptile = @select_reptile %>
-<% elsif @new_regist_reptile.present? %>
+<% elsif @current_select_reptile.present? %>
   <!-- 新入荷レプタイル情報 -->
-  <% @reptile = @new_regist_reptile %>
+  <% @reptile = @current_select_reptile %>
 <% end %>
 <% Rails.application.config.another_logger.debug "[d] view: reptile_info @reptile=#{@reptile.inspect}" %>
 
@@ -17,7 +17,7 @@
 <% end %>
 
 <!-- 検索フォーム -->
-<section class="search-content">
+<div class="search-content">
   <!-- 全国_検索 -->
   <% if @disp_type == "全国" %>
     <%= form_with(url: search_page_path, method: :get, local: true) do |f| %>
@@ -33,14 +33,14 @@
     <%= f.submit '検索', class:"search-btn align-center" %>
     <% end %>
   <% end %>
-</section>
+</div>
 
 <!-- 生体情報の編集 -->
 <% if current_user %>
   <% if @reptile.user_id == current_user.id %>
-    <div class="col-4">
-      <%= link_to "生体情報の編集", edit_user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), class:"btn btn-sm btn-primary px-2 my-2" %>
-      <%= link_to "削除", user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), method: :delete, class:"btn btn-sm login_out btn-hover px-3 my-2", data: { confirm: "生体を削除します。\n本当によろしいですか？" } %>
+    <div class="shop-data-edit">
+      <%= link_to "生体情報の編集", edit_user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), class:"btn btn-sm btn-primary px-2" %>
+      <%= link_to "削除", user_reptile_path(user_id: @reptile.user_id, id: @reptile.id), method: :delete, class:"btn btn-sm login_out btn-hover px-3", data: { confirm: "生体を削除します。\n本当によろしいですか？" } %>
     </div>
   <% end %>
 <% end %>

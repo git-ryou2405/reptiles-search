@@ -45,7 +45,8 @@ class ImageUploader < CarrierWave::Uploader::Base
   # process resize_to_fill: [700, 394, "Center"]  #縦横比を維持しません。
   # process resize_and_pad: [300, 169, "#222222", "Center"]
   # process resize_and_pad: [300, 200, "#222222", "Center"]
-  process resize_and_pad: [350, 233, "#222222", "Center"]
+  # process resize_and_pad: [350, 233, "#222222", "Center"]
+  process resize_and_pad: [350, 233, "#111111", "Center"]
   # process resize_and_pad: [400, 225, "#222222", "Center"]
   # process resize_and_pad: [400, 267, "#222222", "Center"]
   # process resize_and_pad: [500, 281, "#222222", "Center"]

@@ -9,13 +9,12 @@ class UsersController < ApplicationController
 
   def show
     debug_log("[d] Users_Ctrl: ac: show")  # log
-    
     @show_option = "user"
-    @current_reptile = Reptile.where(user_id: current_user)
+    @current_reptiles = Reptile.where(user_id: current_user)
     
     # ショップが持つ、新入荷レプタイル情報を取得
-    if @current_reptile
-      @created_at_desc = @current_reptile.all.order(created_at: "DESC")  # 降順
+    if @current_reptiles
+      @created_at_desc = @current_reptiles.all.order(created_at: "DESC")  # 降順
       debug_log("[d] Users_Ctrl: ac: show @created_at_desc.count=#{@created_at_desc.count}")  # log
       
       if @created_at_desc.count <= 5
@@ -28,20 +27,20 @@ class UsersController < ApplicationController
     end
     
     # ショップが持つ、タイプ毎のReptile情報を取得
-    if params[:reptile_type].present?
-      @show_option = params[:reptile_type]
-      @reptile_type = @current_reptile.where(type1: params[:reptile_type])
-      debug_log("[d] Users_Ctrl: ac: show @show_option=#{@reptile_type}")  # log
-      unless @reptile_type.present?
-        flash.now[:warning] = "「#{params[:reptile_type]}」の登録は現在ありません"
+    if params[:current_reptile_type].present?
+      @show_option = params[:current_reptile_type]
+      @current_reptile_type = @current_reptiles.where(type1: params[:current_reptile_type])
+      debug_log("[d] Users_Ctrl: ac: show @current_reptile_type=#{@current_reptile_type}")  # log
+      unless @current_reptile_type.present?
+        flash.now[:warning] = "「#{params[:current_reptile_type]}」の登録は現在ありません"
       end
     end
     
-    # 新入荷から選択したレプタイルページへ遷移
-    if params[:new_regist].present?
-      @show_option = params[:new_regist]
-      @new_regist_reptile = @current_reptile.find(params[:new_regist])
-      debug_log("[d] Users_Ctrl: ac: show @new_regist_reptile=#{@new_regist_reptile}")  # log
+    # ショップ内で、選択したレプタイルページへ遷移
+    if params[:current_select].present?
+      @show_option = params[:current_select]
+      @current_select_reptile = @current_reptiles.find(params[:current_select])
+      debug_log("[d] Users_Ctrl: ac: show @current_select_reptile=#{@current_select_reptile}")  # log
     end
     
     debug_log("[d] Users_Ctrl: ac: show @show_option=#{@show_option}")  # log
