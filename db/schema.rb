@@ -20,6 +20,9 @@ ActiveRecord::Schema.define(version: 2020_08_23_064627) do
 
   create_table "reptiles", force: :cascade do |t|
     t.string "images"
+    t.string "reptile_img1"
+    t.string "reptile_img2"
+    t.string "reptile_img3"
     t.string "type1"
     t.string "type2"
     t.string "type_name"
@@ -50,6 +53,9 @@ ActiveRecord::Schema.define(version: 2020_08_23_064627) do
     t.boolean "admin", default: false
     t.string "shop_name"
     t.string "shop_images"
+    t.string "shop_img1"
+    t.string "shop_img2"
+    t.string "shop_img3"
     t.string "prefectures"
     t.string "address"
     t.integer "search_map", default: 3

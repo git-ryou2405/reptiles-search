@@ -5,6 +5,9 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, :omniauthable
   mount_uploaders :shop_images, ImageUploader
+  mount_uploader :shop_img1, ImageUploader
+  mount_uploader :shop_img2, ImageUploader
+  mount_uploader :shop_img3, ImageUploader
   serialize :shop_images, JSON
   
   # validates :shop_name, presence: true

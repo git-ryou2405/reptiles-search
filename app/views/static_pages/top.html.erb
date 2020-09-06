@@ -1,75 +1,82 @@
 <% Rails.application.config.another_logger.debug "[d] view: StaticPages#top" %>
 
-<main class="jumbotron text-center">
-  <h1>Reptiles Search</h1>
-  <div class="txt">
-    <div class="txt01">全国の爬虫類ショップから<br>ヘビやトカゲなど一括検索！!</div>
-    <div class="txt02">Reptiles Searchはあなたと爬虫類の出会いを全力サポート！!</div>
+<div class="jumbotron text-center fv">
+  <h1 class="fv-ttl">Reptiles Search</h1>
+  <div class="fv-block">
+    <p class="fv-txt01">全国の爬虫類ショップから<br>ヘビやトカゲなど一括検索！!</p>
+    <p class="fv-txt02">Reptiles Searchはあなたと爬虫類の出会いを全力サポート！!</p>
   </div>
-</main>
+</div>
 
-<div class="container text-center">
-  <!-- 検索フォーム -->
-  <div class="search">
-    <h2 class="serch-ttl">爬虫類を探す</h2>
-    <div class="row justify-content-center">
-      <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
-        <%= f.hidden_field :searchtype, :value => "form" %>
-        <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box align-center" %>
-        <%= f.submit '検索', class:"search-btn align-center" %>
-      <% end %>
-    </div>
-  </div>
-  <!-- 検索フォーム -->
-  
-  <!-- 種類から探す -->
-  <h2 class="group-ttl pt-5">種類から探す</h2>
-  <ul class="reptiles-list flex">
-    <% animal_list = [ "snake", 'turtle', "lizard","gecko", "amphibian", "others" ] %>
-    <% translation = [ "ヘビ", "カメ", "トカゲ","ヤモリ", "両生類", "奇虫・その他" ] %>
-    <% @count = 0 %>
-    <% animal_list.each do |animal_type| %>
-    <li class="reptiles-item">
-        <a href="snake.html">
+<main class="top-search">
+  <div class="bg">
+    <div class="inner">
+
+      <section class="totall-search">
+        <div class="search-ttl-block">
+          <i class="fas fa-paw"></i>
+          <h2 class="search-ttl">爬虫類を探す</h2>
+        </div>
+        <div class="search-form">
+          <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
+            <%= f.hidden_field :searchtype, :value => "form" %>
+            <%= f.text_field :search, :placeholder => "種名やモルフを入力して下さい", class:"search-box" %>
+            <%= f.submit '検索', class:"search-btn" %>
+          <% end %>
+        </div>
+      </section><!-- 全体検索フォーム -->
+      
+      <section class="group-search">
+        <div class="search-ttl-block">
+          <i class="fas fa-frog"></i>
+          <h2 class="search-ttl">種類から探す</h2>
+        </div>
+        <ul class="group-search-list">
+          <% animal_list = [ "snake", 'turtle', "lizard","gecko", "amphibian", "others" ] %>
+          <% translation = [ "ヘビ", "カメ", "トカゲ","ヤモリ", "両生類", "奇虫・その他" ] %>
+          <% @count = 0 %>
+          <% animal_list.each do |animal_type| %>
+          <li class="group-search-item">
             <div class="photo">
               <%= link_to image_tag("/uploads/main/#{animal_type}.jpg"),
-               alljapan_page_path(type1: translation[@count], searchtype: "ctg_btn" ) %>
+              alljapan_page_path(type1: translation[@count], searchtype: "ctg_btn" ) %>
             </div>
             <p class="species"><%= translation[@count] %></p>
-        </a>
-    </li>
-    <% @count +=1 %>
-    <% end %>
-  </ul>
-  <!-- 種類から探す：end -->
+          </li>
+          <% @count +=1 %>
+          <% end %>
+        </ul> <!-- 種類から探す：end -->
+        </section>
 
-  <!-- 検索フォーム -->
-  <div class="search">
-    <h2 class="serch-ttl pt-5", style="width: 350px;">爬虫類ショップを探す</h2>
-    <div class="row justify-content-center">
-      <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
-        <%= f.hidden_field :searchtype, :value => "shop_name" %>
-        <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box align-center" %>
-        <%= f.submit '検索', class:"search-btn align-center" %>
-      <% end %>
-    </div>
-  </div>
-  <!-- 検索フォーム -->
-  
-  <!-- 都道府県から検索 -->
-  <div class="search">
-    <h2 class="serch-ttl pt-5", style="width: 350px;">都道府県から検索</h2>
-    <div class="row justify-content-center">
-    <% @prefectures = Prefecture.all %>
-      <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
-        <%= f.hidden_field :searchtype, :value => "shop_name" %>
-        <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true}, { class: "search-box align-center", style: "width: 200px;" } %>
-        <%= f.submit '検索', class:"search-btn align-center" %>
-      <% end %>
-    </div>
-  </div>
-  <!-- 都道府県から検索 -->
+      <section class="shop-search">
+        <div class="search-ttl-block">
+          <i class="fas fa-spider"></i>
+          <h2 class="search-ttl">爬虫類ショップを探す</h2>
+        </div>
+        <div class="search-form">
+          <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
+            <%= f.hidden_field :searchtype, :value => "shop_name" %>
+            <%= f.text_field :search, :placeholder => "ショップ名を入力して下さい", class:"search-box" %>
+            <%= f.submit '検索', class:"search-btn" %>
+          <% end %>
+        </div>
+      </section><!-- ショップ検索フォーム -->
+      
+      <section class="area-search">
+        <div class="search-ttl-block">
+          <i class="fas fa-map-marked-alt"></i>
+          <h2 class="search-ttl search-ttl02">ショップを都道府県から検索</h2>
+        </div>
+        <div class="search-form">
+        <% @prefectures = Prefecture.all %>
+          <%= form_with(url: alljapan_page_path, method: :get, local: true) do |f| %>
+            <%= f.hidden_field :searchtype, :value => "shop_name" %>
+            <%= f.collection_select :prefectures, @prefectures, :pref, :pref, {include_blank: true}, { class: "search-box select-box"} %>
+            <%= f.submit '検索', class:"search-btn" %>
+          <% end %>
+        </div>
+      </div><!-- 都道府県から検索 -->
 
-  <!-- スクロール用 -->
-  <div class="box"></div>
-</div>
+    </div><!-- .inner -->
+  </div><!-- .bg -->
+</main>

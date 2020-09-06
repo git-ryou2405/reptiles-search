@@ -74,7 +74,13 @@
         <ul class="txt-list">
           <li class="txt-item flex align-center">
             <p class="species">種名</p>
-            <p class="name"><%= reptile.type_name %></p>
+            <p class="name">
+            <% if @disp_type == "全国" %>
+              <%= link_to reptile.type_name, alljapan_page_path(id: reptile.id, searchtype: "reptile_info" ), class:"photo-frame" %>
+            <% else %>
+              <%= link_to reptile.type_name, shop_page_path(reptile_id: reptile.id, shop_id: reptile.user_id) %>
+            <% end %>
+            </p>
           </li>
           <li class="txt-item flex align-center">
             <p class="morph">モルフ</p>

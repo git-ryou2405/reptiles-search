@@ -6,10 +6,10 @@
  @import "bootstrap";
  @import "bootstrap-social";
  @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:400,700');
- 
+
  /*==============================================================================
  init_style
-  ============================================================================= */
+ ============================================================================= */
  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent }
  article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
  ul, li { list-style: none!important; }
@@ -25,19 +25,18 @@
  .inner { width:1000px; margin: 0 auto; padding: 0; position:relative; }
  .fixed { position:fixed; left:0; top:0; z-index:9999; }
  div,p,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,form,input,button,textarea,table,tr,th,td,article,aside,header,footer,section,nav{ -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
- 
+
  body { background-color: #111; color: #fff; padding-top: 60px; font-family: "Hiragino Kaku Gothic ProN";}
  h1,h2,h3,h4,h5,h6 { font-weight:bold; line-height: 1.8; letter-spacing: .06rem; text-align: center;overflow-wrap: break-word;}
  .align-center {align-items:center;}
+//  img { width: 100%; max-width: 100%;}
  /*==============================================================================
  bootstrap
  ============================================================================= */
  .form-control { border-radius: 0.2rem;}
  .container-full { max-width: 1000px; }
- 
- 
- 
- @media screen and (min-width: 768px) {
+
+ @media screen and (min-width: 769px) {
  /*==============================================================================
    PC基本設定
  ============================================================================= */
@@ -55,478 +54,593 @@
    background-color: #333;
    padding: 40px;
  }
- /*==============================================================================
-   共通パーツ
- ============================================================================= */
+/*==============================================================================
+ 共通パーツ
+============================================================================= */
  #header {
-   padding: 10px 0;
-   background-color: #111;
+ padding: 10px 0;
+ background-color: #111;
+ color: silver;
+ font-weight: bold;
+ .container {
+   width: 1000px;
+   margin: 0 auto;
+   padding: 0;
+ }
+ #logo {
    color: silver;
-   font-weight: bold;
-   .container {
-     width: 1000px;
-     margin: 0 auto;
-     padding: 0;
-   }
-   #logo {
-     color: silver;
-     text-decoration: none;
-     font-size: 20px;
-     text-shadow: 1.5px 1.5px #444;
-   }
-   .mypage {
-     color: white;
-     background-color: #17a2b8;
-   }
-   .mypage:hover {
+   text-decoration: none;
+   font-size: 25px;
+   text-shadow: 1.5px 1.5px #444;
+ }
+ .mypage {
    color: white;
-   background-color: #0e7889;
-   }
-   .btn-padding {
-     padding-left: 10px;
-   }
-   .login_out { color: white; background-color: #666;}
-   .login_out:hover {
-     color: white;
-     background-color: #444;
-   }
-   .newcreate:hover {
-     color: #fff;
-     background-color: #c11e2e;
-     border-color: #c11e2e;
-   } 
+   background-color: #17a2b8;
+ }
+ .mypage:hover {
+ color: white;
+ background-color: #0e7889;
+ }
+ .btn-padding {
+   padding-left: 10px;
  }
  .login_out { color: white; background-color: #666;}
  .login_out:hover {
    color: white;
    background-color: #444;
  }
- .shop-ttl { width: 1000px; margin: 0 auto; font-size: 40px;}
- /*==============================================================================
-   topページ
- ============================================================================= */
- .header-pd {
-    padding-top: 4rem;
-  }
- .jumbotron {
-   background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
-   text-shadow: 3px 3px 5px #333, 6px 6px 10px #111;
-   h1 {
-     font-size: 70px;
-     margin: 50px 0px 60px;
-   }
-   .txt {
-     text-shadow: 1px 1px #666, 2px 2px #333;
-   }
-   .txt01 {
-     font-size: 30px;
-   }
-   .txt02 {
-     font-size: 23px;
-     margin: 10px 0 0;
-   }
+ .newcreate:hover {
+   color: #fff;
+   background-color: #c11e2e;
+   border-color: #c11e2e;
+ } 
+}
+.login_out { color: white; background-color: #666;}
+.login_out:hover {
+ color: white;
+ background-color: #444;
+}
+.shop-ttl { width: 1000px; margin: 0 auto; font-size: 40px;}
+/*==============================================================================
+ トップページ FV
+============================================================================= */
+.header-pd {
+ padding-top: 4rem;
+}
+.fv {
+ background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
+ text-shadow: 3px 3px 5px #333, 6px 6px 10px #111;
+ margin: 0!important;
+ .fv-ttl {
+   font-size: 70px;
+   margin: 50px 0px 60px;
+   text-shadow: 1px 1px #666, 2px 2px #333;
  }
- .lower-container {
-   margin: 40px 0 0;
- }
- .group-ttl {
-   width: 240px;
-   color: silver;
+ .fv-txt01 {
    font-size: 30px;
-   text-align: center;
-   margin: 0 auto;
-   padding: 0 0 15px;
-   border-bottom: 1px silver solid;
  }
- .reptiles-item {
-   padding: 60px 0 0 ;
- }
- .reptiles-item:not(:nth-of-type(3n)) {
-   margin: 0 50px 0 0;
- }
- .reptiles-list .photo img { 
-   width: 200px;
-   border-radius: 50%;
-   opacity: 1;
-   border: 3px solid silver;
- }
- .reptiles-list .species {
+ .fv-txt02 {
+   font-size: 23px;
    margin: 10px 0 0;
-   font-size: 20px;
-   font-weight: bold;
-   color: silver;
+ }
+}
+/*==============================================================================
+ トップページ メイン
+============================================================================= */
+ .top-search {
+ .bg { padding: 90px 0 100px;}
+ .search-ttl-block {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 600px;
+   margin: 0 auto;
+   color: #fff;
+   font-size: 40px;
+   .search-ttl {
+     margin: 0 0 0 15px;
+   }
+   .fa-paw {
+     color: palevioletred;
+   }
+ }
+ .search-form {
+   width: 700px;
+   margin: 30px auto 0;
+   text-align: center;
+   form {
+     display: flex;
+     align-items: center;
+   }
+   .search-box {
+     width: 600px;
+     padding: 10px 0 ;
+     border-radius: 5px;
+   }
+   .search-box.select-box {
+     padding: 13px;
+     overflow-y: scroll;
+   }
+   .search-btn {
+     width: 80px;
+     margin: 0 0 0 5px;
+     padding: 11px 0;
+     border: none;
+     background: lightcoral;
+     color: #fff;
+     border-radius: 5px;
+     font-weight: bold;
+     letter-spacing: 1px;
+   }
+   .search-btn:hover {
+     opacity: .8;
+   } 
+ }
+ 
+
+ .group-search {
+   margin: 80px 0 0;
+   .fa-frog {
+     color: darkseagreen;
+   }
+ .group-search-list {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   width: 850px;
+   margin: -10px auto 0;
+   text-align: center;
+   .group-search-item {
+     width: 250px;
+     padding: 40px 0 0;
+     text-align: center;
+     .photo {
+       width: 200px;
+       margin: 0 auto;
+       img { 
+         border-radius: 50%;
+       }
+       img:hover {
+         transform: rotate(5deg);
+         transition: .3s;
+         opacity: .9;
+       }
+     }
+     .species {
+       margin: 15px 0 0;
+       font-size: 25px;
+       font-weight: bold;
+     }
+   }
+   }
+ }
+ .shop-search {
+   margin: 80px 0 0;
+   .fa-spider {
+     color: gold;
+   }
+}
+.area-search {
+ margin: 80px 0 0;
+ .fa-map-marked-alt {
+   color: skyblue;
+ }
+}
+
+
+
+}
+/*==============================================================================
+SHOW
+============================================================================= */
+.show { 
+  display: flex;
+  margin-top: 30px;
+  // サイドメニュー
+  .side-content {
+    width: 250px;
+    .shop-ttl-txt { margin: 20px 0 0; font-size: 20px;}
+  }
+  /* 生体登録 */
+  .regist-pd { 
+    width: 250px; 
+    .regist {
+    padding: 10px 20px;
+    background: lightcoral;
+    color: white;
+    font-size: 18px;
+    border: solid 1px lightcoral;
+    border-radius: 5px;
+    text-shadow: 1px 1px 1px #444;
+    }
+    .regist:hover {
+    background-color: rgb(211, 80, 80);
+    cursor: pointer;
+    }
+  }
+// サイドメニュー
+    .menu-ttl {
+      position: relative;
+      margin: 30px 0 0;
+      padding: 10px 20px;
+      background: #222;
+      color: palevioletred;
+      font-size: 20px;
+      border-radius: 5px;
+      text-shadow: 1px 1px 1px #000;
+      line-height: 1.4;
+      .menu-ttl-sm { font-size: 14px;}
+    }
+    .menu-ttl:first-of-type { margin: 14px 0 0;}
+    .menu-list {
+      padding-left: 0;
+      margin: 3px 0 0;
+      .reptile-item {
+        font-size: 18px;
+        color:palevioletred;
+        padding: 20px;
+        border-bottom: 3px #333 solid;
+        cursor: pointer;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+      .reptile-item:hover {
+        background-color: #222;
+        transition: .3s;
+        }
+      }
+// 新入荷
+    .arrival-ttl {
+      padding: 10px 20px;
+      background: #222;
+      color: darkseagreen;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 5%;
+    }
+    .arrival-item {
+      padding: 20px;
+      border-bottom: 3px #333 solid;
+    }
+    .arrival-day {
+      font-size: 12px;
+    }
+    .arrival-animal {
+      font-size: 16px;
+      margin: 5px 0 0;
+    }
+    .arrival-animal:hover {
+      color: lightblue;
+      text-decoration: underline;
+    }
+// SNS
+    .sns-ttl {
+      margin: 30px 0 0;
+      padding: 10px 20px;
+      background: #222; color: skyblue;
+      font-size: 22px;
+      text-align: center;
+      border-radius: 5%;
+    }
+    .sns-box { 
+      height: 500px;
+      margin: 5px auto 0
+      ;}
+    .twitter-timeline {
+      width: 100%; 
+      height: 100%;
+    }
+// インスタグラム
+    .iswd-base {
+      width: 100% !important;
+      color: black;
+    }
+
+// ショップ名
+  .shop-data-ttl { 
+    width: 700px;
+    margin: 31px 0 0 40px;
+    padding: 10px 20px;
+    background: #222;
+    font-size: 20px;
+    border-radius: 5px;
+    color: thistle;
+    font-weight: bold;
+    text-align: center;
+    }
+// フォーム
+  form { 
+    width: 700px;
+    margin: -12px 0 0 0;
+    .search-box {
+      width: 600px;
+      height: 40px;
+      color: #111;
+      font-size: 13.5px;
+    }
+    .search-btn {
+      margin:0 0 0 10px;
+      width: 80px;
+      height: 40px;
+      background: lightcoral;
+      color: #fff;
+      padding: 0;
+      cursor: pointer;
+      font-size: 13.5px;
+    }
+  }
+
+// ショップデータ
+  .shop-data-list {
+    width: 700px;
+    margin: 29px 0 0 40px;
+    .shop-data-item { 
+      padding: 18.5px;
+      border-bottom: 3px #333 solid;
+      dt {
+        width: 150px;
+        font-size: 20px;
+        font-weight: bold;
+        color: thistle;
+      }
+      dd {
+        width: 500px;
+        font-size: 16px;
+        color: #fff;
+       // overflow-x: scroll;
+        }
+      }
+    }
+   .shop-data-edit {
+     width: 700px;
+     margin: 0 0 20px 40px;
+   }
+// グーグルマップ
+  .googlemap { 
+    width: 700px;
+    height: 350px;
+    margin: 30px 0 15px auto;
+  }
+
+// 商品ページ
+  .search-content {
+    width: 700px; margin: 25px 0 26px 40px;
+    .search-item { 
+      padding: 10px 0 0;
+      border-top: 3px solid #333;
+    }
+    .search-item:not(:first-of-type) {
+      margin: 10px 0 0;
+    }
+    .photo { 
+      width: 200px;
+      padding: 0 18px 0 0;
+    }
+   //  img {
+   //    border: 3px solid #303030;
+   //  }
+    .txt-list { 
+      width: 75%;
+    }
+    .txt-item {
+      font-size: 18px;
+      p:first-of-type {
+        width: 140px;
+        padding: 5px 5px 5px 0;
+        font-weight: bold;
+      }
+    }
+    .name { width: calc(700px - 310px);}
+    .name a:hover { text-decoration: underline; color: lightblue;}
+    .species { color: darkseagreen;}
+    .morph { color: darkgoldenrod;}
+    .shop { color: skyblue;}
+    .gender { color: lightsalmon;}
+    .price { color: thistle;}
+  
+  }
+  .user-list {
+    display: flex;
+    width: 300px;
+    margin: 0 0 0 50px;
+      .btn { 
+        color: #fff;
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+      .btn:first-of-type { 
+        margin: 0 10px 0 0;
+      }
+    }
+  }// }show
+ 
+/*==============================================================================
+footer
+============================================================================= */
+.copyright {
+ .bg {
+   background: #222;
+   padding: 20px 0;
+ }
+ .copyright-txt {
+   color: #fff;
+   font-size: 15px;
    text-align: center;
  }
- .reptiles-list .species:hover {
-   color: lemonchiffon;
-   transition: .3s;
- }
- .reptiles-list .photo img:hover {
-   border: 3px solid lemonchiffon;
-   transition: .5s;
-   transform: rotate(3deg);
- }
- /*==============================================================================
- SHOW
- ============================================================================= */
- .show { 
-   display: flex;
-   margin-top: 30px;
-   // サイドメニュー
-   .side-content {
-     width: 250px;
-     .shop-ttl-txt { margin: 20px 0 0; font-size: 20px;}
-   }
-   /* 生体登録 */
-   .regist-pd { 
-     width: 250px; 
-     .regist {
-     padding: 10px 20px;
-     background: lightcoral;
-     color: white;
-     font-size: 18px;
-     border: solid 1px lightcoral;
-     border-radius: 5px;
-     text-shadow: 1px 1px 1px #444;
-     }
-     .regist:hover {
-     background-color: rgb(211, 80, 80);
-     cursor: pointer;
-     }
-   }
- // サイドメニュー
-     .menu-ttl {
-       position: relative;
-       margin: 30px 0 0;
-       padding: 10px 20px;
-       background: #222;
-       color: palevioletred;
-       font-size: 20px;
-       border-radius: 5px;
-       text-shadow: 1px 1px 1px #000;
-       line-height: 1.4;
-       .menu-ttl-sm { font-size: 14px;}
-     }
-     .menu-ttl:first-of-type { margin: 14px 0 0;}
-     .menu-list {
-       padding-left: 0;
-       margin: 3px 0 0;
-       .reptile-item {
-         font-size: 18px;
-         color:palevioletred;
-         padding: 20px;
-         border-bottom: 3px #333 solid;
-         cursor: pointer;
-         flex-wrap: wrap;
-         justify-content: center;
-         }
-       .reptile-item:hover {
-         background-color: #222;
-         transition: .3s;
-         }
-       }
- // 新入荷
-     .arrival-ttl {
-       padding: 10px 20px;
-       background: #222;
-       color: darkseagreen;
-       font-size: 22px;
-       text-align: center;
-       border-radius: 5%;
-     }
-     .arrival-item {
-       padding: 20px;
-       border-bottom: 3px #333 solid;
-     }
-     .arrival-day {
-       font-size: 12px;
-     }
-     .arrival-animal {
-       font-size: 16px;
-       margin: 5px 0 0;
-     }
-     .arrival-animal:hover {
-       color: lightblue;
-       text-decoration: underline;
-     }
- // SNS
-     .sns-ttl {
-       margin: 30px 0 0;
-       padding: 10px 20px;
-       background: #222; color: skyblue;
-       font-size: 22px;
-       text-align: center;
-       border-radius: 5%;
-     }
-     .sns-box { 
-       height: 500px;
-       margin: 5px auto 0
-       ;}
-     .twitter-timeline {
-       width: 100%; 
-       height: 100%;
-     }
- // インスタグラム
-     .iswd-base {
-       width: 100% !important;
-       color: black;
-     }
- 
- // ショップ名
-   .shop-data-ttl { 
-     width: 700px;
-     margin: 31px 0 0 40px;
-     padding: 10px 20px;
-     background: #222;
-     font-size: 20px;
-     border-radius: 5px;
-     color: thistle;
-     font-weight: bold;
-     text-align: center;
-     }
- // フォーム
-   form { 
-     width: 700px;
-     margin: -12px 0 0 0;
-     .search-box {
-       width: 600px;
-       height: 40px;
-       color: #111;
-       font-size: 13.5px;
-     }
-     .search-btn {
-       margin:0 0 0 10px;
-       width: 80px;
-       height: 40px;
-       background: lightcoral;
-       color: #fff;
-       padding: 0;
-       cursor: pointer;
-       font-size: 13.5px;
-     }
-   }
- 
- // ショップデータ
-   .shop-data-list {
-     width: 700px;
-     margin: 29px 0 0 40px;
-     .shop-data-item { 
-       padding: 18.5px;
-       border-bottom: 3px #333 solid;
-       dt {
-         width: 150px;
-         font-size: 20px;
-         font-weight: bold;
-         color: thistle;
-       }
-       dd {
-         width: 500px;
-         font-size: 16px;
-         color: #fff;
-        // overflow-x: scroll;
-         }
-       }
-     }
-    .shop-data-edit {
-      width: 700px;
-      margin: 0 0 20px 40px;
-    }
- // グーグルマップ
-   .googlemap { 
-     width: 700px;
-     height: 350px;
-     margin: 30px 0 15px auto;
-   }
- 
- // 商品ページ
-   .search-content {
-     width: 700px; margin: 25px 0 26px 40px;
-     .search-item { 
-       padding: 10px 0 0;
-       border-top: 3px solid #333;
-     }
-     .search-item:not(:first-of-type) {
-       margin: 10px 0 0;
-     }
-     .photo { 
-       width: 200px;
-       padding: 0 18px 0 0;
-     }
-    //  img {
-    //    border: 3px solid #303030;
-    //  }
-     .txt-list { 
-       width: 75%;
-     }
-     .txt-item {
-       font-size: 18px;
-       p:first-of-type {
-         width: 140px;
-         padding: 5px 5px 5px 0;
-         font-weight: bold;
-       }
-     }
-     .name { width: calc(700px - 310px);}
-     .name a:hover { text-decoration: underline; color: lightblue;}
-     .species { color: darkseagreen;}
-     .morph { color: darkgoldenrod;}
-     .shop { color: skyblue;}
-     .gender { color: lightsalmon;}
-     .price { color: thistle;}
-   
-   }
-   .user-list {
-     display: flex;
-     width: 300px;
-     margin: 0 0 0 50px;
-       .btn { 
-         color: #fff;
-         background-color: #007bff;
-         border-color: #007bff;
-       }
-       .btn:first-of-type { 
-         margin: 0 10px 0 0;
-       }
-     }
-   }// }show
- }// @media(max-width: 767px)
- 
- /*==============================================================================
- スライダー設定
- ============================================================================= */
- .swiper-container {
-   width: 700px;
-   margin: 0 0 0 40px!important;
-   object-fit: cover;
- }
- .grab {
-  cursor: grab;
- }
- .swiper-slide { text-align: center;}
- .swiper-container:active {
-   cursor: grabbing;
- }
- .swiper-custom-button{
-   margin: 30px;
- }
- .swiper-button-next,
- .swiper-button-prev {
-   position: absolute;
-   top: 50%;   
-   margin-top: -16px;
-   z-index: 10;
- }
- .swiper-button-next.swiper-button-disabled,
- .swiper-button-prev.swiper-button-disabled {
-   opacity: .35;
-   cursor: auto;
-   pointer-events: none
- }
- .swiper-button-prev::before {
-   position: relative;
-   content: "\f104";
-   font-family: FontAwesome;
-   background: rgba(255,255,255,0.5);
-   padding: 8px 12px;
-   opacity: 1;
-   border: 1px solid #333;
- }
- .swiper-button-next::before {
-   position: relative;
-   content: "\f105";
-   font-family: FontAwesome;
-   background: rgba(255,255,255,0.5);
-   padding: 8px 12px;
-   opacity: 1;
-   border: 1px solid #333;
- }
- .swiper-button-prev:hover:before{
-   animation: arrow_prev .5s ease-out forwards;
- }
- @keyframes arrow_prev {
-   0% {
-     right: 0px;
-   }
-   50% {
-     right: 5px;
-   }
-   100% {
-     right: 0;
-   }
- }
- .swiper-button-next:hover:before{
-   animation: arrow_next .5s ease-out forwards;
- }
-   @keyframes arrow_next {
-   0% {
-     left: 0px;
-   }
-   50% {
-     left: 5px;
-   }
-   100% {
-     left: 0;
-   }
- }
- .swiper-button-prev,
- .swiper-container-rtl .swiper-button-next {
-   left: 20px;
-   right: auto;
- }
- .swiper-button-next,
- .swiper-container-rtl .swiper-button-prev {
-   right: 20px;
-   left: auto;
- }
- .swiper-image {
-   object-fit: cover;
- }
- .swiper-button-prev::after { content: none !important; }
- .swiper-button-next::after { content: none !important; }
+} 
+
+
+
+
+}// @media(max-width: 767px)
+
+
+/*==============================================================================
+スライダー設定
+============================================================================= */
+.swiper-container {
+  width: 700px;
+  margin: 0 0 0 40px!important;
+  object-fit: cover;
+}
+.grab {
+ cursor: grab;
+}
+.swiper-slide { text-align: center;}
+.swiper-container:active {
+  cursor: grabbing;
+}
+.swiper-custom-button{
+  margin: 30px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;   
+  margin-top: -16px;
+  z-index: 10;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: .35;
+  cursor: auto;
+  pointer-events: none
+}
+.swiper-button-prev::before {
+  position: relative;
+  content: "\f104";
+  font-family: FontAwesome;
+  background: rgba(255,255,255,0.5);
+  padding: 8px 12px;
+  opacity: 1;
+  border: 1px solid #333;
+}
+.swiper-button-next::before {
+  position: relative;
+  content: "\f105";
+  font-family: FontAwesome;
+  background: rgba(255,255,255,0.5);
+  padding: 8px 12px;
+  opacity: 1;
+  border: 1px solid #333;
+}
+.swiper-button-prev:hover:before{
+  animation: arrow_prev .5s ease-out forwards;
+}
+@keyframes arrow_prev {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 5px;
+  }
+  100% {
+    right: 0;
+  }
+}
+.swiper-button-next:hover:before{
+  animation: arrow_next .5s ease-out forwards;
+}
+  @keyframes arrow_next {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 5px;
+  }
+  100% {
+    left: 0;
+  }
+}
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 20px;
+  right: auto;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 20px;
+  left: auto;
+}
+.swiper-image {
+  object-fit: cover;
+}
+.swiper-button-prev::after { content: none !important; }
+.swiper-button-next::after { content: none !important; }
+
 
 /*==============================================================================
 パンくずリスト
 ============================================================================= */
 .breadcrumbs {
-  font-size: 12px;
-  &:first-child {
-    &:before {
-      color: #fff;
-      font-family: FontAwesome;
-      content: "\f015";
-      margin-right: 6px;
-    }
-  }
+ font-size: 12px;
+ &:first-child {
+   &:before {
+     color: #fff;
+     font-family: FontAwesome;
+     content: "\f015";
+     margin-right: 6px;
+   }
+ }
 }
 .breadcrumbs a:hover {
-  color: #888;
-  text-decoration: underline;
+ color: #888;
+ text-decoration: underline;
 }
 .section-breadcrumbs {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  border-top: 1px solid #444;
-  border-bottom: 1px solid #444;
- // box-shadow: 0px 9px 3px -3px #444;
+ margin: 0 auto;
+ margin-bottom: 20px;
+ border-top: 1px solid #444;
+ border-bottom: 1px solid #444;
+// box-shadow: 0px 9px 3px -3px #444;
 }
- .container-breadcrumbs {
-   width: 1000px;
-   margin: 0 auto;
-   padding: 10px 20px;
- }
+.container-breadcrumbs {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
 
- // 入力フォーム [必須マーク] 
- .field span {
-  font-size: 12px;
-  font-weight: 500;
-  margin: 0 0 0 8px;
-  padding: 2px 4px;
-  border-radius: 2px;
-  color: #fff;
-  background-color: red;
-  vertical-align: 30%;
- }
+/*==============================================================================
+ショップ情報の登録・編集 画面
+============================================================================= */
+ // ショップイメージ
+ .hidden {
+  display: none;
+}
+.select_before {
+  width: 150px;
+  height: 100px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+.select_img {
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  max-width: none;
+  border: 1px solid #000;
+}
+.circle-s_image {
+ display: flex;
+}
+// 入力フォーム [必須マーク]
+.field span {
+ font-size: 12px;
+ font-weight: 500;
+ margin: 0 0 0 8px;
+ padding: 2px 4px;
+ border-radius: 2px;
+ color: #fff;
+ background-color: red;
+ vertical-align: 30%;
+}
 
- .field .mg-tb-6 {
-   margin: 6px 0 6px 0;
- }
+.field .mg-tb-6 {
+  margin: 6px 0 6px 0;
+}

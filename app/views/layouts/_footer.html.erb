@@ -1,62 +1,74 @@
-<style>
-@media screen and (max-width: 768px) {
-footer { font-size: 13.333333333vw;}
-.gnav { position: fixed; bottom: 0; left: 0; right: 0; z-index: 1000; background: #333;}
-.gnav_list { display: flex; align-items: center; margin:0; padding: 0;}
-.gnav_item { width: 33.3%; font-size: 2rem; padding: .6rem 0 .3rem; color: #fff; font-weight: bold; text-align: center;}
-.gnav_item:not(:first-of-type) { border-left: 1px solid #fff; }
-.item01 { border-right: 1px solid #fff; }
-.gnav_item a { display: block;}
-.gnav_item p { font-size: 1rem; margin: .8rem 0 0;}
-.gnav_item i { display: block;}
-.nav_block { display: none; position: fixed; bottom: 0; right: 0; padding: 0; width: 70%; background-color: #222; z-index: 2;  }
-.nav_list { width: 70%; height: 100vh; padding: 100px 0 0}
-.nav_item {  padding: 20px 0 5px; border-bottom: #333 solid 2px; color: #fff; font-size: 2rem; text-align: center;}
-}
-.menu_modal { display: none; position: fixed; bottom: 0; left: 0; z-index: 1; width:100%; height: 100vh; background: #111; opacity: .8;}
-.modal_active{ display: block; transition: .3s;}
+<footer>
+  <div class="copyright">
+    <div class="bg">
+      <div class="inner">
+        <p class="copyright-txt">
+        <small>Copyright © 2019 Reptiles Search.co,.ltd. All Rights Resarved.</small>
+        </p>
+      </div>
+    </div>
+  </div>
 
-@media screen and (min-width: 769px) { 
-    .ds-sp { display: none;}
-}
-</style>
+  <nav class="gnav ds-sp">
+    <ul class="gnav_list">
+      <%= link_to root_path, class:"gnav_item item01" do %>
+        <li><i class="fas fa-home"></i><p>ホーム</p></li>
+      <% end %>
+      <li class="gnav_item item02"><i class="fas fa-search"></i><p>検索</p></li>
+      <li class="gnav_item item03 menu_trigger"><i class="fas fa-bars"><p>メニュー</p></i></li>
+    </ul>
+  </nav>
+  
+  <div class="menu_modal ds-sp"></div> 
 
-<footer class="ds-sp">
-<nav class="gnav">
-<ul class="gnav_list">
-
-  <%= link_to root_path, class:"gnav_item item01" do %>
-    <li><i class="fas fa-home"></i><p>ホーム</p></li>
-  <% end %>
-  <li class="gnav_item item02"><i class="fas fa-search"></i><p>検索</p></li>
-  <li class="gnav_item item03 menu_trigger"><i class="fas fa-bars"><p>メニュー</p></i></li>
-</ul>
-</nav>
+  <div class="nav_block ds-sp">
+    <ul class="nav_list">
+      <%# <div style="padding-bottom: 120px;"></div> %>
+      <%= render "./layouts/bokete" %>
+      
+      <% if current_user.present? %>
+        <%= link_to user_path(current_user) do %>
+          <li class="nav_item">マイページ</li>
+        <% end %>
+        <%= link_to new_user_reptile_path(current_user) do %>
+          <li class="nav_item">生体登録</li>
+        <% end %>
+        <%= link_to "#" do %>
+          <li class="nav_item">・・・・</li>
+        <% end %>
+        <%= link_to "#" do %>
+          <li class="nav_item">・・・・</li>
+        <% end %>
+        <%= link_to edit_user_registration_path(edit_mode: "info") do %>
+          <li class="nav_item">ユーザー情報の編集</li>
+        <% end %>
+        <%= link_to destroy_user_session_path, method: :delete do %>
+          <li class="nav_item">ログアウト</li>
+        <% end %>
+      <% else %>
+        <%= link_to alljapan_page_path(type1: "ヘビ", searchtype: "ctg_btn" ) do %>
+          <li class="nav_item">ヘビを探す</li>
+        <% end %>
+        <%= link_to alljapan_page_path(type1: "カメ", searchtype: "ctg_btn" ) do %>
+          <li class="nav_item">カメを探す</li>
+        <% end %>
+        <%= link_to alljapan_page_path(type1: "トカゲ", searchtype: "ctg_btn" ) do %>
+          <li class="nav_item">トカゲを探す</li>
+        <% end %>
+        <%= link_to alljapan_page_path(type1: "ヤモリ", searchtype: "ctg_btn" ) do %>
+          <li class="nav_item">ヤモリを探す</li>
+        <% end %>
+        <%= link_to alljapan_page_path(type1: "両生類", searchtype: "ctg_btn" ) do %>
+          <li class="nav_item">両生類を探す</li>
+        <% end %>
+        <%= link_to alljapan_page_path(type1: "奇虫・その他", searchtype: "ctg_btn" ) do %>
+          <li class="nav_item">奇虫・その他を探す</li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
 </footer>
 
-<div class="menu_modal ds-sp"></div> 
-
-<div class="nav_block ds-sp">
-<ul class="nav_list">
-  <% if current_user.present? %>
-    <%= link_to new_user_reptile_path(current_user) do %>
-      <li class="nav_item">生体登録</li>
-    <% end %>
-    <%= link_to "#" do %>
-      <li class="nav_item">・・・・</li>
-    <% end %>
-    <%= link_to "#" do %>
-      <li class="nav_item">・・・・</li>
-    <% end %>
-    <%= link_to edit_user_registration_path(edit_mode: "info") do %>
-      <li class="nav_item">ユーザー情報の編集</li>
-    <% end %>
-    <%= link_to destroy_user_session_path, method: :delete do %>
-      <li class="nav_item">ログアウト</li>
-    <% end %>
-  <% end %>
-</ul>
-</div>
 
 <script>
 $(function (){

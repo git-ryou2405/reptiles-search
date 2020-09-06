@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   /*==============================================================================
     共通設定
   ============================================================================= */
@@ -10,7 +10,7 @@
   /*==============================================================================
     topページ
   ============================================================================= */
-  .jumbotron {
+  .fv {
     background:url(/images/hero.jpg) no-repeat 30% 40%/ cover;
   }
   .jumbotron h1 {
@@ -32,7 +32,10 @@
   .text { margin-left: 20px; }
   #my_size { font-size: 1.4rem; }
   .devise { padding: 1.4rem; }
-  
+  .bgc-333 {
+    background-color: #333;
+    padding: 4rem;
+  }
   /*==============================================================================
     共通パーツ
   ============================================================================= */
@@ -85,8 +88,138 @@
         }
       }
   }
-  
+
   .shop-ttl { font-size: 4rem;}
+  /*==============================================================================
+  トップページ FV
+============================================================================= */
+.header-pd {
+  padding-top: 4rem;
+}
+.jumbotron {
+  background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
+  text-shadow: .3rem .3rem .5rem #333, .6rem .6rem 1rem #111;
+  margin: 0!important;
+  .fv-ttl {
+    font-size: 7rem;
+    margin: 5rem 0 6rem;
+    text-shadow: .1rem .1rem #666, .2rem .2rem #333;
+  }
+  .fv-txt01 {
+    font-size: 3rem;
+  }
+  .fv-txt02 {
+    font-size: 2.3rem;
+    margin: 1rem 0 0;
+  }
+}
+/*==============================================================================
+  トップページ メイン
+============================================================================= */
+  .top-search {
+    .bg { padding: 9rem 0 0;}
+    .search-ttl-block {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70rem;
+      margin: 0 auto;
+      color: #fff;
+      font-size: 4.5rem;
+      .search-ttl {
+        margin: 0 0 0 1.5rem;
+      }
+      .search-ttl02 {
+        line-height: 1.45;
+      }
+      .fa-paw {
+        color: palevioletred;
+      }
+    }
+    .search-form {
+      width: 70rem;
+      margin: 3rem auto 0;
+      text-align: center;
+      form {
+        display: flex;
+        align-items: center;
+      }
+      .search-box {
+        width: 60rem;
+        padding: 1rem 0 ;
+        border-radius: .5rem;
+      }
+      .search-box.select-box {
+        padding: 1.3rem 0;
+      }
+      .search-btn {
+        width: 8rem;
+        margin: 0 0 0 .5rem;
+        padding: 1.1rem 0;
+        border: none;
+        background: lightcoral;
+        color: #fff;
+        border-radius: .5rem;
+        font-weight: bold;
+        letter-spacing: .1rem;
+      }
+      .search-btn:hover {
+        opacity: .8;
+      } 
+    }
+    .group-search {
+      margin: 8rem 0 0;
+      .fa-frog {
+        color: darkseagreen;
+      }
+    .group-search-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 70rem;
+      margin: -1rem auto 0;
+      text-align: center;
+      .group-search-item {
+        width: 25rem;
+        padding: 4rem 0 0;
+        text-align: center;
+        .photo {
+          width: 20rem;
+          margin: 0 auto;
+          img { 
+            border-radius: 50%;
+          }
+          img:hover {
+            transform: rotate(5deg);
+            transition: .3s;
+            opacity: .9;
+          }
+        }
+        .species {
+          margin: 1.5rem 0 0;
+          font-size: 3.2rem;
+          font-weight: bold;
+        }
+      }
+      }
+    }
+    .shop-search {
+      margin: 8rem 0 0;
+      .fa-spider {
+        color: gold;
+      }
+  }
+  .area-search {
+    margin: 8rem 0 0;
+    .fa-map-marked-alt {
+      color: skyblue;
+    }
+  }
+  
+  
+  
+  }
   
   /*==============================================================================
   SHOW
@@ -316,25 +449,98 @@
         .price { color: thistle;}
         } 
       }//show
-  }// @media(max-width: 767px)
+  /*==============================================================================
+  footerナビ(SP)
+  ============================================================================= */
+  // ナビ
+  .gnav { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #333;
+    .gnav_list {
+      display: flex;
+      align-items: center;
+      margin:0; 
+      padding: 0;
+      .gnav_item { 
+        width: 33.3%;
+        padding: 2rem 0 1rem;
+        color: #fff;
+        font-size: 2.5rem;
+        font-weight: bold; 
+        text-align: center;
+      }
+      .gnav_item:not(:first-of-type) { 
+        border-left: 1px solid #666;
+      }
+      .item01 { border-right: 1px solid #666; }
+      .gnav_item a { display: block;}
+      .gnav_item p { margin: 1rem 0 0;}
+      .gnav_item i { display: block;}
+    }
+  }
+  // メニュー
+  .nav_block { 
+    display: none; 
+    position: fixed; 
+    bottom: 0; 
+    right: 0; 
+    padding: 0; 
+    width: 70%; 
+    background-color: #222; 
+    z-index: 2; 
+    .nav_list { 
+      width: 90%; 
+      height: 100vh; 
+      margin: 0 auto; 
+      padding: 20rem 0 0;
+    } 
+    .nav_item {  
+      padding: 3rem 0; 
+      border-bottom: #333 solid .1rem; 
+      color: #fff; 
+      font-size: 3.2rem; 
+      text-align: center;
+      text-decoration: none;
+    }
+    .nav_item:active {  
+      background-color: #999;
+      text-decoration: none;
+    }
+  }
+  // モーダル
+  .menu_modal { 
+    display: none; 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    z-index: 1; 
+    width:100%; 
+    height: 100vh; 
+    background: #111; 
+    opacity: .8;
+  }
+.modal_active{ display: block; transition: .3s;}
+
+// コピーライト
+.copyright {
+  .bg {
+    padding: 10rem 0 12.5rem;
+  }
+  .copyright-txt {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+} 
+
+}// @media(max-width: 767px)
   
   
   @media screen and (max-width: 400px) {
-  /*==============================================================================
-    topページ
-  ============================================================================= */
-  .jumbotron h1 {
-    font-size: 3.2rem;
-    margin: 3rem 0px 4rem;
-  }
-  .jumbotron .txt01 {
-    font-size: 1.4rem;
-  }
-  .jumbotron .txt02 {
-    font-size: 1rem;
-    margin: 1rem 0 0;
-  }
-  
   /*==============================================================================
     login画面
   ============================================================================= */

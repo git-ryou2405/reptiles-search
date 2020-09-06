@@ -2,6 +2,9 @@ class CreateReptiles < ActiveRecord::Migration[6.0]
   def change
     create_table :reptiles do |t|
       t.string :images
+      t.string :reptile_img1
+      t.string :reptile_img2
+      t.string :reptile_img3
       t.string :type1
       t.string :type2
       t.string :type_name

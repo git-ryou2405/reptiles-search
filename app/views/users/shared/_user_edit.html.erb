@@ -17,20 +17,106 @@
       <% end %>
 
       <!-- shop_images -->
-      <% if current_user.shop_images.present? %>
-        <% current_user.shop_images.each do |image| %>
-          <% Rails.application.config.another_logger.debug "[d] view: userinfo #{image.inspect}" %>
-        <%= image_tag image.url, :width => "100", id: "margin5px" %>
-        <% end %>
-        <br>
-        <%= link_to "画像を削除", users_delete_photo_path(id: resource.id), class:"btn btn-md btn-primary",data: { confirm: "ショップ画像を削除します。\nよろしければOKを押してください。" } %><br>
-      <% else %>
-        <div class="field">
-          <%= f.label :shop_images, class: "mt-2" %><br>
-          <%= f.file_field :shop_images, multiple: true, id: :resource_shop_images, class: "mg-tb-6" %><br>
+        <div class="circle-s_image">
+          <!-- イメージ１ -->
+          <%= f.label :shop_img1, for: "post_img1" do %>
+            <% if current_user.shop_img1.present? %>
+              <!-- 登録画像 -->
+              <%= image_tag current_user.shop_img1.url, id: "prev_img1", class: "select_img" %>
+            <% else %>
+              <!-- 選択前 -->
+              <div class="before_img1 select_before">
+                <div>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p style="color: #000; text-align: center; font-size: 10px;"><%= "クリックしてファイル" %><br><%= "アップロード" %></p>
+                </div>
+              </div>
+              <!-- 選択後 -->
+              <img src="" id="prev_img1" class="hidden" />
+            <% end %>
+            
+            <%= f.file_field :shop_img1, id: 'post_img1', class: "hidden" %>
+          <% end %>
+          
+          <!-- イメージ２ -->
+          <%= f.label :shop_img2, for: "post_img2" do %>
+            <% if current_user.shop_img2.present? %>
+              <!-- 登録画像 -->
+              <%= image_tag current_user.shop_img2.url, id: "prev_img2", class: "select_img" %>
+            <% else %>
+              <!-- 選択前 -->
+              <div class="before_img2 select_before">
+                <div>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p style="color: #000; text-align: center; font-size: 10px;"><%= "クリックしてファイル" %><br><%= "アップロード" %></p>
+                </div>
+              </div>
+              <!-- 選択後 -->
+              <img  src="" id="prev_img2" class="hidden" />
+            <% end %>
+            
+            <%= f.file_field :shop_img2, id: 'post_img2', class: "hidden" %>
+          <% end %>
+          
+          <!-- イメージ３ -->
+          <%= f.label :shop_img3, for: "post_img3" do %>
+            <% if current_user.shop_img3.present? %>
+              <!-- 登録画像 -->
+              <%= image_tag current_user.shop_img3.url, id: "prev_img3", class: "select_img" %>
+            <% else %>
+              <!-- 選択前 -->
+              <div class="before_img3 select_before">
+                <div>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p style="color: #000; text-align: center; font-size: 10px;"><%= "クリックしてファイル" %><br><%= "アップロード" %></p>
+                </div>
+              </div>
+              <!-- 選択後 -->
+              <img  src="" id="prev_img3" class="hidden" />
+            <% end %>
+            
+            <%= f.file_field :shop_img3, id: 'post_img3', class: "hidden" %>
+          <% end %>
+
         </div>
-      <% end %>
-      <!-- /shop_images -->
+      <!-- shop_images /-->
+      
+<script>
+$( document ).on('turbolinks:load', function() {
+  let prev_img = "";
+  
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      // 元々隠していたimgタグのURI（表示先uri）を取得し、file_fieldから取り込んだfileを、readAsDataURLによって、取得したURIで読み込むようにする。
+      reader.onload = function (e) {
+        $(prev_img).attr('src', e.target.result);      // 's_image_img_prev'属性の'src'と、ロードされた画像ファイルのData URIスキームを取得
+      }
+      reader.readAsDataURL(input.files[0]);                       // readAsDataURL・・・ファイルを、Data URIとして読み込むメソッド
+    }
+  }
+  
+  $("#post_img1").change(function(){
+    $('#prev_img1').removeClass('hidden').addClass('select_img'); // 指定した要素に・・
+    $('.before_img1').remove();                                   // 要素を削除
+    prev_img = '#prev_img1';
+    readURL(this);
+  });
+  $("#post_img2").change(function(){
+    $('#prev_img2').removeClass('hidden').addClass('select_img'); // 指定した要素に・・
+    $('.before_img2').remove();                                   // 要素を削除
+    prev_img = '#prev_img2';
+    readURL(this);
+  });
+  $("#post_img3").change(function(){
+    $('#prev_img3').removeClass('hidden').addClass('select_img'); // 指定した要素に・・
+    $('.before_img3').remove();                                   // 要素を削除
+    prev_img = '#prev_img3';
+    readURL(this);
+  });
+});
+</script>
       
       <!--
       <div class="field">
