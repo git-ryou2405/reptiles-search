@@ -18,9 +18,9 @@
       <% end %>
       
       
-      <div style="margin-left: 5px;">
+      <div style="margin: 10px 0 0 5px;">
         <%= f.label :shop_images %>
-        <div style="font-size: 14px;">（※４枚まで登録できます）</div>
+        <div class="img-coment">（４枚まで登録できます）</div>
       </div>
       
       <!-- shop_images -->
@@ -157,37 +157,24 @@
       </div>
       
       <!-- マップ検索の選択 -->
-      <div style="margin: 15px 0 15px 0; padding: 10px; background: #555; border-radius: 5px;">
-        <div style="float: left; margin-right: 25px;">
+      <div class="map-select-box">
+        <div class="map-icon">
           <img src="https://img.icons8.com/color/48/000000/google-maps.png" width="30px" height="30px" /><%= f.label :search_map, class: "mt-1" %>
         </div>
-        <div class="mt-2" style="font-size: 12px; text-decoration:underline; text-decoration-color: green;">登録内容からGoogleマップを表示できます。</div>
+        <div class="guide1 mt-2">登録内容からGoogleマップを表示できます。</div>
         
-        <div style="padding: 10px 0 0 14px; clear: both;">
-          <label style="font-size: 14px">
-            <%= f.radio_button :search_map, "1" %>"ショップ名" でマップ検索
-          </label><br>
-          <%#= f.label :search_map_shop, "ショップ名" %>
-          
-          <div style="float: right; font-size: 10px;">
+        <div class="map-select">
+          <div>
+            <p class="map-radio-select"><%= f.radio_button :search_map, "1" %> "ショップ名" でマップ検索</p>
+            <p class="map-radio-select"><%= f.radio_button :search_map, "2" %> "住所" でマップ検索</p>
+            <p class="map-radio-select"><%= f.radio_button :search_map, "3" %> マップを使用しない</p>
+          </div>
+          <div class="guide2">
             ※Googleマップで店舗情報を登録済の場合　<br>
             　"ショップ名"の検索がオススメです。
-            <%# マップ検索する情報をどちらかご選択ください。<br> %>
           </div>
-          
-          <label style="font-size: 14px">
-            <%= f.radio_button :search_map, "2" %>"住所" でマップ検索
-          </label><br>
-          <label style="font-size: 14px">
-            <%= f.radio_button :search_map, "3" %>マップを使用しない
-          </label>
-          <%#= f.label :search_map_address, "住所" %>
         </div>
-              <div style="margin-top: 10px; float: right; font-size: 6px; color: black;">
-        <a href="https://icons8.com/icon/32215/google-maps-old" target="_blank" >icon by Icons8</a>
       </div>
-      </div>
-      
       
       <!-- アクセス方法、電話、営業時間、定休日 -->
       <% arrey = [
@@ -250,4 +237,6 @@
   <%= link_to "◀︎ マイページへ戻る", @user, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
 <% end %>
 
-
+<div style="margin-top: 10px; float: right; font-size: 6px; color: black;">
+  <a href="https://icons8.com/icon/32215/google-maps-old" target="_blank" >icon by Icons8</a>
+</div>

@@ -122,7 +122,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 70rem;
+      // width: 70rem;
       margin: 0 auto;
       color: #fff;
       font-size: 4.5rem;
@@ -137,7 +137,7 @@
       }
     }
     .search-form {
-      width: 70rem;
+      // width: 70rem;
       margin: 3rem auto 0;
       text-align: center;
       form {
@@ -177,7 +177,7 @@
       align-items: center;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      width: 70rem;
+      // width: 70rem;
       margin: -1rem auto 0;
       text-align: center;
       .group-search-item {
@@ -216,7 +216,6 @@
       color: skyblue;
     }
   }
-  
   
   
   }
@@ -398,7 +397,7 @@
           width: 28rem;
         }
       }
-      // ユーザー情報編集
+      // ショップ情報編集
       .user-list {
         display: flex;
         width: 30rem;
@@ -412,7 +411,7 @@
             margin: 0 1rem 0 0;
           }
         }
-  
+        
       // 商品ページ
       .search-content { 
         margin: 2rem auto 0;
@@ -449,6 +448,14 @@
         .price { color: thistle;}
         } 
       }//show
+        
+  /*==============================================================================
+  ショップ情報の登録・編集 画面
+  ============================================================================= */
+  .img-coment {
+    font-size: 1.4rem;
+  }
+
   /*==============================================================================
   footerナビ(SP)
   ============================================================================= */
@@ -535,27 +542,7 @@
     font-size: 1.5rem;
     text-align: center;
   }
-} 
-
-/*==============================================================================
-  ショップ情報の登録・編集 画面
-============================================================================= */
- // ショップイメージ
- .hidden {
-  display: none;
 }
-
-// .select_before {
-//   width: 15rem;
-//   height: 10rem;
-//   margin: .5rem;
-//   border: .1rem solid #000;
-// }
-// .select_img {
-//   width: 15rem;
-//   height: 10rem;
-//   margin: .1rem;
-// }
 
 }// @media(max-width: 767px)
   

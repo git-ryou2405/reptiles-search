@@ -605,7 +605,10 @@ footer
 /*==============================================================================
   ショップ情報の登録・編集 画面
 ============================================================================= */
-// ショップイメージ
+// ショップ画像の選択
+.img-coment {
+  font-size: 14px;
+}
 .hidden {
   display: none;
  }
@@ -620,34 +623,64 @@ footer
     position: relative;
   }
   .img-text {
-    color: #000; text-align: center; font-size: 10px;
+    color: #000;
+    text-align: center;
+    font-size: 10px;
     i {
       font-size: 16px;
     }
   }
 }
 .select_before {
+  display: flex;
   position: absolute;
   top: 0;
-  
   width: 100%;
   height: 100%;
-  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #111;
+  background-color: #fff;
   border: 1px solid #000;
 }
 .select_img {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   background-color: #111;
-  border: 1px solid #000;
 }
+
+// マップ検索の選択
+.map-select-box {
+  margin: 15px 0 15px 0;
+  padding: 10px 10px 40px 10px;
+  background: #555;
+  border-radius: 5px;
+  .map-icon {
+    float: left;
+    margin-right: 25px;
+  }
+  .guide1 {
+    font-size: 12px;
+    text-decoration: underline;
+    text-decoration-color: green;
+  }
+  .map-select {
+    padding: 10px 0 0 14px; clear: both;
+  }
+  .map-radio-select {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .guide2 {
+    float: right;
+    margin: 5px;
+    font-size: 10px;
+  }
+}
+
 
 // 入力フォーム [必須マーク]
 .field span {

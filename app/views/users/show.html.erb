@@ -120,17 +120,17 @@
       </script>
       -->
 
-        <!-- ユーザー情報の編集 -->
+        <!-- ショップ情報の編集 -->
         <% if @show_option == "user" %>
         <div class="user-list">
-          <%= link_to "ユーザー情報の編集", edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
+          <%= link_to "ショップ情報の編集", edit_user_registration_path(edit_mode: "info"), class:"btn btn-sm btn-primary px-2 my-2" %>
           <% unless @user.provider.present? %>
           <%= link_to "パスワードの変更", edit_user_registration_path(edit_mode: "pass"), class:"btn btn-sm btn-primary px-3 my-2" %>
           <% end %>
           <%= link_to "アカウントの削除", edit_user_registration_path(edit_mode: "destroy"), class:"btn btn-sm login_out btn-hover px-3 my-2" %>
         </div>
         <% end %>
-        <!-- ユーザー情報の編集 -->
+        <!-- ショップ情報の編集 -->
 
       </div><!-- main-content -->
     </div><!-- show -->
