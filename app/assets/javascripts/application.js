@@ -24,10 +24,11 @@ $( document ).on('turbolinks:load', function() {
     }
   }
   
-  $('[id^=post_img]').change(function(){                              // id: post_imgと一致
+  $('[id^=post_img]').change(function(){        // id: post_imgと一致
     var id = event.target.id[8]
-    $(`#prev_img${id}`).removeClass('hidden').addClass('select_img'); // 指定した要素へ
-    $(`.before_img${id}`).remove();                                   // 要素を削除
+    $(`#prev_img${id}`).removeClass('hidden');
+    $(`#prev_img${id}`).addClass('select_img');
+    $(`.before_img${id}`).remove();             // 要素を削除
     
     // 3、4枚目表示判定
     if (id === '1') {
