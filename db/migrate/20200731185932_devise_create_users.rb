@@ -19,6 +19,7 @@ class DeviseCreateUsers < ActiveRecord::Migration[6.0]
       t.string :shop_img1
       t.string :shop_img2
       t.string :shop_img3
+      t.string :shop_img4
       t.string :prefectures
       t.string :address
       t.integer :search_map,        default: 3

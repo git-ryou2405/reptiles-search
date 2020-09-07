@@ -2,12 +2,13 @@
 <div class="row justify-content-center">
   <div class="col-11">
     <% if @signup == "no_shop_name" %>
-      <h2>ショップ情報の登録</h2>
+      <% provide(:regist_or_edit, '登録') %>
       <% @regist_message = "ショップ情報を登録します。\nこの内容でよろしければOKを押してください。" %>
     <% else %>
-      <h2>ショップ情報の編集</h2>
+      <% provide(:regist_or_edit, '更新') %>
       <% @regist_message = "ショップ情報を更新します。\nこの内容でよろしければOKを押してください。" %>
     <% end %>
+    <h2><%= "ショップ情報の#{yield(:regist_or_edit)}" %></h2>
 
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= render "users/shared/error_messages", resource: resource %>
@@ -15,108 +16,121 @@
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
-
+      
+      
+      <div style="margin-left: 5px;">
+        <%= f.label :shop_images %>
+        <div style="font-size: 14px;">（※４枚まで登録できます）</div>
+      </div>
+      
       <!-- shop_images -->
-        <div class="circle-s_image">
-          <!-- イメージ１ -->
-          <%= f.label :shop_img1, for: "post_img1" do %>
-            <% if current_user.shop_img1.present? %>
-              <!-- 登録画像 -->
-              <%= image_tag current_user.shop_img1.url, id: "prev_img1", class: "select_img" %>
-            <% else %>
-              <!-- 選択前 -->
-              <div class="before_img1 select_before">
-                <div>
-                  <i class="fas fa-camera" style="color: #000;"></i>
-                  <p style="color: #000; text-align: center; font-size: 10px;"><%= "クリックしてファイル" %><br><%= "アップロード" %></p>
+      <!-- イメージ１ -->
+      <div class="shopimg-flex">
+        <div class="img-inner">
+          <div class="img-box">
+            <%= f.label :shop_img1, for: "post_img1" do %>
+              <% if current_user.shop_img1.present? %>
+                <!-- 登録済み画像 -->
+                <%= image_tag current_user.shop_img1.url, id: "prev_img1", class: "select_img" %>
+              <% else %>
+                <!-- 選択前 -->
+                <div class="before_img1 select_before" id="before_img1">
+                  <div class="img-text">
+                    <p><b><%= "１枚目" %></b></p>
+                    <i class="fas fa-camera" style="color: #000;"></i>
+                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                  </div>
                 </div>
-              </div>
-              <!-- 選択後 -->
-              <img src="" id="prev_img1" class="hidden" />
+                <!-- 選択後 -->
+                <img src="" id="prev_img1" class="hidden" />
+              <% end %>
+              
+              <%= f.file_field :shop_img1, id: 'post_img1', class: "hidden" %>
             <% end %>
-            
-            <%= f.file_field :shop_img1, id: 'post_img1', class: "hidden" %>
-          <% end %>
-          
-          <!-- イメージ２ -->
-          <%= f.label :shop_img2, for: "post_img2" do %>
-            <% if current_user.shop_img2.present? %>
-              <!-- 登録画像 -->
-              <%= image_tag current_user.shop_img2.url, id: "prev_img2", class: "select_img" %>
-            <% else %>
-              <!-- 選択前 -->
-              <div class="before_img2 select_before">
-                <div>
-                  <i class="fas fa-camera" style="color: #000;"></i>
-                  <p style="color: #000; text-align: center; font-size: 10px;"><%= "クリックしてファイル" %><br><%= "アップロード" %></p>
-                </div>
-              </div>
-              <!-- 選択後 -->
-              <img  src="" id="prev_img2" class="hidden" />
-            <% end %>
-            
-            <%= f.file_field :shop_img2, id: 'post_img2', class: "hidden" %>
-          <% end %>
-          
-          <!-- イメージ３ -->
-          <%= f.label :shop_img3, for: "post_img3" do %>
-            <% if current_user.shop_img3.present? %>
-              <!-- 登録画像 -->
-              <%= image_tag current_user.shop_img3.url, id: "prev_img3", class: "select_img" %>
-            <% else %>
-              <!-- 選択前 -->
-              <div class="before_img3 select_before">
-                <div>
-                  <i class="fas fa-camera" style="color: #000;"></i>
-                  <p style="color: #000; text-align: center; font-size: 10px;"><%= "クリックしてファイル" %><br><%= "アップロード" %></p>
-                </div>
-              </div>
-              <!-- 選択後 -->
-              <img  src="" id="prev_img3" class="hidden" />
-            <% end %>
-            
-            <%= f.file_field :shop_img3, id: 'post_img3', class: "hidden" %>
-          <% end %>
-
+          </div>
         </div>
+        
+        <!-- イメージ２ -->
+        <div class="img-inner">
+          <div class="img-box">
+            <%= f.label :shop_img2, for: "post_img2" do %>
+              <% if current_user.shop_img2.present? %>
+                <!-- 登録済み画像 -->
+                <%= image_tag current_user.shop_img2.url, id: "prev_img2", class: "select_img" %>
+              <% else %>
+                <!-- 選択前 -->
+                <div class="before_img2 select_before" id="before_img2">
+                  <div class="img-text">
+                    <p><b><%= "２枚目" %></b></p>
+                    <i class="fas fa-camera" style="color: #000;"></i>
+                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                  </div>
+                </div>
+                <!-- 選択後 -->
+                <img  src="" id="prev_img2" class="hidden" />
+              <% end %>
+              
+              <%= f.file_field :shop_img2, id: 'post_img2', class: "hidden" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 1枚目、２枚目が登録済みなら表示 -->
+      <div class=<%= "hidden" unless current_user.shop_img1.present? && current_user.shop_img2.present? %> id="post_img3_4">
+      <div class="shopimg-flex">
+        <!-- イメージ３ -->
+        <div class="img-inner">
+          <div class="img-box">
+            <%= f.label :shop_img3, for: "post_img3" do %>
+              <% if current_user.shop_img3.present? && current_user.shop_img3.url != '/uploads/TestFolder/noimage.jpg' %>
+                <!-- 登録済み画像 -->
+                <%= image_tag current_user.shop_img3.url, id: "prev_img3", class: "select_img" %>
+              <% else %>
+                <!-- 選択前 -->
+                <div class="before_img3 select_before">
+                  <div class="img-text">
+                    <p><b><%= "3枚目" %></b></p>
+                    <i class="fas fa-camera" style="color: #000;"></i>
+                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                  </div>
+                </div>
+                <!-- 選択後 -->
+                <img  src="" id="prev_img3" class="hidden" />
+              <% end %>
+              
+              <%= f.file_field :shop_img3, id: 'post_img3', class: "hidden" %>
+            <% end %>
+          </div>
+        </div>
+        
+        <!-- イメージ４ -->
+        <div class="img-inner">
+          <div class="img-box">
+            <%= f.label :shop_img4, for: "post_img4" do %>
+              <% if current_user.shop_img3.present? && current_user.shop_img4.url != '/uploads/TestFolder/noimage.jpg' %>
+                <!-- 登録済み画像 -->
+                <%= image_tag current_user.shop_img4.url, id: "prev_img4", class: "select_img" %>
+              <% else %>
+                <!-- 選択前 -->
+                <div class="before_img4 select_before">
+                  <div class="img-text">
+                    <p><b><%= "４枚目" %></b></p>
+                    <i class="fas fa-camera" style="color: #000;"></i>
+                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                  </div>
+                </div>
+                <!-- 選択後 -->
+                <img  src="" id="prev_img4" class="hidden" />
+              <% end %>
+              
+              <%= f.file_field :shop_img4, id: 'post_img4', class: "hidden" %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+      </div>
       <!-- shop_images /-->
-      
-<script>
-$( document ).on('turbolinks:load', function() {
-  let prev_img = "";
-  
-  function readURL(input) {
-    if (input.files && input.files[0]) {
-      var reader = new FileReader();
-      
-      // 元々隠していたimgタグのURI（表示先uri）を取得し、file_fieldから取り込んだfileを、readAsDataURLによって、取得したURIで読み込むようにする。
-      reader.onload = function (e) {
-        $(prev_img).attr('src', e.target.result);      // 's_image_img_prev'属性の'src'と、ロードされた画像ファイルのData URIスキームを取得
-      }
-      reader.readAsDataURL(input.files[0]);                       // readAsDataURL・・・ファイルを、Data URIとして読み込むメソッド
-    }
-  }
-  
-  $("#post_img1").change(function(){
-    $('#prev_img1').removeClass('hidden').addClass('select_img'); // 指定した要素に・・
-    $('.before_img1').remove();                                   // 要素を削除
-    prev_img = '#prev_img1';
-    readURL(this);
-  });
-  $("#post_img2").change(function(){
-    $('#prev_img2').removeClass('hidden').addClass('select_img'); // 指定した要素に・・
-    $('.before_img2').remove();                                   // 要素を削除
-    prev_img = '#prev_img2';
-    readURL(this);
-  });
-  $("#post_img3").change(function(){
-    $('#prev_img3').removeClass('hidden').addClass('select_img'); // 指定した要素に・・
-    $('.before_img3').remove();                                   // 要素を削除
-    prev_img = '#prev_img3';
-    readURL(this);
-  });
-});
-</script>
       
       <!--
       <div class="field">
@@ -142,6 +156,7 @@ $( document ).on('turbolinks:load', function() {
         <%= f.text_area :address, autofocus: false, autocomplete: "address", class: "form-control mg-tb-6" %>
       </div>
       
+      <!-- マップ検索の選択 -->
       <div style="margin: 15px 0 15px 0; padding: 10px; background: #555; border-radius: 5px;">
         <div style="float: left; margin-right: 25px;">
           <img src="https://img.icons8.com/color/48/000000/google-maps.png" width="30px" height="30px" /><%= f.label :search_map, class: "mt-1" %>
@@ -168,7 +183,11 @@ $( document ).on('turbolinks:load', function() {
           </label>
           <%#= f.label :search_map_address, "住所" %>
         </div>
+              <div style="margin-top: 10px; float: right; font-size: 6px; color: black;">
+        <a href="https://icons8.com/icon/32215/google-maps-old" target="_blank" >icon by Icons8</a>
       </div>
+      </div>
+      
       
       <!-- アクセス方法、電話、営業時間、定休日 -->
       <% arrey = [
@@ -220,7 +239,7 @@ $( document ).on('turbolinks:load', function() {
       </div>
       
       <div class="actions">
-        <%= f.submit "更新", class: "btn btn-primary w-100 mt-4",data: { confirm: @regist_message } %>
+        <%= f.submit yield(:regist_or_edit), class: "btn btn-primary w-100 mt-4",data: { confirm: @regist_message } %>
       </div>
     <% end %>
   </div>
@@ -231,6 +250,4 @@ $( document ).on('turbolinks:load', function() {
   <%= link_to "◀︎ マイページへ戻る", @user, style:"font-size: 13px; color: silver;", onMouseOver:"this.style.textDecoration='none'; this.style.color='#ffffff';" %>
 <% end %>
 
-<div style="margin-top: 50px; float: right; font-size: 10px; color: black;">
-  <a href="https://icons8.com/icon/32215/google-maps-old" target="_blank" >Google Maps Old icon by Icons8</a>
-</div>
+

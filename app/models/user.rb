@@ -8,6 +8,7 @@ class User < ApplicationRecord
   mount_uploader :shop_img1, ImageUploader
   mount_uploader :shop_img2, ImageUploader
   mount_uploader :shop_img3, ImageUploader
+  mount_uploader :shop_img4, ImageUploader
   serialize :shop_images, JSON
   
   # validates :shop_name, presence: true

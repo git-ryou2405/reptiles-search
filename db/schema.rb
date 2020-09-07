@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 2020_08_23_064627) do
     t.string "shop_img1"
     t.string "shop_img2"
     t.string "shop_img3"
+    t.string "shop_img4"
     t.string "prefectures"
     t.string "address"
     t.integer "search_map", default: 3

@@ -9,6 +9,44 @@ $(function(){
   setTimeout("$('.flash').fadeOut('slow')",2000);
 });
 
+// file_field 画像プレビュー
+$( document ).on('turbolinks:load', function() {
+  let prev_img = "";
+  
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+      var reader = new FileReader();
+      
+      reader.onload = function (e) {
+        $(prev_img).attr('src', e.target.result);
+      }
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+  
+  $('[id^=post_img]').change(function(){                              // id: post_imgと一致
+    let id = event.target.id[8]
+    $(`#prev_img${id}`).removeClass('hidden').addClass('select_img'); // 指定した要素へ
+    $(`.before_img${id}`).remove();                                   // 要素を削除
+    
+    // 3、4枚目表示判定
+    if (id === '1') {
+      if (document.getElementById('before_img2') != null) {
+      } else {
+        $('#post_img3_4').removeClass('hidden');
+      }
+    } else if (id === '2') {
+      if (document.getElementById('before_img1') != null) {
+      } else {
+        $('#post_img3_4').removeClass('hidden');
+      }
+    }
+    
+    prev_img = `#prev_img${id}`;
+    readURL(this);
+  });
+});
+
 /* スライダー */
 var mySwiper = new Swiper('.swiper-container', {
   loop: true,
@@ -57,6 +95,8 @@ function deviceJudgment() {
   }
 }
 deviceJudgment();
+
+
 
 // /* Geocodingで緯度経度を取得 */
 // $(function () {
