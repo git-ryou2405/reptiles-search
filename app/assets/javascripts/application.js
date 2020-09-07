@@ -11,7 +11,7 @@ $(function(){
 
 // file_field 画像プレビュー
 $( document ).on('turbolinks:load', function() {
-  let prev_img = "";
+  var prev_img = "";
   
   function readURL(input) {
     if (input.files && input.files[0]) {
@@ -25,7 +25,7 @@ $( document ).on('turbolinks:load', function() {
   }
   
   $('[id^=post_img]').change(function(){                              // id: post_imgと一致
-    let id = event.target.id[8]
+    var id = event.target.id[8]
     $(`#prev_img${id}`).removeClass('hidden').addClass('select_img'); // 指定した要素へ
     $(`.before_img${id}`).remove();                                   // 要素を削除
     
