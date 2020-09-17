@@ -21,7 +21,7 @@
     <!-- １枚しかなければ１枚のみ表示 -->
     <% if @user.shop_img2.present? %>
       <div class="swiper-wrapper grab">
-        <% img_array = [@user.shop_img1, @user.shop_img2, @user.shop_img3] %>
+        <% img_array = [@user.shop_img1, @user.shop_img2, @user.shop_img3, @user.shop_img4] %>
         <% img_array.each do |image| %>
           <% if image.present? %>
             <div class="swiper-slide">

@@ -9,14 +9,13 @@
       <% @regist_message = "ショップ情報を更新します。\nこの内容でよろしければOKを押してください。" %>
     <% end %>
     <h2><%= "ショップ情報の#{yield(:regist_or_edit)}" %></h2>
-
+    
     <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
       <%= render "users/shared/error_messages", resource: resource %>
 
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
-      
       
       <div style="margin: 10px 0 0 5px;">
         <%= f.label :shop_images %>
@@ -29,50 +28,72 @@
         <div class="img-inner">
           <div class="img-box">
             <%= f.label :shop_img1, for: "post_img1" do %>
+              <!-- 選択前 -->
+              <div class="before_img1 select_before" id="before_img1">
+                <div class="img-text">
+                  <p><b><%= "１枚目" %></b></p>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                </div>
+              </div>
+              <!-- 選択後 -->
+              <img src="" id="prev_img1" class="hidden" />
+              
               <% if current_user.shop_img1.present? %>
                 <!-- 登録済み画像 -->
-                <%= image_tag current_user.shop_img1.url, id: "prev_img1", class: "select_img" %>
-              <% else %>
-                <!-- 選択前 -->
-                <div class="before_img1 select_before" id="before_img1">
-                  <div class="img-text">
-                    <p><b><%= "１枚目" %></b></p>
-                    <i class="fas fa-camera" style="color: #000;"></i>
-                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
-                  </div>
-                </div>
-                <!-- 選択後 -->
-                <img src="" id="prev_img1" class="hidden" />
+                <%= image_tag current_user.shop_img1.url, id: "db_img1", class: "select_img" %>
               <% end %>
               
               <%= f.file_field :shop_img1, id: 'post_img1', class: "hidden" %>
             <% end %>
           </div>
+          <!-- 削除ボタン -->
+          <% if current_user.shop_img1.present? %>
+            <div class="" id="delete_button1">
+              <input type="button" value="削除" id='delete_img1'>
+            </div>
+          <% end %>
+          <div class="hidden" id="delete_button1">
+            <input type="button" value="削除" id='delete_img1'>
+          </div>
+          <!-- 削除フラグ -->
+          <%= hidden_field_tag :shop_img1_val, "false", id: "delete_flag_img1" %>
         </div>
         
         <!-- イメージ２ -->
         <div class="img-inner">
           <div class="img-box">
             <%= f.label :shop_img2, for: "post_img2" do %>
+              <!-- 選択前 -->
+              <div class="before_img2 select_before" id="before_img2">
+                <div class="img-text">
+                  <p><b><%= "２枚目" %></b></p>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                </div>
+              </div>
+              <!-- 選択後 -->
+              <img  src="" id="prev_img2" class="hidden" />
+              
               <% if current_user.shop_img2.present? %>
                 <!-- 登録済み画像 -->
-                <%= image_tag current_user.shop_img2.url, id: "prev_img2", class: "select_img" %>
-              <% else %>
-                <!-- 選択前 -->
-                <div class="before_img2 select_before" id="before_img2">
-                  <div class="img-text">
-                    <p><b><%= "２枚目" %></b></p>
-                    <i class="fas fa-camera" style="color: #000;"></i>
-                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
-                  </div>
-                </div>
-                <!-- 選択後 -->
-                <img  src="" id="prev_img2" class="hidden" />
+                <%= image_tag current_user.shop_img2.url, id: "db_img2", class: "select_img" %>
               <% end %>
               
               <%= f.file_field :shop_img2, id: 'post_img2', class: "hidden" %>
             <% end %>
           </div>
+          <!-- 削除ボタン -->
+          <% if current_user.shop_img2.present? %>
+            <div class="" id="delete_button2">
+              <input type="button" value="削除" id='delete_img2'>
+            </div>
+          <% end %>
+          <div class="hidden" id="delete_button2">
+            <input type="button" value="削除" id='delete_img2'>
+          </div>
+          <!-- 削除フラグ -->
+          <%= hidden_field_tag :shop_img2_val, "false", id: "delete_flag_img2" %>
         </div>
       </div>
       
@@ -83,50 +104,72 @@
         <div class="img-inner">
           <div class="img-box">
             <%= f.label :shop_img3, for: "post_img3" do %>
+              <!-- 選択前 -->
+              <div class="before_img3 select_before">
+                <div class="img-text">
+                  <p><b><%= "3枚目" %></b></p>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
+                </div>
+              </div>
+              <!-- 選択後 -->
+              <img  src="" id="prev_img3" class="hidden" />
+                
               <% if current_user.shop_img3.present? && current_user.shop_img3.url != '/uploads/TestFolder/noimage.jpg' %>
                 <!-- 登録済み画像 -->
-                <%= image_tag current_user.shop_img3.url, id: "prev_img3", class: "select_img" %>
-              <% else %>
-                <!-- 選択前 -->
-                <div class="before_img3 select_before">
-                  <div class="img-text">
-                    <p><b><%= "3枚目" %></b></p>
-                    <i class="fas fa-camera" style="color: #000;"></i>
-                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
-                  </div>
-                </div>
-                <!-- 選択後 -->
-                <img  src="" id="prev_img3" class="hidden" />
+                <%= image_tag current_user.shop_img3.url, id: "db_img3", class: "select_img" %>
               <% end %>
               
               <%= f.file_field :shop_img3, id: 'post_img3', class: "hidden" %>
             <% end %>
           </div>
+          <!-- 削除ボタン -->
+          <% if current_user.shop_img3.present? %>
+            <div class="" id="delete_button3">
+              <input type="button" value="削除" id='delete_img3'>
+            </div>
+          <% end %>
+          <div class="hidden" id="delete_button3">
+            <input type="button" value="削除" id='delete_img3'>
+          </div>
+          <!-- 削除フラグ -->
+          <%= hidden_field_tag :shop_img3_val, "false", id: "delete_flag_img3" %>
         </div>
         
         <!-- イメージ４ -->
         <div class="img-inner">
           <div class="img-box">
             <%= f.label :shop_img4, for: "post_img4" do %>
-              <% if current_user.shop_img3.present? && current_user.shop_img4.url != '/uploads/TestFolder/noimage.jpg' %>
-                <!-- 登録済み画像 -->
-                <%= image_tag current_user.shop_img4.url, id: "prev_img4", class: "select_img" %>
-              <% else %>
-                <!-- 選択前 -->
-                <div class="before_img4 select_before">
-                  <div class="img-text">
-                    <p><b><%= "４枚目" %></b></p>
-                    <i class="fas fa-camera" style="color: #000;"></i>
-                    <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
-                  </div>
+              <!-- 選択前 -->
+              <div class="before_img4 select_before">
+                <div class="img-text">
+                  <p><b><%= "４枚目" %></b></p>
+                  <i class="fas fa-camera" style="color: #000;"></i>
+                  <p><%= "クリックでファイル" %><br><%= "アップロード" %></p>
                 </div>
-                <!-- 選択後 -->
-                <img  src="" id="prev_img4" class="hidden" />
+              </div>
+              <!-- 選択後 -->
+              <img  src="" id="prev_img4" class="hidden" />
+              
+              <% if current_user.shop_img4.present? && current_user.shop_img4.url != '/uploads/TestFolder/noimage.jpg' %>
+                <!-- 登録済み画像 -->
+                <%= image_tag current_user.shop_img4.url, id: "db_img4", class: "select_img" %>
               <% end %>
               
               <%= f.file_field :shop_img4, id: 'post_img4', class: "hidden" %>
             <% end %>
           </div>
+          <!-- 削除ボタン -->
+          <% if current_user.shop_img4.present? %>
+            <div class="" id="delete_button4">
+              <input type="button" value="削除" id='delete_img4'>
+            </div>
+          <% end %>
+          <div class="hidden" id="delete_button4">
+            <input type="button" value="削除" id='delete_img4'>
+          </div>
+          <!-- 削除フラグ -->
+          <%= hidden_field_tag :shop_img4_val, "false", id: "delete_flag_img4" %>
         </div>
       </div>
       </div>

@@ -9,7 +9,7 @@ $(function(){
   setTimeout("$('.flash').fadeOut('slow')",2000);
 });
 
-// file_field 画像プレビュー
+// file_field
 $( document ).on('turbolinks:load', function() {
   var prev_img = "";
   
@@ -24,20 +24,44 @@ $( document ).on('turbolinks:load', function() {
     }
   }
   
+  // 画像プレビュー
   $('[id^=post_img]').change(function(){        // id: post_imgと一致
     var id = event.target.id[8]
     $(`#prev_img${id}`).removeClass('hidden');
     $(`#prev_img${id}`).addClass('select_img');
-    $(`.before_img${id}`).remove();             // 要素を削除
+    $(`.before_img${id}`).addClass('hidden');
+    //$(`.before_img${id}`).remove();             // 要素を削除
+    
+    // 格納済みの画像削除用
+    if (document.getElementById(`db_img${id}`) != null ){
+      $(`#db_img${id}`).removeClass('select_img');
+      $(`#db_img${id}`).addClass('hidden');
+    }
+    
+    $(`#delete_button${id}`).removeClass('hidden');
     
     // 3、4枚目表示判定
     if (id === '1') {
-      if (document.getElementById('before_img2') != null) {
+      // if (document.getElementById('before_img2') != null) {
+      var before_img2 = document.getElementById('before_img2');
+      if ( before_img2 != null ) {
+        if ( before_img2.classList.contains( "hidden" ) != true ) {
+          console.log("img2 == null"); // イメージ２が未選択
+        } else {
+          $('#post_img3_4').removeClass('hidden');
+        }
       } else {
         $('#post_img3_4').removeClass('hidden');
       }
     } else if (id === '2') {
-      if (document.getElementById('before_img1') != null) {
+      // if (document.getElementById('before_img1') != null) {
+      var before_img1 = document.getElementById('before_img1');
+      if ( before_img1 != null ) {
+        if ( before_img1.classList.contains( "hidden" ) != true ) {
+          console.log("img1 == null"); // イメージ１が未選択
+        } else {
+          $('#post_img3_4').removeClass('hidden');
+        }
       } else {
         $('#post_img3_4').removeClass('hidden');
       }
@@ -46,7 +70,28 @@ $( document ).on('turbolinks:load', function() {
     prev_img = `#prev_img${id}`;
     readURL(this);
   });
+  
+  // file_field 選択後の画像削除
+  $('[id^=delete_img]').click(function() {
+    var id = event.target.id[10]
+    console.log(id);
+    //$(`#prev_img${id}`).remove();             // 要素を削除
+    $(`#db_img${id}`).removeClass('select_img');
+    $(`#db_img${id}`).addClass('hidden');
+    
+    $(`#prev_img${id}`).removeClass('select_img');
+    $(`#prev_img${id}`).addClass('hidden');
+    
+    $(`.before_img${id}`).removeClass('hidden');
+    $(`#delete_button${id}`).addClass('hidden');
+    
+    // 削除フラグ変更
+    delete_flag_img = `#delete_flag_img${id}`;
+    $(delete_flag_img).attr('value', "true");
+  });
 });
+
+
 
 /* スライダー */
 var mySwiper = new Swiper('.swiper-container', {

@@ -36,7 +36,22 @@ class Users::RegistrationsController < Devise::RegistrationsController
   def update
     debug_log("[d] Registrations_Ctrl: ac: update id=#{current_user.id}")  # log
     debug_log("[d] Registrations_Ctrl: ac: update search_map=#{params[:search_map]}")  # log
+    
     super
+    
+    if params[:shop_img1_val] == "true"
+      @user.shop_img1 = ""
+      @user.save
+    elsif params[:shop_img2_val] == "true"
+      @user.shop_img2 = ""
+      @user.save
+    elsif params[:shop_img3_val] == "true"
+      @user.shop_img3 = ""
+      @user.save
+    elsif params[:shop_img4_val] == "true"
+      @user.shop_img4 = ""
+      @user.save
+    end
     
     # googleMap_緯度経度の取得
     if @user.saved_change_to_shop_name? || @user.saved_change_to_address? || @user.saved_change_to_search_map?
@@ -87,11 +102,58 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # shop_images削除
   def delete_photo
     debug_log("[d] Registrations_Ctrl: ac: delete_photo")  # log
-    debug_log("[d] Registrations_Ctrl: ac: delete_photo @user=#{@user.inspect}")  # log
+    @user = current_user
+    case params[:photo_id]
+      when "1" then
+        current_user.shop_img1 = ""
+        if @user.shop_img2.present?
+          @user.shop_img1 = @user.shop_img2
+          @user.shop_img2 = ""
+          if @user.shop_img3.present?
+            @user.shop_img2 = @user.shop_img3
+            @user.shop_img3 = ""
+            if @user.shop_img4.present?
+              @user.shop_img3 = @user.shop_img4
+              @user.shop_img4 = ""
+            end
+          end
+        end
+        current_user.save
+      when "2" then
+        current_user.shop_img2 = ""
+        if @user.shop_img3.present?
+          @user.shop_img2 = @user.shop_img3
+          @user.shop_img3 = ""
+          if @user.shop_img4.present?
+            @user.shop_img3 = @user.shop_img4
+            @user.shop_img4 = ""
+          end
+        end
+        current_user.save
+      when "3" then
+        current_user.shop_img3 = ""
+        if @user.shop_img4.present?
+          @user.shop_img3 = @user.shop_img4
+          @user.shop_img4 = ""
+        end
+        current_user.save
+      when "4" then
+        current_user.shop_img4 = ""
+        current_user.save
+    end
+    flash[:success] = "画像を削除しました"
+    
+    redirect_to edit_user_registration_path(id: current_user, edit_mode: "info")
+  end
+  
+  # shop_images削除
+  def delete_photos
+    debug_log("[d] Registrations_Ctrl: ac: delete_photos")  # log
+    debug_log("[d] Registrations_Ctrl: ac: delete_photos @user=#{@user.inspect}")  # log
     if @user.shop_images.present?
       @user.shop_images = ""
       @user.save
-      debug_log("[d] Registrations_Ctrl: ac: delete_photo")  # log
+      debug_log("[d] Registrations_Ctrl: ac: delete_photos")  # log
     end
     
     flash[:success] = "ショップ画像を削除しました"

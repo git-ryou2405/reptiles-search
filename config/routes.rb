@@ -10,7 +10,8 @@ Rails.application.routes.draw do
     :passwords     => "users/passwords"
   }
   devise_scope :user do
-    get '/users/delete_photo' => 'users/registrations#delete_photo'
+    delete '/users/delete_photo' => 'users/registrations#delete_photo'
+    get '/users/delete_photos' => 'users/registrations#delete_photos'
   end
 
   get '/users/sign_out' => 'devise/sessions#destroy'
