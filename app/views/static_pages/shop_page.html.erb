@@ -3,9 +3,10 @@
 <!-- マイページ -->
 <div id="wrapper">
   <!-- ショップ名orレプタイル種別 -->
-  <h1 class="shop-ttl" style="font-size: 40px;"><%= @disp_shopinfo.shop_name %></h1>
+  <h1 class="shop-ttl">
+  <%= @disp_shopinfo.shop_name %></h1>
   <% if @type1_name.present? %>
-    <h1 class="shop-ttl" style="font-size: 20px;"><%= "\"#{@type1_name}\" 一覧" %></h1>
+    <p class="shop-ttl" style="font-size: 20px;"><%= "\"#{@type1_name}\" 一覧" %></h1>
   <% end %>
   <!-- パンくずリスト -->
   <div class="section-breadcrumbs">

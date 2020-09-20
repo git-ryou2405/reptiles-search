@@ -7,25 +7,7 @@
   .inner { margin: 0 3rem; width: auto; }
   .ds-pc { display: none; }
   
-  /*==============================================================================
-    topページ
-  ============================================================================= */
-  .fv {
-    background:url(/images/hero.jpg) no-repeat 30% 40%/ cover;
-  }
-  .jumbotron h1 {
-    font-size: 5rem;
-    margin: 3rem 0px 4rem;
-  }
-  .jumbotron .txt01 {
-    font-size: 2rem;
-  }
-  .jumbotron .txt02 {
-    font-size: 1.4rem;
-    margin: 1rem 0 0;
-  }
-  
-  /*==============================================================================
+  /*===========================================================================
     login画面
   ============================================================================= */
   .btn-social { padding: .8rem; }
@@ -89,35 +71,194 @@
       }
   }
 
-  .shop-ttl { font-size: 4rem;}
+  .shop-ttl { font-size: 4.5rem!important;}
+  .shop-ttl-txt { margin: 1.5rem 0 0; font-size: 3rem; text-align: center;}
   /*==============================================================================
   トップページ FV
 ============================================================================= */
 .header-pd {
   padding-top: 4rem;
 }
-.jumbotron {
+.fv {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:  100vh;
   background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
   text-shadow: .3rem .3rem .5rem #333, .6rem .6rem 1rem #111;
   margin: 0!important;
+
+  .fv-block {
+    position: relative;
+    width: 100%;
+    transform: translateY(-20%);
+    z-index: 3;
+  }
   .fv-ttl {
     font-size: 7rem;
-    margin: 5rem 0 6rem;
     text-shadow: .1rem .1rem #666, .2rem .2rem #333;
+    color: lightcoral;
   }
   .fv-txt01 {
-    font-size: 3rem;
+    margin: 2rem 0 0;
+    font-size: 4.5rem;
+    text-align: center;
   }
   .fv-txt02 {
-    font-size: 2.3rem;
+    font-size: 3.5rem;
     margin: 1rem 0 0;
+    text-align: center;
+  }
+  .search-form {
+    margin: 3rem auto 0;
+    text-align: center;
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .search-box {
+      width: 60rem;
+      height: 6.5rem;
+      padding: 1rem 0 ;
+      border-radius: .5rem;
+      font-size: 3rem;
+    }
+    .search-box.select-box {
+      padding: 1.3rem 0;
+    }
+    .search-btn {
+      width: 8rem;
+      height: 6.5rem;
+      margin: 0 0 0 .5rem;
+      padding: 1.1rem 0;
+      border: none;
+      background: lightcoral;
+      color: #fff;
+      border-radius: .5rem;
+      font-size: 3rem;
+      font-weight: bold;
+      letter-spacing: .1rem;
+    }
+    .search-btn:hover {
+      opacity: .8;
+    } 
+  }
+  .search-ttl-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 7rem;
+    .search-ttl {
+      margin: 0 0 0 1.5rem;
+    }
+    .search-ttl02 {
+      line-height: 1.45;
+    }
+    .fa-paw {
+      color: lightcoral;
+    }
+  }
+  
+
+  // 動く矢印
+  .cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .cp_arrows {
+    position: relative;
+    display: flex;
+    height: 20rem;/*画面いっぱいにする場合100vh*/
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .cp_arrows .cp_arrow {
+    position: absolute;
+    top: 50%;/*着地点（サンプルは[class:cp_arrows]height300pxの50%）*/
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    opacity: 0;
+  }
+  .cp_arrows .cp_arrowfirst {
+    -webkit-animation: arrow-move08 2s ease-in-out infinite;
+            animation: arrow-move08 2s ease-in-out infinite;
+  }
+  .cp_arrows .cp_arrowsecond {
+    -webkit-animation: arrow-move08 2s 1s ease-in-out infinite;
+            animation: arrow-move08 2s 1s ease-in-out infinite;
+  }
+  .cp_arrows .cp_arrow:before, .cp_arrows .cp_arrow:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 6rem;
+    height: .5rem;
+    content: '';
+    background: gold;
+  }
+  .cp_arrows .cp_arrow:before {
+    -webkit-transform: rotate(30deg) translateX(-39%);
+            transform: rotate(30deg) translateX(-39%);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+  }
+  .cp_arrows .cp_arrow:after {
+    -webkit-transform: rotate(-30deg) translateX(39%);
+            transform: rotate(-30deg) translateX(39%);
+    -webkit-transform-origin: top right;
+            transform-origin: top right;
+  }
+  @-webkit-keyframes arrow-move08 {
+    0% {
+      top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes arrow-move08 {
+    0% {
+      top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+      opacity: 0;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+    background-size: 3px 3px;
+    z-index: 1;
   }
 }
 /*==============================================================================
   トップページ メイン
 ============================================================================= */
   .top-search {
-    .bg { padding: 9rem 0 0;}
+    .bg { padding: 8rem 0 0;}
     .search-ttl-block {
       display: flex;
       align-items: center;
@@ -137,7 +278,6 @@
       }
     }
     .search-form {
-      // width: 70rem;
       margin: 3rem auto 0;
       text-align: center;
       form {
@@ -146,20 +286,24 @@
       }
       .search-box {
         width: 60rem;
+        height: 6.5rem;
         padding: 1rem 0 ;
         border-radius: .5rem;
+        font-size: 3rem;
       }
       .search-box.select-box {
         padding: 1.3rem 0;
       }
       .search-btn {
         width: 8rem;
+        height: 6.5rem;
         margin: 0 0 0 .5rem;
         padding: 1.1rem 0;
         border: none;
         background: lightcoral;
         color: #fff;
         border-radius: .5rem;
+        font-size: 3rem;
         font-weight: bold;
         letter-spacing: .1rem;
       }
@@ -168,7 +312,6 @@
       } 
     }
     .group-search {
-      margin: 8rem 0 0;
       .fa-frog {
         color: darkseagreen;
       }
@@ -198,7 +341,7 @@
         }
         .species {
           margin: 1.5rem 0 0;
-          font-size: 3.2rem;
+          font-size: 4rem;
           font-weight: bold;
         }
       }
@@ -248,21 +391,20 @@
         padding: 1rem 2rem;
         background: #222;
         color: palevioletred;
-        font-size: 2.2rem;
+        font-size: 4rem;
         text-align: center;
         border-radius: 5%;
         line-height: 1.4;
-        .menu-ttl-sm { font-size: 1.4rem;}
       }
       .menu-ttl:first-of-type { margin: 1rem 0 0;}
       .menu-ttl:after { 
         position: absolute;
-        top: 30%;
+        top: 40%;
         right: 8%;
-        width: 1.2rem;
-        height: 1.2rem;
+        width: 1.5rem;
+        height: 1.5rem;
         content: attr(data-item);
-        border-width: 3px 0 0 3px;
+        border-width: .5rem 0 0 .5rem;
         border-style: solid;
         border-color: palevioletred transparent transparent palevioletred;
         transform: rotate(225deg) translateY(-50%);
@@ -271,7 +413,7 @@
         padding-left: 0;
         display: none;
         .reptile-item {
-          font-size: 1.8rem;
+          font-size: 4rem;
           color:palevioletred;
           padding: 2rem;
           border-bottom: 3px #333 solid;
@@ -291,10 +433,10 @@
       .arrival-item { 
         padding: 2rem;
         border-bottom: .3rem #333 solid;
-        .arrival-day { font-size: 1.4rem;}
+        .arrival-day { font-size: 4rem;}
         .arrival-animal {
-          font-size: 1.8rem;
           margin: .5rem 0 0;
+          font-size: 4rem;
         }
       }
   
@@ -305,7 +447,7 @@
         padding: 1rem 2rem;
         background: #222;
         color: skyblue;
-        font-size: 2.2rem;
+        font-size: 4rem;
         text-align: center;
         border-radius: 5%;}
       .sns-ttl:after { 
@@ -332,20 +474,28 @@
         .search-box {
           margin:0 0 0 1rem;
           width: 59rem;
-          height: 4rem;
+          height: 6.5rem;
           margin: .5rem 0 0;
           color: #111;
-          font-size: 1.35rem;
+          font-size: 3rem;
         }
         .search-btn {
           margin:0 0 0 1rem;
           width: 8rem;
-          height: 4rem;
+          height: 6.5rem;
           background: lightcoral;
           color: #fff;
           padding: 0;
           cursor: pointer;
-          font-size: 1.35rem;
+          font-size: 3rem;
+        }
+      }
+
+      .shop-data-edit { 
+        margin: 2rem 0; 
+        .btn {
+          font-size: 3rem;
+          display: inline-block;
         }
       }
   
@@ -364,21 +514,22 @@
         width: 100%;
         margin: 3rem 0 0;
         .shop-data-item {
+          flex-direction: column;
+          justify-content: left;
           flex-wrap: wrap;
-          padding: 1rem 1.5rem;
+          padding: 3rem 2rem;
           border-bottom: 2px #333 solid;
-          align-items: center;
           dt { 
-            width: 15rem;
-            font-size: 2rem;
+            font-size: 4.2rem;
             font-weight: bold;
             color: thistle;
+            text-align: left;
           }
           dd { 
-            width: 50rem;
-            margin: 0;
-            font-size: 1.5rem;
+            margin:1.5rem 0 0;
+            font-size: 4rem;
             overflow: scroll;
+            justify-content: flex-start;
           }
         }
       }
@@ -391,6 +542,7 @@
       // スライダー
       .swiper-container {
         width: auto;
+        margin: 0 auto!important;
       }
       .swiper-slide {  
         .swiper-image {
@@ -419,17 +571,21 @@
         padding: 1rem 1rem 0;
         border-top: 3px solid #333;
         font-size: 2rem;
+        flex-direction: column;
         }
         .txt-list { 
           width: 100%;
+          margin: 3rem 0 2rem;
+          align-items: baseline;
         }
         .txt-item{ 
           width: 95%;
-          font-size: 2rem;
+          font-size: 3rem;
         }
         .photo 
-        { width: 16rem;
-          padding: 0 2rem 0 0;
+        { 
+          width: 25rem;
+          margin: 2rem 0 0;
           img{
               width: 100%;
           }
@@ -439,7 +595,6 @@
           padding: .5rem .5rem .5rem 0;
           font-weight: bold;
         }
-        .name  { width: 100%;}
         .name a:hover { text-decoration: underline; color: lightblue;}
         .species { color: darkseagreen;}
         .morph { color: darkgoldenrod;}
@@ -476,7 +631,7 @@
         width: 33.3%;
         padding: 2rem 0 1rem;
         color: #fff;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: bold; 
         text-align: center;
       }
@@ -498,12 +653,12 @@
     padding: 0; 
     width: 70%; 
     background-color: #222; 
-    z-index: 2; 
+    z-index: 4; 
     .nav_list { 
       width: 90%; 
       height: 100vh; 
       margin: 0 auto; 
-      padding: 20rem 0 0;
+      padding: 8rem 0 2rem;
     } 
     .nav_item {  
       padding: 3rem 0; 
@@ -524,7 +679,7 @@
     position: fixed; 
     bottom: 0; 
     left: 0; 
-    z-index: 1; 
+    z-index: 3; 
     width:100%; 
     height: 100vh; 
     background: #111; 
@@ -543,6 +698,30 @@
     text-align: center;
   }
 }
+
+.breadcrumbs {
+  font-size: 2.5rem;
+  &:first-child {
+    &:before {
+      color: #fff;
+      font-family: FontAwesome;
+      content: "\f015";
+      margin-right: 6px;
+    }
+  }
+ }
+ .breadcrumbs a:hover {
+  color: #888;
+  text-decoration: underline;
+ }
+ .section-breadcrumbs {
+  margin: 3rem auto 2rem;
+  border-top: .01rem solid #444;
+  border-bottom: .01rem solid #444;
+ }
+ .container-breadcrumbs {
+   padding: 1rem 2rem;
+ }
 
 }// @media(max-width: 767px)
   

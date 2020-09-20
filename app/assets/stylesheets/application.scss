@@ -101,6 +101,7 @@
  background-color: #444;
 }
 .shop-ttl { width: 1000px; margin: 0 auto; font-size: 40px;}
+.shop-ttl-txt { width: 1000px; margin: 0 auto;}
 /*==============================================================================
  トップページ FV
 ============================================================================= */
@@ -110,19 +111,164 @@
 .fv {
  background:url(/images/hero.jpg) no-repeat 30% 60%/ cover;
  text-shadow: 3px 3px 5px #333, 6px 6px 10px #111;
+ height: 100vh;
  margin: 0!important;
+
+ .fv-block {
+  position: relative;
+  width: 100%;
+  transform: translateY(30%);
+  z-index: 3;
+}
  .fv-ttl {
    font-size: 70px;
-   margin: 50px 0px 60px;
    text-shadow: 1px 1px #666, 2px 2px #333;
+   color: lightcoral;
  }
  .fv-txt01 {
    font-size: 30px;
+   text-align: center;
  }
  .fv-txt02 {
    font-size: 23px;
    margin: 10px 0 0;
+   text-align: center;
  }
+ .search-ttl-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 40px;
+  .search-ttl {
+    margin: 0 0 0 15px;
+  }
+  .fa-paw {
+    color: lightcoral;
+  }
+}
+.search-form {
+  width: 700px;
+  margin: 30px auto 0;
+  text-align: center;
+  form {
+    display: flex;
+    align-items: center;
+  }
+  .search-box {
+    width: 600px;
+    padding: 10px 0 ;
+    border-radius: 5px;
+  }
+  .search-box.select-box {
+    padding: 13px;
+    overflow-y: scroll;
+  }
+  .search-btn {
+    width: 80px;
+    margin: 0 0 0 5px;
+    padding: 11px 0;
+    border: none;
+    background: lightcoral;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .search-btn:hover {
+    opacity: .8;
+  } 
+}
+
+ // 動く矢印
+ .cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.cp_arrows {
+  position: relative;
+  display: flex;
+  height: 200px;/*画面いっぱいにする場合100vh*/
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+.cp_arrows .cp_arrow {
+  position: absolute;
+  top: 50%;/*着地点（サンプルは[class:cp_arrows]height300pxの50%）*/
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  opacity: 0;
+}
+.cp_arrows .cp_arrowfirst {
+  -webkit-animation: arrow-move08 2s ease-in-out infinite;
+          animation: arrow-move08 2s ease-in-out infinite;
+}
+.cp_arrows .cp_arrowsecond {
+  -webkit-animation: arrow-move08 2s 1s ease-in-out infinite;
+          animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+.cp_arrows .cp_arrow:before, .cp_arrows .cp_arrow:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60px;
+  height: 5px;
+  content: '';
+  background: gold;
+}
+.cp_arrows .cp_arrow:before {
+  -webkit-transform: rotate(30deg) translateX(-39%);
+          transform: rotate(30deg) translateX(-39%);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.cp_arrows .cp_arrow:after {
+  -webkit-transform: rotate(-30deg) translateX(39%);
+          transform: rotate(-30deg) translateX(39%);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+@-webkit-keyframes arrow-move08 {
+  0% {
+    top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes arrow-move08 {
+  0% {
+    top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+ .overlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(45deg, rgba(0,0,0,.3) 50%, rgba(0,0,0,.7) 50%);
+  background-size: 3px 3px;
+  z-index: 1;
+}
 }
 /*==============================================================================
  トップページ メイン
@@ -179,7 +325,6 @@
  
 
  .group-search {
-   margin: 80px 0 0;
    .fa-frog {
      color: darkseagreen;
    }
@@ -470,6 +615,35 @@ footer
    text-align: center;
  }
 } 
+// パンくず
+
+.breadcrumbs {
+  font-size: 12px;
+  &:first-child {
+    &:before {
+      color: #fff;
+      font-family: FontAwesome;
+      content: "\f015";
+      margin-right: 6px;
+    }
+  }
+ }
+ .breadcrumbs a:hover {
+  color: #888;
+  text-decoration: underline;
+ }
+ .section-breadcrumbs {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-top: 1px solid #444;
+  border-bottom: 1px solid #444;
+ // box-shadow: 0px 9px 3px -3px #444;
+ }
+ .container-breadcrumbs {
+   width: 1000px;
+   margin: 0 auto;
+   padding: 10px 0px;
+ }
 
 
 
@@ -574,33 +748,7 @@ footer
 /*==============================================================================
 パンくずリスト
 ============================================================================= */
-.breadcrumbs {
- font-size: 12px;
- &:first-child {
-   &:before {
-     color: #fff;
-     font-family: FontAwesome;
-     content: "\f015";
-     margin-right: 6px;
-   }
- }
-}
-.breadcrumbs a:hover {
- color: #888;
- text-decoration: underline;
-}
-.section-breadcrumbs {
- margin: 0 auto;
- margin-bottom: 20px;
- border-top: 1px solid #444;
- border-bottom: 1px solid #444;
-// box-shadow: 0px 9px 3px -3px #444;
-}
-.container-breadcrumbs {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
+
 
 /*==============================================================================
   ショップ情報の登録・編集 画面

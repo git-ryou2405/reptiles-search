@@ -1,18 +1,17 @@
 <% Rails.application.config.another_logger.debug "[d] view: StaticPages#top" %>
 
-<div class="jumbotron text-center fv">
-  <h1 class="fv-ttl">Reptiles Search</h1>
+<div class="fv">
+<div class="overlay"></div>
   <div class="fv-block">
+    <h1 class="fv-ttl">Reptiles Search</h1>
     <p class="fv-txt01">全国の爬虫類ショップから<br>ヘビやトカゲなど一括検索！!</p>
-    <p class="fv-txt02">Reptiles Searchはあなたと爬虫類の出会いを全力サポート！!</p>
-  </div>
-</div>
 
-<main class="top-search">
-  <div class="bg">
-    <div class="inner">
+    <div class="cp_arrows">
+      <div class="cp_arrow cp_arrowfirst"></div>
+      <div class="cp_arrow cp_arrowsecond"></div>
+    </div>
 
-      <section class="totall-search">
+    <div class="totall-search">
         <div class="search-ttl-block">
           <i class="fas fa-paw"></i>
           <h2 class="search-ttl">爬虫類を探す</h2>
@@ -24,7 +23,15 @@
             <%= f.submit '検索', class:"search-btn" %>
           <% end %>
         </div>
-      </section><!-- 全体検索フォーム -->
+      </div><!-- 全体検索フォーム -->
+  </div>
+</div>
+
+<main class="top-search">
+  <div class="bg">
+    <div class="inner">
+
+      
       
       <section class="group-search">
         <div class="search-ttl-block">

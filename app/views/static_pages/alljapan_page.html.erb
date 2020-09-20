@@ -3,13 +3,13 @@
 <!-- マイページ -->
 <div id="wrapper">
   <!-- ショップ名orレプタイル種別 -->
-  <h1 class="shop-ttl" style="font-size: 40px;">全国Search</h1>
+  <h1 class="shop-ttl">全国Search</h1>
   <% if @type1_name.present? %>
-    <h1 class="shop-ttl-txt"><%= "\"#{@type1_name}\" 一覧" %></h1>
+    <p class="shop-ttl-txt"><%= "\"#{@type1_name}\" 一覧" %></h1>
   <% elsif @select_reptile.present?%>
-    <h1 class="shop-ttl-txt"><%= "\"#{@select_reptile.type1}\" 一覧" %></h1>
+    <p class="shop-ttl-txt"><%= "\"#{@select_reptile.type1}\" 一覧" %></h1>
   <% elsif @search_shop_result.present? %>
-    <h1 class="shop-ttl-txt"><%= "\"#{@search_shop_name}\" の検索結果" %></h1>
+    <p class="shop-ttl-txt"><%= "\"#{@search_shop_name}\" の検索結果" %></h1>
   <% end %>
   <!-- パンくずリスト -->
   <div class="section-breadcrumbs">
